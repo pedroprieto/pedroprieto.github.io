@@ -1,0 +1,58 @@
+<?xml-stylesheet type="text/xsl" href="http://example.org/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <lastmod>2019-09-23T12:37:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/uso-github/</loc>
+    <lastmod>2019-09-23T12:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/</loc>
+    <lastmod>2019-09-23T12:37:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2019-09-23T12:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/diw/</loc>
+    <lastmod>2019-09-23T12:37:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/diw-herramientas/</loc>
+    <lastmod>2019-09-23T12:37:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/fundamentos-git-2/</loc>
+    <lastmod>2019-09-23T12:18:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/about/</loc>
+    <lastmod>2019-09-23T11:56:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/fundamentos-git-1/</loc>
+    <lastmod>2019-09-23T11:51:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

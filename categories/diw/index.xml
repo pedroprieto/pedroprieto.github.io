@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>diw on Blog de Pedro Prieto</title>
+    <link>http://example.org/categories/diw/</link>
+    <description>Recent content in diw on Blog de Pedro Prieto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 23 Sep 2019 12:37:00 +0200</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/diw/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GitHub</title>
+      <link>http://example.org/post/uso-github/</link>
+      <pubDate>Mon, 23 Sep 2019 12:37:00 +0200</pubDate>
+      
+      <guid>http://example.org/post/uso-github/</guid>
+      <description>&lt;p&gt;En este artículo se explicará el uso de la herramienta &lt;strong&gt;GitHub&lt;/strong&gt; y las posibilidades que ofrece en el entorno educativo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fundamentos de git II</title>
+      <link>http://example.org/post/fundamentos-git-2/</link>
+      <pubDate>Mon, 23 Sep 2019 12:18:00 +0200</pubDate>
+      
+      <guid>http://example.org/post/fundamentos-git-2/</guid>
+      <description>&lt;p&gt;Este artículo tiene como objetivo profundizar en el manejo de Git con el uso de &lt;strong&gt;ramas&lt;/strong&gt; y &lt;strong&gt;repositorios remotos&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fundamentos de Git I</title>
+      <link>http://example.org/post/fundamentos-git-1/</link>
+      <pubDate>Mon, 23 Sep 2019 11:51:00 +0200</pubDate>
+      
+      <guid>http://example.org/post/fundamentos-git-1/</guid>
+      <description>&lt;p&gt;En este artículo se pretende dar una introducción a los comandos más comunes del software de control de versiones &lt;strong&gt;Git&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

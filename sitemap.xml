@@ -1,57 +1,57 @@
-<?xml-stylesheet type="text/xsl" href="http://example.org/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://pedroprieto.github.io/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://pedroprieto.github.io/categories/</loc>
     <lastmod>2019-09-23T12:37:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/post/uso-github/</loc>
+    <loc>https://pedroprieto.github.io/post/uso-github/</loc>
     <lastmod>2019-09-23T12:37:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/</loc>
-    <lastmod>2019-09-23T12:37:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2019-09-23T12:37:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/categories/diw/</loc>
+    <loc>https://pedroprieto.github.io/post/</loc>
     <lastmod>2019-09-23T12:37:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/diw-herramientas/</loc>
+    <loc>https://pedroprieto.github.io/</loc>
+    <lastmod>2019-09-23T12:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/categories/diw/</loc>
     <lastmod>2019-09-23T12:37:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/post/fundamentos-git-2/</loc>
+    <loc>https://pedroprieto.github.io/categories/diw-herramientas/</loc>
+    <lastmod>2019-09-23T12:37:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/post/fundamentos-git-2/</loc>
     <lastmod>2019-09-23T12:18:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://pedroprieto.github.io/about/</loc>
     <lastmod>2019-09-23T11:56:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/fundamentos-git-1/</loc>
+    <loc>https://pedroprieto.github.io/post/fundamentos-git-1/</loc>
     <lastmod>2019-09-23T11:51:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://pedroprieto.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   

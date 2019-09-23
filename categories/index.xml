@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Blog de Pedro Prieto</title>
-    <link>http://example.org/categories/</link>
+    <link>https://pedroprieto.github.io/categories/</link>
     <description>Recent content in Categories on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Mon, 23 Sep 2019 12:37:00 +0200</lastBuildDate>
     
-	<atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pedroprieto.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>diw</title>
-      <link>http://example.org/categories/diw/</link>
+      <link>https://pedroprieto.github.io/categories/diw/</link>
       <pubDate>Mon, 23 Sep 2019 12:37:00 +0200</pubDate>
       
-      <guid>http://example.org/categories/diw/</guid>
+      <guid>https://pedroprieto.github.io/categories/diw/</guid>
       <description></description>
     </item>
     
     <item>
       <title>diw-herramientas</title>
-      <link>http://example.org/categories/diw-herramientas/</link>
+      <link>https://pedroprieto.github.io/categories/diw-herramientas/</link>
       <pubDate>Mon, 23 Sep 2019 12:37:00 +0200</pubDate>
       
-      <guid>http://example.org/categories/diw-herramientas/</guid>
+      <guid>https://pedroprieto.github.io/categories/diw-herramientas/</guid>
       <description></description>
     </item>
     

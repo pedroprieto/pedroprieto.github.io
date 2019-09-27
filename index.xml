@@ -12,35 +12,13 @@
     
     
     <item>
-      <title>Herramientas de desarrollo</title>
-      <link>https://pedroprieto.github.io/post/herramientas-desarrollo/</link>
+      <title>Posts</title>
+      <link>https://pedroprieto.github.io/post/</link>
       <pubDate>Tue, 24 Sep 2019 00:43:00 +0200</pubDate>
       
-      <guid>https://pedroprieto.github.io/post/herramientas-desarrollo/</guid>
+      <guid>https://pedroprieto.github.io/post/</guid>
       
-        <description>&lt;p&gt;A continuación se muestran algunas herramientas de desarrollo que considero interesantes. Este artículo estará en continua revisión.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>GitHub</title>
-      <link>https://pedroprieto.github.io/post/uso-github/</link>
-      <pubDate>Mon, 23 Sep 2019 12:37:00 +0200</pubDate>
-      
-      <guid>https://pedroprieto.github.io/post/uso-github/</guid>
-      
-        <description>&lt;p&gt;En este artículo se explicará el uso de la herramienta &lt;strong&gt;GitHub&lt;/strong&gt; y las posibilidades que ofrece en el entorno educativo.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Fundamentos de git II</title>
-      <link>https://pedroprieto.github.io/post/fundamentos-git-2/</link>
-      <pubDate>Mon, 23 Sep 2019 12:18:00 +0200</pubDate>
-      
-      <guid>https://pedroprieto.github.io/post/fundamentos-git-2/</guid>
-      
-        <description>&lt;p&gt;Este artículo tiene como objetivo profundizar en el manejo de Git con el uso de &lt;strong&gt;ramas&lt;/strong&gt; y &lt;strong&gt;repositorios remotos&lt;/strong&gt;.&lt;/p&gt;</description>
+        <description></description>
       
     </item>
     
@@ -52,17 +30,6 @@
       <guid>https://pedroprieto.github.io/about/</guid>
       
         <description>Mi nombre es Pedro Prieto. Soy profesor del IES Mare Nostrum de Alicante. Este blog tiene como objetivo servir como plataforma para publicar los materiales de mis clases. Espero que poco a poco se convierta en una buena fuente de recursos tanto para los alumnos como para cualquier persona interesada en los temas que aquí se tratan.</description>
-      
-    </item>
-    
-    <item>
-      <title>Fundamentos de Git I</title>
-      <link>https://pedroprieto.github.io/post/fundamentos-git-1/</link>
-      <pubDate>Mon, 23 Sep 2019 11:51:00 +0200</pubDate>
-      
-      <guid>https://pedroprieto.github.io/post/fundamentos-git-1/</guid>
-      
-        <description>&lt;p&gt;En este artículo se pretende dar una introducción a los comandos más comunes del software de control de versiones &lt;strong&gt;Git&lt;/strong&gt;.&lt;/p&gt;</description>
       
     </item>
     

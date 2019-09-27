@@ -4,7 +4,16 @@
   <url>
     <loc>https://pedroprieto.github.io/categories/</loc>
     <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/categories/diw/</loc>
+    <lastmod>2019-09-24T00:43:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/categories/diw-herramientas-desarrollo/</loc>
+    <lastmod>2019-09-24T00:43:00+02:00</lastmod>
   </url>
   
   <url>
@@ -15,24 +24,11 @@
   <url>
     <loc>https://pedroprieto.github.io/post/</loc>
     <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://pedroprieto.github.io/</loc>
     <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/categories/diw/</loc>
-    <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/categories/diw-herramientas-desarrollo/</loc>
-    <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -57,7 +53,6 @@
   
   <url>
     <loc>https://pedroprieto.github.io/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

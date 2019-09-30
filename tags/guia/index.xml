@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>guia on Blog de Pedro Prieto</title>
+    <link>https://pedroprieto.github.io/tags/guia/</link>
+    <description>Recent content in guia on Blog de Pedro Prieto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 30 Sep 2019 10:46:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://pedroprieto.github.io/tags/guia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guias de estilo</title>
+      <link>https://pedroprieto.github.io/post/planificacion-guia-estilo/</link>
+      <pubDate>Mon, 30 Sep 2019 10:46:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/planificacion-guia-estilo/</guid>
+      <description>&lt;p&gt;Una guía de estilo recoge las normas de diseño que se utilizarán para crear un sitio web. Normalmente hace referencia a una serie de elementos (tipografía, colores, logos, etc.) que se deben utilizar para garantizar la &lt;strong&gt;uniformidad&lt;/strong&gt; de la &lt;strong&gt;estructura&lt;/strong&gt; y &lt;strong&gt;apariencia visual&lt;/strong&gt; del sitio.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

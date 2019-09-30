@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Herramientas de desarrollo - Blog de Pedro Prieto</title>
+  <title>Fundamentos de la planificación de interfaces web - Blog de Pedro Prieto</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Pedro Prieto Alarcón" />
-  <meta name="description" content="A continuación se muestran algunas herramientas de desarrollo que considero interesantes. Este artículo estará en continua revisión.
+  <meta name="description" content="Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos principios de diseño y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la guía de estilo.
 " />
 
   <meta name="keywords" content="DIW, interfaces, DAW, desarrollo web" />
@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.58.3" />
 
 
-<link rel="canonical" href="https://pedroprieto.github.io/post/herramientas-desarrollo/" />
+<link rel="canonical" href="https://pedroprieto.github.io/post/planificacion-fundamentos/" />
 
 
 
@@ -58,26 +58,26 @@
 
 
 
-<meta property="og:title" content="Herramientas de desarrollo" />
-<meta property="og:description" content="A continuación se muestran algunas herramientas de desarrollo que considero interesantes. Este artículo estará en continua revisión." />
+<meta property="og:title" content="Fundamentos de la planificación de interfaces web" />
+<meta property="og:description" content="Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos principios de diseño y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la guía de estilo." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pedroprieto.github.io/post/herramientas-desarrollo/" />
-<meta property="article:published_time" content="2019-09-24T00:43:00+02:00" />
-<meta property="article:modified_time" content="2019-09-24T00:43:00+02:00" />
-<meta itemprop="name" content="Herramientas de desarrollo">
-<meta itemprop="description" content="A continuación se muestran algunas herramientas de desarrollo que considero interesantes. Este artículo estará en continua revisión.">
+<meta property="og:url" content="https://pedroprieto.github.io/post/planificacion-fundamentos/" />
+<meta property="article:published_time" content="2019-09-30T10:28:00+02:00" />
+<meta property="article:modified_time" content="2019-09-30T10:28:00+02:00" />
+<meta itemprop="name" content="Fundamentos de la planificación de interfaces web">
+<meta itemprop="description" content="Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos principios de diseño y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la guía de estilo.">
 
 
-<meta itemprop="datePublished" content="2019-09-24T00:43:00&#43;02:00" />
-<meta itemprop="dateModified" content="2019-09-24T00:43:00&#43;02:00" />
-<meta itemprop="wordCount" content="121">
+<meta itemprop="datePublished" content="2019-09-30T10:28:00&#43;02:00" />
+<meta itemprop="dateModified" content="2019-09-30T10:28:00&#43;02:00" />
+<meta itemprop="wordCount" content="1211">
 
 
 
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="krug,planificacion,usabilidad," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Herramientas de desarrollo"/>
-<meta name="twitter:description" content="A continuación se muestran algunas herramientas de desarrollo que considero interesantes. Este artículo estará en continua revisión."/>
+<meta name="twitter:title" content="Fundamentos de la planificación de interfaces web"/>
+<meta name="twitter:description" content="Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos principios de diseño y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la guía de estilo."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -239,15 +239,15 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">Herramientas de desarrollo</h1>
+      <h1 class="post-title">Fundamentos de la planificación de interfaces web</h1>
       
       <div class="post-meta">
-        <time datetime="2019-09-24" class="post-time">
-          24-09-2019
+        <time datetime="2019-09-30" class="post-time">
+          30-09-2019
         </time>
         <div class="post-category">
             <a href="https://pedroprieto.github.io/categories/diw/"> diw </a>
-            <a href="https://pedroprieto.github.io/categories/diw-herramientas-desarrollo/"> diw-herramientas-desarrollo </a>
+            <a href="https://pedroprieto.github.io/categories/diw-planificacion-interfacesweb/"> diw-planificacion-interfacesweb </a>
             
           </div>
         
@@ -265,86 +265,210 @@
 
     
     <div class="post-content">
-      <p>A continuación se muestran algunas herramientas de desarrollo que considero interesantes. Este artículo estará en continua revisión.</p>
+      <p>Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos <strong>principios de diseño</strong> y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la <strong><a href="/post/planificacion-guia-estilo">guía de estilo</a></strong>.</p>
 
-<h2 id="editores">Editores</h2>
+<p>En este artículo nos centraremos en analizar algunos de los principios generales de diseño más importantes a tener en cuenta. Para ello se tomará como base el libro &ldquo;<a href="http://www.sensible.com/dmmt.html">Don&rsquo;t Make Me Think</a>&rdquo; (<em>No me hagas pensar</em>), de Steven Krug.</p>
+
+<h2 id="don-t-make-me-think">Don&rsquo;t make me think!</h2>
+
+<p>&ldquo;No me hagas pensar&rdquo; es el principio más importante que toda página debería seguir en cuanto a usabilidad. El objetivo principal de toda página web debería ser que fuera evidente, auto-explicativa. El usuario debería ser capaz de ver de un vistazo lo que la página propone sin gastar mucho tiempo pensando sobre ello.</p>
+
+<p>¿Cómo de evidente? Lo suficiente como para que una persona que no sea experta en el tema propuesto en la página y que apenas sepa usar el navegador sea capaz de llegar al sitio y decir &ldquo;Ah, esta página va de&hellip;&rdquo;.</p>
+
+<h2 id="errores-típicos">Errores típicos</h2>
 
 <ul>
-<li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-<li><a href="https://atom.io/">Atom</a></li>
-<li><a href="http://brackets.io/">Brackets</a></li>
-<li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
-<li><a href="https://notepad-plus-plus.org/">Notepad ++</a></li>
-<li><a href="http://emmet.io/">Emmet (plugin)</a></li>
+<li>Nombres poco claros, como nombres de marcas, específicos del funcionamiento interno de la empresa o siglas o nombres técnicos.</li>
+<li>Enlaces y botones que no se muestran de manera obvia y se confunden con texto normal.</li>
+<li>Asumir que el usuario conoce una información que en realidad desconoce.</li>
+<li>No saber en qué lugar del sitio web se está ni cómo volver a un sitio conocido (como por ejemplo, la página principal).</li>
+<li>No ofrecer un punto de entrada claro para empezar a utilizar el sitio.</li>
+<li>No mostrar los elementos típicos (menús de navegación, etc.) en los sitios habituales.</li>
+<li>Sobrecargar la página con información de manera que no se sepa qué es importante o qué no.</li>
+<li>Mezclar el contenido de la página con la publicidad de la misma de manera que sea muy difícil diferenciar ambas cosas.</li>
 </ul>
 
-<h3 id="ides">IDEs</h3>
+<p>El objetivo principal es eliminar todas aquellas preguntas que se pueda hacer el usuario a la hora de utilizar la página.</p>
+
+<h2 id="diseño-orientado-al-escaneo-no-a-la-lectura">Diseño orientado al escaneo, no a la lectura</h2>
+
+<ol>
+<li>Sigue las <strong>convenciones</strong> del diseño web.
 
 <ul>
-<li><a href="http://www.eclipse.org">Eclipse</a>
-
-<ul>
-<li><a href="http://www.eclipse.org/downloads/packages/eclipse-ide-javascript-web-developers/indigosr2">Paquete para JavaScript</a></li>
+<li>Los elementos (menús, logo, contenido,&hellip;) están dispuestos de manera convencional.</li>
+<li>Los elementos (cuadros de búsqueda, iconos de vídeo o audio, redes sociales,&hellip;) son reconocibles.</li>
 </ul></li>
-<li><a href="https://netbeans.org">Netbeans</a>
+<li>Dispone de una <strong>jerarquía</strong> clara.
 
 <ul>
-<li><a href="https://netbeans.org/kb/73/ide/javascript-editor.html">Soporte para JavaScript</a></li>
+<li>Queda claro qué apartados son más importantes que otros.</li>
+<li>Los encabezados de distintos niveles son perfectamente distinguibles unos de otros.</li>
+<li>Las capas agrupan correctamente los contenidos relacionados entre sí.</li>
+</ul></li>
+<li>Las páginas están <strong>divididas en áreas</strong> bien definidas.</li>
+<li>Los <strong>enlaces y botones</strong> se distinguen del texto normal.</li>
+<li>No hay contenido que <strong>distraiga</strong> al usuario.
+
+<ul>
+<li>No hay demasiadas zonas que llamen la atención del usuario de manera evidente (animaciones, exclamaciones, anuncios parpadeando,&hellip;).</li>
+<li>La página muestra un aspecto organizado y es fácil reconocer cada una de las áreas en que está dividida.</li>
+</ul></li>
+<li>El contenido está <strong>estructurado</strong> de manera que sea fácil escanear la página.
+
+<ul>
+<li>Hay encabezados que separan las secciones de texto.</li>
+<li>Queda claro qué encabezado está relacionado con el contenido.</li>
+<li>Los párrafos son cortos.</li>
+<li>Se utilizan listas para esquematizar el contenido.</li>
+<li>La cursiva y la negrita se utilizan pero de manera puntual.</li>
+</ul></li>
+</ol>
+
+<h2 id="elecciones-sencillas">Elecciones sencillas</h2>
+
+<ul>
+<li>Los usuarios buscan elecciones sencillas.</li>
+<li>Es más recomendable ofrecer pocas opciones  en varios pasos que muchas opciones en pocos pasos.</li>
+<li>Las opciones que se ofrecen deben ser lo suficientemente distintas como para no dudar entre una u otra.</li>
+<li>Las instrucciones deben desaparecer o minimizarse al máximo. En caso de aparecer, deben ser:
+
+<ul>
+<li>Breves (mínima cantidad de información que sea útil).</li>
+<li>Oportunas (deben aparecer exclusivamente cuando sean necesarias).</li>
+<li>Visibles (deben captar la atención del usuario y no pasar desapercibidas).</li>
 </ul></li>
 </ul>
 
-<h2 id="editores-online-para-prototipos-rápidos">Editores online para prototipos rápidos</h2>
+<h2 id="omisión-de-palabras-inútiles">Omisión de palabras inútiles</h2>
 
 <ul>
-<li><a href="https://jsbin.com">https://jsbin.com</a></li>
-<li><a href="https://jsfiddle.net/">https://jsfiddle.net/</a></li>
-<li><a href="http://codepen.io/">http://codepen.io/</a></li>
-<li><a href="https://www.jsnippet.net/">https://www.jsnippet.net/</a></li>
+<li>Es conveniente eliminar la mayoría de palabras inútiles en la página.</li>
+<li>Una vez escrito el texto, es conveniente analizarlo para intentar eliminar la mitad de las palabras.</li>
+<li>Se debe intentar evitar textos de bienvenida y descripciones al principio de las secciones y en la página principal.</li>
+<li>Las instrucciones deben escribirse de manera concisa.</li>
 </ul>
 
-<h2 id="herramientas-de-desarrollo-de-navegadores">Herramientas de desarrollo de navegadores</h2>
+<h2 id="diseño-de-la-navegación">Diseño de la navegación</h2>
+
+<h3 id="tipos-de-usuarios">Tipos de usuarios</h3>
 
 <ul>
-<li><a href="https://developers.google.com/web/tools/chrome-devtools/">Chrome DevTools</a> (Chrome)</li>
-<li><a href="https://developer.mozilla.org/es/docs/Tools">Firefox Dev Tools</a> (Firefox)</li>
+<li>Orientados a la navegación.</li>
+<li>Orientados a la búsqueda.</li>
 </ul>
 
-<h2 id="servicios-de-validación">Servicios de validación</h2>
+<h3 id="objetivos-del-menú-de-navegación">Objetivos del menú de navegación</h3>
 
 <ul>
-<li><a href="https://validator.w3.org/">W3C HTML Validation Service</a></li>
-<li><a href="https://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a></li>
-<li><a href="http://www.jslint.com">JSLint</a> (Chequeo de sintaxis y código JavaScript)</li>
+<li>Ayudar a encontrar lo que se está buscando.</li>
+<li>Indicar la localización actual dentro del sitio.</li>
+<li>Mostrar el contenido del sitio web.</li>
+<li>Explicar cómo utilizar el sitio.</li>
+<li>Dar confianza en la calidad del sitio.</li>
 </ul>
 
-<h2 id="git">Git</h2>
+<h3 id="convenciones">Convenciones</h3>
 
 <ul>
-<li><a href="https://git-scm.com/download/win">Git para Windows</a></li>
+<li>Los menús de navegación deben aparecer en los sitios convencionales.</li>
+<li>La navegación debe de mostrarse de manera consistente en todas las páginas, con algunas excepciones:
+
+<ul>
+<li>Páginas de pago online.</li>
+<li>Páginas de registro, suscripción, personalización de preferencias,&hellip;</li>
+</ul></li>
+<li>Es conveniente mostrar el logo de la página que actúe de enlace a la página principal en la parte superior izquierda.</li>
 </ul>
 
-<h2 id="node--plataforma-de-desarrollo-en-javascript">Node (plataforma de desarrollo en JavaScript)</h2>
+<h3 id="elementos-de-la-navegación">Elementos de la navegación</h3>
+
+<h4 id="navegación-primaria-dot">Navegación primaria.</h4>
 
 <ul>
-<li><a href="https://nodejs.org/en/">Node JS</a></li>
-<li><a href="https://www.npmjs.com/">Node packages</a></li>
+<li>Muestra las secciones principales del sitio.</li>
 </ul>
 
-<h2 id="diagramas-y-diseño">Diagramas y diseño</h2>
+<h4 id="utilidades">Utilidades</h4>
 
 <ul>
-<li><a href="http://plantuml.com">PlantUml</a></li>
-<li><a href="https://draw.io">Draw.io</a></li>
+<li>Son herramientas que utilizará el usuario. Ejemplos: cuadro de búsqueda, carrito de compra, &ldquo;mi cuenta&rdquo;, enlaces para iniciar sesión,&hellip;</li>
+<li>Se deben mostrar las cuatro o cinco más importantes en lugar visible (junto a la navegación primaria, por ejemplo).</li>
+<li>El resto deben mostrarse en el pie de página.</li>
 </ul>
 
-<h2 id="licencias">Licencias</h2>
+<h4 id="enlace-a-la-página-principal">Enlace a la página principal</h4>
 
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Copyright">Copyright</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Copyleft">Copyleft</a></li>
-<li><a href="https://opensource.org/osd.html">Open Source Definition</a></li>
-<li><a href="http://choosealicense.com">Choose a License</a></li>
-<li><a href="https://creativecommons.org/share-your-work/">Creative Commons licenses</a> (Para creaciones que no son código, como sitios web, multimedia, textos, libros, etc.)</li>
+<li>En el logo de la empresa.</li>
+<li>En la navegación principal.</li>
+</ul>
+
+<h4 id="navegación-secundaria-y-posteriores">Navegación secundaria y posteriores</h4>
+
+<ul>
+<li>Se debe prestar atención a todos los niveles de navegación, no solo a los principales.</li>
+<li>De esta manera se asegura una coherencia a todos los niveles.</li>
+</ul>
+
+<h3 id="búsqueda">Búsqueda</h3>
+
+<ul>
+<li>Es conveniente mostrar un cuadro de búsqueda en las utilidades.</li>
+<li>El cuadro de búsqueda debe mostrarse de manera convencional (icono de buscar o palabra &ldquo;Buscar&rdquo;).</li>
+<li>No deben mostrarse muchas opciones de búsqueda o filtrado en primera instancia. En su lugar, se deben mostrar cuando ya se haya realizado la primera búsqueda con el objeto de ayudar a filtrar los resultados.</li>
+</ul>
+
+<h3 id="nombres-de-las-páginas">Nombres de las páginas</h3>
+
+<ul>
+<li>Se debe mostrar el nombre de cada una de las páginas en la parte superior del contenido.</li>
+<li>El nombre debe resaltarse de manera adecuada, ya que es el elemento de mayor jerarquía de la página.</li>
+<li>El nombre debe concordar con el nombre de la opción del menú que ha conducido a dicha página.</li>
+</ul>
+
+<h3 id="localización">Localización</h3>
+
+<ul>
+<li>El menú de navegación debe resaltar la sección o secciones en las que se está en cada momento.</li>
+<li>El resaltado debe ser evidente.</li>
+</ul>
+
+<h3 id="migas-de-pan">Migas de pan</h3>
+
+<ul>
+<li>Deben aparecer en la parte superior.</li>
+<li>Se debe utilizar &ldquo;<strong>&gt;</strong>&rdquo; para separar niveles.</li>
+<li>El último nivel (nombre de la página actual) no debe ser un enlace y debe aparecer destacado.</li>
+</ul>
+
+<h3 id="pestañas">Pestañas</h3>
+
+<ul>
+<li>Son evidentes y fáciles de usar.</li>
+<li>Deben estar correctamente configuradas para resaltar la sección actual.</li>
+</ul>
+
+<h3 id="test-de-navegación">Test de navegación</h3>
+
+<p>El diseñador siempre piensa que el usuario va a llegar a la página deseada a través de la página principal y desde allí a través de la navegación. Sin embargo, en multitud de ocasiones se llega a una página directamente a través de un enlace enviado por otra persona o a través de un buscador.
+Por ello, al llegar a una página interior de un sitio web directamente se debería poder contestar a las siguientes preguntas sin demasiada dificultad:</p>
+
+<ul>
+<li>¿Qué sitio es éste? (Nombre del sitio o compañía)</li>
+<li>¿En qué página estoy? (Nombre de la página)</li>
+<li>¿Cuáles son las secciones principales? (Navegación primaria)</li>
+<li>¿Qué opciones tengo en este nivel? (Navegación local)</li>
+<li>¿En qué lugar me encuentro dentro de la jerarquía? (Localización)</li>
+<li>¿Dónde puedo realizar una búsqueda?</li>
+</ul>
+
+<h2 id="referencias">Referencias</h2>
+
+<ul>
+<li><a href="http://www.sensible.com/dmmt.html">Don&rsquo;t make me think</a>, enlace a la web del autor del libro, Steven Krug</li>
+<li><a href="https://amybughunter.wordpress.com/2014/08/16/book-summary-dont-make-me-think-by-steve-krug/">https://amybughunter.wordpress.com/2014/08/16/book-summary-dont-make-me-think-by-steve-krug/</a></li>
+<li><a href="http://www.squeezedbooks.com/articles/dont-make-me-think-a-common-sense-approach-to-web-usability-%282nd-edition%29--summary.html">http://www.squeezedbooks.com/articles/dont-make-me-think-a-common-sense-approach-to-web-usability-%282nd-edition%29--summary.html</a></li>
 </ul>
     </div>
 
@@ -358,7 +482,7 @@
   <p class="copyright-item">
     <span class="item-title">Ultima Modificación</span>
     <span class="item-content">
-      24-09-2019
+      30-09-2019
       
     </span>
   </p>
@@ -374,12 +498,17 @@
     
 
     <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="https://pedroprieto.github.io/tags/krug/">krug</a>
+          <a href="https://pedroprieto.github.io/tags/planificacion/">planificacion</a>
+          <a href="https://pedroprieto.github.io/tags/usabilidad/">usabilidad</a>
+          
+        </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/planificacion-fundamentos/">
+          <a class="prev" href="/post/planificacion-guia-estilo/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -389,12 +518,12 @@
 </svg>
 
             </i>
-            <span class="prev-text nav-default">Fundamentos de la planificación de interfaces web</span>
+            <span class="prev-text nav-default">Guias de estilo</span>
             <span class="prev-text nav-mobile">Anterior</span>
           </a>
         
-          <a class="next" href="/post/uso-github/">
-            <span class="next-text nav-default">GitHub</span>
+          <a class="next" href="/post/herramientas-desarrollo/">
+            <span class="next-text nav-default">Herramientas de desarrollo</span>
             <span class="prev-text nav-mobile">Siguiente</span>
             
             <i class="iconfont">

@@ -3,12 +3,67 @@
   
   <url>
     <loc>https://pedroprieto.github.io/categories/</loc>
-    <lastmod>2019-09-24T00:43:00+02:00</lastmod>
+    <lastmod>2019-09-30T10:46:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://pedroprieto.github.io/categories/diw/</loc>
-    <lastmod>2019-09-24T00:43:00+02:00</lastmod>
+    <lastmod>2019-09-30T10:46:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/categories/diw-planificacion-interfacesweb/</loc>
+    <lastmod>2019-09-30T10:46:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/estilo/</loc>
+    <lastmod>2019-09-30T10:46:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/guia/</loc>
+    <lastmod>2019-09-30T10:46:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/post/planificacion-guia-estilo/</loc>
+    <lastmod>2019-09-30T10:46:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/planificacion/</loc>
+    <lastmod>2019-09-30T10:46:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/post/</loc>
+    <lastmod>2019-09-30T10:46:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/</loc>
+    <lastmod>2019-09-30T10:46:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/</loc>
+    <lastmod>2019-09-30T10:46:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/post/planificacion-fundamentos/</loc>
+    <lastmod>2019-09-30T10:28:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/krug/</loc>
+    <lastmod>2019-09-30T10:28:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/usabilidad/</loc>
+    <lastmod>2019-09-30T10:28:00+02:00</lastmod>
   </url>
   
   <url>
@@ -18,16 +73,6 @@
   
   <url>
     <loc>https://pedroprieto.github.io/post/herramientas-desarrollo/</loc>
-    <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/post/</loc>
-    <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/</loc>
     <lastmod>2019-09-24T00:43:00+02:00</lastmod>
   </url>
   
@@ -49,10 +94,6 @@
   <url>
     <loc>https://pedroprieto.github.io/post/fundamentos-git-1/</loc>
     <lastmod>2019-09-23T11:51:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/tags/</loc>
   </url>
   
 </urlset>

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 30 Sep 2019 10:46:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 07 Oct 2019 11:01:00 +0200</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Diseño de prototipos</title>
+      <link>https://pedroprieto.github.io/post/diseno-prototipos/</link>
+      <pubDate>Mon, 07 Oct 2019 11:01:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/diseno-prototipos/</guid>
+      <description>&lt;p&gt;En todo proyecto de desarrollo web es recomendable realizar un prototipo o boceto del interfaz. De esta manera se puede tener una idea aproximada del aspecto visual que tendrá, qué secciones lo compondrán, cómo se verá en pantalla, etc.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Guias de estilo</title>

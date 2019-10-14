@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 07 Oct 2019 11:01:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 14 Oct 2019 13:37:00 +0200</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pautas de accesibilidad</title>
+      <link>https://pedroprieto.github.io/post/accesibilidad/</link>
+      <pubDate>Mon, 14 Oct 2019 13:37:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/accesibilidad/</guid>
+      <description>&lt;p&gt;La accesibilidad web es una práctica inclusiva que tiene como objetivo que &lt;strong&gt;no haya ninguna barrera que impida o limite el uso y acceso a Internet&lt;/strong&gt; a personas con cualquier tipo de discapacidad.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Diseño de prototipos</title>

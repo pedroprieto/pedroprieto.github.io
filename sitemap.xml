@@ -2,8 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pedroprieto.github.io/tags/accesibilidad/</loc>
+    <lastmod>2019-10-14T13:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/accesibility/</loc>
+    <lastmod>2019-10-14T13:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/aria/</loc>
+    <lastmod>2019-10-14T13:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pedroprieto.github.io/categories/</loc>
-    <lastmod>2019-10-07T11:01:00+02:00</lastmod>
+    <lastmod>2019-10-14T13:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/categories/diw/</loc>
+    <lastmod>2019-10-14T13:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/categories/diw-planificacion-interfacesweb/</loc>
+    <lastmod>2019-10-14T13:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/post/accesibilidad/</loc>
+    <lastmod>2019-10-14T13:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/post/</loc>
+    <lastmod>2019-10-14T13:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/</loc>
+    <lastmod>2019-10-14T13:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/</loc>
+    <lastmod>2019-10-14T13:37:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/wai/</loc>
+    <lastmod>2019-10-14T13:37:00+02:00</lastmod>
   </url>
   
   <url>
@@ -13,16 +63,6 @@
   
   <url>
     <loc>https://pedroprieto.github.io/post/diseno-prototipos/</loc>
-    <lastmod>2019-10-07T11:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/categories/diw/</loc>
-    <lastmod>2019-10-07T11:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/categories/diw-planificacion-interfacesweb/</loc>
     <lastmod>2019-10-07T11:01:00+02:00</lastmod>
   </url>
   
@@ -37,22 +77,7 @@
   </url>
   
   <url>
-    <loc>https://pedroprieto.github.io/post/</loc>
-    <lastmod>2019-10-07T11:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://pedroprieto.github.io/tags/prototipos/</loc>
-    <lastmod>2019-10-07T11:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/</loc>
-    <lastmod>2019-10-07T11:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/tags/</loc>
     <lastmod>2019-10-07T11:01:00+02:00</lastmod>
   </url>
   

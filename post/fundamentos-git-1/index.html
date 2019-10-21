@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.af20b78e95c84de86b00a0242a4a77bd2601700e1b250edf27537d957ac0041d.css" integrity="sha256-ryC3jpXITehrAKAkKkp3vSYBcA4bJQ7fJ1N9lXrABB0=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.9d905c6e18c5b36b748e85c65cd37158c2ae15f9a4abcd251c141c17295039ab.css" integrity="sha256-nZBcbhjFs2t0joXGXNNxWMKuFfmkq80lHBQcFylQOas=" media="screen" crossorigin="anonymous">
 
 
 
@@ -305,28 +305,22 @@
 </ul>
 
 <h3 id="configuración">Configuración</h3>
-
-<pre><code class="language-bash"># Opciones obligatorias (nombre y correo)
-git config --global user.name &quot;Nombre y apellido&quot;
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#999;font-style:italic"># Opciones obligatorias (nombre y correo)</span>
+git config --global user.name <span style="color:#ed9d13">&#34;Nombre y apellido&#34;</span>
 git config --global user.email CORREO@ELECTRONICO
 
-# Editor de preferencia. Como ejemplos se incluyen el Notepad y el Notepad ++ en Windows
-# Ejecutar sólo una de los tres comandos siguientes
-git config --global core.editor notepad # Notepad de Windows
-git config --global core.editor &quot;'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin&quot; # Notepad ++
-git config --global core.editor &quot;'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin&quot; # Notepad ++ 32 bit
+<span style="color:#999;font-style:italic"># Editor de preferencia. Como ejemplos se incluyen el Notepad y el Notepad ++ en Windows</span>
+<span style="color:#999;font-style:italic"># Ejecutar sólo una de los tres comandos siguientes</span>
+git config --global core.editor notepad <span style="color:#999;font-style:italic"># Notepad de Windows</span>
+git config --global core.editor <span style="color:#ed9d13">&#34;&#39;C:/Program Files/Notepad++/notepad++.exe&#39; -multiInst -notabbar -nosession -noPlugin&#34;</span> <span style="color:#999;font-style:italic"># Notepad ++</span>
+git config --global core.editor <span style="color:#ed9d13">&#34;&#39;C:/Program Files (x86)/Notepad++/notepad++.exe&#39; -multiInst -notabbar -nosession -noPlugin&#34;</span> <span style="color:#999;font-style:italic"># Notepad ++ 32 bit</span>
 
-# Almacenamiento de credenciales para no pedir usuario y contraseña de GitHub cada vez que se suban cambios al servidor
-# Ejecutar sólo uno de los dos comandos siguientes en función del sistema
-git config --global credential.helper cache   # Para Linux
-git config --global credential.helper wincred # Para Windows
-</code></pre>
-
+<span style="color:#999;font-style:italic"># Almacenamiento de credenciales para no pedir usuario y contraseña de GitHub cada vez que se suban cambios al servidor</span>
+<span style="color:#999;font-style:italic"># Ejecutar sólo uno de los dos comandos siguientes en función del sistema</span>
+git config --global credential.helper cache   <span style="color:#999;font-style:italic"># Para Linux</span>
+git config --global credential.helper wincred <span style="color:#999;font-style:italic"># Para Windows</span></code></pre></div>
 <h3 id="creación-de-repositorios">Creación de repositorios</h3>
-
-<pre><code class="language-bash">git init
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init</code></pre></div>
 <h3 id="ciclo-de-vida">Ciclo de vida</h3>
 
 
@@ -343,10 +337,7 @@ git config --global credential.helper wincred # Para Windows
 
 
 <h3 id="revisando-el-estado">Revisando el estado</h3>
-
-<pre><code class="language-bash">git status
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git status</code></pre></div>
 <h3 id="ignorar-archivos">Ignorar archivos</h3>
 
 <ul>
@@ -355,54 +346,28 @@ git config --global credential.helper wincred # Para Windows
 </ul>
 
 <h3 id="visualizar-cambios">Visualizar cambios</h3>
-
-<pre><code class="language-bash">git diff
-git diff &lt;archivo&gt;
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git diff
+git diff &lt;archivo&gt;</code></pre></div>
 <h3 id="añadir-archivos-al-área-de-preparación--stage">Añadir archivos al área de preparación (stage)</h3>
-
-<pre><code class="language-bash">git add &lt;archivo&gt; # Añadir archivos individuales
-git add .         # Añadir todos los archivos nuevos o modificados
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add &lt;archivo&gt; <span style="color:#999;font-style:italic"># Añadir archivos individuales</span>
+git add .         <span style="color:#999;font-style:italic"># Añadir todos los archivos nuevos o modificados</span></code></pre></div>
 <h3 id="visualizar-cambios-de-los-archivos-en-el-área-de-preparación">Visualizar cambios de los archivos en el área de preparación</h3>
-
-<pre><code class="language-bash">git diff --staged
-git diff --staged &lt;archivo&gt;
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git diff --staged
+git diff --staged &lt;archivo&gt;</code></pre></div>
 <h3 id="confirmar-cambios--commit">Confirmar cambios (commit)</h3>
-
-<pre><code class="language-bash">git commit -m &quot;MENSAJE&quot;
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git commit -m <span style="color:#ed9d13">&#34;MENSAJE&#34;</span></code></pre></div>
 <h3 id="historial-de-cambios">Historial de cambios</h3>
-
-<pre><code class="language-bash">git log
-git log --graph
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git log
+git log --graph</code></pre></div>
 <h3 id="ver-cambios-realizados-en-anteriores-commits">Ver cambios realizados en anteriores commits</h3>
-
-<pre><code class="language-bash">git show &lt;commit&gt;
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git show &lt;commit&gt;</code></pre></div>
 <h3 id="quitar-archivo-del-área-de-preparación">Quitar archivo del área de preparación</h3>
-
-<pre><code class="language-bash">git reset HEAD &lt;archivo&gt;
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git reset HEAD &lt;archivo&gt;</code></pre></div>
 <h3 id="eliminar-las-modificaciones-con-respecto-al-último-commit">Eliminar las modificaciones con respecto al último commit</h3>
-
-<pre><code class="language-bash"># ¡PELIGRO! Todos los cambios que se hayan hecho al archivo desde el último commit se eliminarán
-git checkout -- &lt;archivo&gt;
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#999;font-style:italic"># ¡PELIGRO! Todos los cambios que se hayan hecho al archivo desde el último commit se eliminarán</span>
+git checkout -- &lt;archivo&gt;</code></pre></div>
 <h3 id="etiquetado">Etiquetado</h3>
-
-<pre><code class="language-bash">git tag
-</code></pre>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git tag</code></pre></div>
     </div>
 
     

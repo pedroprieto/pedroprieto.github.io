@@ -6,10 +6,73 @@
     <description>Recent content in Tags on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 14 Oct 2019 14:36:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 21 Oct 2019 12:39:00 +0200</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>css</title>
+      <link>https://pedroprieto.github.io/tags/css/</link>
+      <pubDate>Mon, 21 Oct 2019 12:39:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>minimizar</title>
+      <link>https://pedroprieto.github.io/tags/minimizar/</link>
+      <pubDate>Mon, 21 Oct 2019 12:39:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/minimizar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>optimizar</title>
+      <link>https://pedroprieto.github.io/tags/optimizar/</link>
+      <pubDate>Mon, 21 Oct 2019 12:39:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/optimizar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>medida</title>
+      <link>https://pedroprieto.github.io/tags/medida/</link>
+      <pubDate>Mon, 21 Oct 2019 12:28:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/medida/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unidades</title>
+      <link>https://pedroprieto.github.io/tags/unidades/</link>
+      <pubDate>Mon, 21 Oct 2019 12:28:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/unidades/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>viewport</title>
+      <link>https://pedroprieto.github.io/tags/viewport/</link>
+      <pubDate>Mon, 21 Oct 2019 12:28:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/viewport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>modelo-caja</title>
+      <link>https://pedroprieto.github.io/tags/modelo-caja/</link>
+      <pubDate>Mon, 21 Oct 2019 11:47:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/modelo-caja/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>accesibilidad</title>

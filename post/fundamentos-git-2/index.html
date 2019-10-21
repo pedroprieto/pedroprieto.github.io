@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.af20b78e95c84de86b00a0242a4a77bd2601700e1b250edf27537d957ac0041d.css" integrity="sha256-ryC3jpXITehrAKAkKkp3vSYBcA4bJQ7fJ1N9lXrABB0=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.9d905c6e18c5b36b748e85c65cd37158c2ae15f9a4abcd251c141c17295039ab.css" integrity="sha256-nZBcbhjFs2t0joXGXNNxWMKuFfmkq80lHBQcFylQOas=" media="screen" crossorigin="anonymous">
 
 
 
@@ -318,76 +318,42 @@
 </ul>
 
 <h4 id="crear-ramas">Crear ramas</h4>
-
-<pre><code class="language-bash">git branch &lt;nombre_rama&gt;
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git branch &lt;nombre_rama&gt;</code></pre></div>
 <h4 id="ver-ramas-disponibles">Ver ramas disponibles</h4>
-
-<pre><code class="language-bash">git branch
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git branch</code></pre></div>
 <h4 id="cambiar-de-rama">Cambiar de rama</h4>
-
-<pre><code class="language-bash">git checkout &lt;nombre_rama&gt;
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git checkout &lt;nombre_rama&gt;</code></pre></div>
 <h4 id="fusionar-una-rama">Fusionar una rama</h4>
 
 <ul>
 <li>Primero nos posicionamos en la rama sobre la que se va a realizar la fusión</li>
 
 <li><p>Para realizar la fusión ejecutar:</p>
-
-<pre><code class="language-bash">git merge &lt;nombre_rama_a_fusionar&gt;
-</code></pre></li>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git merge &lt;nombre_rama_a_fusionar&gt;</code></pre></div></li>
 </ul>
 
 <h4 id="eliminar-una-rama">Eliminar una rama</h4>
-
-<pre><code class="language-bash">git branch -d &lt;nombre_rama&gt;
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git branch -d &lt;nombre_rama&gt;</code></pre></div>
 <h3 id="remotos">Remotos</h3>
 
 <h4 id="clonar-un-repositorio">Clonar un repositorio</h4>
-
-<pre><code class="language-bash">git clone &lt;URL_REPOSITORIO&gt;
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone &lt;URL_REPOSITORIO&gt;</code></pre></div>
 <h4 id="ver-remotos">Ver remotos</h4>
-
-<pre><code class="language-bash">git remote -v
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git remote -v</code></pre></div>
 <h4 id="añadir-eliminar-y-renombrar-remotos">Añadir, eliminar y renombrar remotos</h4>
-
-<pre><code class="language-bash">git remote add &lt;NOMBRE_REMOTO&gt; &lt;URL_REPOSITORIO&gt;   # Añadir remoto
-git remote rm &lt;NOMBRE_REMOTO&gt;                      # Eliminar remoto
-git remote rename &lt;NOMBRE_ORIGINAL&gt; &lt;NOMBRE_NUEVO&gt; # Renombrar remoto
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git remote add &lt;NOMBRE_REMOTO&gt; &lt;URL_REPOSITORIO&gt;   <span style="color:#999;font-style:italic"># Añadir remoto</span>
+git remote rm &lt;NOMBRE_REMOTO&gt;                      <span style="color:#999;font-style:italic"># Eliminar remoto</span>
+git remote rename &lt;NOMBRE_ORIGINAL&gt; &lt;NOMBRE_NUEVO&gt; <span style="color:#999;font-style:italic"># Renombrar remoto</span></code></pre></div>
 <h4 id="traer-información-del-remoto">Traer información del remoto</h4>
-
-<pre><code class="language-bash"># Este comando NO realiza la fusión en la rama local
-# Si se desean incorporar los cambios habría que realizar un git merge
-git fetch [NOMBRE_REMOTO] # El nombre del remoto por defecto es ORIGIN
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#999;font-style:italic"># Este comando NO realiza la fusión en la rama local</span>
+<span style="color:#999;font-style:italic"># Si se desean incorporar los cambios habría que realizar un git merge</span>
+git fetch [NOMBRE_REMOTO] <span style="color:#999;font-style:italic"># El nombre del remoto por defecto es ORIGIN</span></code></pre></div>
 <h4 id="traer-y-fusionar-cambios-del-remoto">Traer y fusionar cambios del remoto</h4>
-
-<pre><code class="language-bash">git pull [NOMBRE_REMOTO] [NOMBRE_RAMA] # Pull = fetch + merge
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git pull [NOMBRE_REMOTO] [NOMBRE_RAMA] <span style="color:#999;font-style:italic"># Pull = fetch + merge</span></code></pre></div>
 <h4 id="enviar-cambios-al-remoto">Enviar cambios al remoto</h4>
-
-<pre><code class="language-bash">git push [NOMBRE_REMOTO] [NOMBRE_RAMA]
-</code></pre>
-
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push [NOMBRE_REMOTO] [NOMBRE_RAMA]</code></pre></div>
 <h4 id="enviar-los-cambios-de-una-rama-al-remoto-y-crear-una-rama-remota-asociada">Enviar los cambios de una rama al remoto y crear una rama remota asociada</h4>
-
-<pre><code class="language-bash">git push -u NOMBRE_REMOTO NOMBRE_RAMA
-</code></pre>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push -u NOMBRE_REMOTO NOMBRE_RAMA</code></pre></div>
     </div>
 
     

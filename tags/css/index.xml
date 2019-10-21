@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on Blog de Pedro Prieto</title>
+    <link>https://pedroprieto.github.io/tags/css/</link>
+    <description>Recent content in css on Blog de Pedro Prieto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 21 Oct 2019 12:39:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://pedroprieto.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Minimización de hojas de estilo</title>
+      <link>https://pedroprieto.github.io/post/minimizacion_css/</link>
+      <pubDate>Mon, 21 Oct 2019 12:39:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/minimizacion_css/</guid>
+      <description>&lt;p&gt;La minimización de código tiene como objetivo &lt;strong&gt;reducir el tamaño del archivo eliminando caracteres innecesarios&lt;/strong&gt;. Se utiliza en diseño web para reducir el tamaño de los archivos CSS y JavaScript y así reducir el tiempo de carga del sitio web.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Unidades de medida</title>
+      <link>https://pedroprieto.github.io/post/unidades-medida-css/</link>
+      <pubDate>Mon, 21 Oct 2019 12:28:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/unidades-medida-css/</guid>
+      <description>&lt;p&gt;En este artículo estudiaremos las unidades de medida más utilizadas en CSS, así como las diferencias más importantes entre las unidades &lt;strong&gt;relativas&lt;/strong&gt; y las unidades &lt;strong&gt;absolutas&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Notas sobre el modelo de cajas en CSS</title>
+      <link>https://pedroprieto.github.io/post/modelo-caja-css/</link>
+      <pubDate>Mon, 21 Oct 2019 11:47:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/modelo-caja-css/</guid>
+      <description>&lt;p&gt;El &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FModelo%5FCaja/Introducci%C3%B3n%5Fal%5Fmodelo%5Fde%5Fcaja%5Fde%5FCSS&#34;&gt;modelo de caja de CSS&lt;/a&gt; tiene como objetivo definir el comportamiento de los elementos en HTML. En concreto define el &lt;strong&gt;contenido&lt;/strong&gt;, &lt;strong&gt;relleno&lt;/strong&gt;, &lt;strong&gt;bordes&lt;/strong&gt; y &lt;strong&gt;márgenes&lt;/strong&gt;. Se utiliza en gran medida para disponer los elementos en una estructura determinada (el denominado &lt;strong&gt;layout&lt;/strong&gt;). En este artículo veremos un par de características relacionadas con él que pueden ser de mucha utilidad: la propiedad &lt;code&gt;box-sizing&lt;/code&gt; y el comportamiento de la &lt;strong&gt;anchura y altura&lt;/strong&gt; de las cajas.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Conceptos básicos de CSS</title>
+      <link>https://pedroprieto.github.io/post/conceptos-basicos-css/</link>
+      <pubDate>Mon, 21 Oct 2019 11:28:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/conceptos-basicos-css/</guid>
+      <description>&lt;p&gt;Este artículo tiene como objetivo ofrecer una introducción sobre &lt;strong&gt;CSS&lt;/strong&gt;, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

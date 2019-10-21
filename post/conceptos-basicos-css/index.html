@@ -70,7 +70,7 @@
 
 <meta itemprop="datePublished" content="2019-10-21T11:28:00&#43;02:00" />
 <meta itemprop="dateModified" content="2019-10-21T11:28:00&#43;02:00" />
-<meta itemprop="wordCount" content="1323">
+<meta itemprop="wordCount" content="1365">
 
 
 
@@ -348,6 +348,15 @@
 &lt;/<span style="color:#6ab825;font-weight:bold">body</span>&gt;</code></pre></div>
 <p>En el ejemplo, el párrafo tendrá color verde, ya que el valor de su peso &ldquo;a&rdquo; es 1. Como el peso &ldquo;a&rdquo; es el más importante, es el que se impone a los demás.</p>
 
+<h3 id="important">!important</h3>
+
+<p>Existe una manera de sobreescribir estilos CSS sin importar las reglas de especificidad: añadiendo <code>!important</code> a la regla correspondiente:</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#6ab825;font-weight:bold">p</span> {
+    <span style="color:#6ab825;font-weight:bold">color</span>: <span style="color:#6ab825;font-weight:bold">red</span> <span style="color:#cd2828;font-weight:bold">!important</span>;
+}
+#<span style="color:#447fcf;text-decoration:underline">parrafo1</span> {
+    <span style="color:#6ab825;font-weight:bold">color</span>: <span style="color:#6ab825;font-weight:bold">green</span>;
+}</code></pre></div><div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#6ab825;font-weight:bold">p</span> <span style="color:#bbb">id</span>=<span style="color:#ed9d13">&#34;parrafo1&#34;</span>&gt;Será ROJO a pesar de que la regla es menos específica&lt;/<span style="color:#6ab825;font-weight:bold">p</span>&gt;</code></pre></div>
 <h2 id="hojas-de-estilo-alternativas">Hojas de estilo alternativas</h2>
 
 <p>Es posible incluir más de una hoja de estilo en un sitio web y ofrecer al usuario la posibilidad de usar una u otra mediante el uso de <strong>hojas de estilo alternativas</strong>.</p>

@@ -419,64 +419,64 @@
 <h3 id="unidad-em">Unidad &lsquo;em&rsquo;</h3>
 
 <p>Esta unidad hace referencia al <strong>tamaño de letra calculado heredado por el elemento</strong>. Por tanto, para calcular el valor real aplicado habrá que determinar los <strong>valores que se van heredando</strong> de los elementos <strong>contenedores</strong>. A continuación se muestra un ejemplo:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#6ab825;font-weight:bold">html</span> {
-  <span style="color:#6ab825;font-weight:bold">font-size</span>: <span style="color:#3677a9">12</span><span style="color:#6ab825;font-weight:bold">px</span>;
-  <span style="color:#6ab825;font-weight:bold">text-indent</span>: <span style="color:#3677a9">1</span><span style="color:#6ab825;font-weight:bold">em</span>; <span style="color:#999;font-style:italic">/* 1em = 12px */</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">html</span> {
+  <span style="color:#a2f;font-weight:bold">font-size</span>: <span style="color:#666">12</span><span style="color:#0b0;font-weight:bold">px</span>;
+  <span style="color:#a2f;font-weight:bold">text-indent</span>: <span style="color:#666">1</span><span style="color:#0b0;font-weight:bold">em</span>; <span style="color:#080;font-style:italic">/* 1em = 12px */</span>
 }
 
-<span style="color:#6ab825;font-weight:bold">p</span> {                 <span style="color:#999;font-style:italic">/* Hereda 1em = 12px; */</span>
-  <span style="color:#6ab825;font-weight:bold">font-size</span>: <span style="color:#3677a9">0.5</span><span style="color:#6ab825;font-weight:bold">em</span>; <span style="color:#999;font-style:italic">/* Tamaño = 6px */</span>
+<span style="color:#008000;font-weight:bold">p</span> {                 <span style="color:#080;font-style:italic">/* Hereda 1em = 12px; */</span>
+  <span style="color:#a2f;font-weight:bold">font-size</span>: <span style="color:#666">0.5</span><span style="color:#0b0;font-weight:bold">em</span>; <span style="color:#080;font-style:italic">/* Tamaño = 6px */</span>
 }
 
-<span style="color:#6ab825;font-weight:bold">p</span> <span style="color:#6ab825;font-weight:bold">span</span> {            <span style="color:#999;font-style:italic">/* Hereda 1em = 6px */</span>
-  <span style="color:#6ab825;font-weight:bold">font-size</span>: <span style="color:#3677a9">0.5</span><span style="color:#6ab825;font-weight:bold">em</span>; <span style="color:#999;font-style:italic">/* Tamaño = 3px */</span>
+<span style="color:#008000;font-weight:bold">p</span> <span style="color:#008000;font-weight:bold">span</span> {            <span style="color:#080;font-style:italic">/* Hereda 1em = 6px */</span>
+  <span style="color:#a2f;font-weight:bold">font-size</span>: <span style="color:#666">0.5</span><span style="color:#0b0;font-weight:bold">em</span>; <span style="color:#080;font-style:italic">/* Tamaño = 3px */</span>
 }</code></pre></div>
 <h3 id="unidad-rem">Unidad &lsquo;rem&rsquo;</h3>
 
 <p>Esta unidad tiene una <strong>referencia fija</strong>, que es el <strong>tamaño de letra definido en el elemento raíz</strong>. Por tanto, para calcular el valor real aplicado simplemente hay que mirar el elemento raíz. A continuación se muestra un ejemplo:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#6ab825;font-weight:bold">html</span> {
-  <span style="color:#6ab825;font-weight:bold">font-size</span>: <span style="color:#3677a9">12</span><span style="color:#6ab825;font-weight:bold">px</span>;
-  <span style="color:#6ab825;font-weight:bold">text-indent</span>: <span style="color:#3677a9">1</span><span style="color:#6ab825;font-weight:bold">rem</span>; <span style="color:#999;font-style:italic">/* 1em = 12px */</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">html</span> {
+  <span style="color:#a2f;font-weight:bold">font-size</span>: <span style="color:#666">12</span><span style="color:#0b0;font-weight:bold">px</span>;
+  <span style="color:#a2f;font-weight:bold">text-indent</span>: <span style="color:#666">1</span><span style="color:#0b0;font-weight:bold">rem</span>; <span style="color:#080;font-style:italic">/* 1em = 12px */</span>
 }
 
-<span style="color:#6ab825;font-weight:bold">p</span> {
-  <span style="color:#6ab825;font-weight:bold">font-size</span>: <span style="color:#3677a9">0.5</span><span style="color:#6ab825;font-weight:bold">rem</span>; <span style="color:#999;font-style:italic">/* Tamaño = 6px */</span>
+<span style="color:#008000;font-weight:bold">p</span> {
+  <span style="color:#a2f;font-weight:bold">font-size</span>: <span style="color:#666">0.5</span><span style="color:#0b0;font-weight:bold">rem</span>; <span style="color:#080;font-style:italic">/* Tamaño = 6px */</span>
 }
 
-<span style="color:#6ab825;font-weight:bold">p</span> <span style="color:#6ab825;font-weight:bold">span</span> {
-  <span style="color:#6ab825;font-weight:bold">font-size</span>: <span style="color:#3677a9">0.5</span><span style="color:#6ab825;font-weight:bold">rem</span>; <span style="color:#999;font-style:italic">/* Tamaño = 6px */</span>
+<span style="color:#008000;font-weight:bold">p</span> <span style="color:#008000;font-weight:bold">span</span> {
+  <span style="color:#a2f;font-weight:bold">font-size</span>: <span style="color:#666">0.5</span><span style="color:#0b0;font-weight:bold">rem</span>; <span style="color:#080;font-style:italic">/* Tamaño = 6px */</span>
 }</code></pre></div>
 <p>Estas unidades simplifican los cálculos al tener una referencia fija (no hay que ir calculando valores heredados de los elementos contenedores).</p>
 
 <h3 id="porcentaje">Porcentaje</h3>
 
 <p>El porcentaje suele tomarse como una unidad relativa más. Un porcentaje de un 100% hace referencia al tamaño calculado del elemento contenedor (un tamaño de un 100% en un tipo de letra hace referencia al tamaño del tipo de letra aplicado en el elemento contenedor). Por tanto, para calcular el valor real aplicado habrá que determinar los <strong>valores que se van heredando</strong> de los elementos <strong>contenedores</strong>. A continuación se muestra un ejemplo:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#6ab825;font-weight:bold">body</span> {
-  <span style="color:#6ab825;font-weight:bold">width</span>: <span style="color:#3677a9">1024</span><span style="color:#6ab825;font-weight:bold">px</span>; <span style="color:#999;font-style:italic">/* 100% = 1024px */</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">body</span> {
+  <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">1024</span><span style="color:#0b0;font-weight:bold">px</span>; <span style="color:#080;font-style:italic">/* 100% = 1024px */</span>
 }
 
-<span style="color:#6ab825;font-weight:bold">div</span> {            <span style="color:#999;font-style:italic">/* Hereda 100% = 1024px */</span>
-  <span style="color:#6ab825;font-weight:bold">width</span>: <span style="color:#3677a9">50</span><span style="color:#6ab825;font-weight:bold">%</span>;    <span style="color:#999;font-style:italic">/* Anchura = 512px */</span>
+<span style="color:#008000;font-weight:bold">div</span> {            <span style="color:#080;font-style:italic">/* Hereda 100% = 1024px */</span>
+  <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">50</span><span style="color:#0b0;font-weight:bold">%</span>;    <span style="color:#080;font-style:italic">/* Anchura = 512px */</span>
 }
 
-<span style="color:#6ab825;font-weight:bold">div</span> <span style="color:#6ab825;font-weight:bold">div</span> {        <span style="color:#999;font-style:italic">/* Hereda 100% = 512px */</span>
-  <span style="color:#6ab825;font-weight:bold">width</span>: <span style="color:#3677a9">50</span><span style="color:#6ab825;font-weight:bold">%</span>;    <span style="color:#999;font-style:italic">/* Anchura = 256px */</span>
+<span style="color:#008000;font-weight:bold">div</span> <span style="color:#008000;font-weight:bold">div</span> {        <span style="color:#080;font-style:italic">/* Hereda 100% = 512px */</span>
+  <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">50</span><span style="color:#0b0;font-weight:bold">%</span>;    <span style="color:#080;font-style:italic">/* Anchura = 256px */</span>
 }</code></pre></div>
 <h3 id="unidades-vw-vh-vmin-y-vmax">Unidades &lsquo;vw&rsquo;, &lsquo;vh&rsquo;, &lsquo;vmin&rsquo; y &lsquo;vmax&rsquo;</h3>
 
 <p>Estas unidades hacen referencia al tamaño del <strong><a href="https://www.w3schools.com/css/css%5Frwd%5Fviewport.asp">viewport</a></strong>. CSS define el <em>viewport</em> como el <strong>tamaño del área que se utiliza para representar la página web</strong>. Coincide con el <code>&lt;body&gt;</code> incluyendo los márgenes. Es importante indicar que en los <strong>navegadores móviles</strong> el <em>viewport</em> tiene un <strong>tamaño superior al tamaño real</strong> de la pantalla: es por ello que las páginas web se muestran completas como vistas desde un zoom de alejamiento (este tema será tratado con más detalle más adelante).</p>
 
 <p>Estas unidades tienen una <strong>referencia fija</strong>, que es el ancho (&lsquo;vw&rsquo;), alto (&lsquo;vh&rsquo;), dimensión más pequeña (&lsquo;vmin&rsquo;) o dimensión más grande (&lsquo;vmax&rsquo;) del <em>viewport</em>. Por tanto, para calcular el valor real aplicado simplemente hay que mirar el elemento raíz. A continuación se muestra un ejemplo:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#999;font-style:italic">/* Suponemos que el ancho de la pantalla
-</span><span style="color:#999;font-style:italic">del dispositivo es de 1024px, por lo que
-</span><span style="color:#999;font-style:italic">100vw = 1024px */</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#080;font-style:italic">/* Suponemos que el ancho de la pantalla
+</span><span style="color:#080;font-style:italic">del dispositivo es de 1024px, por lo que
+</span><span style="color:#080;font-style:italic">100vw = 1024px */</span>
 
-<span style="color:#6ab825;font-weight:bold">div</span> {            <span style="color:#999;font-style:italic">/* 1vw = 1024/100 */</span>
-  <span style="color:#6ab825;font-weight:bold">width</span>: <span style="color:#3677a9">50</span><span style="color:#6ab825;font-weight:bold">vw</span>;   <span style="color:#999;font-style:italic">/* Anchura = 512px */</span>
+<span style="color:#008000;font-weight:bold">div</span> {            <span style="color:#080;font-style:italic">/* 1vw = 1024/100 */</span>
+  <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">50</span><span style="color:#0b0;font-weight:bold">vw</span>;   <span style="color:#080;font-style:italic">/* Anchura = 512px */</span>
 }
 
-<span style="color:#6ab825;font-weight:bold">div</span> <span style="color:#6ab825;font-weight:bold">div</span> {         <span style="color:#999;font-style:italic">/* 1vw = 1024/100 */</span>
-  <span style="color:#6ab825;font-weight:bold">width</span>: <span style="color:#3677a9">50</span><span style="color:#6ab825;font-weight:bold">vw</span>;    <span style="color:#999;font-style:italic">/* Anchura = 512px */</span>
+<span style="color:#008000;font-weight:bold">div</span> <span style="color:#008000;font-weight:bold">div</span> {         <span style="color:#080;font-style:italic">/* 1vw = 1024/100 */</span>
+  <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">50</span><span style="color:#0b0;font-weight:bold">vw</span>;    <span style="color:#080;font-style:italic">/* Anchura = 512px */</span>
 }</code></pre></div>
 <p>Como ocurre con las unidades &lsquo;rem&rsquo;, las unidades relativas al <em>viewport</em> simplifican los cálculos al tener una referencia fija.</p>
     </div>

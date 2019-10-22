@@ -281,43 +281,43 @@ Frente a esto, es interesante conocer que CSS permite definir variables que pued
 <p>Los preprocesadores CSS permiten utilizar un lenguaje especial para definir código CSS. Dicho lenguaje depende del preprocesador elegido y suele ser muy parecido al CSS convencional.</p>
 
 <p>El lenguaje debe ser <strong>compilado</strong> a CSS para que los navegadores puedan usarlo. A continuación podemos ver un ejemplo de <strong>SASS</strong>:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sass" data-lang="sass"><span style="color:#bbb">$font-stack</span>:    Helvetica, <span style="color:#40ffff">sans-serif</span>
-<span style="color:#bbb">$primary-color</span>: <span style="color:#3677a9">#333</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sass" data-lang="sass"><span style="color:#b44">$font-stack</span><span style="color:#666">:</span>    Helvetica<span style="color:#666">,</span> <span style="color:#800">sans-serif</span>
+<span style="color:#b44">$primary-color</span><span style="color:#666">:</span> <span style="color:#666">#333</span>
 
-<span style="color:#6ab825;font-weight:bold">body</span>
-<span style="color:#a61717;background-color:#e3d2d2">  </span><span style="color:#bbb">font</span>: <span style="color:#3677a9">100</span><span style="color:#6ab825;font-weight:bold">%</span> <span style="color:#40ffff">$font-stack</span>
-<span style="color:#a61717;background-color:#e3d2d2">  </span><span style="color:#bbb">color</span>: <span style="color:#40ffff">$primary-color</span>
+<span style="color:#008000;font-weight:bold">body</span>
+<span style="">  </span><span style="color:#b44">font</span><span style="color:#666">:</span> <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">%</span> <span style="color:#b8860b">$font-stack</span>
+<span style="">  </span><span style="color:#b44">color</span><span style="color:#666">:</span> <span style="color:#b8860b">$primary-color</span>
 
-<span style="color:#6ab825;font-weight:bold">nav</span>
-  <span style="color:#6ab825;font-weight:bold">ul</span>
-<span style="color:#a61717;background-color:#e3d2d2">    </span><span style="color:#bbb">margin</span>: <span style="color:#3677a9">0</span>
-<span style="color:#a61717;background-color:#e3d2d2">    </span><span style="color:#bbb">padding</span>: <span style="color:#3677a9">0</span>
-<span style="color:#a61717;background-color:#e3d2d2">    </span><span style="color:#bbb">list-style</span>: <span style="color:#40ffff">none</span>
+<span style="color:#008000;font-weight:bold">nav</span>
+  <span style="color:#008000;font-weight:bold">ul</span>
+<span style="">    </span><span style="color:#b44">margin</span><span style="color:#666">:</span> <span style="color:#666">0</span>
+<span style="">    </span><span style="color:#b44">padding</span><span style="color:#666">:</span> <span style="color:#666">0</span>
+<span style="">    </span><span style="color:#b44">list-style</span><span style="color:#666">:</span> <span style="color:#800">none</span>
 
-  <span style="color:#6ab825;font-weight:bold">li</span>
-<span style="color:#a61717;background-color:#e3d2d2">    </span><span style="color:#bbb">display</span>: <span style="color:#40ffff">inline</span>-<span style="color:#40ffff">block</span>
+  <span style="color:#008000;font-weight:bold">li</span>
+<span style="">    </span><span style="color:#b44">display</span><span style="color:#666">:</span> <span style="color:#800">inline</span><span style="color:#666">-</span><span style="color:#800">block</span>
 
-  <span style="color:#6ab825;font-weight:bold">a</span>
-<span style="color:#a61717;background-color:#e3d2d2">    </span><span style="color:#bbb">display</span>: <span style="color:#40ffff">block</span>
-<span style="color:#a61717;background-color:#e3d2d2">    </span><span style="color:#bbb">padding</span>: <span style="color:#3677a9">6</span><span style="color:#6ab825;font-weight:bold">px</span> <span style="color:#3677a9">12</span><span style="color:#6ab825;font-weight:bold">px</span>
-<span style="color:#a61717;background-color:#e3d2d2">    </span><span style="color:#bbb">text-decoration</span>: <span style="color:#40ffff">none</span></code></pre></div>
+  <span style="color:#008000;font-weight:bold">a</span>
+<span style="">    </span><span style="color:#b44">display</span><span style="color:#666">:</span> <span style="color:#800">block</span>
+<span style="">    </span><span style="color:#b44">padding</span><span style="color:#666">:</span> <span style="color:#666">6</span><span style="color:#0b0;font-weight:bold">px</span> <span style="color:#666">12</span><span style="color:#0b0;font-weight:bold">px</span>
+<span style="">    </span><span style="color:#b44">text-decoration</span><span style="color:#666">:</span> <span style="color:#800">none</span></code></pre></div>
 <p>Y el resultado de la compilación en CSS:</p>
-<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#6ab825;font-weight:bold">body</span> {
-  <span style="color:#6ab825;font-weight:bold">font</span>: <span style="color:#3677a9">100</span><span style="color:#6ab825;font-weight:bold">%</span> Helvetica, <span style="color:#6ab825;font-weight:bold">sans-serif</span>;
-  <span style="color:#6ab825;font-weight:bold">color</span>: <span style="color:#3677a9">#333</span>;
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">body</span> {
+  <span style="color:#a2f;font-weight:bold">font</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">%</span> Helvetica, <span style="color:#a2f;font-weight:bold">sans-serif</span>;
+  <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#666">#333</span>;
 }
-<span style="color:#6ab825;font-weight:bold">nav</span> <span style="color:#6ab825;font-weight:bold">ul</span> {
-  <span style="color:#6ab825;font-weight:bold">margin</span>: <span style="color:#3677a9">0</span>;
-  <span style="color:#6ab825;font-weight:bold">padding</span>: <span style="color:#3677a9">0</span>;
-  <span style="color:#6ab825;font-weight:bold">list-style</span>: <span style="color:#6ab825;font-weight:bold">none</span>;
+<span style="color:#008000;font-weight:bold">nav</span> <span style="color:#008000;font-weight:bold">ul</span> {
+  <span style="color:#a2f;font-weight:bold">margin</span>: <span style="color:#666">0</span>;
+  <span style="color:#a2f;font-weight:bold">padding</span>: <span style="color:#666">0</span>;
+  <span style="color:#a2f;font-weight:bold">list-style</span>: <span style="color:#a2f;font-weight:bold">none</span>;
 }
-<span style="color:#6ab825;font-weight:bold">nav</span> <span style="color:#6ab825;font-weight:bold">li</span> {
-  <span style="color:#6ab825;font-weight:bold">display</span>: <span style="color:#6ab825;font-weight:bold">inline</span>-<span style="color:#6ab825;font-weight:bold">block</span>;
+<span style="color:#008000;font-weight:bold">nav</span> <span style="color:#008000;font-weight:bold">li</span> {
+  <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">inline</span><span style="color:#666">-</span><span style="color:#a2f;font-weight:bold">block</span>;
 }
-<span style="color:#6ab825;font-weight:bold">nav</span> <span style="color:#6ab825;font-weight:bold">a</span> {
-  <span style="color:#6ab825;font-weight:bold">display</span>: <span style="color:#6ab825;font-weight:bold">block</span>;
-  <span style="color:#6ab825;font-weight:bold">padding</span>: <span style="color:#3677a9">6</span><span style="color:#6ab825;font-weight:bold">px</span> <span style="color:#3677a9">12</span><span style="color:#6ab825;font-weight:bold">px</span>;
-  <span style="color:#6ab825;font-weight:bold">text-decoration</span>: <span style="color:#6ab825;font-weight:bold">none</span>;
+<span style="color:#008000;font-weight:bold">nav</span> <span style="color:#008000;font-weight:bold">a</span> {
+  <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">block</span>;
+  <span style="color:#a2f;font-weight:bold">padding</span>: <span style="color:#666">6</span><span style="color:#0b0;font-weight:bold">px</span> <span style="color:#666">12</span><span style="color:#0b0;font-weight:bold">px</span>;
+  <span style="color:#a2f;font-weight:bold">text-decoration</span>: <span style="color:#a2f;font-weight:bold">none</span>;
 }</code></pre></div>
 <p>A continuación se enumeran algunos de los preprocesadores CSS más utilizados son:</p>
 
@@ -334,61 +334,61 @@ Frente a esto, es interesante conocer que CSS permite definir variables que pued
 
 <p>Es posible hacer uso de esta característica sin tener que recurrir a un preprocesador haciendo uso de las <strong><a href="https://developer.mozilla.org/es/docs/Web/CSS/Using%5FCSS%5Fcustom%5Fproperties">propiedades personalizadas CSS</a></strong>. A continuación se muestra un ejemplo:</p>
 
-<div class="highlight"><div style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<div class="highlight"><div style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 1
-</span><span style="display:block;width:100%;background-color:#363636"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 2
-</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 6
-</span><span style="display:block;width:100%;background-color:#363636"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 7
-</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">15
-</span><span style="display:block;width:100%;background-color:#363636"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">16
-</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">22
-</span><span style="display:block;width:100%;background-color:#363636"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">23
-</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#686868">26
+<pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="display:block;width:100%;background-color:#dfdfdf"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="display:block;width:100%;background-color:#dfdfdf"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="display:block;width:100%;background-color:#dfdfdf"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="display:block;width:100%;background-color:#dfdfdf"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#ffa500">root</span> {
-<span style="display:block;width:100%;background-color:#363636">  <span style="color:#40ffff">--color-fondo-principal</span>: <span style="color:#6ab825;font-weight:bold">brown</span>;
+<pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a2f">root</span> {
+<span style="display:block;width:100%;background-color:#dfdfdf">  <span style="color:#b8860b">--color-fondo-principal</span>: <span style="color:#a2f;font-weight:bold">brown</span>;
 </span>}
 
-.<span style="color:#447fcf;text-decoration:underline">uno</span> {
-  <span style="color:#6ab825;font-weight:bold">color</span>: <span style="color:#6ab825;font-weight:bold">white</span>;
-<span style="display:block;width:100%;background-color:#363636">  <span style="color:#6ab825;font-weight:bold">background-color</span>: <span style="color:#447fcf">var</span>(--<span style="color:#6ab825;font-weight:bold">color</span>-fondo-principal);
-</span>  <span style="color:#6ab825;font-weight:bold">margin</span>: <span style="color:#3677a9">10</span><span style="color:#6ab825;font-weight:bold">px</span>;
-  <span style="color:#6ab825;font-weight:bold">width</span>: <span style="color:#3677a9">50</span><span style="color:#6ab825;font-weight:bold">px</span>;
-  <span style="color:#6ab825;font-weight:bold">height</span>: <span style="color:#3677a9">50</span><span style="color:#6ab825;font-weight:bold">px</span>;
-  <span style="color:#6ab825;font-weight:bold">display</span>: <span style="color:#6ab825;font-weight:bold">inline</span>-<span style="color:#6ab825;font-weight:bold">block</span>;
+.<span style="color:#00f">uno</span> {
+  <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">white</span>;
+<span style="display:block;width:100%;background-color:#dfdfdf">  <span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#00a000">var</span>(<span style="color:#666">--</span><span style="color:#a2f;font-weight:bold">color</span><span style="color:#666">-</span>fondo<span style="color:#666">-</span>principal);
+</span>  <span style="color:#a2f;font-weight:bold">margin</span>: <span style="color:#666">10</span><span style="color:#0b0;font-weight:bold">px</span>;
+  <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">50</span><span style="color:#0b0;font-weight:bold">px</span>;
+  <span style="color:#a2f;font-weight:bold">height</span>: <span style="color:#666">50</span><span style="color:#0b0;font-weight:bold">px</span>;
+  <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">inline</span><span style="color:#666">-</span><span style="color:#a2f;font-weight:bold">block</span>;
 }
 
-.<span style="color:#447fcf;text-decoration:underline">dos</span> {
-  <span style="color:#6ab825;font-weight:bold">color</span>: <span style="color:#6ab825;font-weight:bold">white</span>;
-<span style="display:block;width:100%;background-color:#363636">  <span style="color:#6ab825;font-weight:bold">background-color</span>: <span style="color:#447fcf">var</span>(--<span style="color:#6ab825;font-weight:bold">color</span>-fondo-principal);
-</span>  <span style="color:#6ab825;font-weight:bold">margin</span>: <span style="color:#3677a9">10</span><span style="color:#6ab825;font-weight:bold">px</span>;
-  <span style="color:#6ab825;font-weight:bold">width</span>: <span style="color:#3677a9">75</span><span style="color:#6ab825;font-weight:bold">px</span>;
+.<span style="color:#00f">dos</span> {
+  <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">white</span>;
+<span style="display:block;width:100%;background-color:#dfdfdf">  <span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#00a000">var</span>(<span style="color:#666">--</span><span style="color:#a2f;font-weight:bold">color</span><span style="color:#666">-</span>fondo<span style="color:#666">-</span>principal);
+</span>  <span style="color:#a2f;font-weight:bold">margin</span>: <span style="color:#666">10</span><span style="color:#0b0;font-weight:bold">px</span>;
+  <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">75</span><span style="color:#0b0;font-weight:bold">px</span>;
 }
 
-.<span style="color:#447fcf;text-decoration:underline">tres</span> {
-  <span style="color:#6ab825;font-weight:bold">color</span>: <span style="color:#6ab825;font-weight:bold">white</span>;
-<span style="display:block;width:100%;background-color:#363636">  <span style="color:#6ab825;font-weight:bold">background-color</span>: <span style="color:#447fcf">var</span>(--<span style="color:#6ab825;font-weight:bold">color</span>-fondo-principal);
-</span>  <span style="color:#6ab825;font-weight:bold">margin</span>: <span style="color:#3677a9">10</span><span style="color:#6ab825;font-weight:bold">px</span>;
-  <span style="color:#6ab825;font-weight:bold">width</span>: <span style="color:#3677a9">100</span><span style="color:#6ab825;font-weight:bold">px</span>;
+.<span style="color:#00f">tres</span> {
+  <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">white</span>;
+<span style="display:block;width:100%;background-color:#dfdfdf">  <span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#00a000">var</span>(<span style="color:#666">--</span><span style="color:#a2f;font-weight:bold">color</span><span style="color:#666">-</span>fondo<span style="color:#666">-</span>principal);
+</span>  <span style="color:#a2f;font-weight:bold">margin</span>: <span style="color:#666">10</span><span style="color:#0b0;font-weight:bold">px</span>;
+  <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>;
 }</code></pre></td></tr></table>
 </div>
 </div>

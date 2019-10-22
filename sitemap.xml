@@ -2,32 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pedroprieto.github.io/tags/bem/</loc>
+    <lastmod>2019-10-22T11:51:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pedroprieto.github.io/categories/</loc>
-    <lastmod>2019-10-22T09:54:00+02:00</lastmod>
+    <lastmod>2019-10-22T11:51:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://pedroprieto.github.io/tags/css/</loc>
-    <lastmod>2019-10-22T09:54:00+02:00</lastmod>
+    <lastmod>2019-10-22T11:51:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://pedroprieto.github.io/categories/diw/</loc>
-    <lastmod>2019-10-22T09:54:00+02:00</lastmod>
+    <lastmod>2019-10-22T11:51:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://pedroprieto.github.io/categories/diw-estilos-multimedia/</loc>
-    <lastmod>2019-10-22T09:54:00+02:00</lastmod>
+    <lastmod>2019-10-22T11:51:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pedroprieto.github.io/tags/less/</loc>
-    <lastmod>2019-10-22T09:54:00+02:00</lastmod>
+    <loc>https://pedroprieto.github.io/post/estrategias_diseno_css/</loc>
+    <lastmod>2019-10-22T11:51:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://pedroprieto.github.io/post/</loc>
+    <lastmod>2019-10-22T11:51:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/</loc>
+    <lastmod>2019-10-22T11:51:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/</loc>
+    <lastmod>2019-10-22T11:51:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/less/</loc>
     <lastmod>2019-10-22T09:54:00+02:00</lastmod>
   </url>
   
@@ -37,17 +57,7 @@
   </url>
   
   <url>
-    <loc>https://pedroprieto.github.io/</loc>
-    <lastmod>2019-10-22T09:54:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://pedroprieto.github.io/tags/sass/</loc>
-    <lastmod>2019-10-22T09:54:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/tags/</loc>
     <lastmod>2019-10-22T09:54:00+02:00</lastmod>
   </url>
   

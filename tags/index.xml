@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Blog de Pedro Prieto</title>
@@ -6,15 +6,24 @@
     <description>Recent content in Tags on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 22 Oct 2019 09:54:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2019 11:51:00 +0200</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>BEM</title>
+      <link>https://pedroprieto.github.io/tags/bem/</link>
+      <pubDate>Tue, 22 Oct 2019 11:51:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/bem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>css</title>
       <link>https://pedroprieto.github.io/tags/css/</link>
-      <pubDate>Tue, 22 Oct 2019 09:54:00 +0200</pubDate>
+      <pubDate>Tue, 22 Oct 2019 11:51:00 +0200</pubDate>
       
       <guid>https://pedroprieto.github.io/tags/css/</guid>
       <description></description>

@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 21 Oct 2019 12:39:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2019 09:54:00 +0200</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,45 @@
     <item>
       <title>css</title>
       <link>https://pedroprieto.github.io/tags/css/</link>
-      <pubDate>Mon, 21 Oct 2019 12:39:00 +0200</pubDate>
+      <pubDate>Tue, 22 Oct 2019 09:54:00 +0200</pubDate>
       
       <guid>https://pedroprieto.github.io/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>less</title>
+      <link>https://pedroprieto.github.io/tags/less/</link>
+      <pubDate>Tue, 22 Oct 2019 09:54:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/less/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>preprocesadores</title>
+      <link>https://pedroprieto.github.io/tags/preprocesadores/</link>
+      <pubDate>Tue, 22 Oct 2019 09:54:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/preprocesadores/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sass</title>
+      <link>https://pedroprieto.github.io/tags/sass/</link>
+      <pubDate>Tue, 22 Oct 2019 09:54:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/sass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>variables</title>
+      <link>https://pedroprieto.github.io/tags/variables/</link>
+      <pubDate>Tue, 22 Oct 2019 09:54:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/variables/</guid>
       <description></description>
     </item>
     

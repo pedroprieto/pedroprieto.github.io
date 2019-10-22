@@ -6,10 +6,21 @@
     <description>Recent content in diw-estilos-multimedia on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 21 Oct 2019 12:39:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2019 09:54:00 +0200</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/categories/diw-estilos-multimedia/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Variables y preprocesadores CSS</title>
+      <link>https://pedroprieto.github.io/post/variables_preprocesadores_css/</link>
+      <pubDate>Tue, 22 Oct 2019 09:54:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/variables_preprocesadores_css/</guid>
+      <description>&lt;p&gt;En los últimos años han aparecido una gran cantidad de &lt;a href=&#34;https://developer.mozilla.org/es/docs/Glossary/Preprocesador%5FCSS&#34;&gt;preprocesadores CSS&lt;/a&gt; que permiten incorporar técnicas de lenguajes de programación (variables, anidamiento, &lt;a href=&#34;https://es.wikipedia.org/wiki/Mixin&#34;&gt;mixins&lt;/a&gt;,&amp;hellip;) a la creación de hojas de estilo. La desventaja que tienen es que el código debe &lt;strong&gt;compilarse&lt;/strong&gt; para generar CSS válido que pueda ser utilizado por el navegador.&lt;/p&gt;
+
+&lt;p&gt;Frente a esto, es interesante conocer que CSS permite definir &lt;strong&gt;variables&lt;/strong&gt; que pueden ser reutilizadas en todo el documento, proporcionando una alternativa sencilla y estándar, aunque lógicamente menos potente.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Minimización de hojas de estilo</title>

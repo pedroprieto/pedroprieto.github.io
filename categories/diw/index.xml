@@ -6,10 +6,28 @@
     <description>Recent content in diw on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 22 Oct 2019 11:51:00 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2019 18:02:00 +0100</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/categories/diw/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Técnicas para crear layouts</title>
+      <link>https://pedroprieto.github.io/post/tecnicas_layout/</link>
+      <pubDate>Mon, 28 Oct 2019 18:02:00 +0100</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/tecnicas_layout/</guid>
+      <description>&lt;p&gt;En la actualidad existen muchas maneras de crear layouts utilizando CSS. A las técnicas tradicionales (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;inline-block&lt;/code&gt;) se suman otras nuevas aportadas por CSS3, como &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FFlexible%5FBox%5FLayout/Conceptos%5FBasicos%5Fde%5FFlexbox&#34;&gt;flexbox&lt;/a&gt; o &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FGrid%5FLayout&#34;&gt;CSS Grid Layout&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tipos de layouts</title>
+      <link>https://pedroprieto.github.io/post/tipos_layout/</link>
+      <pubDate>Mon, 28 Oct 2019 13:15:00 +0100</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/tipos_layout/</guid>
+      <description>&lt;p&gt;El &lt;em&gt;layout&lt;/em&gt; o &lt;strong&gt;estructura&lt;/strong&gt; de un interfaz web es la manera de organizar o disponer los elementos visuales en la página. El diseño del layout determina la posición de cada uno de los elementos que componen el interfaz web (cabecera, menús, banners, contenido, etc.).&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Estrategias de diseño con CSS</title>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>formularios on Blog de Pedro Prieto</title>
+    <link>https://pedroprieto.github.io/tags/formularios/</link>
+    <description>Recent content in formularios on Blog de Pedro Prieto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 29 Oct 2019 12:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://pedroprieto.github.io/tags/formularios/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diseño de formularios</title>
+      <link>https://pedroprieto.github.io/post/disenyo_formularios/</link>
+      <pubDate>Tue, 29 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/disenyo_formularios/</guid>
+      <description>&lt;p&gt;En este artículo se analizarán algunas recomendaciones de diseño relacionadas con los formularios web. El objetivo es aprender a diseñar formularios que muestren la información de manera limpia, clara y de forma adaptada a cualquier tipo de dispositivo.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

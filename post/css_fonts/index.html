@@ -70,7 +70,7 @@
 
 <meta itemprop="datePublished" content="2019-10-31T16:12:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-10-31T16:12:00&#43;01:00" />
-<meta itemprop="wordCount" content="696">
+<meta itemprop="wordCount" content="713">
 
 
 
@@ -338,17 +338,33 @@
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">div</span> {
   <span style="color:#a2f;font-weight:bold">font-family</span>: miFuente;
 }</code></pre></div>
-<p>Algunos servicios como <a href="https://fonts.google.com/">Google Fonts</a> ofrecen la posibilidad de seleccionar una o varias fuentes para incorporar a nuestra web utilizando etiquetas <code>&lt;link&gt;</code> en el archivo HTML o <code>@import</code> en CSS (este último método es <a href="https://stackoverflow.com/questions/1022695/difference-between-import-and-link-in-css">menos aconsejable</a>). Si accedemos a la URL definida en dicha etiqueta <code>&lt;link&gt;</code> veremos que el código corresponde a código CSS que hace uso de la regla <code>@font-face</code> para cargar las fuentes correspondientes. A continuación se muestra un ejemplo para incorporar la fuente <code>Roboto</code>:</p>
+<p>Algunos servicios como <a href="https://fonts.google.com/">Google Fonts</a> ofrecen la posibilidad de seleccionar una o varias fuentes para incorporar a nuestra web utilizando etiquetas <code>&lt;link&gt;</code> en el archivo HTML o <code>@import</code> en CSS (este último método es <a href="https://stackoverflow.com/questions/1022695/difference-between-import-and-link-in-css">menos aconsejable</a>).</p>
+
+<p>A continuación se muestra un ejemplo para incorporar la fuente <code>Roboto</code>:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;https://fonts.googleapis.com/css?family=Roboto&amp;display=swap&#34;</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span>&gt;</code></pre></div>
 <p>De manera alternativa se puede cargar a través de CSS (menos aconsejable, tal como hemos comentado antes):</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">style</span>&gt;
   @<span style="color:#a2f;font-weight:bold">import</span> <span style="color:#008000;font-weight:bold">url</span><span style="color:#666">(</span><span style="color:#b44">&#39;https://fonts.googleapis.com/css?family=Roboto&amp;display=swap&#39;</span><span style="color:#666">)</span>;
 &lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;</code></pre></div>
-<p>Una vez incluida la etiqueta <code>&lt;link&gt;</code> en el archivo HTML podremos hacer uso de la fuente en los ficheros CSS de la siguiente maner:</p>
+<p>Si <a href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">accedemos a la URL</a> definida en la etiqueta <code>&lt;link&gt;</code> o en <code>@import</code> veremos que el código corresponde a código CSS que hace uso de la regla <code>@font-face</code> para cargar las fuentes correspondientes.</p>
+
+<p>Una vez incluida la etiqueta <code>&lt;link&gt;</code> en el archivo HTML o la regla <code>@import</code> en CSS podremos hacer uso de la fuente en los ficheros CSS de la siguiente manera:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">font-family</span><span style="color:#666">:</span> <span style="color:#b44">&#39;Roboto&#39;</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">sans-serif</span><span style="color:#666">;</span></code></pre></div>
 <h2 id="más-información">Más información</h2>
 
-<p>Para obtener más información sobre fuentes se puede consultar el artículo &ldquo;<a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=es">Optimización de fuentes web</a>&rdquo; de Google. En él se explica con mayor detalle la teoría relacionada con fuentes, tipos de formatos para almacenar fuentes (formatos <code>woff</code>, <code>woff2</code> o <code>truetype</code>), compresión o subdivisión de Unicode para seleccionar los glifos correspondientes a una determinada familia de lenguajes (latino, cirílico, griego,&hellip;).</p>
+<p>Para obtener más información sobre fuentes se puede consultar el artículo &ldquo;<a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=es">Optimización de fuentes web</a>&rdquo; de Google. En él se explica con mayor detalle la teoría relacionada con fuentes, tipos de formatos para almacenar fuentes (formatos <code>woff</code>, <code>woff2</code> o <code>truetype</code>), compresión o subdivisión de Unicode para seleccionar los caracteres correspondientes a una determinada familia de lenguajes (latino, cirílico, griego,&hellip;).</p>
+
+<h2 id="referencias">Referencias</h2>
+
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=es">https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=es</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/CSS/@font-face">https://developer.mozilla.org/es/docs/Web/CSS/@font-face</a></li>
+<li><a href="https://www.w3schools.com/cssref/css3%5Fpr%5Ffont-face%5Frule.asp">https://www.w3schools.com/cssref/css3%5Fpr%5Ffont-face%5Frule.asp</a></li>
+<li><a href="https://www.w3.org/Style/Examples/007/fonts.en.html">https://www.w3.org/Style/Examples/007/fonts.en.html</a></li>
+<li><a href="https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file">https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file</a></li>
+<li><a href="https://stackoverflow.com/questions/56141957/difference-between-font-face-and-import-url">https://stackoverflow.com/questions/56141957/difference-between-font-face-and-import-url</a></li>
+<li><a href="https://stackoverflow.com/questions/1022695/difference-between-import-and-link-in-css">https://stackoverflow.com/questions/1022695/difference-between-import-and-link-in-css</a></li>
+</ul>
     </div>
 
     

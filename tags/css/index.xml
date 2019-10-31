@@ -6,10 +6,19 @@
     <description>Recent content in css on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 29 Oct 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 16:12:00 +0100</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fuentes en CSS</title>
+      <link>https://pedroprieto.github.io/post/css_fonts/</link>
+      <pubDate>Thu, 31 Oct 2019 16:12:00 +0100</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/css_fonts/</guid>
+      <description>&lt;p&gt;En este artículo se aborda el uso de tipos de letra (fuentes) en CSS: cómo incorporar fuentes desde &lt;strong&gt;servidores externos&lt;/strong&gt;, qué tipos de &lt;strong&gt;fuente genéricos&lt;/strong&gt; existen y cómo establecer &lt;strong&gt;tipos de fuentes seguros&lt;/strong&gt; para que sean compatibles con todos los navegadores y sistemas operativos.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Diseño de formularios</title>

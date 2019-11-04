@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>responsive on Blog de Pedro Prieto</title>
+    <link>https://pedroprieto.github.io/tags/responsive/</link>
+    <description>Recent content in responsive on Blog de Pedro Prieto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 04 Nov 2019 12:44:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://pedroprieto.github.io/tags/responsive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diseño responsivo</title>
+      <link>https://pedroprieto.github.io/post/disenyo_responsivo/</link>
+      <pubDate>Mon, 04 Nov 2019 12:44:00 +0100</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/disenyo_responsivo/</guid>
+      <description>&lt;p&gt;En este artículo trataremos los fundamentos del diseño web adaptable o adaptativo (&lt;em&gt;Responsive Web Design&lt;/em&gt; en inglés).&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

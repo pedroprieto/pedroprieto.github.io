@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Transformaciones, transiciones y animaciones en CSS - Blog de Pedro Prieto</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Pedro Prieto Alarcón" />
+  <meta name="description" content="En este artículo estudiaremos las herramientas disponibles en CSS para crear transformaciones, transiciones y animaciones.
+" />
+
+  <meta name="keywords" content="DIW, interfaces, DAW, desarrollo web" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.59.0" />
+
+
+<link rel="canonical" href="https://pedroprieto.github.io/post/transiciones_css/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.9d905c6e18c5b36b748e85c65cd37158c2ae15f9a4abcd251c141c17295039ab.css" integrity="sha256-nZBcbhjFs2t0joXGXNNxWMKuFfmkq80lHBQcFylQOas=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="Transformaciones, transiciones y animaciones en CSS" />
+<meta property="og:description" content="En este artículo estudiaremos las herramientas disponibles en CSS para crear transformaciones, transiciones y animaciones." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pedroprieto.github.io/post/transiciones_css/" />
+<meta property="article:published_time" content="2019-11-12T00:09:00+01:00" />
+<meta property="article:modified_time" content="2019-11-12T00:09:00+01:00" />
+<meta itemprop="name" content="Transformaciones, transiciones y animaciones en CSS">
+<meta itemprop="description" content="En este artículo estudiaremos las herramientas disponibles en CSS para crear transformaciones, transiciones y animaciones.">
+
+
+<meta itemprop="datePublished" content="2019-11-12T00:09:00&#43;01:00" />
+<meta itemprop="dateModified" content="2019-11-12T00:09:00&#43;01:00" />
+<meta itemprop="wordCount" content="659">
+
+
+
+<meta itemprop="keywords" content="css,animaciones,transiciones,transformaciones," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Transformaciones, transiciones y animaciones en CSS"/>
+<meta name="twitter:description" content="En este artículo estudiaremos las herramientas disponibles en CSS para crear transformaciones, transiciones y animaciones."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Blog de Pedro Prieto</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://pedroprieto.github.io/">Inicio</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://pedroprieto.github.io/post">Archivo</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://pedroprieto.github.io/tags/">Tags</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://pedroprieto.github.io/categories/">Categorías</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://pedroprieto.github.io/about/">Acerca de</a>
+          
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      Blog de Pedro Prieto
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://pedroprieto.github.io/">Inicio</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://pedroprieto.github.io/post">Archivo</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://pedroprieto.github.io/tags/">Tags</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://pedroprieto.github.io/categories/">Categorías</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://pedroprieto.github.io/about/">Acerca de</a>
+          
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Transformaciones, transiciones y animaciones en CSS</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-11-12" class="post-time">
+          12-11-2019
+        </time>
+        <div class="post-category">
+            <a href="https://pedroprieto.github.io/categories/diw/"> diw </a>
+            <a href="https://pedroprieto.github.io/categories/diw-estilos-multimedia/"> diw-estilos-multimedia </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      <p>En este artículo estudiaremos las herramientas disponibles en CSS para crear transformaciones, transiciones y animaciones.</p>
+
+<h2 id="transformaciones">Transformaciones</h2>
+
+<p>Las transformaciones CSS permiten <strong>mover</strong>, <strong>rotar</strong>, <strong>escalar</strong> o <strong>inclinar</strong> elementos. CSS permite realizar transformaciones <strong>2D</strong> y <strong>3D</strong>.</p>
+
+<p>Las transformaciones en principio son <strong>estáticas</strong>: es decir, no están animadas (aunque pueden estarlo mediante transiciones o animaciones). Un ejemplo de transformación sería el siguiente:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">#<span style="color:#00f;font-weight:bold">div1</span> {
+  <span style="color:#a2f;font-weight:bold">transform</span>: <span style="color:#a2f">rotate</span>(<span style="color:#666">20</span><span style="color:#0b0;font-weight:bold">deg</span>); <span style="color:#080;font-style:italic">/* Rotación 2D de 20º */</span>
+}
+
+#<span style="color:#00f;font-weight:bold">div2</span> {
+    <span style="color:#a2f;font-weight:bold">transform</span>: <span style="color:#a2f">rotateY</span>(<span style="color:#666">150</span><span style="color:#0b0;font-weight:bold">deg</span>); <span style="color:#080;font-style:italic">/* Rotación 3D de 150º en el eje Y */</span>
+}</code></pre></div>
+<p>En este enlace puede verse un <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3%5Ftransform%5Frotate">ejemplo de rotación 2D</a>. En este otro puede verse un <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3%5Ftransform%5FrotateY">ejemplo de rotación 3D</a>.</p>
+
+<p>En los siguientes enlaces puede consultarse información más detallada sobre las distintas transformaciones que pueden realizarse en CSS:</p>
+
+<ul>
+<li><a href="https://www.w3schools.com/css/css3%5F2dtransforms.asp">Transformaciones 2D</a></li>
+<li><a href="https://www.w3schools.com/css/css3%5F3dtransforms.asp">Transformaciones 3D</a></li>
+</ul>
+
+<h2 id="transiciones">Transiciones</h2>
+
+<p>Las <strong>transiciones CSS</strong> permiten realizar <strong>cambios graduales de determinadas propiedades con una duración determinada</strong>. Para definir una transición es necesario especificar:</p>
+
+<ol>
+<li>La(s) propiedad(es) a animar</li>
+<li>La duración de la transición</li>
+<li>Opcionalmente, el retraso y la curva de velocidad de la transición</li>
+</ol>
+
+<p>Es importante tener claro que la transición se ejecutará <strong>cuando se produzca un cambio en el valor de la propiedad definida en la transición</strong>. Por ejemplo, si se define una transición para la propiedad <code>width</code> de una capa, la transición se producirá cuando se realice un cambio en la anchura de dicha capa. Los cambios de valor de la propiedad pueden realizarse básicamente de <strong>dos maneras</strong>:</p>
+
+<ol>
+<li>A través de una <a href="https://www.w3schools.com/css/css%5Fpseudo%5Fclasses.asp">pseudo-clase</a> (como por ejemplo, <code>:hover</code>, que se activa al pasar el ratón por encima)</li>
+<li>A través de JavaScript</li>
+</ol>
+
+<p>Por último, hay que tener en cuenta que <strong>solo se pueden realizar transiciones (y animaciones) sobre propiedades CSS que sean <a href="https://www.w3schools.com/cssref/css%5Fanimatable.asp">animables</a></strong>.</p>
+
+<p>A continuación se muestra un ejemplo de transición de la propiedad <code>width</code> de una capa (en este enlace puede verse el <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3%5Ftransition1">ejemplo en ejecución</a>):</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">div</span> {
+  <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>;
+  <span style="color:#a2f;font-weight:bold">height</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>;
+  <span style="color:#a2f;font-weight:bold">background</span>: <span style="color:#a2f;font-weight:bold">red</span>;
+  <span style="color:#a2f;font-weight:bold">transition</span>: <span style="color:#a2f;font-weight:bold">width</span> <span style="color:#666">2</span><span style="color:#0b0;font-weight:bold">s</span>;
+}
+
+<span style="color:#008000;font-weight:bold">div</span>:<span style="color:#a2f">hover</span> {
+  <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">300</span><span style="color:#0b0;font-weight:bold">px</span>;
+}</code></pre></div>
+<p>En el ejemplo se ha definido una transición para la propiedad <code>width</code> con una duración de 2 segundos. Cuando cambie el valor de dicha propiedad, el cambio no se realizará bruscamente, sino que se realizará <strong>progresivamente hasta alcanzar el nuevo valor pasados 2 segundos</strong>. En este caso el cambio de valor de <code>width</code> se produce al pasar el ratón por encima de la capa, aunque también funcionaría si se cambia el valor de dicha propiedad <code>width</code> a través de JavaScript.</p>
+
+<p>A continuación se muestra un <a href="https://jsbin.com/qugopah/1/edit?html,css,js,output">ejemplo de transición con pseudo-clases y JavaScript</a>.</p>
+
+<p>En el siguiente enlace puede consultarse más <a href="https://www.w3schools.com/css/css3%5Ftransitions.asp">información sobre transiciones CSS</a>.</p>
+
+<h2 id="animaciones">Animaciones</h2>
+
+<p>Las animaciones CSS permiten ejecutar <strong>cambios de estilos</strong> sobre un determinado elemento de manera <strong>gradual</strong> a través de una serie de <strong>estados</strong> denominados <strong>fotogramas clave (keyframes)</strong>.</p>
+
+<p>Un ejemplo de animación sería el siguiente:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#080;font-style:italic">/* Definición de la animación */</span>
+@<span style="color:#a2f;font-weight:bold">keyframes</span> <span style="color:#008000;font-weight:bold">cambios</span>{
+    <span style="color:#008000;font-weight:bold">0</span><span style="color:#666">%</span> {
+        <span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#a2f;font-weight:bold">red</span>;
+        <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>;
+    }
+    <span style="color:#008000;font-weight:bold">25</span><span style="color:#666">%</span> {
+        <span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#a2f;font-weight:bold">yellow</span>;
+        <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">50</span><span style="color:#0b0;font-weight:bold">px</span>;
+        <span style="color:#a2f;font-weight:bold">transform</span>: <span style="color:#a2f">translate</span>(<span style="color:#666">0</span>, <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>);
+    }
+    <span style="color:#008000;font-weight:bold">50</span><span style="color:#666">%</span> {
+        <span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#a2f;font-weight:bold">blue</span>;
+        <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>;
+        <span style="color:#a2f;font-weight:bold">transform</span>: <span style="color:#a2f">translate</span>(<span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>, <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>);
+
+    }
+    <span style="color:#008000;font-weight:bold">75</span><span style="color:#666">%</span> {
+        <span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#a2f;font-weight:bold">blue</span>;
+        <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">150</span><span style="color:#0b0;font-weight:bold">px</span>;
+        <span style="color:#a2f;font-weight:bold">transform</span>: <span style="color:#a2f">translate</span>(<span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>, <span style="color:#666">0</span>);
+
+    }
+    <span style="color:#008000;font-weight:bold">100</span><span style="color:#666">%</span> {
+        <span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#a2f;font-weight:bold">red</span>;
+        <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>;
+        <span style="color:#a2f;font-weight:bold">transform</span>: <span style="color:#a2f">translate</span>(<span style="color:#666">0</span>, <span style="color:#666">0</span>);
+
+    }
+}
+<span style="color:#080;font-style:italic">/* Elemento que recibe la animación */</span>
+<span style="color:#008000;font-weight:bold">div</span> {
+    <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>;
+    <span style="color:#a2f;font-weight:bold">height</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>;
+    <span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#a2f;font-weight:bold">red</span>;
+    <span style="color:#a2f;font-weight:bold">animation-name</span>: cambios;
+    <span style="color:#a2f;font-weight:bold">animation-duration</span>: <span style="color:#666">4</span><span style="color:#0b0;font-weight:bold">s</span>;
+    <span style="color:#a2f;font-weight:bold">animation-iteration-count</span>: <span style="color:#a2f;font-weight:bold">infinite</span>;
+}</code></pre></div>
+<p>El funcionamiento del ejemplo se describe a continuación:</p>
+
+<ul>
+<li>En primer lugar se definen los fotogramas clave mediante <code>@keyframes</code> indicando el nombre de la animación (<code>cambios</code>).</li>
+<li>En este caso se definen 5 fotogramas clave que representan los estilos deseados en los instantes de tiempo definidos en porcentajes.</li>
+<li>En cada fotograma clave es posible definir varios estilos.</li>
+<li>Los cambios de estilos entre fotogramas clave se realizan progresivamente mediante <strong>transiciones</strong>.</li>
+<li>Por último, se asigna la animación a la capa deseada mediante la propiedad <code>animation-name</code> indicando el nombre de la animación definida con anterioridad (<code>cambios</code>) y se especifica un tiempo mediante <code>animation-duration</code>.</li>
+<li>Opcionalmente se pueden definir el número de veces que se ejecutará la animación con <code>animation-iteration-count</code>.</li>
+</ul>
+
+<p>Para obtener más información sobre animaciones pueden consultarse los siguientes enlaces:</p>
+
+<ul>
+<li><a href="https://www.w3schools.com/css/css3%5Fanimations.asp">https://www.w3schools.com/css/css3%5Fanimations.asp</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web/CSS/@keyframes">https://developer.mozilla.org/es/docs/Web/CSS/@keyframes</a></li>
+</ul>
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Autor</span>
+    <span class="item-content">Pedro Prieto Alarcón</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">Ultima Modificación</span>
+    <span class="item-content">
+      12-11-2019
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">Licencia</span>
+    <span class="item-content"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
+  </p>
+</div>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://pedroprieto.github.io/tags/css/">css</a>
+          <a href="https://pedroprieto.github.io/tags/animaciones/">animaciones</a>
+          <a href="https://pedroprieto.github.io/tags/transiciones/">transiciones</a>
+          <a href="https://pedroprieto.github.io/tags/transformaciones/">transformaciones</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/imagenes_web/">
+            <span class="next-text nav-default">Imágenes en la web</span>
+            <span class="prev-text nav-mobile">Siguiente</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+  
+    <a href="mailto:pedroprieto@iesmarenostrum.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://github.com/pedroprieto" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://pedroprieto.github.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+       -
+    2019
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        Pedro Prieto Alarcón
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

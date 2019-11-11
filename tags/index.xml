@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 04 Nov 2019 12:44:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 11 Nov 2019 13:22:00 +0100</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>css</title>
       <link>https://pedroprieto.github.io/tags/css/</link>
-      <pubDate>Mon, 04 Nov 2019 12:44:00 +0100</pubDate>
+      <pubDate>Mon, 11 Nov 2019 13:22:00 +0100</pubDate>
       
       <guid>https://pedroprieto.github.io/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>imagenes</title>
+      <link>https://pedroprieto.github.io/tags/imagenes/</link>
+      <pubDate>Mon, 11 Nov 2019 13:22:00 +0100</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/imagenes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>licencias</title>
+      <link>https://pedroprieto.github.io/tags/licencias/</link>
+      <pubDate>Mon, 11 Nov 2019 11:47:00 +0100</pubDate>
+      
+      <guid>https://pedroprieto.github.io/tags/licencias/</guid>
       <description></description>
     </item>
     

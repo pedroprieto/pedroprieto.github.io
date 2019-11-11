@@ -6,10 +6,28 @@
     <description>Recent content in diw on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 04 Nov 2019 12:44:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 11 Nov 2019 13:22:00 +0100</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/categories/diw/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Imágenes en la web</title>
+      <link>https://pedroprieto.github.io/post/imagenes_web/</link>
+      <pubDate>Mon, 11 Nov 2019 13:22:00 +0100</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/imagenes_web/</guid>
+      <description>&lt;p&gt;Las imágenes incluidas en los sitios web son responsables de gran parte del &lt;strong&gt;tamaño de descarga&lt;/strong&gt;. Por tanto, es de vital importancia utilizar las técnicas adecuadas tanto para su &lt;strong&gt;correcta visualización&lt;/strong&gt; (independientemente del tipo de dispositivo utilizado) como para su &lt;strong&gt;optimización de tamaño&lt;/strong&gt; de cara a mejorar la velocidad de carga del sitio.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Licencias y propiedad intelectual</title>
+      <link>https://pedroprieto.github.io/post/licencias/</link>
+      <pubDate>Mon, 11 Nov 2019 11:47:00 +0100</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/licencias/</guid>
+      <description>&lt;p&gt;A la hora de crear un sitio web es muy importante conocer la legislación sobre propiedad intelectual y los distintos tipos de licencias disponibles tanto para &lt;strong&gt;proteger los contenidos o código que generemos&lt;/strong&gt; como para &lt;strong&gt;utilizar adecuadamente contenido creado por terceros&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Diseño responsivo</title>

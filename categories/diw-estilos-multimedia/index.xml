@@ -6,10 +6,19 @@
     <description>Recent content in diw-estilos-multimedia on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 12 Nov 2019 00:09:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2019 00:55:00 +0100</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/categories/diw-estilos-multimedia/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Audio y vídeo en HTML</title>
+      <link>https://pedroprieto.github.io/post/audio_video_html/</link>
+      <pubDate>Tue, 12 Nov 2019 00:55:00 +0100</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/audio_video_html/</guid>
+      <description>&lt;p&gt;HTML5 define las etiquetas &lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt; y &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt; para incorporar archivos de audio y vídeo respectivamente en páginas web. En este artículo veremos cómo utilizar dichas etiquetas, qué &lt;strong&gt;formatos&lt;/strong&gt; de vídeo y audio son compatibles con los distintos navegadores y qué &lt;strong&gt;programas&lt;/strong&gt; podemos utilizar para &lt;strong&gt;editar&lt;/strong&gt; y &lt;strong&gt;realizar conversiones&lt;/strong&gt; entre distintos formatos.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Transformaciones, transiciones y animaciones en CSS</title>

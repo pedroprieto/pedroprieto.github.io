@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Audio y vídeo en HTML - Blog de Pedro Prieto</title>
+  <title>Fundamentos del CMS Jekyll - Blog de Pedro Prieto</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Pedro Prieto Alarcón" />
-  <meta name="description" content="HTML5 define las etiquetas &amp;lt;audio&amp;gt; y &amp;lt;video&amp;gt; para incorporar archivos de audio y vídeo respectivamente en páginas web. En este artículo veremos cómo utilizar dichas etiquetas, qué formatos de vídeo y audio son compatibles con los distintos navegadores y qué programas podemos utilizar para editar y realizar conversiones entre distintos formatos.
+  <meta name="description" content="Introducción Jekyll es un gestor de contenido de tipo estático (static site generator). No depende de ninguna base de datos ni de ningún lenguaje de servidor. Utiliza ficheros de texto para almacenar los contenidos y los datos. Dado que no utiliza tecnologías de servidor, es necesario realizar un proceso de generación o compilación para producir archivos HTML válidos que puedan ser alojados en un servidor y procesados adecuadamente por un navegador web convencional.
 " />
 
   <meta name="keywords" content="DIW, interfaces, DAW, desarrollo web" />
@@ -36,7 +36,7 @@
 <meta name="generator" content="Hugo 0.59.0" />
 
 
-<link rel="canonical" href="https://pedroprieto.github.io/post/audio_video_html/" />
+<link rel="canonical" href="https://pedroprieto.github.io/post/jekyllcms/" />
 
 
 
@@ -58,26 +58,32 @@
 
 
 
-<meta property="og:title" content="Audio y vídeo en HTML" />
-<meta property="og:description" content="HTML5 define las etiquetas &lt;audio&gt; y &lt;video&gt; para incorporar archivos de audio y vídeo respectivamente en páginas web. En este artículo veremos cómo utilizar dichas etiquetas, qué formatos de vídeo y audio son compatibles con los distintos navegadores y qué programas podemos utilizar para editar y realizar conversiones entre distintos formatos." />
+<meta property="og:title" content="Fundamentos del CMS Jekyll" />
+<meta property="og:description" content="Introducción
+
+Jekyll es un gestor de contenido de tipo estático (static site generator). No depende de ninguna base de datos ni de ningún lenguaje de servidor. Utiliza ficheros de texto para almacenar los contenidos y los datos. Dado que no utiliza tecnologías de servidor, es necesario realizar un proceso de generación o compilación para producir archivos HTML válidos que puedan ser alojados en un servidor y procesados adecuadamente por un navegador web convencional." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pedroprieto.github.io/post/audio_video_html/" />
-<meta property="article:published_time" content="2019-11-12T00:55:00+01:00" />
-<meta property="article:modified_time" content="2019-11-12T00:55:00+01:00" />
-<meta itemprop="name" content="Audio y vídeo en HTML">
-<meta itemprop="description" content="HTML5 define las etiquetas &lt;audio&gt; y &lt;video&gt; para incorporar archivos de audio y vídeo respectivamente en páginas web. En este artículo veremos cómo utilizar dichas etiquetas, qué formatos de vídeo y audio son compatibles con los distintos navegadores y qué programas podemos utilizar para editar y realizar conversiones entre distintos formatos.">
+<meta property="og:url" content="https://pedroprieto.github.io/post/jekyllcms/" />
+<meta property="article:published_time" content="2019-11-19T12:27:00+01:00" />
+<meta property="article:modified_time" content="2019-11-19T12:27:00+01:00" />
+<meta itemprop="name" content="Fundamentos del CMS Jekyll">
+<meta itemprop="description" content="Introducción
+
+Jekyll es un gestor de contenido de tipo estático (static site generator). No depende de ninguna base de datos ni de ningún lenguaje de servidor. Utiliza ficheros de texto para almacenar los contenidos y los datos. Dado que no utiliza tecnologías de servidor, es necesario realizar un proceso de generación o compilación para producir archivos HTML válidos que puedan ser alojados en un servidor y procesados adecuadamente por un navegador web convencional.">
 
 
-<meta itemprop="datePublished" content="2019-11-12T00:55:00&#43;01:00" />
-<meta itemprop="dateModified" content="2019-11-12T00:55:00&#43;01:00" />
-<meta itemprop="wordCount" content="540">
+<meta itemprop="datePublished" content="2019-11-19T12:27:00&#43;01:00" />
+<meta itemprop="dateModified" content="2019-11-19T12:27:00&#43;01:00" />
+<meta itemprop="wordCount" content="879">
 
 
 
-<meta itemprop="keywords" content="css,audio,video," />
+<meta itemprop="keywords" content="css,jekyll,cms," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Audio y vídeo en HTML"/>
-<meta name="twitter:description" content="HTML5 define las etiquetas &lt;audio&gt; y &lt;video&gt; para incorporar archivos de audio y vídeo respectivamente en páginas web. En este artículo veremos cómo utilizar dichas etiquetas, qué formatos de vídeo y audio son compatibles con los distintos navegadores y qué programas podemos utilizar para editar y realizar conversiones entre distintos formatos."/>
+<meta name="twitter:title" content="Fundamentos del CMS Jekyll"/>
+<meta name="twitter:description" content="Introducción
+
+Jekyll es un gestor de contenido de tipo estático (static site generator). No depende de ninguna base de datos ni de ningún lenguaje de servidor. Utiliza ficheros de texto para almacenar los contenidos y los datos. Dado que no utiliza tecnologías de servidor, es necesario realizar un proceso de generación o compilación para producir archivos HTML válidos que puedan ser alojados en un servidor y procesados adecuadamente por un navegador web convencional."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -239,11 +245,11 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">Audio y vídeo en HTML</h1>
+      <h1 class="post-title">Fundamentos del CMS Jekyll</h1>
       
       <div class="post-meta">
-        <time datetime="2019-11-12" class="post-time">
-          12-11-2019
+        <time datetime="2019-11-19" class="post-time">
+          19-11-2019
         </time>
         <div class="post-category">
             <a href="https://pedroprieto.github.io/categories/diw/"> diw </a>
@@ -265,100 +271,86 @@
 
     
     <div class="post-content">
-      <p>HTML5 define las etiquetas <code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code> para incorporar archivos de audio y vídeo respectivamente en páginas web. En este artículo veremos cómo utilizar dichas etiquetas, qué <strong>formatos</strong> de vídeo y audio son compatibles con los distintos navegadores y qué <strong>programas</strong> podemos utilizar para <strong>editar</strong> y <strong>realizar conversiones</strong> entre distintos formatos.</p>
+      <h2 id="introducción">Introducción</h2>
 
-<h2 id="audio">Audio</h2>
+<p><a href="https://jekyllrb.com">Jekyll</a> es un <a href="https://es.wikipedia.org/wiki/Sistema%5Fde%5Fgestión%5Fde%5Fcontenidos">gestor de contenido</a> de tipo <strong>estático</strong> (<em>static site generator</em>). No depende de ninguna base de datos ni de ningún lenguaje de servidor. Utiliza ficheros de texto para almacenar los contenidos y los datos. Dado que no utiliza tecnologías de servidor, es necesario realizar un proceso de <strong>generación</strong> o compilación para producir archivos HTML válidos que puedan ser alojados en un servidor y procesados adecuadamente por un navegador web convencional.</p>
 
-<h3 id="etiqueta-audio">Etiqueta <code>&lt;audio&gt;</code></h3>
-
-<p>Los archivos de audio pueden insertarse en una página web mediante la etiqueta <code>&lt;audio&gt;</code>. Dicha etiqueta permite especificar <strong>varios archivos de audio</strong> de manera <strong>ordenada</strong>. De esta manera, el navegador <strong>intentará reproducir el primer archivo de la lista para el que tenga soporte</strong>.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"> &lt;<span style="color:#008000;font-weight:bold">audio</span> <span style="color:#b44">controls</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">source</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;cancion.ogg&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;audio/ogg&#34;</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">source</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;cancion.mp3&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;audio/mpeg&#34;</span>&gt;
-  El navegador no soporta la etiqueta audio.
-&lt;/<span style="color:#008000;font-weight:bold">audio</span>&gt;</code></pre></div>
-<p>En el ejemplo anterior, el navegador intentará reproducir el archivo <code>cancion.ogg</code>; en caso de que no soporte ese tipo de archivo, intentará reproducir <code>cancion.mp3</code>.</p>
-
-<p>La etiqueta <code>&lt;audio&gt;</code> admite varios atributos. En el caso del ejemplo, el atributo <code>controls</code> indica que se deben mostrar los controles de reproducción.</p>
-
-<p>Para más información sobre las opciones de la etiqueta <code>&lt;audio&gt;</code> se pueden consultar los siguientes enlaces:</p>
+<p>En Jekyll podemos distinguir varias categorías de archivos:</p>
 
 <ul>
-<li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/audio">https://developer.mozilla.org/es/docs/Web/HTML/Elemento/audio</a></li>
-<li><a href="https://www.w3schools.com/tags/tag%5Faudio.asp">https://www.w3schools.com/tags/tag%5Faudio.asp</a></li>
+<li>Ficheros de <strong>configuración</strong> - Almacenan la configuración general del sitio y las opciones de personalización.</li>
+<li>Ficheros de <strong>contenido</strong> - Almacenan los contenidos de las páginas del sitio.</li>
+<li>Ficheros de <strong>datos</strong> - Permiten crear estructuras de datos que pueden ser mostrados en las distintas páginas del sitio o utilizarse para generar estructuras, menús de navegación, listas,&hellip;</li>
+<li>Ficheros de <strong>plantillas</strong> - Se utilizan para crear la estructura de las páginas que componen el sitio web.</li>
 </ul>
 
-<h3 id="formatos-de-audio">Formatos de audio</h3>
+<p>Jekyll utiliza un sistema de plantillas denominado <em>Liquid</em> para combinar los distintos tipos de ficheros y crear el resultado final: un sitio web totalmente estático que utiliza únicamente HTML, CSS y JavaScript.</p>
 
-<p>Los principales formatos utilizados para audio son:</p>
+<p>La documentación de Jekyll puede consultarse <a href="https://jekyllrb.com/docs/">en este enlace</a>.</p>
+
+<h2 id="instalación">Instalación</h2>
+
+<p>Las instrucciones de instalación de Jekyll pueden consultarse <a href="https://jekyllrb.com/docs/installation/">aquí</a>. Utiliza el ecosistema <strong>Ruby</strong> para ejecutarse.</p>
+
+<p>Una vez instado Ruby se puede proceder a instalar Jekyll mediante el siguiente comando:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">gem install jekyll bundler</code></pre></div>
+<h2 id="uso-básico">Uso básico</h2>
+
+<p>Jekyll se ejecuta desde la linea de comandos. Su uso básico permite:</p>
 
 <ul>
-<li><strong>MP3</strong> - Formato más utilizado. Compatible con <strong>todos los navegadores</strong>.</li>
-<li><strong>OGG</strong> - Formato OGG Vorbis. No compatible con IE ni con Safari.</li>
-<li><strong>WAV</strong> - No compatible con IE.</li>
+<li>Crear un nuevo sitio Jekyll mediante <code>jekyll new NOMBRE_PROYECTO</code>. Este comando crea un nuevo proyecto Jekyll en la carpeta <code>./NOMBRE_PROYECTO</code>. Todas las acciones que se indican a continuación se deben ejecutar dentro de dicha carpeta.</li>
+<li>Generar el sitio web en la carpeta <code>./_site</code> mediante <code>bundle exec jekyll build</code>.</li>
+<li>Lanzar un servidor web para visualizar el proyecto en el navegador mediante <code>bundle exec jekyll serve</code>. Una vez lanzado se puede acceder al sitio web a través del navegador en <code>http://localhost:4000</code>. Mediante este comando se pueden ver los cambios automáticamente sin necesidad de tener que generar el proyecto cada vez.</li>
 </ul>
 
-<p>Para más información sobre compatibilidad de formatos multimedia puede consultarse:</p>
+<p>Puede obtenerse más información en <a href="https://jekyllrb.com/docs/quickstart/">https://jekyllrb.com/docs/quickstart/</a>.</p>
 
-<ul>
-<li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Formatos%5Fadmitidos%5Fde%5Faudio%5Fy%5Fvideo%5Fen%5Fhtml5">https://developer.mozilla.org/es/docs/Web/HTML/Formatos%5Fadmitidos%5Fde%5Faudio%5Fy%5Fvideo%5Fen%5Fhtml5</a></li>
-</ul>
+<h2 id="organización-de-archivos">Organización de archivos</h2>
 
-<h3 id="programas-de-edición-de-audio">Programas de edición de audio</h3>
+<p>La organización de archivos y carpetas en un proyecto Jekyll se puede consultar en <a href="https://jekyllrb.com/docs/structure/">https://jekyllrb.com/docs/structure/</a>. Jekyll está pensado para utilizar <a href="https://jekyllrb.com/docs/themes/">temas</a>, aunque se puede crear una estructura propia a partir de los siguientes archivos:</p>
 
-<ul>
-<li><a href="https://www.audacityteam.org/">Audacity</a> - Programa de edición de audio Open Source.</li>
-</ul>
+<dl>
+<dt><code>_config.yml</code></dt>
+<dd>Fichero <em>YAML</em> de configuración. En él se detallan las opciones de configuración del proyecto.</dd>
+<dt><code>_layouts</code></dt>
+<dd>Carpeta que incluye los ficheros de <strong>plantilla</strong>. Cada fichero es un fichero HTML que se utiliza para englobar el contenido de las distintas páginas que componen el sitio. El nombre del fichero es el nombre de la plantilla. La etiqueta <code>{{content}}</code> se utiliza para incluir el contenido de la página que está usando la plantilla. Más información en <a href="https://jekyllrb.com/docs/layouts/">https://jekyllrb.com/docs/layouts/</a>.</dd>
+<dt><code>_includes</code></dt>
+<dd>Carpeta que incluye los ficheros HTML que se utilizan como <em>parciales</em> para ser incluidos en plantillas u otras páginas del sitio. La etiqueta <code>{% include ARCHIVO.html%}</code> se utilizará para incluir el contenido del fichero <code>_includes/ARCHIVO.html</code>. Más información en <a href="https://jekyllrb.com/docs/includes/">https://jekyllrb.com/docs/includes/</a>.</dd>
+<dt>Carpeta principal</dt>
+<dd>Los ficheros HTML (o MarkDown) que aparezcan en la carpeta principal del proyecto formarán las páginas estáticas del sitio. Cada página tendrá definido un <em>front matter</em> donde se indicará, entre otras cosas, qué plantilla utilizará dicha página.</dd>
+<dt><code>_site</code></dt>
+<dd>Carpeta que contiene el sitio web generado por Jekyll una vez realizadas todas las tareas de procesado (inyección del contenido de los archivos parciales, aplicación de plantillas, procesado de datos, etc.). El contenido de esta carpeta puede ser publicado en cualquier servidor HTTP.</dd>
+</dl>
 
-<h2 id="vídeo">Vídeo</h2>
+<h2 id="front-matter">Front matter</h2>
 
-<h3 id="etiqueta-video">Etiqueta <code>&lt;video&gt;</code></h3>
+<p>El <em>front matter</em> es el contenido de texto que aparece al comienzo de cualquier archivo que deba ser procesado por Jekyll. Si Jekyll encuentra un archivo que no tenga definido un <em>front matter</em> no lo procesa y lo copia a la misma localización del directorio <code>_site</code>. El <em>front matter</em> está delimitado entre dos líneas formadas por un <strong>tres guiones</strong>. Su aspecto es parecido al siguiente:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---<span style="color:#bbb">
+</span><span style="color:#bbb"></span>layout:<span style="color:#bbb"> </span>mi_layout<span style="color:#bbb">
+</span><span style="color:#bbb"></span>permalink:<span style="color:#bbb"> </span>/url/estatica/de/la/pagina<span style="color:#bbb">
+</span><span style="color:#bbb"></span>title:<span style="color:#bbb"> </span>Título<span style="color:#bbb"> </span>de<span style="color:#bbb"> </span>la<span style="color:#bbb"> </span>página<span style="color:#bbb">
+</span><span style="color:#bbb"></span>---</code></pre></div>
+<p>En el <em>front matter</em> se pueden definir datos en forma <code>variable: valor</code> que luego podrán ser utilizados por el sistema Liquid de plantillas. Su uso más básico permite definir las siguientes características de la página:</p>
 
-<p>Los archivos de vídeo pueden insertarse en una página web mediante la etiqueta <code>&lt;video&gt;</code>. Dicha etiqueta permite especificar <strong>varios archivos de vídeo</strong> de manera <strong>ordenada</strong>. De esta manera, el navegador <strong>intentará reproducir el primer archivo de la lista para el que tenga soporte</strong>.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"> &lt;<span style="color:#008000;font-weight:bold">video</span> <span style="color:#b44">width</span><span style="color:#666">=</span><span style="color:#b44">&#34;320&#34;</span> <span style="color:#b44">height</span><span style="color:#666">=</span><span style="color:#b44">&#34;240&#34;</span> <span style="color:#b44">controls</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">source</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;video.mp4&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;video/mp4&#34;</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">source</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;video.ogg&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;video/ogg&#34;</span>&gt;
-  El navegador no soporta la etiqueta video.
-&lt;/<span style="color:#008000;font-weight:bold">video</span>&gt;</code></pre></div>
-<p>En el ejemplo anterior, el navegador intentará reproducir el archivo <code>video.mp4</code>; en caso de que no soporte ese tipo de archivo, intentará reproducir <code>video.ogg</code>.</p>
+<dl>
+<dt><code>layout</code></dt>
+<dd>Indica el archivo de plantilla que se utilizará para mostrar la página. El nombre definido en esta variable hace referencia al archivo del mismo nombre sin la extensión presente en la carpeta <code>_layouts</code>.</dd>
+<dt><code>permalink</code></dt>
+<dd>Indica la URL estática que tendrá la página web en caso de querer que se muestre alguna distinta al nombre del archivo.</dd>
+<dt><code>title</code></dt>
+<dd>El título de la página.</dd>
+</dl>
 
-<p>La etiqueta <code>&lt;video&gt;</code> admite varios atributos. En el caso del ejemplo, el atributo <code>controls</code> indica que se deben mostrar los controles de reproducción.</p>
+<p>Normalmente todos los ficheros que necesiten acceder al sistema de plantillas de Jekyll tendrán definido un <em>front matter</em>. Aquellos otros que no lo necesiten (por lo general, archivos CSS, JS, imágenes y demás) no tendrán definido un <em>front matter</em> (es posible que algunos de ellos, dependiendo del tipo de aplicación, sí que lo necesiten).</p>
 
-<p>Para que los vídeos se adapten correctamente a <strong>cualquier ancho de pantalla</strong> se puede definir su <strong>anchura</strong> al <strong>100%</strong>. De esta manera se adaptará al ancho del elemento contenedor. Es importante dejar la <strong>altura</strong> en <code>auto</code> para preservar la relación de aspecto. Un ejemplo de código CSS sería el siguiente:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">video</span> {
-    <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">%</span>;
-    <span style="color:#a2f;font-weight:bold">height</span>: <span style="color:#a2f;font-weight:bold">auto</span>;
-}</code></pre></div>
-<p>Para más información sobre las opciones de la etiqueta <code>&lt;video&gt;</code> se pueden consultar los siguientes enlaces:</p>
+<p>Puede consultarse más información sobre el <em>front matter</em> en <a href="https://jekyllrb.com/docs/frontmatter/">https://jekyllrb.com/docs/frontmatter/</a>.</p>
 
-<ul>
-<li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/video">https://developer.mozilla.org/es/docs/Web/HTML/Elemento/video</a></li>
-<li><a href="https://www.w3schools.com/tags/tag%5Fvideo.asp">https://www.w3schools.com/tags/tag%5Fvideo.asp</a></li>
-</ul>
+<h2 id="integración-con-github-pages">Integración con GitHub Pages</h2>
 
-<h3 id="formatos-de-vídeo">Formatos de vídeo</h3>
+<p>Jekyll está integrado en el servicio de GitHub Pages. Si se sube un repositorio con un proyecto Jekyll a la rama de GitHub Pages (<code>gh-pages</code>), este se compilará automáticamente y será publicado en Internet. Por tanto, no es necesario compilarlo antes de subirlo ni subir la carpeta <code>_site</code>.</p>
 
-<p>Los principales formatos utilizados para vídeo son:</p>
-
-<ul>
-<li><strong>MP4</strong> - Contenedor MP4, códec de vídeo H264 y códec de audio AAC. Formato más utilizado. Compatible con <strong>todos los navegadores</strong>.</li>
-<li><strong>OGG</strong> - Contenedor OGG, códec de vídeo Theora y códec de audio Vorbis. No compatible con IE ni con Safari.</li>
-<li><strong>WebM</strong> - Contenedor WebM, códec de vídeo VP8 y códec de audio Vorbis. No compatible con IE ni con Safari.</li>
-</ul>
-
-<p>Para más información sobre compatibilidad de formatos multimedia puede consultarse:</p>
-
-<ul>
-<li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Formatos%5Fadmitidos%5Fde%5Faudio%5Fy%5Fvideo%5Fen%5Fhtml5">https://developer.mozilla.org/es/docs/Web/HTML/Formatos%5Fadmitidos%5Fde%5Faudio%5Fy%5Fvideo%5Fen%5Fhtml5</a></li>
-</ul>
-
-<h3 id="programas-de-edición-de-vídeo">Programas de edición de vídeo</h3>
-
-<ul>
-<li><a href="https://www.openshot.org/es/">Openshot</a> - Editor de vídeo Open Source</li>
-<li><a href="https://handbrake.fr/">Handbrake</a> - Conversor de formatos de vídeo</li>
-<li><a href="https://obsproject.com/es/">OBS Studio</a> - Software de grabación de vídeo y transmisión en vivo</li>
-</ul>
+<p>En estos enlaces puede consultarse más información sobre <a href="https://pages.github.com/">GitHub Pages</a> y <a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/">Jekyll y GitHub Pages</a>.</p>
     </div>
 
     
@@ -371,7 +363,7 @@
   <p class="copyright-item">
     <span class="item-title">Ultima Modificación</span>
     <span class="item-content">
-      12-11-2019
+      19-11-2019
       
     </span>
   </p>
@@ -389,30 +381,17 @@
     <footer class="post-footer">
       <div class="post-tags">
           <a href="https://pedroprieto.github.io/tags/css/">css</a>
-          <a href="https://pedroprieto.github.io/tags/audio/">audio</a>
-          <a href="https://pedroprieto.github.io/tags/video/">video</a>
+          <a href="https://pedroprieto.github.io/tags/jekyll/">jekyll</a>
+          <a href="https://pedroprieto.github.io/tags/cms/">cms</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/jekyllcms/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">Fundamentos del CMS Jekyll</span>
-            <span class="prev-text nav-mobile">Anterior</span>
-          </a>
         
-          <a class="next" href="/post/transiciones_css/">
-            <span class="next-text nav-default">Transformaciones, transiciones y animaciones en CSS</span>
+          <a class="next" href="/post/audio_video_html/">
+            <span class="next-text nav-default">Audio y vídeo en HTML</span>
             <span class="prev-text nav-mobile">Siguiente</span>
             
             <i class="iconfont">

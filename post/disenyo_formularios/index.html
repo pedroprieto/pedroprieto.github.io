@@ -70,7 +70,7 @@
 
 <meta itemprop="datePublished" content="2019-10-29T12:00:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-10-29T12:00:00&#43;01:00" />
-<meta itemprop="wordCount" content="1321">
+<meta itemprop="wordCount" content="1369">
 
 
 
@@ -372,7 +372,7 @@
 
 <p>En el caso concreto de formularios es recomendable utilizar <code>flexbox</code> o <code>display: inline-block</code> definiendo una anchura igual para las etiquetas junto con otra anchura igual para los controles. La separación entre ambos puede realizarse utilizando el margen.</p>
 
-<p>A continuación se muestra un ejemplo del código utilizado para ello:</p>
+<p>A continuación se muestra un ejemplo del código utilizando <code>display: inline-block</code>:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">label</span> {
     <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">inline</span><span style="color:#666">-</span><span style="color:#a2f;font-weight:bold">block</span>;
     <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">7</span><span style="color:#0b0;font-weight:bold">em</span>;
@@ -388,15 +388,15 @@
     &lt;<span style="color:#008000;font-weight:bold">legend</span>&gt;Título&lt;/<span style="color:#008000;font-weight:bold">legend</span>&gt;
 
     &lt;<span style="color:#008000;font-weight:bold">ul</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">li</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;grupo-control&#34;</span>&gt;
         &lt;<span style="color:#008000;font-weight:bold">span</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;etiqueta&#34;</span>&gt;&lt;<span style="color:#008000;font-weight:bold">label</span> <span style="color:#b44">for</span><span style="color:#666">=</span><span style="color:#b44">&#34;name&#34;</span>&gt;Nombre&lt;/<span style="color:#008000;font-weight:bold">label</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">span</span>&gt;
         &lt;<span style="color:#008000;font-weight:bold">span</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;control&#34;</span>&gt;&lt;<span style="color:#008000;font-weight:bold">input</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text&#34;</span> <span style="color:#b44">name</span><span style="color:#666">=</span><span style="color:#b44">&#34;name&#34;</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;name&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">span</span>&gt;
       &lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">li</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;grupo-control&#34;</span>&gt;
         &lt;<span style="color:#008000;font-weight:bold">span</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;etiqueta&#34;</span>&gt;&lt;<span style="color:#008000;font-weight:bold">label</span> <span style="color:#b44">for</span><span style="color:#666">=</span><span style="color:#b44">&#34;lname&#34;</span>&gt;Apellidos&lt;/<span style="color:#008000;font-weight:bold">label</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">span</span>&gt;
         &lt;<span style="color:#008000;font-weight:bold">span</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;control&#34;</span>&gt;&lt;<span style="color:#008000;font-weight:bold">input</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text&#34;</span> <span style="color:#b44">name</span><span style="color:#666">=</span><span style="color:#b44">&#34;lname&#34;</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;lname&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">span</span>&gt;
       &lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">li</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;grupo-control&#34;</span>&gt;
         &lt;<span style="color:#008000;font-weight:bold">span</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;etiqueta&#34;</span>&gt;&lt;<span style="color:#008000;font-weight:bold">label</span> <span style="color:#b44">for</span><span style="color:#666">=</span><span style="color:#b44">&#34;email&#34;</span>&gt;Email&lt;/<span style="color:#008000;font-weight:bold">label</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">span</span>&gt;
         &lt;<span style="color:#008000;font-weight:bold">span</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;control&#34;</span>&gt;&lt;<span style="color:#008000;font-weight:bold">input</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text&#34;</span> <span style="color:#b44">name</span><span style="color:#666">=</span><span style="color:#b44">&#34;email&#34;</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;email&#34;</span>&gt;&lt;/<span style="color:#008000;font-weight:bold">span</span>&gt;
       &lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
@@ -405,6 +405,24 @@
   &lt;/<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
 
 &lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;</code></pre></div>
+<p>Partiendo del código anterior, se muestra a continuación el código necesario para alinear los campos utilizando <code>flexbox</code>:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#00f">grupo-control</span> {
+  <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">flex</span>;
+}
+
+.<span style="color:#00f">etiqueta</span> {
+    <span style="color:#a2f;font-weight:bold">flex</span>: <span style="color:#666">1</span> <span style="color:#666">1</span> <span style="color:#666">0</span>;
+}
+
+.<span style="color:#00f">control</span> {
+  <span style="color:#a2f;font-weight:bold">flex</span>: <span style="color:#666">2</span> <span style="color:#666">1</span> <span style="color:#666">0</span>;
+}
+
+<span style="color:#008000;font-weight:bold">input</span> {
+  <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">%</span>;
+  <span style="color:#a2f;font-weight:bold">margin</span>: <span style="color:#666">0</span>;
+  <span style="color:#a2f;font-weight:bold">padding</span>: <span style="color:#666">0</span>;
+}</code></pre></div>
 <h3 id="pistas--placeholders">Pistas (Placeholders)</h3>
 
 <p>Es posible utilizar pistas para indicar al usuario qué información debe introducir en cada campo del formulario. Para ello se puede utilizar el atributo <code>placeholder</code>.</p>

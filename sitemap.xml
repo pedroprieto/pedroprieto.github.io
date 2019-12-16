@@ -2,22 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://pedroprieto.github.io/categories/</loc>
-    <lastmod>2019-11-19T12:30:00+01:00</lastmod>
+    <loc>https://pedroprieto.github.io/post/bootstrap/</loc>
+    <lastmod>2019-12-16T12:43:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pedroprieto.github.io/tags/cms/</loc>
-    <lastmod>2019-11-19T12:30:00+01:00</lastmod>
+    <loc>https://pedroprieto.github.io/tags/bootstrap/</loc>
+    <lastmod>2019-12-16T12:43:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/categories/</loc>
+    <lastmod>2019-12-16T12:43:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://pedroprieto.github.io/tags/css/</loc>
-    <lastmod>2019-11-19T12:30:00+01:00</lastmod>
+    <lastmod>2019-12-16T12:43:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://pedroprieto.github.io/categories/diw/</loc>
+    <lastmod>2019-12-16T12:43:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/categories/diw-bootstrap/</loc>
+    <lastmod>2019-12-16T12:43:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/post/</loc>
+    <lastmod>2019-12-16T12:43:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/</loc>
+    <lastmod>2019-12-16T12:43:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/</loc>
+    <lastmod>2019-12-16T12:43:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/cms/</loc>
     <lastmod>2019-11-19T12:30:00+01:00</lastmod>
   </url>
   
@@ -33,21 +63,6 @@
   
   <url>
     <loc>https://pedroprieto.github.io/tags/jekyll/</loc>
-    <lastmod>2019-11-19T12:30:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/post/</loc>
-    <lastmod>2019-11-19T12:30:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/</loc>
-    <lastmod>2019-11-19T12:30:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/tags/</loc>
     <lastmod>2019-11-19T12:30:00+01:00</lastmod>
   </url>
   

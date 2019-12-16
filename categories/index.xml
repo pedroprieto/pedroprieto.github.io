@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 19 Nov 2019 12:30:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 16 Dec 2019 12:43:00 +0100</lastBuildDate>
     
 	<atom:link href="https://pedroprieto.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>diw</title>
       <link>https://pedroprieto.github.io/categories/diw/</link>
-      <pubDate>Tue, 19 Nov 2019 12:30:00 +0100</pubDate>
+      <pubDate>Mon, 16 Dec 2019 12:43:00 +0100</pubDate>
       
       <guid>https://pedroprieto.github.io/categories/diw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diw-bootstrap</title>
+      <link>https://pedroprieto.github.io/categories/diw-bootstrap/</link>
+      <pubDate>Mon, 16 Dec 2019 12:43:00 +0100</pubDate>
+      
+      <guid>https://pedroprieto.github.io/categories/diw-bootstrap/</guid>
       <description></description>
     </item>
     

@@ -17,9 +17,7 @@
       <pubDate>Tue, 19 Nov 2019 12:30:00 +0100</pubDate>
       
       <guid>https://pedroprieto.github.io/post/jekyllcms/</guid>
-      <description>&lt;h2 id=&#34;introducción&#34;&gt;Introducción&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; es un &lt;a href=&#34;https://es.wikipedia.org/wiki/Sistema%5Fde%5Fgestión%5Fde%5Fcontenidos&#34;&gt;gestor de contenido&lt;/a&gt; de tipo &lt;strong&gt;estático&lt;/strong&gt; (&lt;em&gt;static site generator&lt;/em&gt;). No depende de ninguna base de datos ni de ningún lenguaje de servidor. Utiliza ficheros de texto para almacenar los contenidos y los datos. Dado que no utiliza tecnologías de servidor, es necesario realizar un proceso de &lt;strong&gt;generación&lt;/strong&gt; o compilación para producir archivos HTML válidos que puedan ser alojados en un servidor y procesados adecuadamente por un navegador web convencional.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; es un &lt;a href=&#34;https://es.wikipedia.org/wiki/Sistema%5Fde%5Fgestión%5Fde%5Fcontenidos&#34;&gt;gestor de contenido&lt;/a&gt; de tipo &lt;strong&gt;estático&lt;/strong&gt; (&lt;em&gt;static site generator&lt;/em&gt;). No depende de ninguna base de datos ni de ningún lenguaje de servidor. Utiliza ficheros de texto para almacenar los contenidos y los datos. Dado que no utiliza tecnologías de servidor, es necesario realizar un proceso de &lt;strong&gt;generación&lt;/strong&gt; o compilación para producir archivos HTML válidos que puedan ser alojados en un servidor y procesados adecuadamente por un navegador web convencional.&lt;/p&gt;</description>
     </item>
     
   </channel>

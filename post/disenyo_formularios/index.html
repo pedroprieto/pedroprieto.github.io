@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.59.0" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/disenyo_formularios/" />
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.9d905c6e18c5b36b748e85c65cd37158c2ae15f9a4abcd251c141c17295039ab.css" integrity="sha256-nZBcbhjFs2t0joXGXNNxWMKuFfmkq80lHBQcFylQOas=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.74578408e75a62a40c7e92f542ce759fb6b37b9651bf325fb56682a2b7897058.css" integrity="sha256-dFeECOdaYqQMfpL1Qs51n7aze5ZRvzJftWaCoreJcFg=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,16 +66,13 @@
 <meta property="article:modified_time" content="2019-10-29T12:00:00+01:00" />
 <meta itemprop="name" content="Diseño de formularios">
 <meta itemprop="description" content="En este artículo se analizarán algunas recomendaciones de diseño relacionadas con los formularios web. El objetivo es aprender a diseñar formularios que muestren la información de manera limpia, clara y de forma adaptada a cualquier tipo de dispositivo.">
-
-
 <meta itemprop="datePublished" content="2019-10-29T12:00:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-10-29T12:00:00&#43;01:00" />
-<meta itemprop="wordCount" content="1369">
+<meta itemprop="wordCount" content="1362">
 
 
 
-<meta itemprop="keywords" content="css,formularios," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css,formularios," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Diseño de formularios"/>
 <meta name="twitter:description" content="En este artículo se analizarán algunas recomendaciones de diseño relacionadas con los formularios web. El objetivo es aprender a diseñar formularios que muestren la información de manera limpia, clara y de forma adaptada a cualquier tipo de dispositivo."/>
 
@@ -266,58 +263,52 @@
     
     <div class="post-content">
       <p>En este artículo se analizarán algunas recomendaciones de diseño relacionadas con los formularios web. El objetivo es aprender a diseñar formularios que muestren la información de manera limpia, clara y de forma adaptada a cualquier tipo de dispositivo.</p>
-
 <h2 id="estructura-y-diseño-visual--código">Estructura y diseño visual (código)</h2>
-
 <p>A continuación se muestran algunos consejos relacionados con el código HTML y CSS utilizado en formularios.</p>
-
 <h3 id="fieldset">Fieldset</h3>
-
 <p>La etiqueta <code>&lt;fieldset&gt;</code> se utiliza para agrupar controles relacionados. Se suele utilizar junto con la etiqueta <code>&lt;legend&gt;</code>, que muestra un texto a modo de título.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">form</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
     &lt;<span style="color:#008000;font-weight:bold">legend</span>&gt;Título&lt;/<span style="color:#008000;font-weight:bold">legend</span>&gt;
 
-    <span style="color:#080;font-style:italic">&lt;!-- Controles del formulario --&gt;</span>
+    <span style="color:#080;font-style:italic">&lt;!--</span><span style="color:#080;font-style:italic"> Controles del formulario </span><span style="color:#080;font-style:italic">--&gt;</span>
 
   &lt;/<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
 
-&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;</code></pre></div>
-<h3 id="agrupación-de-controles">Agrupación de controles</h3>
-
+&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;
+</code></pre></div><h3 id="agrupación-de-controles">Agrupación de controles</h3>
 <p>Los controles de formulario son elementos en línea. Por tanto, para que aparezcan en líneas distintas es conveniente agruparlos mediante etiquetas de bloque. En este punto se puede optar por etiquetas <code>&lt;p&gt;</code> o <code>&lt;div&gt;</code>:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">form</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
     &lt;<span style="color:#008000;font-weight:bold">legend</span>&gt;Título&lt;/<span style="color:#008000;font-weight:bold">legend</span>&gt;
 
-    &lt;<span style="color:#008000;font-weight:bold">div</span>&gt;<span style="color:#080;font-style:italic">&lt;!-- Control de formulario --&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">div</span>&gt;<span style="color:#080;font-style:italic">&lt;!-- Control de formulario --&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-    &lt;<span style="color:#008000;font-weight:bold">div</span>&gt;<span style="color:#080;font-style:italic">&lt;!-- Control de formulario --&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span>&gt;<span style="color:#080;font-style:italic">&lt;!--</span><span style="color:#080;font-style:italic"> Control de formulario </span><span style="color:#080;font-style:italic">--&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span>&gt;<span style="color:#080;font-style:italic">&lt;!--</span><span style="color:#080;font-style:italic"> Control de formulario </span><span style="color:#080;font-style:italic">--&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+    &lt;<span style="color:#008000;font-weight:bold">div</span>&gt;<span style="color:#080;font-style:italic">&lt;!--</span><span style="color:#080;font-style:italic"> Control de formulario </span><span style="color:#080;font-style:italic">--&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
 
   &lt;/<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
 
-&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;</code></pre></div>
-<p>O por listas (ordenadas o desordenadas):</p>
+&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;
+</code></pre></div><p>O por listas (ordenadas o desordenadas):</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">form</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
     &lt;<span style="color:#008000;font-weight:bold">legend</span>&gt;Título&lt;/<span style="color:#008000;font-weight:bold">legend</span>&gt;
 
     &lt;<span style="color:#008000;font-weight:bold">ul</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;<span style="color:#080;font-style:italic">&lt;!-- Control de formulario --&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;<span style="color:#080;font-style:italic">&lt;!-- Control de formulario --&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
-      &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;<span style="color:#080;font-style:italic">&lt;!-- Control de formulario --&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;<span style="color:#080;font-style:italic">&lt;!--</span><span style="color:#080;font-style:italic"> Control de formulario </span><span style="color:#080;font-style:italic">--&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;<span style="color:#080;font-style:italic">&lt;!--</span><span style="color:#080;font-style:italic"> Control de formulario </span><span style="color:#080;font-style:italic">--&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
+      &lt;<span style="color:#008000;font-weight:bold">li</span>&gt;<span style="color:#080;font-style:italic">&lt;!--</span><span style="color:#080;font-style:italic"> Control de formulario </span><span style="color:#080;font-style:italic">--&gt;</span>&lt;/<span style="color:#008000;font-weight:bold">li</span>&gt;
     &lt;/<span style="color:#008000;font-weight:bold">ul</span>&gt;
 
   &lt;/<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
 
-&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;</code></pre></div>
-<p>En caso de utilizar listas es posible ocultar los puntos mediante el siguiente código CSS:</p>
+&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;
+</code></pre></div><p>En caso de utilizar listas es posible ocultar los puntos mediante el siguiente código CSS:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">form</span> <span style="color:#008000;font-weight:bold">ul</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">form</span> <span style="color:#008000;font-weight:bold">ol</span> {
     <span style="color:#a2f;font-weight:bold">list-style</span>: <span style="color:#a2f;font-weight:bold">none</span>;
     <span style="color:#a2f;font-weight:bold">padding</span>: <span style="color:#666">0</span>;
-}</code></pre></div>
-<h3 id="campos">Campos</h3>
-
+}
+</code></pre></div><h3 id="campos">Campos</h3>
 <p>Para identificar los controles se deben utilizar los atributos <code>id</code> y <code>name</code>. El atributo <code>id</code> se utiliza para a programación de cliente (<em>front-end</em>), mientras que el atributo <code>name</code> se utiliza para el envío de los datos al servidor (<em>back-end</em>). Es muy importante tener en cuenta que normalmente <strong>hay que utilizar los dos</strong>.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">form</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
@@ -331,19 +322,15 @@
 
   &lt;/<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
 
-&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;</code></pre></div>
-<h3 id="etiquetas--labels">Etiquetas (labels)</h3>
-
+&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;
+</code></pre></div><h3 id="etiquetas--labels">Etiquetas (labels)</h3>
 <p>Para mostrar la información asociada a un control se debe utilizar la etiqueta <code>&lt;label&gt;</code>. Dicha etiqueta utiliza el atributo <code>for</code> para indicar el control al que va asociado. El valor del atributo <code>for</code> debe ser el valor del atributo <code>id</code> del control correspondiente.</p>
-
 <p>El uso de etiquetas tiene varias ventajas:</p>
-
 <ul>
 <li>El usuario puede pulsar con el ratón sobre la etiqueta y activar el control asociado.</li>
 <li>Dispositivos como lectores de pantalla o lectores braille necesitan las etiquetas para poder mostrar la información asociada al control.</li>
 </ul>
-
-<!--listend-->
+<!-- raw HTML omitted -->
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">form</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
     &lt;<span style="color:#008000;font-weight:bold">legend</span>&gt;Título&lt;/<span style="color:#008000;font-weight:bold">legend</span>&gt;
@@ -365,13 +352,10 @@
 
   &lt;/<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
 
-&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;</code></pre></div>
-<h3 id="alineación">Alineación</h3>
-
+&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;
+</code></pre></div><h3 id="alineación">Alineación</h3>
 <p>La alineación de controles o etiquetas puede conseguirse utilizando cualquiera de las técnicas vistas en el artículo de <a href="/post/tecnicas_layout/">técnicas para crear layouts</a>.</p>
-
 <p>En el caso concreto de formularios es recomendable utilizar <code>flexbox</code> o <code>display: inline-block</code> definiendo una anchura igual para las etiquetas junto con otra anchura igual para los controles. La separación entre ambos puede realizarse utilizando el margen.</p>
-
 <p>A continuación se muestra un ejemplo del código utilizando <code>display: inline-block</code>:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">label</span> {
     <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">inline</span><span style="color:#666">-</span><span style="color:#a2f;font-weight:bold">block</span>;
@@ -381,8 +365,8 @@
 <span style="color:#008000;font-weight:bold">input</span> {
     <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">inline</span><span style="color:#666">-</span><span style="color:#a2f;font-weight:bold">block</span>;
     <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">9</span><span style="color:#0b0;font-weight:bold">em</span>;
-}</code></pre></div>
-<p>Es posible (y recomendable) utilizar etiquetas <code>&lt;span&gt;</code> para agrupar etiquetas y controles y así poderlos procesar correctamente en CSS.</p>
+}
+</code></pre></div><p>Es posible (y recomendable) utilizar etiquetas <code>&lt;span&gt;</code> para agrupar etiquetas y controles y así poderlos procesar correctamente en CSS.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">form</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
     &lt;<span style="color:#008000;font-weight:bold">legend</span>&gt;Título&lt;/<span style="color:#008000;font-weight:bold">legend</span>&gt;
@@ -404,8 +388,8 @@
 
   &lt;/<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
 
-&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;</code></pre></div>
-<p>Partiendo del código anterior, se muestra a continuación el código necesario para alinear los campos utilizando <code>flexbox</code>:</p>
+&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;
+</code></pre></div><p>Partiendo del código anterior, se muestra a continuación el código necesario para alinear los campos utilizando <code>flexbox</code>:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#00f">grupo-control</span> {
   <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">flex</span>;
 }
@@ -422,9 +406,8 @@
   <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">%</span>;
   <span style="color:#a2f;font-weight:bold">margin</span>: <span style="color:#666">0</span>;
   <span style="color:#a2f;font-weight:bold">padding</span>: <span style="color:#666">0</span>;
-}</code></pre></div>
-<h3 id="pistas--placeholders">Pistas (Placeholders)</h3>
-
+}
+</code></pre></div><h3 id="pistas--placeholders">Pistas (Placeholders)</h3>
 <p>Es posible utilizar pistas para indicar al usuario qué información debe introducir en cada campo del formulario. Para ello se puede utilizar el atributo <code>placeholder</code>.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">form</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
@@ -447,18 +430,14 @@
 
   &lt;/<span style="color:#008000;font-weight:bold">fieldset</span>&gt;
 
-&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;</code></pre></div>
-<h3 id="validación">Validación</h3>
-
+&lt;/<span style="color:#008000;font-weight:bold">form</span>&gt;
+</code></pre></div><h3 id="validación">Validación</h3>
 <p>Los formularios pueden ser <strong>validados</strong> tanto en el <strong>cliente</strong> como en el <strong>servidor</strong>. Suele ser una buena práctica utilizar <strong>ambas formas de validación</strong>:</p>
-
 <ul>
 <li>La validación en <strong>servidor</strong> es <strong>fundamental</strong>, ya que siempre es necesario verificar los datos que recibe la aplicación para evitar errores, código malicioso o incompatibilidad con los tipos de datos definidos en la base de datos.</li>
 <li>La validación en <strong>cliente</strong> no es obligatoria, aunque ofrece varias <strong>ventajas</strong>, como mejorar la <strong>experiencia de usuario</strong>, <strong>optimizar la cantidad de datos</strong> utilizada en la conexión o <strong>disminuir la carga de proceso del servidor</strong>.</li>
 </ul>
-
 <p>La utilización de HTML5 junto con los navegadores actuales permiten incorporar validación en entorno de cliente de manera muy sencilla. Algunas de las recomendaciones a seguir son:</p>
-
 <ul>
 <li>Utilizar las etiquetas <code>&lt;input&gt;</code> definidas en HTML5: <code>&lt;input type=&quot;date&quot;&gt;</code>, <code>&lt;input type=&quot;email&quot;&gt;</code>, <code>&lt;input type=&quot;number&quot;&gt;</code>,&hellip; Más información <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/input">sobre etiquetas input</a>.</li>
 <li>Utilizar el atributo <code>required</code> para indicar que un campo es obligatorio.</li>
@@ -466,23 +445,14 @@
 <li>Utilizar <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Forms/Validacion%5Fformulario%5Fdatos#Mensajes%5Fde%5Ferror%5Fpersonalizados">mensajes de error personalizados</a> (requiere JavaScript).</li>
 <li>Utilizar las <a href="https://developer.mozilla.org/es/docs/Web/CSS/:invalid">pseudo-clases <code>:valid</code> y <code>:invalid</code></a> de CSS para personalizar la apariencia visual de los campos correctos o incorrectos.</li>
 </ul>
-
 <p>Puede consultarse más información sobre validación en este <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Forms/Validacion%5Fformulario%5Fdatos">artículo de MDN sobre validación de formularios</a>.</p>
-
 <h3 id="relleno-automático-de-campos">Relleno automático de campos</h3>
-
 <p>La mayoría de los navegadores permiten almacenar valores introducidos en formularios anteriores y sugerir posibles valores a la hora de rellenar el formulario actual. Para ello se puede utilizar la característica de <a href="https://developer.mozilla.org/es/docs/Web/HTML/Atributos/autocomplete">autocomplete</a>.</p>
-
 <h3 id="ejemplo-completo">Ejemplo completo</h3>
-
 <p>A continuación puedes ver un <a href="https://jsbin.com/bebozar/3/edit?html,css,output">ejemplo de formulario utilizando las recomendaciones descritas</a>.</p>
-
 <h2 id="usabilidad-y-accesibilidad">Usabilidad y accesibilidad</h2>
-
 <h3 id="alineación-de-etiquetas">Alineación de etiquetas</h3>
-
 <p>Las <strong>etiquetas</strong> de los formularios suelen colocarse <strong>arriba o a la izquierda</strong> de los controles. Cuando se colocan a la izquierda, pueden <strong>alinearse</strong> a la <strong>izquierda</strong> o a la <strong>derecha</strong>. Cada una de estas opciones tiene sus ventajas e inconvenientes.</p>
-
 <table>
 <thead>
 <tr>
@@ -492,7 +462,6 @@
 <th>Derecha</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Útil para tipos de datos conocidos</td>
@@ -500,42 +469,36 @@
 <td></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Procesamiento rápido</td>
 <td>X</td>
 <td></td>
 <td>X</td>
 </tr>
-
 <tr>
 <td>No problemas con etiquetas largas</td>
 <td>X</td>
 <td></td>
 <td>X</td>
 </tr>
-
 <tr>
 <td>Asociación etiqueta-control clara</td>
 <td></td>
 <td></td>
 <td>X</td>
 </tr>
-
 <tr>
 <td>Ocupa poco espacio vertical</td>
 <td></td>
 <td>X</td>
 <td>X</td>
 </tr>
-
 <tr>
 <td>Favorece el escaneo de etiquetas</td>
 <td></td>
 <td>X</td>
 <td></td>
 </tr>
-
 <tr>
 <td>Útil para tipos de  datos desconocidos</td>
 <td></td>
@@ -544,9 +507,7 @@
 </tr>
 </tbody>
 </table>
-
 <h3 id="datos-obligatorios-y-opcionales">Datos obligatorios y opcionales</h3>
-
 <ul>
 <li>Se debe <strong>minimizar</strong> el número de <strong>datos opcionales</strong>.</li>
 <li>Si la mayoría de datos son obligatorios: indicar los opcionales.</li>
@@ -554,74 +515,54 @@
 <li>Es mejor utilizar indicadores mediante <strong>texto</strong>; también se puede utilizar <code>*</code> para los campos <strong>obligatorios</strong>.</li>
 <li>Se deben asociar los indicadores con las etiquetas.</li>
 </ul>
-
 <h3 id="longitud-de-los-campos">Longitud de los campos</h3>
-
 <ul>
 <li>El tamaño de los campos puede ofrecer información sobre su contenido.</li>
 <li>Muchos tamaños: ruido adicional</li>
 <li>En caso de duda, tamaño igual para todos los campos.</li>
 </ul>
-
 <h3 id="acciones">Acciones</h3>
-
 <ul>
 <li>Es recomendable mostrar el mínimo número de acciones posibles (idealmente sólo 1).</li>
 <li>En caso de mostrar más de una acción, diferenciar visualmente la opción principal de las secundarias.</li>
 </ul>
-
 <h3 id="ayuda">Ayuda</h3>
-
 <ul>
 <li>Se debe minimizar la cantidad de ayuda mostrada.</li>
 <li>En caso de necesitar instrucciones, mostrar la ayuda adosada a los campos que la necesiten (ayuda dinámica).</li>
 </ul>
-
 <h3 id="entrada-de-datos">Entrada de datos</h3>
-
 <ul>
 <li>Se debe mostrar claramente el camino a seguir para completar el formulario.</li>
 <li>En caso de que el formulario sea <strong>muy largo</strong>, se debe ofrecer la posibilidad de <strong>salvar el progreso</strong>.</li>
 <li>Es conveniente permitir la <strong>entrada flexible de datos</strong> (por ejemplo, en números de teléfono: 999-112233, 999112233, 999 11 22 33, 999 112 233, etc.).</li>
 </ul>
-
 <h3 id="control-por-teclado">Control por teclado</h3>
-
 <ul>
 <li>Se debe tener en cuenta el uso del teclado para rellenar formularios. Para ello puede utilizarse el atributo <a href="http://www.w3schools.com/tags/att%5Fglobal%5Ftabindex.asp">tabindex</a>.</li>
 </ul>
-
 <h3 id="retroalimentación">Retroalimentación</h3>
-
 <ul>
 <li>Se debe utilizar validación automática en campos con alta tasa de error.</li>
 <li>Es recomendable utilizar sugerencias para evitar errores.</li>
 <li><strong>Siempre</strong> se debe mostrar un <strong>mensaje</strong> cuando se <strong>envíe un formulario</strong> indicando si la acción ha tenido éxito o si se ha producido un error.</li>
 </ul>
-
 <h3 id="errores">Errores</h3>
-
 <ul>
 <li>Se debe comunicar claramente que ha ocurrido un error: en la <strong>parte superior</strong> de la página utilizando <strong>contraste visual</strong>.</li>
 <li>Además, se debe indicar qué <strong>campos</strong> son los que contienen <strong>errores</strong>.</li>
 </ul>
-
 <h3 id="progreso-de-envío">Progreso de envío</h3>
-
 <ul>
 <li>Es recomendable mostrar indicaciones de las acciones en progreso.</li>
 <li>Es muy recomendable <strong>desactivar el botón de envío</strong> después de que el usuario lo haya pulsado. De esta manera evitamos que se produzcan envíos duplicados.</li>
 </ul>
-
 <h3 id="envío">Envío</h3>
-
 <ul>
 <li>Se debe mostrar claramente si los datos se han enviado con éxito.</li>
 <li>Se debe indicar alguna <strong>referencia a la acción que se ha realizado</strong>: actualización, creación de información nueva, pago,&hellip;</li>
 </ul>
-
 <h2 id="referencias">Referencias</h2>
-
 <ul>
 <li><a href="http://www.slideshare.net/AaronGustafson/learning-to-love-forms-web-directions-south-07">Recomendaciones para diseño de formularios (en inglés)</a></li>
 <li><a href="http://www.slideshare.net/psykoreactor/best-practices-for-form-design">Consejos de usabilidad de formularios (en inglés)</a></li>
@@ -770,7 +711,7 @@
     &copy;
     
        -
-    2019
+    2020
     <span class="heart">
       
       <i class="iconfont">

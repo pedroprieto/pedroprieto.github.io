@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.59.0" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/tipos_layout/" />
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.9d905c6e18c5b36b748e85c65cd37158c2ae15f9a4abcd251c141c17295039ab.css" integrity="sha256-nZBcbhjFs2t0joXGXNNxWMKuFfmkq80lHBQcFylQOas=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.74578408e75a62a40c7e92f542ce759fb6b37b9651bf325fb56682a2b7897058.css" integrity="sha256-dFeECOdaYqQMfpL1Qs51n7aze5ZRvzJftWaCoreJcFg=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,16 +66,13 @@
 <meta property="article:modified_time" content="2019-10-28T13:15:00+01:00" />
 <meta itemprop="name" content="Tipos de layouts">
 <meta itemprop="description" content="El layout o estructura de un interfaz web es la manera de organizar o disponer los elementos visuales en la página. El diseño del layout determina la posición de cada uno de los elementos que componen el interfaz web (cabecera, menús, banners, contenido, etc.).">
-
-
 <meta itemprop="datePublished" content="2019-10-28T13:15:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-10-28T13:15:00&#43;01:00" />
 <meta itemprop="wordCount" content="563">
 
 
 
-<meta itemprop="keywords" content="css,layout," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css,layout," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tipos de layouts"/>
 <meta name="twitter:description" content="El layout o estructura de un interfaz web es la manera de organizar o disponer los elementos visuales en la página. El diseño del layout determina la posición de cada uno de los elementos que componen el interfaz web (cabecera, menús, banners, contenido, etc.)."/>
 
@@ -266,20 +263,15 @@
     
     <div class="post-content">
       <p>El <em>layout</em> o <strong>estructura</strong> de un interfaz web es la manera de organizar o disponer los elementos visuales en la página. El diseño del layout determina la posición de cada uno de los elementos que componen el interfaz web (cabecera, menús, banners, contenido, etc.).</p>
-
 <p>Además, el diseño del layout comprende también una serie de decisiones que afectan a las siguientes <strong>características</strong>:</p>
-
 <ul>
 <li>Tamaño de los márgenes.</li>
 <li>Tamaño y posición de imágenes y figuras.</li>
 <li>Número de columnas (o áreas) en que se divide la página.</li>
 <li>Áreas dejadas en blanco intencionadamente.</li>
 </ul>
-
 <h2 id="santo-grial">Santo Grial</h2>
-
 <p>Uno de los patrones de diseño más utilizados es un diseño formado por varias (normalmente tres) columnas, con el contenido principal ocupando una de ellas (normalmente en el centro) y el resto de elementos (menús, banners,&hellip;) en las otras columnas. Las columnas idealmente deben tener la misma altura independientemente de su contenido y opcionalmente pueden tener bordes o colores de fondo diferenciados.</p>
-
 
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 <div class="box">
@@ -295,9 +287,7 @@
   </figure>
 </div>
 
-
 <p>Aunque parece sencillo de conseguir, no hay ninguna solución óptima para este diseño. Todas ellas tienen algún inconveniente:</p>
-
 <ul>
 <li>Visualización incorrecta en algún navegador.</li>
 <li>Utilización de muchas etiquetas HTML.</li>
@@ -305,11 +295,8 @@
 <li>Adaptación incorrecta en dispositivos móviles.</li>
 <li>Necesidad de utilizar lenguaje de script.</li>
 </ul>
-
 <h2 id="métodos-antiguos">Métodos antiguos</h2>
-
 <h3 id="tablas">Tablas</h3>
-
 <ul>
 <li>Problemas semánticos.</li>
 <li>Mezcla de estructura (HTML) con presentación visual.</li>
@@ -317,7 +304,6 @@
 <li>Problemas con lectores de pantalla.</li>
 <li>Problemas de tiempo de respuesta de los navegadores.</li>
 </ul>
-
 
 
 <div class="box">
@@ -333,17 +319,13 @@
   </figure>
 </div>
 
-
 <h3 id="posicionamiento-absoluto">Posicionamiento absoluto</h3>
-
 <ul>
 <li>Rígido e inflexible.</li>
 <li>Utilizado para versiones que deban ser impresas</li>
 <li>Unidades de medida absolutas (cm, mm,&hellip;).</li>
 </ul>
-
 <h3 id="anchura-fija">Anchura fija</h3>
-
 <ul>
 <li>Muy popular.</li>
 <li>Se crea una capa contenedora que alberga todo el contenido de la página.</li>
@@ -352,58 +334,42 @@
 <li>Aparece una barra de desplazamiento horizontal cuando se muestra en una pantalla pequeña.</li>
 <li>Utiliza el píxel como unidad de medida principal.</li>
 </ul>
-
 <p>Ventajas:</p>
-
 <ul>
 <li>Ajuste perfecto. Son sitios que hacen uso de gran cantidad de imágenes y estructuras muy complejas. Necesitan controlar exactamente el tamaño de las capas para que las imágenes acoplen perfectamente.</li>
 <li>Fácil de desarrollar y mantener.</li>
 </ul>
-
 <p>Desventajas:</p>
-
 <ul>
 <li>Poco usabilidad en pantallas pequeñas.</li>
 <li>No se adaptan correctamente a dispositivos móviles.</li>
 <li>No se adaptan correctamente frente a un aumento de zoom o aumento del tamaño del texto.</li>
 </ul>
-
 <h2 id="diseño-responsivo">Diseño responsivo</h2>
-
 <p>Los métodos actuales de diseño de layouts suelen tener las siguientes características:</p>
-
 <ul>
 <li>No utilizan anchuras fijas.</li>
 <li>Se adaptan correctamente a pantallas pequeñas y grandes.</li>
 <li>Utilizan unidades CSS relativas (ems, rems, porcentajes, valores mínimos y máximos,&hellip;).</li>
 <li>Utilizan media queries CSS3 para proporcionar versiones distintas a cada dispositivo en función de su resolución de pantalla.</li>
 </ul>
-
 <p>Ventajas:</p>
-
 <ul>
 <li>Muy buena experiencia de uso independientemente del dispositivo o tamaño de pantalla elegido.</li>
 </ul>
-
 <p>Desventajas:</p>
-
 <ul>
 <li>Todos los dispositivos reciben todo el código independientemente de si lo van a utilizar o no.</li>
 <li>Difícil de desarrollar y testear.</li>
 <li>No hay un control perfecto a nivel de píxel: por tanto, puede ser difícil adaptar imágenes de tamaño fijo.</li>
 </ul>
-
 <p>Ejemplos:</p>
-
 <ul>
 <li><a href="http://designmodo.com/responsive-design-examples/">http://designmodo.com/responsive-design-examples/</a></li>
 <li><a href="http://seesparkbox.com/">http://seesparkbox.com/</a></li>
 </ul>
-
 <h3 id="conclusiones">Conclusiones</h3>
-
 <p>Independientemente del modelo de layout elegido, el objetivo que se persigue es:</p>
-
 <ul>
 <li>Proporcionar a los usuarios una buena <strong>experiencia de uso</strong>.</li>
 <li>Servir una página web que funcione y se comporte de manera óptima independientemente del dispositivo o tamaño de pantalla utilizado sin comprometer la experiencia de uso.</li>
@@ -552,7 +518,7 @@
     &copy;
     
        -
-    2019
+    2020
     <span class="heart">
       
       <i class="iconfont">

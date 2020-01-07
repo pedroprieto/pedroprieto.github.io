@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.59.0" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/disenyo_responsivo/" />
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.9d905c6e18c5b36b748e85c65cd37158c2ae15f9a4abcd251c141c17295039ab.css" integrity="sha256-nZBcbhjFs2t0joXGXNNxWMKuFfmkq80lHBQcFylQOas=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.74578408e75a62a40c7e92f542ce759fb6b37b9651bf325fb56682a2b7897058.css" integrity="sha256-dFeECOdaYqQMfpL1Qs51n7aze5ZRvzJftWaCoreJcFg=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,16 +66,13 @@
 <meta property="article:modified_time" content="2019-11-04T12:44:00+01:00" />
 <meta itemprop="name" content="Diseño responsivo">
 <meta itemprop="description" content="En este artículo trataremos los fundamentos del diseño web adaptable o adaptativo (Responsive Web Design en inglés).">
-
-
 <meta itemprop="datePublished" content="2019-11-04T12:44:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-11-04T12:44:00&#43;01:00" />
 <meta itemprop="wordCount" content="2286">
 
 
 
-<meta itemprop="keywords" content="css,responsive," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css,responsive," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Diseño responsivo"/>
 <meta name="twitter:description" content="En este artículo trataremos los fundamentos del diseño web adaptable o adaptativo (Responsive Web Design en inglés)."/>
 
@@ -266,48 +263,29 @@
     
     <div class="post-content">
       <p>En este artículo trataremos los fundamentos del diseño web adaptable o adaptativo (<em>Responsive Web Design</em> en inglés).</p>
-
 <blockquote>
-<p>El diseño web adaptable (también <strong>diseño web adaptativo</strong> o <strong>responsivo</strong>; este último calco del inglés <em>responsive web design</em>), es una filosofía de diseño y desarrollo cuyo objetivo es adaptar la apariencia de las páginas web al dispositivo que se esté utilizando para visitarlas. Hoy día las páginas web se ven en multitud de dispositivos como tabletas, teléfonos inteligentes, libros electrónicos, portátiles, PC, etcétera. Además, aún dentro de cada tipo, cada dispositivo tiene sus características concretas: tamaño de pantalla, resolución, potencia de CPU, sistema operativo o capacidad de memoria entre otras. Esta tecnología pretende que con un único diseño web, todo se vea correctamente en cualquier dispositivo. &mdash;<em>Fuente: <a href="https://es.wikipedia.org/wiki/Diseño%5Fweb%5Fadaptable">Wikipedia</a></em></p>
+<p>El diseño web adaptable (también <strong>diseño web adaptativo</strong> o <strong>responsivo</strong>; este último calco del inglés <em>responsive web design</em>), es una filosofía de diseño y desarrollo cuyo objetivo es adaptar la apariencia de las páginas web al dispositivo que se esté utilizando para visitarlas. Hoy día las páginas web se ven en multitud de dispositivos como tabletas, teléfonos inteligentes, libros electrónicos, portátiles, PC, etcétera. Además, aún dentro de cada tipo, cada dispositivo tiene sus características concretas: tamaño de pantalla, resolución, potencia de CPU, sistema operativo o capacidad de memoria entre otras. Esta tecnología pretende que con un único diseño web, todo se vea correctamente en cualquier dispositivo. &mdash;<em>Fuente: <a href="https://es.wikipedia.org/wiki/Dise%C3%B1o%5Fweb%5Fadaptable">Wikipedia</a></em></p>
 </blockquote>
-
 <h2 id="mobile-first">Mobile First</h2>
-
 <p>La tendencia actual consiste en diseñar siguiendo la filosofía <strong>Mobile First</strong>, o <em>Móvil primero</em>. Esta teoría aboga por <strong>realizar el diseño pensando en dispositivos móviles</strong> y posteriormente añadir o modificar características para adaptar el diseño a otro tipo de dispositivos y pantallas.</p>
-
 <p>La justificación de esta metodología está en que es necesario abordar en primer lugar un <strong>diseño que pueda funcionar en los dispositivos con mayores limitaciones</strong>: tamaños pequeños de pantalla, menor potencia de proceso o menor velocidad de conexión. Los dispositivos móviles, pese a su desarrollo en los últimos años, son los más afectados por dichas limitaciones, sobre todo la relacionada con el tamaño de pantalla. Un diseño que se ajuste a estos dispositivos funcionará sin problemas en el resto, por lo que se trata de un <strong>diseño universal</strong>.</p>
-
 <p>Una vez garantizado que el diseño base es capaz de funcionar en todos los dispositivos independientemente de sus limitaciones, se puede proceder a <strong>enriquecer</strong> el diseño de manera que ofrezca <strong>más funcionalidades</strong> o <strong>aproveche mejor las características del resto de dispositivos</strong>. Dichas mejoras <strong>solo serán visibles en los dispositivos que puedan aprovecharlas</strong> y <strong>no afectarán negativamente</strong> en ningún caso al diseño base.</p>
-
 <p>Puedes consultar información más detallada sobre la filosofía <em>Mobile First</em> en estos enlaces:</p>
-
 <ul>
 <li><a href="https://www.initcoms.com/que-es-mobile-first-posicionamiento/">Qué es mobile first y cómo puede mejorar tu posicionamiento</a></li>
 <li><a href="https://zurb.com/word/mobile-first">Mobile First</a></li>
 </ul>
-
 <h2 id="dispositivos-y-resoluciones-de-pantalla">Dispositivos y resoluciones de pantalla</h2>
-
 <p>A continuación vamos a explicar algunos conceptos relacionados con las resoluciones de pantalla de los dispositivos y cómo afectan al Desarrollo Web, en concreto al diseño con CSS.</p>
-
 <h3 id="resolución-nativa">Resolución nativa</h3>
-
 <p>Cada dispositivo (móvil, tablet, monitor, televisión,&hellip;) tiene una <strong>resolución nativa</strong> (también llamada <strong>física</strong>) indicada en sus especificaciones. Esta resolución se expresa en el formato <code>anchura x altura</code> (por ejemplo, 1024 x 768 píxeles).</p>
-
 <h3 id="resolución-css--device-width">Resolución CSS (<code>device-width</code>)</h3>
-
 <p>Sin embargo, la <strong>resolución nativa no se suele utilizar como referencia en CSS</strong> en dispositivos que no sean monitores o pantallas convencionales. Esto es debido a que determinados <strong>dispositivos</strong>, como teléfonos móviles o tablets, tienen un <strong>tamaño de pantalla muy pequeño</strong>. Por hacernos una idea, el tamaño de letra por defecto en los navegadores es de 16px. Este tamaño de letra puede ser aceptable en un monitor con una resolución 1440x900 con un tamaño de pantalla de 22 pulgadas, pero resultaría muy pequeño en un teléfono de resolución 1920x1024 de 5 pulgadas.</p>
-
 <p>Por tanto, en lugar de tomar la resolución física o nativa como referencia, se toma como referencia otro valor denominado <strong>resolución CSS</strong> (anchura CSS, también llamada <em>CSS width</em> o <code>device-width</code>, y altura CSS o <em>CSS height</em>). Esta resolución está ajustada al tamaño del dispositivo, por lo que el <strong>tamaño del texto</strong> y los elementos en general será adecuado para una correcta visualización.</p>
-
 <p>En <a href="http://mydevice.io/devices/">http://mydevice.io/devices/</a> puedes consultar una lista con las resoluciones CSS de los dispositivos más conocidos.</p>
-
 <h3 id="el-viewport">El <em>ViewPort</em></h3>
-
 <p>Por último, existe un tercer valor de resolución utilizado en el diseño web, que es la resolución del <em>ViewPort</em>. El <em>ViewPort</em> se corresponde con el <strong>ancho de la pantalla del navegador web</strong>.</p>
-
 <p>Este concepto fue desarrollado por Apple en el iPhone y tenía como objetivo solucionar el problema del tamaño de la pantalla a la hora de visualizar páginas web. Consiste en <strong>hacer creer al navegador</strong> que el <strong>ancho de la pantalla es mayor que su anchura CSS</strong>. De esta manera las <strong>páginas web</strong> se podrán <strong>mostrar exactamente igual que en navegadores de escritorio</strong> pero aparecerán con un tamaño más pequeño, como si se hubiera hecho un <strong>zoom de alejamiento</strong>. De esta manera consiguieron que la navegación a través del móvil fuera igual que la de escritorio, con la pequeña diferencia del zoom.</p>
-
 
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 <div class="box">
@@ -323,64 +301,44 @@
   </figure>
 </div>
 
-
 <p>Es importante dejar claro que la resolución del <em>ViewPort</em> es <strong>distinta de la resolución física y la resolución CSS</strong>. En los sistemas <strong>Android</strong> el ancho es de <strong>800px</strong> y en los sistemas <strong>iOS</strong> es de <strong>980px</strong>.</p>
-
 <h3 id="etiqueta-meta-name-viewport">Etiqueta <code>&lt;meta name=&quot;viewport&quot;&gt;</code></h3>
-
-<p>En el diseño adaptativo se busca que la apariencia visual de la página web esté ajustada al tamaño de la pantalla. Para ello se utiliza la etiqueta <a href="https://developer.mozilla.org/es/docs/Móvil/Viewport%5Fmeta%5Ftag"><meta name="viewport"></a>. Esta etiqueta sirve para <strong>indicar al navegador</strong> qué <strong>tamaño</strong> debe definir para su <em>ViewPort</em>. En la mayoría de ocasiones utilizaremos la etiqueta de la siguiente manera:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">meta</span> <span style="color:#b44">name</span><span style="color:#666">=</span><span style="color:#b44">&#34;viewport&#34;</span> <span style="color:#b44">content</span><span style="color:#666">=</span><span style="color:#b44">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;</code></pre></div>
-<p>Este código indica al navegador que debe utilizar la <strong>anchura CSS</strong> (<code>width=device-width</code>) como ancho del <em>ViewPort</em>. De esta manera las páginas se adaptarán a una resolución adecuada para el tamaño de pantalla del dispositivo.</p>
-
+<p>En el diseño adaptativo se busca que la apariencia visual de la página web esté ajustada al tamaño de la pantalla. Para ello se utiliza la etiqueta <a href="https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport%5Fmeta%5Ftag"><!-- raw HTML omitted --></a>. Esta etiqueta sirve para <strong>indicar al navegador</strong> qué <strong>tamaño</strong> debe definir para su <em>ViewPort</em>. En la mayoría de ocasiones utilizaremos la etiqueta de la siguiente manera:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">meta</span> <span style="color:#b44">name</span><span style="color:#666">=</span><span style="color:#b44">&#34;viewport&#34;</span> <span style="color:#b44">content</span><span style="color:#666">=</span><span style="color:#b44">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
+</code></pre></div><p>Este código indica al navegador que debe utilizar la <strong>anchura CSS</strong> (<code>width=device-width</code>) como ancho del <em>ViewPort</em>. De esta manera las páginas se adaptarán a una resolución adecuada para el tamaño de pantalla del dispositivo.</p>
 <blockquote>
 <p><strong>¡IMPORTANTE!</strong> Esta etiqueta <strong>sólo debe utilizarse</strong> con diseños web <strong>optimizados para móvil</strong> o diseños web <strong>adaptativos</strong>. Si la página no está adaptada para móvil no se debe usar, ya que se visualizaría de manera incorrecta.</p>
 </blockquote>
-
-<p>Puedes consultar más información relacionada con esta etiqueta en este <a href="https://developer.mozilla.org/es/docs/Móvil/Viewport%5Fmeta%5Ftag">artículo sobre ViewPort en MDN</a>.</p>
-
+<p>Puedes consultar más información relacionada con esta etiqueta en este <a href="https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport%5Fmeta%5Ftag">artículo sobre ViewPort en MDN</a>.</p>
 <h2 id="media-queries">Media queries</h2>
-
 <p>Las <em>media queries</em> son expresiones que se utilizan en CSS3 para <strong>identificar el dispositivo</strong> al que va dirigido un determinado <strong>conjunto de reglas de estilo CSS</strong>.</p>
-
 <p>Una <em>media query</em> es una <strong>expresión lógica</strong> que sólo puede tomar dos valores: verdadero o falso. Si la expresión es <strong>verdadera</strong>, el <strong>conjunto de reglas</strong> de estilo definidas en su interior se <strong>aplica</strong>; si es falsa, no se aplica.</p>
-
 <p>Cada expresión <em>media query</em> está formada por un <strong>tipo de medio</strong> (<em>Media Type</em>) y cero o más <strong>características del medio</strong> para comprobar las características concretas del dispositivo.</p>
-
 <h3 id="tipos-de-medio--media-types">Tipos de medio (Media Types)</h3>
-
 <p>Un <em>Media Type</em> define un tipo de dispositivo. Los tipos de medio disponibles actualmente son:</p>
-
 <ul>
 <li><code>all</code>. Se utiliza para hacer referencia a <strong>todos los dispositivos</strong>. Si no se indica ningún <em>media type</em> es el que se utiliza <strong>por defecto</strong>.</li>
 <li><code>screen</code>. Se utiliza para hacer referencia a <strong>pantallas</strong> (móvil, tabletas, ordenadores, portátiles,&hellip;).</li>
 <li><code>print</code>. Se utiliza para hacer referencia a <strong>impresoras</strong>. Define las reglas de estilo que se aplicarán al imprimir la página.</li>
 <li><code>speech</code>. Se utiliza para hacer referencia a <strong>sintetizadores de voz</strong>.</li>
 </ul>
-
 <h3 id="características-del-medio--media-features">Características del medio (Media Features)</h3>
-
 <p>Se pueden utilizar expresiones adicionales al <em>Media Type</em> para <strong>determinar de manera más concreta las características del dispositivo</strong>. Algunas de las características más utilizadas son:</p>
-
 <ul>
 <li><code>width</code> - Indica la <strong>anchura</strong> del <em>ViewPort</em> del dispositivo. Sólo se incluyen los dispositivos cuya anchura del <em>ViewPort</em> se corresponda con la indicada.</li>
 <li><code>max-width</code> - Indica la anchura máxima del <em>ViewPort</em> del dispositivo. Los dispositivos con una anchura del <em>ViewPort</em> <strong>igual o inferior</strong> a la indicada estarán incluidos en la regla.</li>
 <li><code>min-width</code> - Indica la anchura mínima del <em>ViewPort</em> del dispositivo. Los dispositivos con una anchura del <em>ViewPort</em> <strong>igual o superior</strong> a la indicada estarán incluidos en la regla.</li>
 </ul>
-
 <p>Existe otra propiedad relacionada con la anchura de los dispositivos denominada <code>device-width</code>, pero en el borrador más reciente de la especificación <a href="https://drafts.csswg.org/mediaqueries-4/#mf-deprecated">han sido declaradas obsoletas</a>.</p>
-
 <p>En este enlace se puede consultar todas las <a href="https://developer.mozilla.org/es/docs/CSS/Media%5Fqueries#Funciones%5FMultimedia">Características del medio disponibles</a>.</p>
-
 <h3 id="sintaxis">Sintaxis</h3>
-
 <p>Para definir una <em>Media Query</em> se sigue la siguiente sintaxis en CSS:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">@<span style="color:#a2f;font-weight:bold">media</span> <span style="color:#008000;font-weight:bold">mediatype</span> <span style="color:#008000;font-weight:bold">and</span><span style="color:#666">|</span><span style="color:#008000;font-weight:bold">not</span><span style="color:#666">|</span><span style="color:#008000;font-weight:bold">only</span> <span style="color:#666">(</span><span style="color:#008000;font-weight:bold">media_feature</span><span style="color:#666">)</span> {
    <span style="color:#008000;font-weight:bold">Código</span> <span style="color:#008000;font-weight:bold">CSS</span><span style="color:#666">;</span>
-}</code></pre></div>
-<p>También es posible definir que una determinada hoja de estilos se aplique para un determinado tipo de medios. En este caso, el código a incluir sería:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span> <span style="color:#b44">media</span><span style="color:#666">=</span><span style="color:#b44">&#34;mediatype and|not|only (media_feature)&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;estilos.css&#34;</span>&gt;</code></pre></div>
-<h3 id="ejemplo">Ejemplo</h3>
-
+}
+</code></pre></div><p>También es posible definir que una determinada hoja de estilos se aplique para un determinado tipo de medios. En este caso, el código a incluir sería:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span> <span style="color:#b44">media</span><span style="color:#666">=</span><span style="color:#b44">&#34;mediatype and|not|only (media_feature)&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;estilos.css&#34;</span>&gt;
+</code></pre></div><h3 id="ejemplo">Ejemplo</h3>
 <p>A continuación se muestra un ejemplo de uso de <em>Media Queries</em>:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#080;font-style:italic">/* Estilos Mobile First: se aplican por defecto a todos los tamaños de pantalla */</span>
 <span style="color:#080;font-style:italic">/* Como se puede ver, no están dentro de ninguna Media Query */</span>
@@ -410,21 +368,16 @@
     <span style="color:#008000;font-weight:bold">p</span> {
         <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">white</span>;
     }
-}</code></pre></div>
-<p>En el siguiente enlace puedes ver el <a href="https://jsbin.com/cemaqos/edit?html,css,output">ejemplo anterior funcionando</a> (cambia el tamaño de la ventana de salida para comprobar los cambios).</p>
-
+}
+</code></pre></div><p>En el siguiente enlace puedes ver el <a href="https://jsbin.com/cemaqos/edit?html,css,output">ejemplo anterior funcionando</a> (cambia el tamaño de la ventana de salida para comprobar los cambios).</p>
 <h3 id="mobile-first-y-media-queries">Mobile First y Media Queries</h3>
-
 <p>Tal como se puede ver en el ejemplo anterior, se ha tenido en cuenta la filosofía <strong>Mobile First</strong> para realizar el diseño con Media Queries:</p>
-
 <ul>
 <li>En primer lugar, se han definido unos estilos de base <strong>que no están dentro de ninguna Media Query</strong>. Dichos estilos son los estilos que se aplicarán a todos los dispositivos y que <strong>deben estar pensados para dispositivos móviles o de pantalla pequeña</strong>. En esta sección estará el <strong>layout</strong> para <strong>vista móvil</strong> y en general todos los estilos apropiados para dichos dispositivos. Normalmente las distintas secciones de la web (menús, cabeceras, contenido,&hellip;) se suelen disponer <strong>en una única columna</strong> para favorecer la usabilidad en este tipo de dispositivos.</li>
 <li>A continuación se ha definido una Media Query con una <strong>anchura mínima</strong> de 300px. En esa Media Query se incluirán los estilos que se necesiten <strong>añadir o cambiar</strong> para adecuar la vista a dispositivos con un tamaño de pantalla intermedio. Estos estilos <strong>solo serán utilizados por dispositivos con esa anchura mínima</strong> de pantalla. Por tanto, será en el interior de esta Media Query donde incluiremos posibles cambios en el <strong>layout</strong> para cambiar la disposición de los elementos principales de nuestra web y que se vean de otra manera para pantallas de tamaño medio (por ejemplo, capas posicionadas en dos o más columnas).</li>
 <li>Por último, se ha definido una Media Query con una <strong>anchura mínima</strong> de 700px. Aquí se incluirán los estilos que se necesiten <strong>añadir o cambiar</strong> para adecuar la vista a dispositivos con un tamaño de pantalla grande.</li>
 </ul>
-
 <p>Algunos <strong>consejos importantes</strong> a tener en cuenta para diseñar con <strong>Media Queries y Mobile First</strong>:</p>
-
 <ul>
 <li>Crear los <strong>estilos de base fuera de cualquier Media Query</strong>.</li>
 <li>Crear un layout de <strong>columna única</strong> para el estilo de base. Dado que HTML posiciona automáticamente los elementos <code>&lt;div&gt;</code> uno debajo de otro, <strong>no es necesario utilizar ninguna técnica específica de layout (<code>flexbox</code>, <code>grid</code>) en los estilos de base</strong>.</li>
@@ -432,71 +385,48 @@
 <li>Utilizar tantos <strong>cortes de resolución</strong> como se necesiten. Normalmente se utilizan 2 ó 3 cortes, pero pueden utilizarse más. En este enlace pueden consultarse los <a href="https://getbootstrap.com/docs/4.3/layout/overview/#responsive-breakpoints">cortes de resolución utilizados por la librería Bootstrap</a>.</li>
 <li>Si se utiliza solo <code>min-width</code> es necesario recordar que los estilos definidos tanto fuera de las Media Queries como en las Media Queries que hagan referencia a tamaños inferiores se <strong>siguen aplicando</strong>.</li>
 </ul>
-
 <p>A continuación puedes ver un <a href="https://jsbin.com/ketaqer/edit?html,css,output">ejemplo con estilos definidos en varias Media Queries</a> (cambia el tamaño de la ventana de salida para ver cómo cambia la apariencia en función de la resolución).</p>
-
 <h3 id="más-información">Más información</h3>
-
 <p>En los siguientes enlaces puede consultarse más información sobre Media Queries:</p>
-
 <ul>
 <li><a href="https://developer.mozilla.org/es/docs/CSS/Media%5Fqueries">CSS Media Queries en MDN</a></li>
 <li><a href="https://www.w3schools.com/css/css3%5Fmediaqueries%5Fex.asp">CSS Media Queries Examples en W3Schools</a></li>
 </ul>
-
 <h3 id="curiosidad-modelo-de-rejilla">Curiosidad: Modelo de Rejilla</h3>
-
 <p>Muchos diseños actuales se basan en el <strong>modelo de rejilla</strong>. Básicamente consiste en dividir la página en un número de columnas (usualmente 12) y disponer las capas de manera que ocupen un número de columnas determinado. Este tipo de diseños se suele combinar con <em>media queries</em> para realizar diseños responsivos.</p>
-
 <p>A continuación se muestran dos enlaces con información más detallada sobre este tema:</p>
-
 <ul>
 <li><a href="https://www.w3schools.com/css/css%5Frwd%5Fgrid.asp">Tutorial de diseño basado en rejilla</a>.</li>
 <li><a href="https://www.w3schools.com/css/css%5Frwd%5Fmediaqueries.asp">Cómo combinar el diseño en rejilla con <em>media queries</em> para realizar diseños reponsivos</a>.</li>
 </ul>
-
 <h3 id="curiosidad-font-boosting--chrome-mobile">Curiosidad: Font boosting (Chrome Mobile)</h3>
-
 <p>El navegador Chrome para móviles <strong>cambia el tamaño de la letra</strong> de algunos <strong>elementos de bloque</strong> en función de la <strong>altura</strong> de los mismos para favorecer su legibilidad. Esta característica hace que los estilos que se muestran no coincidan en ocasiones con los estilos establecidos en las hojas de estilo.</p>
-
 <p>Para <strong>desactivar</strong> esta característica basta con <strong>especificar una altura</strong> (<code>height</code>) o altura máxima (<code>max-height</code>) a la capa en cuestión.</p>
-
 <p>Para desactivarlo de manera global basta con establecer una altura máxima con un valor muy grande a nivel global.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">html</span> <span style="color:#666">*</span> {
     <span style="color:#a2f;font-weight:bold">max-height</span>:<span style="color:#666">1000000</span><span style="color:#0b0;font-weight:bold">px</span>;
-}</code></pre></div>
-<p>Para más información puedes consultar los siguientes artículos de <em>Stack Overflow</em>:</p>
-
+}
+</code></pre></div><p>Para más información puedes consultar los siguientes artículos de <em>Stack Overflow</em>:</p>
 <ul>
 <li><a href="http://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font">http://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font</a></li>
 <li><a href="http://stackoverflow.com/questions/13430897/how-to-override-font-boosting-in-mobile-chrome">http://stackoverflow.com/questions/13430897/how-to-override-font-boosting-in-mobile-chrome</a></li>
 </ul>
-
 <h2 id="simulación-de-tamaños-de-pantalla">Simulación de tamaños de pantalla</h2>
-
 <p>Las <a href="/post/herramientas-desarrollo/#herramientas-de-desarrollo-de-navegadores">herramientas de desarrollo de los navegadores</a> incorporan un modo de <strong>Vista de Diseño Adaptable</strong> para simular cómo se verá la página en distintos tamaños de pantalla:</p>
-
 <ul>
 <li><a href="https://developer.mozilla.org/es/docs/Tools/Responsive%5FDesign%5FView">Responsive Design View (Firefox)</a></li>
 <li><a href="https://developers.google.com/web/tools/chrome-devtools/device-mode/">Device Mode (Chrome)</a></li>
 </ul>
-
 <p>Es importante saber que en última instancia el mejor test siempre es <strong>comprobar la apariencia visual desde un dispositivo nativo</strong> (tablet, teléfono móvil,..).</p>
-
 <h2 id="evolución-futura">Evolución futura</h2>
-
 <p>Las tendencias actuales en el campo del diseño adaptativo van enfocadas a <strong>personalizar el código que proporciona el servidor</strong> en función del tipo de cliente que hace la petición.</p>
-
 <p>Así, en lugar de responder a todos los dispositivos con la misma versión de los archivos HTML y CSS (que incluye todas las adaptaciones para todos los dispositivos mediante <em>media queries</em>), el <strong>servidor</strong> es capaz de <strong>detectar el tipo de dispositivo</strong> que realiza la petición (móvil, tablet, ordenador,&hellip;) y ofrecerle <strong>únicamente el código que necesita</strong>. Así, un móvil recibiría únicamente el código CSS optimizado para móvil, sin incluir las <em>media queries</em> correspondientes a tablets u ordenadores.</p>
-
 <p>De esta manera se reduce el tamaño de los archivos y se aumenta la velocidad de carga de los sitios.</p>
-
 <h2 id="referencias">Referencias</h2>
-
 <ul>
 <li><a href="http://www.w3schools.com/css/css%5Frwd%5Fintro.asp">Guía de RWD en W3Schools</a></li>
 <li><a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/?hl=es">Aspectos básicos del diseño web adaptable (Google)</a></li>
-<li><a href="https://developer.mozilla.org/es/docs/Web%5FDevelopment/Mobile/Diseño%5Fresponsivo">Diseño Responsivo (MDN)</a></li>
+<li><a href="https://developer.mozilla.org/es/docs/Web%5FDevelopment/Mobile/Dise%C3%B1o%5Fresponsivo">Diseño Responsivo (MDN)</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS%5Flayout/Responsive%5FDesign">Responsive Design (MDN)</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive%5Fweb%5Fapps/Responsive/responsive%5Fdesign%5Fbuilding%5Fblocks">The building blocks of responsive design (MDN)</a></li>
 </ul>
@@ -644,7 +574,7 @@
     &copy;
     
        -
-    2019
+    2020
     <span class="heart">
       
       <i class="iconfont">

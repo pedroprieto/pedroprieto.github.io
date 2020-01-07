@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.59.0" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/css_fonts/" />
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.9d905c6e18c5b36b748e85c65cd37158c2ae15f9a4abcd251c141c17295039ab.css" integrity="sha256-nZBcbhjFs2t0joXGXNNxWMKuFfmkq80lHBQcFylQOas=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.74578408e75a62a40c7e92f542ce759fb6b37b9651bf325fb56682a2b7897058.css" integrity="sha256-dFeECOdaYqQMfpL1Qs51n7aze5ZRvzJftWaCoreJcFg=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,16 +66,13 @@
 <meta property="article:modified_time" content="2019-10-31T16:12:00+01:00" />
 <meta itemprop="name" content="Fuentes en CSS">
 <meta itemprop="description" content="En este artículo se aborda el uso de tipos de letra (fuentes) en CSS: cómo incorporar fuentes desde servidores externos, qué tipos de fuente genéricos existen y cómo establecer tipos de fuentes seguros para que sean compatibles con todos los navegadores y sistemas operativos.">
-
-
 <meta itemprop="datePublished" content="2019-10-31T16:12:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-10-31T16:12:00&#43;01:00" />
 <meta itemprop="wordCount" content="713">
 
 
 
-<meta itemprop="keywords" content="css,fuentes," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css,fuentes," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Fuentes en CSS"/>
 <meta name="twitter:description" content="En este artículo se aborda el uso de tipos de letra (fuentes) en CSS: cómo incorporar fuentes desde servidores externos, qué tipos de fuente genéricos existen y cómo establecer tipos de fuentes seguros para que sean compatibles con todos los navegadores y sistemas operativos."/>
 
@@ -266,11 +263,8 @@
     
     <div class="post-content">
       <p>En este artículo se aborda el uso de tipos de letra (fuentes) en CSS: cómo incorporar fuentes desde <strong>servidores externos</strong>, qué tipos de <strong>fuente genéricos</strong> existen y cómo establecer <strong>tipos de fuentes seguros</strong> para que sean compatibles con todos los navegadores y sistemas operativos.</p>
-
 <h2 id="tipos-de-fuente">Tipos de fuente</h2>
-
 <p>En general podemos distinguir 5 grandes tipos de fuentes:</p>
-
 <dl>
 <dt><strong>Serif</strong></dt>
 <dd>Tipo de letra con remates en los extremos de las líneas. Se suele utilizar mucho en textos impresos. Tiene un aspecto visual más formal.</dd>
@@ -283,7 +277,6 @@
 <dt><strong>Fantasía</strong></dt>
 <dd>Tipo de letra que muestra caracteres extraños o personalizados.</dd>
 </dl>
-
 
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 <div class="box">
@@ -299,63 +292,52 @@
   </figure>
 </div>
 
-
 <h2 id="fuentes-en-css">Fuentes en CSS</h2>
-
 <p>En CSS se pueden distinguir dos tipos de fuentes que pueden utilizarse con la propiedad <code>font-family</code>:</p>
-
 <dl>
 <dt><strong>Genéricas</strong></dt>
 <dd>Son unos tipos de fuente consideradas <strong>seguras</strong>, ya que son compatibles con todos los navegadores y sistemas operativos. El tipo de letra que se mostrará corresponderá al tipo de letra configurada por defecto en el sistema correspondiente. Por ejemplo, si un navegador Firefox tiene definida &ldquo;Arial&rdquo; como tipo de letra Sans-Serif predeterminada, un tipo de letra <code>sans-serif</code> en CSS se mostrará en pantalla como &ldquo;Arial&rdquo;. En este enlace se puede ver un <a href="https://jsbin.com/nuhuzux/edit?html,css,output">ejemplo de los tipos de letra genéricos en CSS</a>. Dichos tipos genéricos son:
-
 <ul>
 <li><code>serif</code></li>
 <li><code>sans-serif</code></li>
 <li><code>monospace</code></li>
 <li><code>cursive</code></li>
 <li><code>fantasy</code></li>
-</ul></dd>
+</ul>
+</dd>
 <dt><strong>Tipos de letra concretos</strong></dt>
 <dd>Por ejemplo, <code>font-family: &quot;Arial&quot;</code>. Hay que tener en cuenta que especificar un tipo de letra concreto implica dar por supuesto que dicho tipo de letra <strong>está instalada en el sistema operativo del cliente</strong> (a no ser que se importe un tipo de letra desde un archivo o servidor externo, que veremos en un apartado posterior). Si el tipo de letra especificado no está disponible, el navegador mostrará el tipo de letra que tenga configurado por defecto. Además, es casi seguro que <a href="https://www.w3.org/Style/Examples/007/fonts.en.html">distintos sistemas operativos mostrarán las fuentes de manera diferente</a>.</dd>
 </dl>
-
 <h2 id="configuración-segura-de-tipos-de-fuentes">Configuración segura de tipos de fuentes</h2>
-
 <p>A la hora de definir los tipos de fuente mediante la propiedad <code>font-family</code> es una buena práctica especificar no una, sino <strong>varios tipos de fuente separados por comas</strong> indicando <strong>en último lugar un tipo de fuente genérica</strong>. El navegador tratará de cargar el tipo de fuente de la primera opción y si no lo consigue, probará el siguiente. De esta manera garantizamos en última instancia que se mostrará un tipo de fuente adecuado (<em>serif</em>, <em>sans-serif</em>, <em>monospace</em>, <em>cursive</em> o <em>fantasy</em>) independientemente del navegador o sistema operativo utilizado.</p>
-
 <p>Algunos ejemplos de tipos de fuente seguros son:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">font-family</span><span style="color:#666">:</span> <span style="color:#b44">&#34;Times New Roman&#34;</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">Times</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">serif</span><span style="color:#666">;</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">
+<span style="color:#008000;font-weight:bold">font-family</span><span style="color:#666">:</span> <span style="color:#b44">&#34;Times New Roman&#34;</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">Times</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">serif</span><span style="color:#666">;</span>
 <span style="color:#008000;font-weight:bold">font-family</span><span style="color:#666">:</span> <span style="color:#008000;font-weight:bold">Arial</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">Helvetica</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">sans-serif</span><span style="color:#666">;</span>
-<span style="color:#008000;font-weight:bold">font-family</span><span style="color:#666">:</span> <span style="color:#b44">&#34;Courier New&#34;</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">Courier</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">monospace</span><span style="color:#666">;</span></code></pre></div>
-<h2 id="cargar-fuentes-desde-archivos-o-urls">Cargar fuentes desde archivos o URLs</h2>
-
+<span style="color:#008000;font-weight:bold">font-family</span><span style="color:#666">:</span> <span style="color:#b44">&#34;Courier New&#34;</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">Courier</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">monospace</span><span style="color:#666">;</span>
+</code></pre></div><h2 id="cargar-fuentes-desde-archivos-o-urls">Cargar fuentes desde archivos o URLs</h2>
 <p>Para incluir una fuente desde un archivo (tanto almacenado en el propio servidor como en una URL ajena) se utiliza la propiedad <code>@font-face</code> de CSS:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">@<span style="color:#a2f;font-weight:bold">font-face</span> {
     <span style="color:#008000;font-weight:bold">font-family</span><span style="color:#666">:</span> <span style="color:#008000;font-weight:bold">miFuente</span><span style="color:#666">;</span>
-    <span style="color:#008000;font-weight:bold">src</span><span style="color:#666">:</span> <span style="color:#008000;font-weight:bold">url</span><span style="color:#666">(</span><span style="color:#008000;font-weight:bold">ruta_archivo_fuente</span>.<span style="color:#00f">woff</span><span style="color:#666">);</span>
-}</code></pre></div>
-<p>Una vez importada puede utilizarse así:</p>
+    <span style="color:#008000;font-weight:bold">src</span><span style="color:#666">:</span> <span style="color:#008000;font-weight:bold">url</span><span style="color:#666">(</span><span style="color:#008000;font-weight:bold">ruta_archivo_fuente</span>.<span style="color:#00f">woff</span><span style="color:#666">)</span><span style="color:#666">;</span>
+}
+</code></pre></div><p>Una vez importada puede utilizarse así:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">div</span> {
   <span style="color:#a2f;font-weight:bold">font-family</span>: miFuente;
-}</code></pre></div>
-<p>Algunos servicios como <a href="https://fonts.google.com/">Google Fonts</a> ofrecen la posibilidad de seleccionar una o varias fuentes para incorporar a nuestra web utilizando etiquetas <code>&lt;link&gt;</code> en el archivo HTML o <code>@import</code> en CSS (este último método es <a href="https://stackoverflow.com/questions/1022695/difference-between-import-and-link-in-css">menos aconsejable</a>).</p>
-
+}
+</code></pre></div><p>Algunos servicios como <a href="https://fonts.google.com/">Google Fonts</a> ofrecen la posibilidad de seleccionar una o varias fuentes para incorporar a nuestra web utilizando etiquetas <code>&lt;link&gt;</code> en el archivo HTML o <code>@import</code> en CSS (este último método es <a href="https://stackoverflow.com/questions/1022695/difference-between-import-and-link-in-css">menos aconsejable</a>).</p>
 <p>A continuación se muestra un ejemplo para incorporar la fuente <code>Roboto</code>:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;https://fonts.googleapis.com/css?family=Roboto&amp;display=swap&#34;</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span>&gt;</code></pre></div>
-<p>De manera alternativa se puede cargar a través de CSS (menos aconsejable, tal como hemos comentado antes):</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;https://fonts.googleapis.com/css?family=Roboto&amp;display=swap&#34;</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span>&gt;
+</code></pre></div><p>De manera alternativa se puede cargar a través de CSS (menos aconsejable, tal como hemos comentado antes):</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">style</span>&gt;
   @<span style="color:#a2f;font-weight:bold">import</span> <span style="color:#008000;font-weight:bold">url</span><span style="color:#666">(</span><span style="color:#b44">&#39;https://fonts.googleapis.com/css?family=Roboto&amp;display=swap&#39;</span><span style="color:#666">)</span>;
-&lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;</code></pre></div>
-<p>Si <a href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">accedemos a la URL</a> definida en la etiqueta <code>&lt;link&gt;</code> o en <code>@import</code> veremos que el código corresponde a código CSS que hace uso de la regla <code>@font-face</code> para cargar las fuentes correspondientes.</p>
-
+&lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;
+</code></pre></div><p>Si <a href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">accedemos a la URL</a> definida en la etiqueta <code>&lt;link&gt;</code> o en <code>@import</code> veremos que el código corresponde a código CSS que hace uso de la regla <code>@font-face</code> para cargar las fuentes correspondientes.</p>
 <p>Una vez incluida la etiqueta <code>&lt;link&gt;</code> en el archivo HTML o la regla <code>@import</code> en CSS podremos hacer uso de la fuente en los ficheros CSS de la siguiente manera:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">font-family</span><span style="color:#666">:</span> <span style="color:#b44">&#39;Roboto&#39;</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">sans-serif</span><span style="color:#666">;</span></code></pre></div>
-<h2 id="más-información">Más información</h2>
-
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">font-family</span><span style="color:#666">:</span> <span style="color:#b44">&#39;Roboto&#39;</span><span style="color:#666">,</span> <span style="color:#008000;font-weight:bold">sans-serif</span><span style="color:#666">;</span>
+</code></pre></div><h2 id="más-información">Más información</h2>
 <p>Para obtener más información sobre fuentes se puede consultar el artículo &ldquo;<a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=es">Optimización de fuentes web</a>&rdquo; de Google. En él se explica con mayor detalle la teoría relacionada con fuentes, tipos de formatos para almacenar fuentes (formatos <code>woff</code>, <code>woff2</code> o <code>truetype</code>), compresión o subdivisión de Unicode para seleccionar los caracteres correspondientes a una determinada familia de lenguajes (latino, cirílico, griego,&hellip;).</p>
-
 <h2 id="referencias">Referencias</h2>
-
 <ul>
 <li><a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=es">https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=es</a></li>
 <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/@font-face">https://developer.mozilla.org/es/docs/Web/CSS/@font-face</a></li>
@@ -509,7 +491,7 @@
     &copy;
     
        -
-    2019
+    2020
     <span class="heart">
       
       <i class="iconfont">

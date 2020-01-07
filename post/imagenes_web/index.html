@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.59.0" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/imagenes_web/" />
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.9d905c6e18c5b36b748e85c65cd37158c2ae15f9a4abcd251c141c17295039ab.css" integrity="sha256-nZBcbhjFs2t0joXGXNNxWMKuFfmkq80lHBQcFylQOas=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.74578408e75a62a40c7e92f542ce759fb6b37b9651bf325fb56682a2b7897058.css" integrity="sha256-dFeECOdaYqQMfpL1Qs51n7aze5ZRvzJftWaCoreJcFg=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,16 +66,13 @@
 <meta property="article:modified_time" content="2019-11-11T13:22:00+01:00" />
 <meta itemprop="name" content="Imágenes en la web">
 <meta itemprop="description" content="Las imágenes incluidas en los sitios web son responsables de gran parte del tamaño de descarga. Por tanto, es de vital importancia utilizar las técnicas adecuadas tanto para su correcta visualización (independientemente del tipo de dispositivo utilizado) como para su optimización de tamaño de cara a mejorar la velocidad de carga del sitio.">
-
-
 <meta itemprop="datePublished" content="2019-11-11T13:22:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-11-11T13:22:00&#43;01:00" />
-<meta itemprop="wordCount" content="2222">
+<meta itemprop="wordCount" content="2223">
 
 
 
-<meta itemprop="keywords" content="css,imagenes," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css,imagenes," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Imágenes en la web"/>
 <meta name="twitter:description" content="Las imágenes incluidas en los sitios web son responsables de gran parte del tamaño de descarga. Por tanto, es de vital importancia utilizar las técnicas adecuadas tanto para su correcta visualización (independientemente del tipo de dispositivo utilizado) como para su optimización de tamaño de cara a mejorar la velocidad de carga del sitio."/>
 
@@ -266,11 +263,8 @@
     
     <div class="post-content">
       <p>Las imágenes incluidas en los sitios web son responsables de gran parte del <strong>tamaño de descarga</strong>. Por tanto, es de vital importancia utilizar las técnicas adecuadas tanto para su <strong>correcta visualización</strong> (independientemente del tipo de dispositivo utilizado) como para su <strong>optimización de tamaño</strong> de cara a mejorar la velocidad de carga del sitio.</p>
-
 <h2 id="fundamentos-técnicos">Fundamentos técnicos</h2>
-
 <h3 id="tipos-de-imagen">Tipos de imagen</h3>
-
 
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 <div class="box">
@@ -286,50 +280,32 @@
   </figure>
 </div>
 
-
 <p>Podemos distinguir entre dos grandes grupos de imágenes:</p>
-
 <ul>
 <li><strong>Mapas de bits</strong> (<em>raster</em>) - Son imágenes compuestas por <strong>píxeles</strong>. Son las captadas por las cámaras o creadas por programas de edición.</li>
 <li><strong>Vectoriales</strong> - Son imágenes que muestran su información mediante <strong>descripciones matemáticas</strong>. Están creadas exclusivamente por programas de edición.</li>
 </ul>
-
-<p>Las imágenes de <a href="https://es.wikipedia.org/wiki/Imagen%5Fde%5Fmapa%5Fde%5Fbits">mapa de bits</a> se suelen utilizar en <strong>fotografías</strong>. Tienen una <strong>resolución fija</strong>, por lo que <strong>al ampliarse pierden calidad</strong> (a este proceso se le denomina <a href="https://es.wikipedia.org/wiki/Aliasing#En%5Fla%5Fcomputación%5Fgráfica">aliasing</a>). Suelen ocupar <strong>mucho espacio de almacenamiento</strong> y por ello se suelen almacenar en formatos que soportan <strong>compresión</strong>.</p>
-
-<p>Las imágenes <a href="https://es.wikipedia.org/wiki/Gráfico%5Fvectorial">vectoriales</a> se suelen utilizar en <strong>diseño</strong> (carteles, folletos, logos, cómics,&hellip;). No tienen una resolución fija, por lo que <strong>no pierden calidad al ampliarse</strong>. Suelen ocupar <strong>poco espacio de almacenamiento</strong>. No están pensadas para imágenes de muy alta complejidad. Para mostrarse en pantallas se tienen que <strong>convertir a mapas de bits</strong> mediante un proceso llamado <strong>render</strong>.</p>
-
+<p>Las imágenes de <a href="https://es.wikipedia.org/wiki/Imagen%5Fde%5Fmapa%5Fde%5Fbits">mapa de bits</a> se suelen utilizar en <strong>fotografías</strong>. Tienen una <strong>resolución fija</strong>, por lo que <strong>al ampliarse pierden calidad</strong> (a este proceso se le denomina <a href="https://es.wikipedia.org/wiki/Aliasing#En%5Fla%5Fcomputaci%C3%B3n%5Fgr%C3%A1fica">aliasing</a>). Suelen ocupar <strong>mucho espacio de almacenamiento</strong> y por ello se suelen almacenar en formatos que soportan <strong>compresión</strong>.</p>
+<p>Las imágenes <a href="https://es.wikipedia.org/wiki/Gr%C3%A1fico%5Fvectorial">vectoriales</a> se suelen utilizar en <strong>diseño</strong> (carteles, folletos, logos, cómics,&hellip;). No tienen una resolución fija, por lo que <strong>no pierden calidad al ampliarse</strong>. Suelen ocupar <strong>poco espacio de almacenamiento</strong>. No están pensadas para imágenes de muy alta complejidad. Para mostrarse en pantallas se tienen que <strong>convertir a mapas de bits</strong> mediante un proceso llamado <strong>render</strong>.</p>
 <h3 id="profundidad-de-color">Profundidad de color</h3>
-
 <p>La <a href="https://es.wikipedia.org/wiki/Profundidad%5Fde%5Fcolor">profundidad de color</a> se refiere a la <strong>cantidad de bits</strong> utilizados para representar <strong>un píxel</strong> de una imagen. Actualmente se utiliza una profundidad de color de 32 bits:</p>
-
 <ul>
 <li>8 bits para el color rojo (256 gamas de rojo)</li>
 <li>8 bits para el color verde (256 gamas de verde)</li>
 <li>8 bits para el color azul (256 gamas de azul)</li>
-<li>8 bits para el <a href="https://es.wikipedia.org/wiki/Composición%5Falfa">canal alfa</a> (256 gamas de transparencia/opacidad)</li>
+<li>8 bits para el <a href="https://es.wikipedia.org/wiki/Composici%C3%B3n%5Falfa">canal alfa</a> (256 gamas de transparencia/opacidad)</li>
 </ul>
-
 <h3 id="resolución">Resolución</h3>
-
-<p>La <a href="https://es.wikipedia.org/wiki/Resolución%5Fde%5Fimagen">resolución de imagen</a> indica la <strong>cantidad de píxeles</strong> que componen una imagen. Está directamente relacionada con el <strong>nivel de detalle</strong>: a mayor resolución, mayor nivel de detalle.</p>
-
+<p>La <a href="https://es.wikipedia.org/wiki/Resoluci%C3%B3n%5Fde%5Fimagen">resolución de imagen</a> indica la <strong>cantidad de píxeles</strong> que componen una imagen. Está directamente relacionada con el <strong>nivel de detalle</strong>: a mayor resolución, mayor nivel de detalle.</p>
 <p>Normalmente se especifica en formato <code>ancho x alto</code> o en <strong>megapíxeles</strong> (multiplicación del ancho por el alto): por ejemplo, una imagen de 1600 x 1200 píxeles = 1.920.000 píxeles = 1.92 Megapíxeles.</p>
-
 <p>Se define la <strong>relación de aspecto</strong> como la proporción entre la anchura y la altura. Así, una imagen de <strong>1600 x 1200</strong> píxeles tiene una relación de aspecto de <strong>1.33</strong>.</p>
-
 <h3 id="compresión">Compresión</h3>
-
 <p>El <strong>tamaño</strong> de una imagen sin comprimir depende de la <strong>resolución</strong> y de la <strong>profundidad de color</strong>. Así, una imagen de 1600x1200px con color de 32 bits tendrá un tamaño:</p>
-
 <p>Tamaño = 1600 * 1200 * 32 = 61440000 bits = 7680000 Bytes = <strong>7.32 MB</strong></p>
-
 <p>Es necesario por tanto <strong>comprimir</strong> la imagen mediante alguno de los formatos específicos creados para ello.</p>
-
 <h2 id="formatos">Formatos</h2>
-
 <p>Los formatos más utilizados en el <strong>diseño web</strong> son:
 Algunos de los formatos más habituales son:</p>
-
 <ul>
 <li>BMP - Mapa de bits sin compresión.</li>
 <li>ICO - Mapa de bits sin compresión. Utilizado para iconos.</li>
@@ -340,37 +316,26 @@ Algunos de los formatos más habituales son:</p>
 <li>WebP - Mapa de bits con compresión. Utilizado para fotografías o dibujos (no soportado en Safari).</li>
 <li>SVG - Imagen vectorial.</li>
 </ul>
-
 <p>Para más información se puede consultar este artículo sobre <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image%5Ftypes">compatibilidad de formatos de imagen en navegadores</a>.</p>
-
 <h2 id="software">Software</h2>
-
 <p>A continuación se indican algunos de los programas <strong>Open Source</strong> más utilizados para la edición de imágenes:</p>
-
 <ul>
 <li><a href="http://www.gimp.org.es/">GIMP</a> - Programa de edición de imágenes de <strong>mapa de bits</strong> similar a Photoshop.</li>
 <li><a href="https://inkscape.org/es/">Inkscape</a> - Programa de edición de imágenes <strong>vectoriales</strong>.</li>
 </ul>
-
 <h2 id="optimización-de-imágenes-para-web">Optimización de imágenes para web</h2>
-
 <p>La optimización de imágenes es fundamental para mejorar el <strong>tiempo de carga</strong> de los sitios web. Una de las opciones más interesantes consiste en especificar <strong>diferentes versiones de una imagen</strong> para <strong>distintos tipos de dispositivos</strong>. De esta manera, el dispositivo solo descargará aquella imagen que sea más apropiada para sus características, como puede ser el formato (<code>webp</code>, <code>jpeg</code>,&hellip;) o la resolución. Así, un dispositivo de <strong>baja resolución</strong> descargará una imagen de <strong>peor calidad y menor tamaño</strong>, optimizando así su velocidad de descarga y evitando utilizar una resolución que no puede aprovechar, mientras que un dispositivo de <strong>alta resolución</strong> descargará una imagen de <strong>mejor calidad</strong>.</p>
-
 <p>HTML5 define <strong>dos opciones</strong> para proporcionar diferentes versiones de una imagen:</p>
-
 <ul>
 <li>El atributo <code>srcset</code></li>
 <li>La etiqueta <code>&lt;picture&gt;</code>.</li>
 </ul>
-
 <p>Ambas opciones pueden utilizarse incluso de manera combinada. Sin embargo, cada una está pensada para un caso de uso distinto. Podemos distinguir <strong>3 casos de uso</strong>:</p>
-
 <ul>
 <li>Utilizar imágenes de distinta resolución que van a ocupar la <strong>misma proporción de pantalla</strong> en todos los dispositivos. Por ejemplo, una imagen que va a ocupar el 100% de la pantalla tanto en dispositivos móviles como pantallas grandes. A este caso lo denominaremos <strong>cambio de resolución</strong>.</li>
 <li>Utilizar imágenes de distinta resolución que van a ocupar <strong>distinta proporción de pantalla</strong> en función del dispositivo.se van a mostrar. Por ejemplo, una imagen que va a ocupar el 100% de la pantalla en dispositivos móviles pero un 50% en pantallas grandes. A este caso lo llamaremos <strong>cambio de resolución con distintos tamaños</strong>.</li>
 <li>Por último, utilizar imágenes con <strong>distinta relación de aspecto</strong> (relación entre el ancho y el alto) en función del dispositivo. Por ejemplo, una imagen apaisada con la información más importante en la parte central se verá adecuadamente en pantallas grandes; sin embargo, en dispositivos móviles se verá muy delgada. En este último caso es conveniente proporcionar una <strong>versión recortada</strong> de la imagen que muestre los detalles importantes. A este caso se le denomina <strong>dirección de arte</strong>.</li>
 </ul>
-
 
 
 <div class="box">
@@ -386,115 +351,85 @@ Algunos de los formatos más habituales son:</p>
   </figure>
 </div>
 
-
 <h3 id="cambio-de-resolución">Cambio de resolución</h3>
-
 <p>En este caso supondremos que la imagen va a ocupar el <strong>mismo ancho de pantalla</strong> en todo tipo de dispositivos. En el ejemplo se asumirá que la imagen va a ocupar siempre el 100% del ancho de pantalla, tanto en pantallas grandes como en móviles. En estos casos lo recomendable es utilizar el atributo <code>srcset</code> del elemento <code>&lt;img&gt;</code>. Este atributo proporciona al navegador una serie de opciones para que <strong>elija la mejor opción en función de la resolución</strong>. Es el navegador el encargado de elegir, no se fuerza elección alguna.</p>
-
 <p>En este caso, para optimizar la elección de la imagen a cargar, habrá que tener en cuenta <strong>únicamente el tamaño de las imágenes</strong>. Pongamos por ejemplo que disponemos de 3 versiones de una imagen: los anchos de resolución de las imágenes son <code>450px</code>, <code>850px</code> y <code>1400px</code>. Así, tendremos que:</p>
-
 <ul>
 <li>Un dispositivo con un ancho de <strong>900px</strong> debería mostrar la imagen de <strong>1400px</strong>, ya que la anterior se quedaría corta y perdería calidad al ampliarla.</li>
 <li>Un dispositivo con un ancho de <strong>700px</strong> debería utilizar la imagen de <strong>850px</strong>.</li>
 <li>Un dispositivo de <strong>380px</strong> debería utilizar la imagen de <strong>450px</strong>.</li>
 </ul>
-
 <p>El código a utilizar sería el siguiente:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;Imagen&#34;</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;imagen_450.jpg&#34;</span>
- <span style="color:#b44">srcset</span><span style="color:#666">=</span><span style="color:#b44">&#34;imagen_450.jpg 450w, imagen_850.jpg 850w, imagen_1400.jpg 1400w&#34;</span>&gt;</code></pre></div>
-<p>En el código anterior tenemos que:</p>
-
+ <span style="color:#b44">srcset</span><span style="color:#666">=</span><span style="color:#b44">&#34;imagen_450.jpg 450w, imagen_850.jpg 850w, imagen_1400.jpg 1400w&#34;</span>&gt;
+</code></pre></div><p>En el código anterior tenemos que:</p>
 <ul>
 <li>Se utiliza el atributo <code>src</code> para indicar la imagen a utilizar por defecto en caso de que el navegador no soporte <code>srcset</code>.</li>
 <li>Se utiliza el atributo <code>srcset</code> para indicar una lista de posibles imágenes indicando su resolución.</li>
 <li>La resolución en este caso se indica mediante la unidad <code>w</code>, que hace referencia a la anchura (<em>width</em>). <code>imagen_450.jpg 450w</code> significa que ese archivo de imagen tiene una resolución de 450px.</li>
 <li>De manera alternativa se puede indicar la resolución utilizando <strong>descriptores</strong>: <code>1x</code>, <code>1.5x</code>, <code>2x</code>,&hellip; Estos descriptores hacen referencia a la densidad de píxeles de la pantalla: <code>1x</code> es resolución convencional, mientras que <code>2x</code> es la resolución utilizada por dispositivos de alta resolución, como las pantallas Retina de Apple. Así, sería posible utilizar <code>imagen_1400.jpg 2x</code>, indicando que esa versión de imagen debe ser utilizada por dispositivos de alta resolución únicamente.</li>
 </ul>
-
 <h3 id="cambio-de-resolución-distintos-tamaños-de-imagen">Cambio de resolución: distintos tamaños de imagen</h3>
-
 <p>En este caso supondremos que la imagen va a ocupar el <strong>distinto ancho de pantalla</strong> según el tipo de dispositivo. Siguiendo con el caso del ejemplo anterior (versiones de imagen con resolución 450px, 850px y 1400px), asumiremos que se ha creado código CSS que haga uso de <code>media queries</code> con las siguientes reglas:</p>
-
 <ul>
 <li>En pantallas <strong>grandes</strong> (&gt;768px), la imagen ocupará un <strong>50%</strong> de la pantalla.</li>
 <li>En pantallas <strong>pequeñas</strong> (&lt;768px), la imagen ocupará el <strong>100%</strong> de la pantalla.</li>
 </ul>
-
 <p>En este caso, para optimizar la elección de la imagen a cargar habrá que tener en cuenta no solo el tamaño de las imágenes, sino también <strong>qué espacio van a ocupar</strong>. Así, tendremos que:</p>
-
 <ul>
 <li>Si la resolución del dispositivo es de <strong>900px</strong>, en principio parece que debería utilizar la imagen de 1400px. Sin embargo, en nuestro código CSS hemos configurado las imágenes para que ocupen un 50% de la pantalla. Por tanto, la imagen ocupará 450px. Bastará entonces con cargar la <strong>imagen de 854px</strong>.</li>
 <li>Si la resolución del dispositivo es de <strong>700px</strong> queremos que la imagen se muestre ocupando un 100% de la pantalla. Por tanto, se deberá cargar también la imagen de <strong>854px</strong>.</li>
 <li>Para cargar la imagen de 1400px el <strong>dispositivo</strong> deberá tener una <strong>resolución mínima de 1701px</strong>: en este caso la imagen ocupará un 50% de la pantalla, es decir, 850.5px, por lo que no le bastará con la de 850px y deberá cargar la de 1400px,</li>
 </ul>
-
 <p>Para que el navegador tenga en cuenta los tamaños que van a ocupar las imágenes en los distintos tipos de dispositivo hay que utilizar el atributo <code>sizes</code> del elmento <code>&lt;img&gt;</code>: este atributo permite especificar condiciones de tamaño en forma de <code>media queries</code> junto con una referencia al tamaño que ocupará la imagen (por ejemplo, en unidades <code>vw</code>).</p>
-
 <p>El código a utilizar sería el siguiente:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;Imagen&#34;</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;imagen_450.jpg&#34;</span>
  <span style="color:#b44">srcset</span><span style="color:#666">=</span><span style="color:#b44">&#34;imagen_450.jpg 450w, imagen_850.jpg 850w, imagen_1400.jpg 1400w&#34;</span>
- <span style="color:#b44">sizes</span><span style="color:#666">=</span><span style="color:#b44">&#34;(min-width: 768px) 50vw, 100vw&#34;</span>&gt;</code></pre></div>
-<p>En el código anterior tenemos que:</p>
-
+ <span style="color:#b44">sizes</span><span style="color:#666">=</span><span style="color:#b44">&#34;(min-width: 768px) 50vw, 100vw&#34;</span>&gt;
+</code></pre></div><p>En el código anterior tenemos que:</p>
 <ul>
 <li>Se añade el atributo <code>sizes</code> a la imagen.</li>
 <li>Este atributo indica una lista de tamaños con indicación opcional de <code>media queries</code>.</li>
 <li>Así, <code>(min-width: 768px) 50vw</code> indica que en dispositivos con anchura mínima de 768px van a mostrar la imagen ocupando un 50% de la pantalla (<code>50vw</code>).</li>
 <li>El elemento <code>100vw</code>, al no tener media query, indica que si no se cumple ninguna otra condición la imagen ocupará un 100% de la pantalla.</li>
 </ul>
-
 <blockquote>
 <p>¡IMPORTANTE! El atributo <code>sizes</code> no cambia el ancho de la imagen. Simplemente tiene una función <strong>informativa</strong> para determinar qué resolución se debería cargar. Para cambiar el tamaño de la imagen habrá que utilizar reglas y media queries CSS convencionales.</p>
 </blockquote>
-
 <h3 id="dirección-de-arte">Dirección de arte</h3>
-
 <p>Esta técnica consiste en mostrar diferentes <strong>versiones</strong> de la imagen en función de la anchura del dispositivo. Normalmente se utiliza para <strong>recortar imágenes</strong> y que <strong>se vea la información más importante en pantallas pequeñas</strong>.</p>
-
 <p>Por ejemplo, supongamos que se quiere mostrar <strong>2 versiones distintas</strong> de la imagen en función del tipo de dispositivo:</p>
-
 <ul>
 <li>En pantallas <strong>grandes</strong> (&gt;768px) se mostrará la imagen <code>img_wide.jpg</code>, que es una versión completa de la imagen en formato apaisado.</li>
 <li>En pantallas <strong>pequeñas</strong> (&lt;768px) se mostrará la imagen <code>img_mobile.jpg</code>, que es una versión <strong>recortada</strong> de la imagen en formato cuadrado.</li>
 </ul>
-
 <p>Para la dirección de arte se utiliza la etiqueta <code>&lt;picture&gt;</code>. Esta etiqueta permite definir <strong>varios archivos de imagen</strong> a través de etiquetas <code>&lt;source&gt;</code> junto con <strong>media queries</strong> para hacer que se muestre una determinada imagen en función de la resolución del dispositivo. Esta etiqueta <strong>fuerza al navegador a escoger la imagen necesaria</strong>, a diferencia del atributo <code>srcset</code>, que permite al navegador elegir.</p>
-
 <p>El código a utilizar sería el siguiente:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">picture</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">source</span> <span style="color:#b44">media</span><span style="color:#666">=</span><span style="color:#b44">&#34;(min-width: 768px)&#34;</span> <span style="color:#b44">srcset</span><span style="color:#666">=</span><span style="color:#b44">&#34;img_wide.jpg&#34;</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">source</span> <span style="color:#b44">srcset</span><span style="color:#666">=</span><span style="color:#b44">&#34;img_mobile.jpg&#34;</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;img_mobile.jpg&#34;</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;Imagen&#34;</span>&gt;
-&lt;/<span style="color:#008000;font-weight:bold">picture</span>&gt;</code></pre></div>
-<p>El funcionamiento del código es el siguiente:</p>
-
+&lt;/<span style="color:#008000;font-weight:bold">picture</span>&gt;
+</code></pre></div><p>El funcionamiento del código es el siguiente:</p>
 <ul>
 <li>El primer elemento <code>&lt;source&gt;</code> define un archivo de imagen que se deberá utilizar en dispositivos cuya anchura sea <strong>mayor de 768px</strong>.</li>
 <li>El segundo elemento <code>&lt;source&gt;</code> define un archivo de imagen que se deberá utilizar en el <strong>resto de casos</strong>.</li>
 <li>El elemento <code>&lt;img&gt;</code> es <strong>obligatorio</strong> incluirlo, ya que proporciona en primer lugar el atributo <code>alt</code> con la descripción textual de la imagen y ofrece <strong>compatibilidad</strong> con los navegadores que no soporten la etiqueta <code>&lt;picture&gt;</code>.</li>
 </ul>
-
 <blockquote>
 <p>Es importante dejar claro que el elemento <code>&lt;picture&gt;</code> está pensado para los casos de dirección de arte (mostrar imágenes <strong>distintas</strong> en función del dispositivo). Si lo que se pretende es ofrecer <strong>distintas resoluciones de la misma imagen</strong>, entonces es mejor utilizar elementos <code>&lt;img&gt;</code> con atributos <code>srcset</code> y <code>sizes</code>.</p>
 </blockquote>
-
 <p>Por último, señalar que se puede utilizar simultáneamente el elemento <code>&lt;picture&gt;</code> para dirección de arte y además proporcionar alternativas de resolución con el atributo <code>srcset</code> (ya que éste se puede utilizar también en los elementos <code>&lt;source&gt;</code>).</p>
-
 <h3 id="referencias">Referencias</h3>
-
 <p>A continuación se indican algunos enlaces con más información sobre el tema:</p>
-
 <ul>
 <li><a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/images?hl=es">Google - Imágenes responsivas</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia%5Fand%5Fembedding/Responsive%5Fimages">MDN - Imágenes responsivas</a></li>
 <li><a href="https://www.responsivebreakpoints.com/">Generador de imágenes responsivas</a></li>
 <li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/picture">MDN - El elemento <code>&lt;picture&gt;</code></a></li>
 </ul>
-
 <h2 id="aplicar-estilos-a-imágenes">Aplicar estilos a imágenes</h2>
-
 <p>En ocasiones hacer que las imágenes se muestren adecuadamente puede ser complicado. En el siguiente enlace se muestran algunas <a href="https://www.w3schools.com/css/css3%5Fimages.asp">técnicas para personalizar la apariencia de las imágenes mediante CSS</a>. En él se muestran técnicas de <strong>centrado</strong>, <strong>diseño responsivo</strong> o <strong>creación de efectos o filtros</strong>.</p>
-
 <p>La técnica más importante para crear imágenes responsivas (que se adapten correctamente a la capa contenedora) consiste en introducir la etiqueta <code>&lt;img&gt;</code> dentro de una etiqueta <code>&lt;div&gt;</code> y establecer el ancho de la imagen al 100%. De esta manera, redimensionando la etiqueta <code>&lt;div&gt;</code> contenedora se podrá cambiar el tamaño de la imagen. El código sería el siguiente:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">img</span> {
     <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">%</span>;
@@ -502,9 +437,11 @@ Algunos de los formatos más habituales son:</p>
 
 .<span style="color:#00f">img_container</span> {
     <span style="color:#080;font-style:italic">/* Aquí es donde se debe cambiar el ancho deseado de la imagen */</span>
-}</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;img_container&#34;</span>&gt;
+}
+</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;img_container&#34;</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;&#34;</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;&#34;</span>&gt;
-&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+</code></pre></div>
     </div>
 
     
@@ -649,7 +586,7 @@ Algunos de los formatos más habituales son:</p>
     &copy;
     
        -
-    2019
+    2020
     <span class="heart">
       
       <i class="iconfont">

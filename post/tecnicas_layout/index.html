@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.59.0" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/tecnicas_layout/" />
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.9d905c6e18c5b36b748e85c65cd37158c2ae15f9a4abcd251c141c17295039ab.css" integrity="sha256-nZBcbhjFs2t0joXGXNNxWMKuFfmkq80lHBQcFylQOas=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.74578408e75a62a40c7e92f542ce759fb6b37b9651bf325fb56682a2b7897058.css" integrity="sha256-dFeECOdaYqQMfpL1Qs51n7aze5ZRvzJftWaCoreJcFg=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,16 +66,13 @@
 <meta property="article:modified_time" content="2019-10-28T18:02:00+01:00" />
 <meta itemprop="name" content="Técnicas para crear layouts">
 <meta itemprop="description" content="En la actualidad existen muchas maneras de crear layouts utilizando CSS. A las técnicas tradicionales (float, inline-block) se suman otras nuevas aportadas por CSS3, como flexbox o CSS Grid Layout.">
-
-
 <meta itemprop="datePublished" content="2019-10-28T18:02:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-10-28T18:02:00&#43;01:00" />
 <meta itemprop="wordCount" content="863">
 
 
 
-<meta itemprop="keywords" content="css,layout,flexbox,grid," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css,layout,flexbox,grid," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Técnicas para crear layouts"/>
 <meta name="twitter:description" content="En la actualidad existen muchas maneras de crear layouts utilizando CSS. A las técnicas tradicionales (float, inline-block) se suman otras nuevas aportadas por CSS3, como flexbox o CSS Grid Layout."/>
 
@@ -266,60 +263,42 @@
     
     <div class="post-content">
       <p>En la actualidad existen muchas maneras de crear layouts utilizando CSS. A las técnicas tradicionales (<code>float</code>, <code>inline-block</code>) se suman otras nuevas aportadas por CSS3, como <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FFlexible%5FBox%5FLayout/Conceptos%5FBasicos%5Fde%5FFlexbox">flexbox</a> o <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FGrid%5FLayout">CSS Grid Layout</a>.</p>
-
 <p>A continuación veremos las principales técnicas de creación de layouts utilizadas en el diseño web.</p>
-
 <h2 id="float">Float</h2>
-
 <p>Se utilizan para layouts que no necesitan centrado vertical ni alturas de capas iguales.</p>
-
 <p>Ventajas:</p>
-
 <ul>
 <li>Método más popular.</li>
 <li>Al ser el método más popular, los fallos que se producen están muy bien documentados y se han desarrollado muchos métodos para corregirlos.</li>
 </ul>
-
 <p>Desventajas:</p>
-
 <ul>
 <li>Necesitan ser reseteados (<a href="http://stackoverflow.com/questions/8554043/what-is-clearfix">clearfix</a>). Si se utilizan <em>media queries</em> para personalizar la apariencia en función del dispositivo será necesario hacer un <em>clear</em> para cada adaptación.</li>
 <li>No se pueden alinear en vertical.</li>
 <li>Las alturas de las capas no son iguales.</li>
 <li>Dependen del orden en que aparezcan las capas en el HTML.</li>
 </ul>
-
 <h2 id="inline-block">Inline-block</h2>
-
 <p>Se utilizan cuando se necesitan layouts con las siguientes características:</p>
-
 <ul>
 <li>Sitios que necesitan alineación vertical.</li>
 <li>Para evitar tener que realizar el <em>clear</em> de los floats cuando se utilizan <em>media queries</em>.</li>
 <li>Para realizar menús horizontales utilizando listas.</li>
 </ul>
-
 <p>Ventajas:</p>
-
 <ul>
 <li>Posibilidad de alineación vertical.</li>
 <li>No necesitan hacer <em>clear</em> en diseños complejos adaptados a muchos dispositivos con <em>media queries</em>.</li>
 </ul>
-
 <p>Desventajas:</p>
-
 <ul>
 <li>Las alturas de las capas no son iguales.</li>
 <li>Dependen del orden en que aparezcan las capas en el HTML.</li>
 <li>Tienen un fallo que consiste en <strong>crear un espacio en blanco adicional</strong> (<em>whitespace bug</em>) entre los elementos. La solución si utilizamos listas consiste en utilizar tipos de documento HTML5 y no cerrar los elementos <code>&lt;li&gt;</code>. En este <a href="http://blog.karenmenezes.com/2013/aug/30/inline-block-conundrum-part-2/">enlace</a> se muestra el problema.</li>
 </ul>
-
 <p>Ejemplo de galería con <code>inline-block</code>: <a href="http://karenmenezes.com/inlineblockgrid/">http://karenmenezes.com/inlineblockgrid/</a></p>
-
 <h2 id="display-table">Display table</h2>
-
 <p>La propiedad <code>display: table</code> automáticamente transforma la apariencia de una capa en la de una tabla. De esta manera se consigue un diseño basado en columnas de manera muy sencilla sin tener que utilizar tablas reales (que, recordemos, no son recomendables).</p>
-
 <p>Sin embargo, para tener un control total es necesario replicar la estructura de una tabla utilizando <code>divs</code>, por lo que se termina cayendo en el mismo error que al diseñar utilizando tablas.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;tableWrap&#34;</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;tableBlock&#34;</span>&gt;
@@ -337,16 +316,13 @@
     &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
 
   &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;</code></pre></div>
-<p>Ventajas:</p>
-
+&lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
+</code></pre></div><p>Ventajas:</p>
 <ul>
 <li>Posibilidad de alineación vertical.</li>
 <li>Permite crear capas de alturas iguales.</li>
 </ul>
-
 <p>Desventajas:</p>
-
 <ul>
 <li>Es necesario crear <code>&lt;div&gt;</code> adicionales para simular la estructura de las tablas. No obstante, la especificación indica que no es obligatorio.</li>
 <li>Dependen del orden en que aparezcan las capas en el HTML.</li>
@@ -355,21 +331,15 @@
 <li>Es difícil de adaptar para crear diseños responsivos con varios puntos de ruptura.</li>
 <li>Problemas con IE6 y IE7.</li>
 </ul>
-
 <h2 id="cajas-flexibles--flexbox">Cajas Flexibles (FlexBox)</h2>
-
 <p><strong>FlexBox</strong> ofrece un mecanismo muy completo para realizar layouts. Tiene una gran variedad de opciones y es muy versátil. En este <a href="https://youtu.be/DVtKcX6U4Ro">videotutorial sobre Flexbox</a> se explica su funcionamiento.</p>
-
 <p>Los siguientes recursos también son muy interesantes:</p>
-
 <ul>
 <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></li>
 <li><a href="https://developer.mozilla.org/es/docs/Web/Guide/CSS/Cajas%5Fflexibles">https://developer.mozilla.org/es/docs/Web/Guide/CSS/Cajas%5Fflexibles</a></li>
 <li><a href="http://demo.agektmr.com/flexbox/">http://demo.agektmr.com/flexbox/</a></li>
 </ul>
-
 <p>Ventajas:</p>
-
 <ul>
 <li>Independencia del orden en que aparezcan las capas en el HTML. Elimina la necesidad de utilizar JavaScript para esto.</li>
 <li>Ofrecen alineación vertical.</li>
@@ -378,51 +348,40 @@
 <li>Ofrecen una gran flexibilidad en cuanto a las opciones a utilizar.</li>
 <li>Las cajas pueden ocupar automáticamente el espacio disponible, crecer o menguar a petición.</li>
 </ul>
-
 <p>Desventajas:</p>
-
 <ul>
 <li>Existe una especificación inicial que ha quedado desfasada (hay que tener cuidado al buscar tutoriales en Internet).</li>
 <li>La sintaxis es algo compleja.</li>
 <li>Es necesario utilizar prefijos para soportar todos los navegadores.</li>
 <li>No es compatible con IE9 y anteriores.</li>
 </ul>
-
 <h2 id="grid-layout">Grid layout</h2>
-
 <p>Su funcionamiento consiste en definir una serie de zonas dispuestas a modo de rejilla para a continuación asignar cada capa o sección a la zona correspondiente. En este <a href="https://youtu.be/Ve7TnakTTAc">videotutorial sobre CSS Grid</a> se explica su funcionamiento.</p>
-
 <p>Tiene múltiples ventajas, entre las que destacan las siguientes:</p>
-
 <ul>
 <li><strong>Eliminación</strong> total de la necesidad de definir <strong>capas contenedoras</strong>. Bastará con tener una capa para cada área independiente de la página.</li>
 <li>Independencia del orden en que aparezcan las capas en el HTML.</li>
 <li><strong>Independencia completa</strong> entre <strong>HTML</strong> y <strong>presentación visual</strong>.</li>
 </ul>
-
 <p>Para aprender más sobre Grid Layout puedes consultar:</p>
-
 <ul>
 <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a></li>
 <li><a href="https://www.w3schools.com/css/css%5Fgrid.asp">https://www.w3schools.com/css/css%5Fgrid.asp</a></li>
 <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FGrid%5FLayout/Conceptos%5FB%C3%A1sicos%5Fdel%5FPosicionamiento%5Fcon%5FRejillas">https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FGrid%5FLayout/Conceptos%5FB%C3%A1sicos%5Fdel%5FPosicionamiento%5Fcon%5FRejillas</a></li>
 <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/grid-template-areas">https://developer.mozilla.org/es/docs/Web/CSS/grid-template-areas</a></li>
 </ul>
-
 <h2 id="algunos-consejos-de-diseño">Algunos consejos de diseño</h2>
-
 <ul>
 <li>Los bloques que aparecen uno <strong>debajo del otro no presentan problemas</strong>: se muestran correctamente si son <code>display: block</code> (recordemos que estos elementos introducen saltos de línea, por lo que se muestran uno a continuación del otro).</li>
 <li>El <strong>problema</strong> aparece cuando tenemos capas que deben aparecer a la <strong>derecha o izquierda</strong> de otras. En ese caso tendremos que utilizar alguno de los métodos propuestos.</li>
 <li>La manera más sencilla de diseñar el layout consiste en hacer <strong>agrupaciones por filas o columnas</strong>:
-
 <ul>
 <li>Se deben buscar las <strong>filas</strong> que lleguen a los extremos de las capas contenedoras.</li>
 <li>Dentro de cada fila se procederá a agrupar por <strong>columnas</strong> que lleguen a su vez a los extremos de los contenedores.</li>
 <li>Se continuará de esta manera (filas, columnas,&hellip;) hasta completar el diseño.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 
 <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
 <div class="box">
@@ -437,7 +396,6 @@
       </figcaption>
   </figure>
 </div>
-
 
 <p>Por último, es recomendable pensar en el layout más adecuado para <strong>dispositivos móviles</strong> o pantallas pequeñas. Este tema será abordado con más detalle en otros artículos.</p>
     </div>
@@ -586,7 +544,7 @@
     &copy;
     
        -
-    2019
+    2020
     <span class="heart">
       
       <i class="iconfont">

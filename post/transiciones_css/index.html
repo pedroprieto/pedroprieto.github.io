@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.59.0" />
+<meta name="generator" content="Hugo 0.62.0" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/transiciones_css/" />
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.9d905c6e18c5b36b748e85c65cd37158c2ae15f9a4abcd251c141c17295039ab.css" integrity="sha256-nZBcbhjFs2t0joXGXNNxWMKuFfmkq80lHBQcFylQOas=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.74578408e75a62a40c7e92f542ce759fb6b37b9651bf325fb56682a2b7897058.css" integrity="sha256-dFeECOdaYqQMfpL1Qs51n7aze5ZRvzJftWaCoreJcFg=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,16 +66,13 @@
 <meta property="article:modified_time" content="2019-11-12T00:09:00+01:00" />
 <meta itemprop="name" content="Transformaciones, transiciones y animaciones en CSS">
 <meta itemprop="description" content="En este artículo estudiaremos las herramientas disponibles en CSS para crear transformaciones, transiciones y animaciones.">
-
-
 <meta itemprop="datePublished" content="2019-11-12T00:09:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-11-12T00:09:00&#43;01:00" />
 <meta itemprop="wordCount" content="659">
 
 
 
-<meta itemprop="keywords" content="css,animaciones,transiciones,transformaciones," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css,animaciones,transiciones,transformaciones," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Transformaciones, transiciones y animaciones en CSS"/>
 <meta name="twitter:description" content="En este artículo estudiaremos las herramientas disponibles en CSS para crear transformaciones, transiciones y animaciones."/>
 
@@ -266,11 +263,8 @@
     
     <div class="post-content">
       <p>En este artículo estudiaremos las herramientas disponibles en CSS para crear transformaciones, transiciones y animaciones.</p>
-
 <h2 id="transformaciones">Transformaciones</h2>
-
 <p>Las transformaciones CSS permiten <strong>mover</strong>, <strong>rotar</strong>, <strong>escalar</strong> o <strong>inclinar</strong> elementos. CSS permite realizar transformaciones <strong>2D</strong> y <strong>3D</strong>.</p>
-
 <p>Las transformaciones en principio son <strong>estáticas</strong>: es decir, no están animadas (aunque pueden estarlo mediante transiciones o animaciones). Un ejemplo de transformación sería el siguiente:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">#<span style="color:#00f;font-weight:bold">div1</span> {
   <span style="color:#a2f;font-weight:bold">transform</span>: <span style="color:#a2f">rotate</span>(<span style="color:#666">20</span><span style="color:#0b0;font-weight:bold">deg</span>); <span style="color:#080;font-style:italic">/* Rotación 2D de 20º */</span>
@@ -278,35 +272,26 @@
 
 #<span style="color:#00f;font-weight:bold">div2</span> {
     <span style="color:#a2f;font-weight:bold">transform</span>: <span style="color:#a2f">rotateY</span>(<span style="color:#666">150</span><span style="color:#0b0;font-weight:bold">deg</span>); <span style="color:#080;font-style:italic">/* Rotación 3D de 150º en el eje Y */</span>
-}</code></pre></div>
-<p>En este enlace puede verse un <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3%5Ftransform%5Frotate">ejemplo de rotación 2D</a>. En este otro puede verse un <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3%5Ftransform%5FrotateY">ejemplo de rotación 3D</a>.</p>
-
+}
+</code></pre></div><p>En este enlace puede verse un <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3%5Ftransform%5Frotate">ejemplo de rotación 2D</a>. En este otro puede verse un <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3%5Ftransform%5FrotateY">ejemplo de rotación 3D</a>.</p>
 <p>En los siguientes enlaces puede consultarse información más detallada sobre las distintas transformaciones que pueden realizarse en CSS:</p>
-
 <ul>
 <li><a href="https://www.w3schools.com/css/css3%5F2dtransforms.asp">Transformaciones 2D</a></li>
 <li><a href="https://www.w3schools.com/css/css3%5F3dtransforms.asp">Transformaciones 3D</a></li>
 </ul>
-
 <h2 id="transiciones">Transiciones</h2>
-
 <p>Las <strong>transiciones CSS</strong> permiten realizar <strong>cambios graduales de determinadas propiedades con una duración determinada</strong>. Para definir una transición es necesario especificar:</p>
-
 <ol>
 <li>La(s) propiedad(es) a animar</li>
 <li>La duración de la transición</li>
 <li>Opcionalmente, el retraso y la curva de velocidad de la transición</li>
 </ol>
-
 <p>Es importante tener claro que la transición se ejecutará <strong>cuando se produzca un cambio en el valor de la propiedad definida en la transición</strong>. Por ejemplo, si se define una transición para la propiedad <code>width</code> de una capa, la transición se producirá cuando se realice un cambio en la anchura de dicha capa. Los cambios de valor de la propiedad pueden realizarse básicamente de <strong>dos maneras</strong>:</p>
-
 <ol>
 <li>A través de una <a href="https://www.w3schools.com/css/css%5Fpseudo%5Fclasses.asp">pseudo-clase</a> (como por ejemplo, <code>:hover</code>, que se activa al pasar el ratón por encima)</li>
 <li>A través de JavaScript</li>
 </ol>
-
 <p>Por último, hay que tener en cuenta que <strong>solo se pueden realizar transiciones (y animaciones) sobre propiedades CSS que sean <a href="https://www.w3schools.com/cssref/css%5Fanimatable.asp">animables</a></strong>.</p>
-
 <p>A continuación se muestra un ejemplo de transición de la propiedad <code>width</code> de una capa (en este enlace puede verse el <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss3%5Ftransition1">ejemplo en ejecución</a>):</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">div</span> {
   <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">px</span>;
@@ -317,17 +302,12 @@
 
 <span style="color:#008000;font-weight:bold">div</span>:<span style="color:#a2f">hover</span> {
   <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">300</span><span style="color:#0b0;font-weight:bold">px</span>;
-}</code></pre></div>
-<p>En el ejemplo se ha definido una transición para la propiedad <code>width</code> con una duración de 2 segundos. Cuando cambie el valor de dicha propiedad, el cambio no se realizará bruscamente, sino que se realizará <strong>progresivamente hasta alcanzar el nuevo valor pasados 2 segundos</strong>. En este caso el cambio de valor de <code>width</code> se produce al pasar el ratón por encima de la capa, aunque también funcionaría si se cambia el valor de dicha propiedad <code>width</code> a través de JavaScript.</p>
-
+}
+</code></pre></div><p>En el ejemplo se ha definido una transición para la propiedad <code>width</code> con una duración de 2 segundos. Cuando cambie el valor de dicha propiedad, el cambio no se realizará bruscamente, sino que se realizará <strong>progresivamente hasta alcanzar el nuevo valor pasados 2 segundos</strong>. En este caso el cambio de valor de <code>width</code> se produce al pasar el ratón por encima de la capa, aunque también funcionaría si se cambia el valor de dicha propiedad <code>width</code> a través de JavaScript.</p>
 <p>A continuación se muestra un <a href="https://jsbin.com/qugopah/1/edit?html,css,js,output">ejemplo de transición con pseudo-clases y JavaScript</a>.</p>
-
 <p>En el siguiente enlace puede consultarse más <a href="https://www.w3schools.com/css/css3%5Ftransitions.asp">información sobre transiciones CSS</a>.</p>
-
 <h2 id="animaciones">Animaciones</h2>
-
 <p>Las animaciones CSS permiten ejecutar <strong>cambios de estilos</strong> sobre un determinado elemento de manera <strong>gradual</strong> a través de una serie de <strong>estados</strong> denominados <strong>fotogramas clave (keyframes)</strong>.</p>
-
 <p>Un ejemplo de animación sería el siguiente:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#080;font-style:italic">/* Definición de la animación */</span>
 @<span style="color:#a2f;font-weight:bold">keyframes</span> <span style="color:#008000;font-weight:bold">cambios</span>{
@@ -367,9 +347,8 @@
     <span style="color:#a2f;font-weight:bold">animation-name</span>: cambios;
     <span style="color:#a2f;font-weight:bold">animation-duration</span>: <span style="color:#666">4</span><span style="color:#0b0;font-weight:bold">s</span>;
     <span style="color:#a2f;font-weight:bold">animation-iteration-count</span>: <span style="color:#a2f;font-weight:bold">infinite</span>;
-}</code></pre></div>
-<p>El funcionamiento del ejemplo se describe a continuación:</p>
-
+}
+</code></pre></div><p>El funcionamiento del ejemplo se describe a continuación:</p>
 <ul>
 <li>En primer lugar se definen los fotogramas clave mediante <code>@keyframes</code> indicando el nombre de la animación (<code>cambios</code>).</li>
 <li>En este caso se definen 5 fotogramas clave que representan los estilos deseados en los instantes de tiempo definidos en porcentajes.</li>
@@ -378,9 +357,7 @@
 <li>Por último, se asigna la animación a la capa deseada mediante la propiedad <code>animation-name</code> indicando el nombre de la animación definida con anterioridad (<code>cambios</code>) y se especifica un tiempo mediante <code>animation-duration</code>.</li>
 <li>Opcionalmente se pueden definir el número de veces que se ejecutará la animación con <code>animation-iteration-count</code>.</li>
 </ul>
-
 <p>Para obtener más información sobre animaciones pueden consultarse los siguientes enlaces:</p>
-
 <ul>
 <li><a href="https://www.w3schools.com/css/css3%5Fanimations.asp">https://www.w3schools.com/css/css3%5Fanimations.asp</a></li>
 <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/@keyframes">https://developer.mozilla.org/es/docs/Web/CSS/@keyframes</a></li>
@@ -531,7 +508,7 @@
     &copy;
     
        -
-    2019
+    2020
     <span class="heart">
       
       <i class="iconfont">

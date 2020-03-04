@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.62.0" />
+<meta name="generator" content="Hugo 0.64.1" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/jekyllcms/" />
@@ -301,9 +301,9 @@
 <h2 id="front-matter">Front matter</h2>
 <p>El <em>front matter</em> es el contenido de texto que aparece al comienzo de cualquier archivo que deba ser procesado por Jekyll. Si Jekyll encuentra un archivo que no tenga definido un <em>front matter</em> no lo procesa y lo copia a la misma localización del directorio <code>_site</code>. El <em>front matter</em> está delimitado entre dos líneas formadas por un <strong>tres guiones</strong>. Su aspecto es parecido al siguiente:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---<span style="color:#bbb">
-</span><span style="color:#bbb"></span>layout:<span style="color:#bbb"> </span>mi_layout<span style="color:#bbb">
-</span><span style="color:#bbb"></span>permalink:<span style="color:#bbb"> </span>/url/estatica/de/la/pagina<span style="color:#bbb">
-</span><span style="color:#bbb"></span>title:<span style="color:#bbb"> </span>Título<span style="color:#bbb"> </span>de<span style="color:#bbb"> </span>la<span style="color:#bbb"> </span>página<span style="color:#bbb">
+</span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">layout</span>:<span style="color:#bbb"> </span>mi_layout<span style="color:#bbb">
+</span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">permalink</span>:<span style="color:#bbb"> </span>/url/estatica/de/la/pagina<span style="color:#bbb">
+</span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">title</span>:<span style="color:#bbb"> </span>Título<span style="color:#bbb"> </span>de<span style="color:#bbb"> </span>la<span style="color:#bbb"> </span>página<span style="color:#bbb">
 </span><span style="color:#bbb"></span>---<span style="color:#bbb">
 </span></code></pre></div><p>En el <em>front matter</em> se pueden definir datos en forma <code>variable: valor</code> que luego podrán ser utilizados por el sistema Liquid de plantillas. Su uso más básico permite definir las siguientes características de la página:</p>
 <dl>

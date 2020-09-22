@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.64.1" />
+<meta name="generator" content="Hugo 0.74.3" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/conceptos-basicos-css/" />
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.74578408e75a62a40c7e92f542ce759fb6b37b9651bf325fb56682a2b7897058.css" integrity="sha256-dFeECOdaYqQMfpL1Qs51n7aze5ZRvzJftWaCoreJcFg=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.c7bcffe1b631dc45825dc64759f523156f555bbb307b515eb892f14c8eff2598.css" integrity="sha256-x7z/4bYx3EWCXcZHWfUjFW9VW7swe1FeuJLxTI7/JZg=" media="screen" crossorigin="anonymous">
 
 
 
@@ -66,13 +66,14 @@
 <meta property="article:modified_time" content="2019-10-21T11:28:00+02:00" />
 <meta itemprop="name" content="Conceptos básicos de CSS">
 <meta itemprop="description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.">
-<meta itemprop="datePublished" content="2019-10-21T11:28:00&#43;02:00" />
-<meta itemprop="dateModified" content="2019-10-21T11:28:00&#43;02:00" />
+<meta itemprop="datePublished" content="2019-10-21T11:28:00+02:00" />
+<meta itemprop="dateModified" content="2019-10-21T11:28:00+02:00" />
 <meta itemprop="wordCount" content="1378">
 
 
 
-<meta itemprop="keywords" content="css," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Conceptos básicos de CSS"/>
 <meta name="twitter:description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada."/>
 
@@ -284,7 +285,7 @@
 <li><strong>Hojas de estilos internas</strong>. Se utilizan para aplicar estilos a la página en la cual se utiliza. El código de la hoja de estilo se ubicará en la cabecera de la página web, entre las etiquetas siguientes:</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">style</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span>&gt;
-        <span style="color:#666">&lt;</span><span style="color:#666">!</span><span style="color:#008000;font-weight:bold">--</span>  <span style="color:#008000;font-weight:bold">Código_css</span>  <span style="color:#008000;font-weight:bold">--</span><span style="color:#666">&gt;</span>
+        <span style="color:#666">&lt;!</span><span style="color:#008000;font-weight:bold">--</span>  <span style="color:#008000;font-weight:bold">Código_css</span>  <span style="color:#008000;font-weight:bold">--</span><span style="color:#666">&gt;</span>
 &lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;
 </code></pre></div><ul>
 <li><strong>Hojas de estilos externas</strong>. Se utilizan para aplicar el mismo formato a varias páginas de un portal. Se definen en un archivo externo que será consultado por todas las páginas HTML del sitio web, reutilizando por tanto el código. Para ello se escribirá el código CSS en un documento externo con extensión css. Posteriormente se vinculará a la página web mediante la utilización de la siguiente <strong>etiqueta</strong> en la <strong>cabecera</strong> del documento HTML en cuestión:</li>
@@ -301,10 +302,10 @@
 <p>La regla general es la siguiente: <strong>los estilos aplicados a selectores más concretos tienen mayor peso que los aplicados a selectores más generales</strong>. En caso de empate, el <strong>último</strong> estilo que se aplica es el que prevalece (las hojas de estilo externas se considera que se cargan antes que las hojas de estilo internas).</p>
 <p>En concreto, el procedimiento que se aplica es el siguiente (fuente: <a href="https://www.w3.org/TR/CSS22/cascade.html#cascade">https://www.w3.org/TR/CSS22/cascade.html#cascade</a>):</p>
 <ul>
-<li>Se cuenta 1 si la declaración está incluida en un atributo <code>style</code>; si no, se cuenta 0. (Peso &ldquo;<strong>a</strong>&quot;, mayor importancia).</li>
+<li>Se cuenta 1 si la declaración está incluida en un atributo <code>style</code>; si no, se cuenta 0. (Peso &ldquo;<strong>a</strong>&rdquo;, mayor importancia).</li>
 <li>Se cuenta el número de identificadores (ID) que aparezcan en el selector. (Peso &ldquo;<strong>b</strong>&quot;).</li>
 <li>Se cuenta el número de atributos (distintos al ID) , clases y pseudo-clases en el selector. (Peso &ldquo;<strong>c</strong>&quot;).</li>
-<li>Se cuenta el número de nombres de elementos y pseudo-elementos en el selector. (Peso &ldquo;<strong>d</strong>&quot;, menor importancia).</li>
+<li>Se cuenta el número de nombres de elementos y pseudo-elementos en el selector. (Peso &ldquo;<strong>d</strong>&rdquo;, menor importancia).</li>
 </ul>
 <p>Para determinar qué estilo se aplica en caso de conflicto se mira el resultado: el número más alto en la casilla de mayor peso es el que se aplica; en caso de empate, se comprueban los números de los pesos más bajos sucesivamente.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"> *             {}  /* a=0 b=0 c=0 d=0 -&gt; especificidad = 0,0,0,0 */

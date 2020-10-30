@@ -6,11 +6,7 @@
     <description>Recent content in git on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 23 Sep 2019 12:37:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://pedroprieto.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 23 Sep 2019 12:37:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitHub</title>
       <link>https://pedroprieto.github.io/post/uso-github/</link>

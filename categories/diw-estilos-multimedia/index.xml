@@ -6,11 +6,7 @@
     <description>Recent content in diw-estilos-multimedia on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 19 Nov 2019 12:30:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://pedroprieto.github.io/categories/diw-estilos-multimedia/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 19 Nov 2019 12:30:00 +0100</lastBuildDate><atom:link href="https://pedroprieto.github.io/categories/diw-estilos-multimedia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fundamentos del CMS Jekyll</title>
       <link>https://pedroprieto.github.io/post/jekyllcms/</link>

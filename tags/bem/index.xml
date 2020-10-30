@@ -6,11 +6,7 @@
     <description>Recent content in BEM on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 22 Oct 2019 11:51:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://pedroprieto.github.io/tags/bem/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 22 Oct 2019 11:51:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/bem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Estrategias de diseño con CSS</title>
       <link>https://pedroprieto.github.io/post/estrategias_diseno_css/</link>

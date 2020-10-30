@@ -6,11 +6,7 @@
     <description>Recent content in audio on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 12 Nov 2019 00:55:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://pedroprieto.github.io/tags/audio/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 12 Nov 2019 00:55:00 +0100</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/audio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Audio y vídeo en HTML</title>
       <link>https://pedroprieto.github.io/post/audio_video_html/</link>

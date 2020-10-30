@@ -68,7 +68,7 @@
 <meta itemprop="description" content="En este artículo trataremos los fundamentos del diseño web adaptable o adaptativo (Responsive Web Design en inglés).">
 <meta itemprop="datePublished" content="2019-11-04T12:44:00+01:00" />
 <meta itemprop="dateModified" content="2019-11-04T12:44:00+01:00" />
-<meta itemprop="wordCount" content="2284">
+<meta itemprop="wordCount" content="2285">
 
 
 
@@ -265,7 +265,7 @@
     <div class="post-content">
       <p>En este artículo trataremos los fundamentos del diseño web adaptable o adaptativo (<em>Responsive Web Design</em> en inglés).</p>
 <blockquote>
-<p>El diseño web adaptable (también <strong>diseño web adaptativo</strong> o <strong>responsivo</strong>; este último calco del inglés <em>responsive web design</em>), es una filosofía de diseño y desarrollo cuyo objetivo es adaptar la apariencia de las páginas web al dispositivo que se esté utilizando para visitarlas. Hoy día las páginas web se ven en multitud de dispositivos como tabletas, teléfonos inteligentes, libros electrónicos, portátiles, PC, etcétera. Además, aún dentro de cada tipo, cada dispositivo tiene sus características concretas: tamaño de pantalla, resolución, potencia de CPU, sistema operativo o capacidad de memoria entre otras. Esta tecnología pretende que con un único diseño web, todo se vea correctamente en cualquier dispositivo. &mdash;<em>Fuente: <a href="https://es.wikipedia.org/wiki/Dise%25C3%25B1o%5Fweb%5Fadaptable">Wikipedia</a></em></p>
+<p>El diseño web adaptable (también <strong>diseño web adaptativo</strong> o <strong>responsivo</strong>; este último calco del inglés <em>responsive web design</em>), es una filosofía de diseño y desarrollo cuyo objetivo es adaptar la apariencia de las páginas web al dispositivo que se esté utilizando para visitarlas. Hoy día las páginas web se ven en multitud de dispositivos como tabletas, teléfonos inteligentes, libros electrónicos, portátiles, PC, etcétera. Además, aún dentro de cada tipo, cada dispositivo tiene sus características concretas: tamaño de pantalla, resolución, potencia de CPU, sistema operativo o capacidad de memoria entre otras. Esta tecnología pretende que con un único diseño web, todo se vea correctamente en cualquier dispositivo. &mdash;<em>Fuente: <a href="https://es.wikipedia.org/wiki/Dise%C3%B1o%5Fweb%5Fadaptable">Wikipedia</a></em></p>
 </blockquote>
 <h2 id="mobile-first">Mobile First</h2>
 <p>La tendencia actual consiste en diseñar siguiendo la filosofía <strong>Mobile First</strong>, o <em>Móvil primero</em>. Esta teoría aboga por <strong>realizar el diseño pensando en dispositivos móviles</strong> y posteriormente añadir o modificar características para adaptar el diseño a otro tipo de dispositivos y pantallas.</p>
@@ -303,13 +303,13 @@
 
 <p>Es importante dejar claro que la resolución del <em>ViewPort</em> es <strong>distinta de la resolución física y la resolución CSS</strong>. En los sistemas <strong>Android</strong> el ancho es de <strong>800px</strong> y en los sistemas <strong>iOS</strong> es de <strong>980px</strong>.</p>
 <h3 id="etiqueta-meta-name-viewport">Etiqueta <code>&lt;meta name=&quot;viewport&quot;&gt;</code></h3>
-<p>En el diseño adaptativo se busca que la apariencia visual de la página web esté ajustada al tamaño de la pantalla. Para ello se utiliza la etiqueta <a href="https://developer.mozilla.org/es/docs/M%25C3%25B3vil/Viewport%5Fmeta%5Ftag"><!-- raw HTML omitted --></a>. Esta etiqueta sirve para <strong>indicar al navegador</strong> qué <strong>tamaño</strong> debe definir para su <em>ViewPort</em>. En la mayoría de ocasiones utilizaremos la etiqueta de la siguiente manera:</p>
+<p>En el diseño adaptativo se busca que la apariencia visual de la página web esté ajustada al tamaño de la pantalla. Para ello se utiliza la etiqueta <a href="https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport%5Fmeta%5Ftag">meta name=&ldquo;viewport&rdquo;</a>. Esta etiqueta sirve para <strong>indicar al navegador</strong> qué <strong>tamaño</strong> debe definir para su <em>ViewPort</em>. En la mayoría de ocasiones utilizaremos la etiqueta de la siguiente manera:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">meta</span> <span style="color:#b44">name</span><span style="color:#666">=</span><span style="color:#b44">&#34;viewport&#34;</span> <span style="color:#b44">content</span><span style="color:#666">=</span><span style="color:#b44">&#34;width=device-width, initial-scale=1.0&#34;</span>&gt;
 </code></pre></div><p>Este código indica al navegador que debe utilizar la <strong>anchura CSS</strong> (<code>width=device-width</code>) como ancho del <em>ViewPort</em>. De esta manera las páginas se adaptarán a una resolución adecuada para el tamaño de pantalla del dispositivo.</p>
 <blockquote>
 <p><strong>¡IMPORTANTE!</strong> Esta etiqueta <strong>sólo debe utilizarse</strong> con diseños web <strong>optimizados para móvil</strong> o diseños web <strong>adaptativos</strong>. Si la página no está adaptada para móvil no se debe usar, ya que se visualizaría de manera incorrecta.</p>
 </blockquote>
-<p>Puedes consultar más información relacionada con esta etiqueta en este <a href="https://developer.mozilla.org/es/docs/M%25C3%25B3vil/Viewport%5Fmeta%5Ftag">artículo sobre ViewPort en MDN</a>.</p>
+<p>Puedes consultar más información relacionada con esta etiqueta en este <a href="https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport%5Fmeta%5Ftag">artículo sobre ViewPort en MDN</a>.</p>
 <h2 id="media-queries">Media queries</h2>
 <p>Las <em>media queries</em> son expresiones que se utilizan en CSS3 para <strong>identificar el dispositivo</strong> al que va dirigido un determinado <strong>conjunto de reglas de estilo CSS</strong>.</p>
 <p>Una <em>media query</em> es una <strong>expresión lógica</strong> que sólo puede tomar dos valores: verdadero o falso. Si la expresión es <strong>verdadera</strong>, el <strong>conjunto de reglas</strong> de estilo definidas en su interior se <strong>aplica</strong>; si es falsa, no se aplica.</p>

@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.76.5" />
+<meta name="generator" content="Hugo 0.78.1" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/imagenes_web/" />
@@ -68,7 +68,7 @@
 <meta itemprop="description" content="Las imágenes incluidas en los sitios web son responsables de gran parte del tamaño de descarga. Por tanto, es de vital importancia utilizar las técnicas adecuadas tanto para su correcta visualización (independientemente del tipo de dispositivo utilizado) como para su optimización de tamaño de cara a mejorar la velocidad de carga del sitio.">
 <meta itemprop="datePublished" content="2019-11-11T13:22:00+01:00" />
 <meta itemprop="dateModified" content="2019-11-11T13:22:00+01:00" />
-<meta itemprop="wordCount" content="2223">
+<meta itemprop="wordCount" content="2222">
 
 
 
@@ -378,8 +378,8 @@ Algunos de los formatos más habituales son:</p>
 </ul>
 <p>En este caso, para optimizar la elección de la imagen a cargar habrá que tener en cuenta no solo el tamaño de las imágenes, sino también <strong>qué espacio van a ocupar</strong>. Así, tendremos que:</p>
 <ul>
-<li>Si la resolución del dispositivo es de <strong>900px</strong>, en principio parece que debería utilizar la imagen de 1400px. Sin embargo, en nuestro código CSS hemos configurado las imágenes para que ocupen un 50% de la pantalla. Por tanto, la imagen ocupará 450px. Bastará entonces con cargar la <strong>imagen de 854px</strong>.</li>
-<li>Si la resolución del dispositivo es de <strong>700px</strong> queremos que la imagen se muestre ocupando un 100% de la pantalla. Por tanto, se deberá cargar también la imagen de <strong>854px</strong>.</li>
+<li>Si la resolución del dispositivo es de <strong>900px</strong>, en principio parece que debería utilizar la imagen de 1400px. Sin embargo, en nuestro código CSS hemos configurado las imágenes para que ocupen un 50% de la pantalla. Por tanto, la imagen ocupará 450px. Bastará entonces con cargar la <strong>imagen de 450px</strong>.</li>
+<li>Si la resolución del dispositivo es de <strong>700px</strong> queremos que la imagen se muestre ocupando un 100% de la pantalla. Por tanto, se deberá cargar la imagen de <strong>850px</strong>.</li>
 <li>Para cargar la imagen de 1400px el <strong>dispositivo</strong> deberá tener una <strong>resolución mínima de 1701px</strong>: en este caso la imagen ocupará un 50% de la pantalla, es decir, 850.5px, por lo que no le bastará con la de 850px y deberá cargar la de 1400px,</li>
 </ul>
 <p>Para que el navegador tenga en cuenta los tamaños que van a ocupar las imágenes en los distintos tipos de dispositivo hay que utilizar el atributo <code>sizes</code> del elmento <code>&lt;img&gt;</code>: este atributo permite especificar condiciones de tamaño en forma de <code>media queries</code> junto con una referencia al tamaño que ocupará la imagen (por ejemplo, en unidades <code>vw</code>).</p>

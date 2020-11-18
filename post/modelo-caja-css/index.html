@@ -68,7 +68,7 @@
 <meta itemprop="description" content="El modelo de caja de CSS tiene como objetivo definir el comportamiento de los elementos en HTML. En concreto define el contenido, relleno, bordes y márgenes. Se utiliza en gran medida para disponer los elementos en una estructura determinada (el denominado layout). En este artículo veremos un par de características relacionadas con él que pueden ser de mucha utilidad: la propiedad box-sizing y el comportamiento de la anchura y altura de las cajas.">
 <meta itemprop="datePublished" content="2019-10-21T11:47:00+02:00" />
 <meta itemprop="dateModified" content="2019-10-21T11:47:00+02:00" />
-<meta itemprop="wordCount" content="316">
+<meta itemprop="wordCount" content="323">
 
 
 
@@ -265,9 +265,12 @@
     <div class="post-content">
       <p>El <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FModelo%5FCaja/Introducci%C3%B3n%5Fal%5Fmodelo%5Fde%5Fcaja%5Fde%5FCSS">modelo de caja de CSS</a> tiene como objetivo definir el comportamiento de los elementos en HTML. En concreto define el <strong>contenido</strong>, <strong>relleno</strong>, <strong>bordes</strong> y <strong>márgenes</strong>. Se utiliza en gran medida para disponer los elementos en una estructura determinada (el denominado <strong>layout</strong>). En este artículo veremos un par de características relacionadas con él que pueden ser de mucha utilidad: la propiedad <code>box-sizing</code> y el comportamiento de la <strong>anchura y altura</strong> de las cajas.</p>
 <h2 id="la-propiedad-box-sizing">La propiedad <code>box-sizing</code></h2>
-<p>Existe una propiedad en CSS3 denominada <code>box-sizing</code> que permite cambiar la definición de anchura para ésta que incluya el <strong>contenido, relleno (padding) y bordes</strong> (no se incluye el margen). En este <a href="http://www.w3schools.com/cssref/css3%5Fpr%5Fbox-sizing.asp">enlace</a> puedes consultar su funcionamiento.</p>
-<p>De esta manera, al utilizar el código <code>box-sizing: border-box;</code>, no habrá que hacer sumas para calcular el ancho total de las cajas. En este otro <a href="http://es.learnlayout.com/box-sizing.html">enlace</a> puedes encontrar una explicación más detallada.</p>
-<h2 id="altura-y-anchura-de-los-elementos">Altura y anchura de los elementos</h2>
+<p>Existe una propiedad en CSS3 denominada <code>box-sizing</code> que permite cambiar la definición de anchura para ésta que incluya el <strong>contenido, relleno (padding) y bordes</strong> (no se incluye el margen). En este <a href="http://www.w3schools.com/cssref/css3%5Fpr%5Fbox-sizing.asp">enlace</a> puedes consultar su funcionamiento. De esta manera, al utilizar el código <code>box-sizing: border-box;</code>, no habrá que hacer sumas para calcular el ancho total de las cajas.</p>
+<p>Es habitual utilizar este código si se va a usar esta propiedad:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#666">*</span> {
+    <span style="color:#a2f;font-weight:bold">box-sizing</span>: <span style="color:#a2f;font-weight:bold">border-box</span>;
+}
+</code></pre></div><h2 id="altura-y-anchura-de-los-elementos">Altura y anchura de los elementos</h2>
 <p>La utilización de porcentajes en la definición de anchuras y alturas tiene algunas diferencias:</p>
 <ul>
 <li>La <strong>anchura</strong> de los elementos es <strong>independiente de su contenido</strong>: depende del ancho del elemento contenedor o del ancho de la ventana del navegador en última instancia.</li>

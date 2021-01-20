@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.78.1" />
+<meta name="generator" content="Hugo 0.80.0" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/conceptos-basicos-css/" />
@@ -68,7 +68,7 @@
 <meta itemprop="description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.">
 <meta itemprop="datePublished" content="2019-10-21T11:28:00+02:00" />
 <meta itemprop="dateModified" content="2019-10-21T11:28:00+02:00" />
-<meta itemprop="wordCount" content="1378">
+<meta itemprop="wordCount" content="1384">
 
 
 
@@ -280,16 +280,19 @@
 <ul>
 <li><strong>Aplicar estilos directamente a elementos HTML</strong>. De esta manera se escribe el código CSS dentro del atributo style de la etiqueta HTML en cuestión.Por ejemplo, para aplicar un estilo css a un párrafo:</li>
 </ul>
+<!-- raw HTML omitted -->
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;código_css&#34;</span>&gt;HOLA&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
 </code></pre></div><ul>
 <li><strong>Hojas de estilos internas</strong>. Se utilizan para aplicar estilos a la página en la cual se utiliza. El código de la hoja de estilo se ubicará en la cabecera de la página web, entre las etiquetas siguientes:</li>
 </ul>
+<!-- raw HTML omitted -->
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">style</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span>&gt;
         <span style="color:#666">&lt;!</span><span style="color:#008000;font-weight:bold">--</span>  <span style="color:#008000;font-weight:bold">Código_css</span>  <span style="color:#008000;font-weight:bold">--</span><span style="color:#666">&gt;</span>
 &lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;
 </code></pre></div><ul>
 <li><strong>Hojas de estilos externas</strong>. Se utilizan para aplicar el mismo formato a varias páginas de un portal. Se definen en un archivo externo que será consultado por todas las páginas HTML del sitio web, reutilizando por tanto el código. Para ello se escribirá el código CSS en un documento externo con extensión css. Posteriormente se vinculará a la página web mediante la utilización de la siguiente <strong>etiqueta</strong> en la <strong>cabecera</strong> del documento HTML en cuestión:</li>
 </ul>
+<!-- raw HTML omitted -->
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;nombre_archivo_css.css&#34;</span>&gt;
 </code></pre></div><h2 id="cascada-y-herencia">Cascada y herencia</h2>
 <p>CSS permite definir estilos en varios sitios, tal como hemos visto en el punto anterior. Además, es posible que un elemento reciba estilos de varios orígenes distintos. Algunos ejemplos de ello son:</p>
@@ -372,6 +375,7 @@
 <li><a href="https://www.cssscript.com">CSSScript.com</a> - Más recursos CSS</li>
 <li><a href="http://www.w3schools.com/cssref/">Guía de referencia de propiedades CSS</a> - Listado de propiedades CSS</li>
 <li><a href="http://librosweb.es/css/">http://librosweb.es/css/</a> - Curso completo de CSS pero algo anticuado</li>
+<li><a href="https://www.websiteplanet.com/blog/html-guide-beginners/">https://www.websiteplanet.com/blog/html-guide-beginners/</a> - Conceptos básicos de HTML</li>
 </ul>
     </div>
 
@@ -516,7 +520,7 @@
     &copy;
     
        -
-    2020
+    2021
     <span class="heart">
       
       <i class="iconfont">

@@ -34,7 +34,7 @@ Frente a esto, es interesante conocer que CSS permite definir variables que pued
 
 
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.88.1" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/variables_preprocesadores_css/" />
@@ -53,7 +53,7 @@ Frente a esto, es interesante conocer que CSS permite definir variables que pued
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.c7bcffe1b631dc45825dc64759f523156f555bbb307b515eb892f14c8eff2598.css" integrity="sha256-x7z/4bYx3EWCXcZHWfUjFW9VW7swe1FeuJLxTI7/JZg=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.346b7bb505a2b535947515c747973b5be8787e525e0f9dc2931295a6a030c67b.css" integrity="sha256-NGt7tQWitTWUdRXHR5c7W&#43;h4flJeD53CkxKVpqAwxns=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,20 +63,16 @@ Frente a esto, es interesante conocer que CSS permite definir variables que pued
 <meta property="og:description" content="En los últimos años han aparecido una gran cantidad de preprocesadores CSS que permiten incorporar técnicas de lenguajes de programación (variables, anidamiento, mixins,&hellip;) a la creación de hojas de estilo. La desventaja que tienen es que el código debe compilarse para generar CSS válido que pueda ser utilizado por el navegador.
 Frente a esto, es interesante conocer que CSS permite definir variables que pueden ser reutilizadas en todo el documento, proporcionando una alternativa sencilla y estándar, aunque lógicamente menos potente." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pedroprieto.github.io/post/variables_preprocesadores_css/" />
+<meta property="og:url" content="https://pedroprieto.github.io/post/variables_preprocesadores_css/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-10-22T09:54:00+02:00" />
 <meta property="article:modified_time" content="2019-10-22T09:54:00+02:00" />
+
 <meta itemprop="name" content="Variables y preprocesadores CSS">
 <meta itemprop="description" content="En los últimos años han aparecido una gran cantidad de preprocesadores CSS que permiten incorporar técnicas de lenguajes de programación (variables, anidamiento, mixins,&hellip;) a la creación de hojas de estilo. La desventaja que tienen es que el código debe compilarse para generar CSS válido que pueda ser utilizado por el navegador.
-Frente a esto, es interesante conocer que CSS permite definir variables que pueden ser reutilizadas en todo el documento, proporcionando una alternativa sencilla y estándar, aunque lógicamente menos potente.">
-<meta itemprop="datePublished" content="2019-10-22T09:54:00+02:00" />
+Frente a esto, es interesante conocer que CSS permite definir variables que pueden ser reutilizadas en todo el documento, proporcionando una alternativa sencilla y estándar, aunque lógicamente menos potente."><meta itemprop="datePublished" content="2019-10-22T09:54:00+02:00" />
 <meta itemprop="dateModified" content="2019-10-22T09:54:00+02:00" />
 <meta itemprop="wordCount" content="410">
-
-
-
-<meta itemprop="keywords" content="css,variables,preprocesadores,sass,less," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css,variables,preprocesadores,sass,less," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Variables y preprocesadores CSS"/>
 <meta name="twitter:description" content="En los últimos años han aparecido una gran cantidad de preprocesadores CSS que permiten incorporar técnicas de lenguajes de programación (variables, anidamiento, mixins,&hellip;) a la creación de hojas de estilo. La desventaja que tienen es que el código debe compilarse para generar CSS válido que pueda ser utilizado por el navegador.
 Frente a esto, es interesante conocer que CSS permite definir variables que pueden ser reutilizadas en todo el documento, proporcionando una alternativa sencilla y estándar, aunque lógicamente menos potente."/>
@@ -272,7 +268,7 @@ Frente a esto, es interesante conocer que CSS permite definir variables que pued
 <h2 id="preprocesadores-css">Preprocesadores CSS</h2>
 <p>Los preprocesadores CSS permiten utilizar un lenguaje especial para definir código CSS. Dicho lenguaje depende del preprocesador elegido y suele ser muy parecido al CSS convencional.</p>
 <p>El lenguaje debe ser <strong>compilado</strong> a CSS para que los navegadores puedan usarlo. A continuación podemos ver un ejemplo de <strong>SASS</strong>:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sass" data-lang="sass"><span style="color:#b44">$font-stack</span><span style="color:#666">:</span>    Helvetica<span style="color:#666">,</span> <span style="color:#800">sans-serif</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sass" data-lang="sass"><span style="color:#b44">$font-stack</span><span style="color:#666">:</span>    Helvetica<span style="color:#666">,</span> <span style="color:#800">sans-serif</span>
 <span style="color:#b44">$primary-color</span><span style="color:#666">:</span> <span style="color:#666">#333</span>
 
 <span style="color:#008000;font-weight:bold">body</span>
@@ -293,7 +289,7 @@ Frente a esto, es interesante conocer que CSS permite definir variables que pued
 <span style="">    </span><span style="color:#b44">padding</span><span style="color:#666">:</span> <span style="color:#666">6</span><span style="color:#0b0;font-weight:bold">px</span> <span style="color:#666">12</span><span style="color:#0b0;font-weight:bold">px</span>
 <span style="">    </span><span style="color:#b44">text-decoration</span><span style="color:#666">:</span> <span style="color:#800">none</span>
 </code></pre></div><p>Y el resultado de la compilación en CSS:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">body</span> {
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">body</span> {
   <span style="color:#a2f;font-weight:bold">font</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">%</span> Helvetica, <span style="color:#a2f;font-weight:bold">sans-serif</span>;
   <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#666">#333</span>;
 }
@@ -303,7 +299,7 @@ Frente a esto, es interesante conocer que CSS permite definir variables que pued
   <span style="color:#a2f;font-weight:bold">list-style</span>: <span style="color:#a2f;font-weight:bold">none</span>;
 }
 <span style="color:#008000;font-weight:bold">nav</span> <span style="color:#008000;font-weight:bold">li</span> {
-  <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">inline</span><span style="color:#666">-</span><span style="color:#a2f;font-weight:bold">block</span>;
+  <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">inline-block</span>;
 }
 <span style="color:#008000;font-weight:bold">nav</span> <span style="color:#008000;font-weight:bold">a</span> {
   <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">block</span>;
@@ -322,7 +318,7 @@ Frente a esto, es interesante conocer que CSS permite definir variables que pued
 <p>Es posible hacer uso de esta característica sin tener que recurrir a un preprocesador haciendo uso de las <strong><a href="https://developer.mozilla.org/es/docs/Web/CSS/Using%5FCSS%5Fcustom%5Fproperties">propiedades personalizadas CSS</a></strong>. A continuación se muestra un ejemplo:</p>
 <div class="highlight"><div style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+<pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
 </span><span style="display:block;width:100%;background-color:#dfdfdf"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
 </span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
@@ -350,7 +346,7 @@ Frente a esto, es interesante conocer que CSS permite definir variables que pued
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a2f">root</span> {
+<pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">:<span style="color:#a2f">root</span> {
 <span style="display:block;width:100%;background-color:#dfdfdf">  <span style="color:#b8860b">--color-fondo-principal</span>: <span style="color:#a2f;font-weight:bold">brown</span>;
 </span>}
 
@@ -360,7 +356,7 @@ Frente a esto, es interesante conocer que CSS permite definir variables que pued
 </span>  <span style="color:#a2f;font-weight:bold">margin</span>: <span style="color:#666">10</span><span style="color:#0b0;font-weight:bold">px</span>;
   <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">50</span><span style="color:#0b0;font-weight:bold">px</span>;
   <span style="color:#a2f;font-weight:bold">height</span>: <span style="color:#666">50</span><span style="color:#0b0;font-weight:bold">px</span>;
-  <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">inline</span><span style="color:#666">-</span><span style="color:#a2f;font-weight:bold">block</span>;
+  <span style="color:#a2f;font-weight:bold">display</span>: <span style="color:#a2f;font-weight:bold">inline-block</span>;
 }
 
 .<span style="color:#00f">dos</span> {

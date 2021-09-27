@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.88.1" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/imagenes_web/" />
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.c7bcffe1b631dc45825dc64759f523156f555bbb307b515eb892f14c8eff2598.css" integrity="sha256-x7z/4bYx3EWCXcZHWfUjFW9VW7swe1FeuJLxTI7/JZg=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.346b7bb505a2b535947515c747973b5be8787e525e0f9dc2931295a6a030c67b.css" integrity="sha256-NGt7tQWitTWUdRXHR5c7W&#43;h4flJeD53CkxKVpqAwxns=" media="screen" crossorigin="anonymous">
 
 
 
@@ -61,19 +61,15 @@
 <meta property="og:title" content="Imágenes en la web" />
 <meta property="og:description" content="Las imágenes incluidas en los sitios web son responsables de gran parte del tamaño de descarga. Por tanto, es de vital importancia utilizar las técnicas adecuadas tanto para su correcta visualización (independientemente del tipo de dispositivo utilizado) como para su optimización de tamaño de cara a mejorar la velocidad de carga del sitio." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pedroprieto.github.io/post/imagenes_web/" />
+<meta property="og:url" content="https://pedroprieto.github.io/post/imagenes_web/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-11-11T13:22:00+01:00" />
 <meta property="article:modified_time" content="2019-11-11T13:22:00+01:00" />
+
 <meta itemprop="name" content="Imágenes en la web">
-<meta itemprop="description" content="Las imágenes incluidas en los sitios web son responsables de gran parte del tamaño de descarga. Por tanto, es de vital importancia utilizar las técnicas adecuadas tanto para su correcta visualización (independientemente del tipo de dispositivo utilizado) como para su optimización de tamaño de cara a mejorar la velocidad de carga del sitio.">
-<meta itemprop="datePublished" content="2019-11-11T13:22:00+01:00" />
+<meta itemprop="description" content="Las imágenes incluidas en los sitios web son responsables de gran parte del tamaño de descarga. Por tanto, es de vital importancia utilizar las técnicas adecuadas tanto para su correcta visualización (independientemente del tipo de dispositivo utilizado) como para su optimización de tamaño de cara a mejorar la velocidad de carga del sitio."><meta itemprop="datePublished" content="2019-11-11T13:22:00+01:00" />
 <meta itemprop="dateModified" content="2019-11-11T13:22:00+01:00" />
 <meta itemprop="wordCount" content="2222">
-
-
-
-<meta itemprop="keywords" content="css,imagenes," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css,imagenes," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Imágenes en la web"/>
 <meta name="twitter:description" content="Las imágenes incluidas en los sitios web son responsables de gran parte del tamaño de descarga. Por tanto, es de vital importancia utilizar las técnicas adecuadas tanto para su correcta visualización (independientemente del tipo de dispositivo utilizado) como para su optimización de tamaño de cara a mejorar la velocidad de carga del sitio."/>
 
@@ -361,7 +357,7 @@ Algunos de los formatos más habituales son:</p>
 <li>Un dispositivo de <strong>380px</strong> debería utilizar la imagen de <strong>450px</strong>.</li>
 </ul>
 <p>El código a utilizar sería el siguiente:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;Imagen&#34;</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;imagen_450.jpg&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;Imagen&#34;</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;imagen_450.jpg&#34;</span>
  <span style="color:#b44">srcset</span><span style="color:#666">=</span><span style="color:#b44">&#34;imagen_450.jpg 450w, imagen_850.jpg 850w, imagen_1400.jpg 1400w&#34;</span>&gt;
 </code></pre></div><p>En el código anterior tenemos que:</p>
 <ul>
@@ -384,7 +380,7 @@ Algunos de los formatos más habituales son:</p>
 </ul>
 <p>Para que el navegador tenga en cuenta los tamaños que van a ocupar las imágenes en los distintos tipos de dispositivo hay que utilizar el atributo <code>sizes</code> del elmento <code>&lt;img&gt;</code>: este atributo permite especificar condiciones de tamaño en forma de <code>media queries</code> junto con una referencia al tamaño que ocupará la imagen (por ejemplo, en unidades <code>vw</code>).</p>
 <p>El código a utilizar sería el siguiente:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;Imagen&#34;</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;imagen_450.jpg&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;Imagen&#34;</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;imagen_450.jpg&#34;</span>
  <span style="color:#b44">srcset</span><span style="color:#666">=</span><span style="color:#b44">&#34;imagen_450.jpg 450w, imagen_850.jpg 850w, imagen_1400.jpg 1400w&#34;</span>
  <span style="color:#b44">sizes</span><span style="color:#666">=</span><span style="color:#b44">&#34;(min-width: 768px) 50vw, 100vw&#34;</span>&gt;
 </code></pre></div><p>En el código anterior tenemos que:</p>
@@ -406,7 +402,7 @@ Algunos de los formatos más habituales son:</p>
 </ul>
 <p>Para la dirección de arte se utiliza la etiqueta <code>&lt;picture&gt;</code>. Esta etiqueta permite definir <strong>varios archivos de imagen</strong> a través de etiquetas <code>&lt;source&gt;</code> junto con <strong>media queries</strong> para hacer que se muestre una determinada imagen en función de la resolución del dispositivo. Esta etiqueta <strong>fuerza al navegador a escoger la imagen necesaria</strong>, a diferencia del atributo <code>srcset</code>, que permite al navegador elegir.</p>
 <p>El código a utilizar sería el siguiente:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">picture</span>&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">picture</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">source</span> <span style="color:#b44">media</span><span style="color:#666">=</span><span style="color:#b44">&#34;(min-width: 768px)&#34;</span> <span style="color:#b44">srcset</span><span style="color:#666">=</span><span style="color:#b44">&#34;img_wide.jpg&#34;</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">source</span> <span style="color:#b44">srcset</span><span style="color:#666">=</span><span style="color:#b44">&#34;img_mobile.jpg&#34;</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;img_mobile.jpg&#34;</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;Imagen&#34;</span>&gt;
@@ -432,14 +428,14 @@ Algunos de los formatos más habituales son:</p>
 <h2 id="aplicar-estilos-a-imágenes">Aplicar estilos a imágenes</h2>
 <p>En ocasiones hacer que las imágenes se muestren adecuadamente puede ser complicado. En el siguiente enlace se muestran algunas <a href="https://www.w3schools.com/css/css3%5Fimages.asp">técnicas para personalizar la apariencia de las imágenes mediante CSS</a>. En él se muestran técnicas de <strong>centrado</strong>, <strong>diseño responsivo</strong> o <strong>creación de efectos o filtros</strong>.</p>
 <p>La técnica más importante para crear imágenes responsivas (que se adapten correctamente a la capa contenedora) consiste en introducir la etiqueta <code>&lt;img&gt;</code> dentro de una etiqueta <code>&lt;div&gt;</code> y establecer el ancho de la imagen al 100%. De esta manera, redimensionando la etiqueta <code>&lt;div&gt;</code> contenedora se podrá cambiar el tamaño de la imagen. El código sería el siguiente:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">img</span> {
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">img</span> {
     <span style="color:#a2f;font-weight:bold">width</span>: <span style="color:#666">100</span><span style="color:#0b0;font-weight:bold">%</span>;
 }
 
 .<span style="color:#00f">img_container</span> {
     <span style="color:#080;font-style:italic">/* Aquí es donde se debe cambiar el ancho deseado de la imagen */</span>
 }
-</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;img_container&#34;</span>&gt;
+</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;img_container&#34;</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;&#34;</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;&#34;</span>&gt;
 &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
 </code></pre></div>

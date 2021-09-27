@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.88.1" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/estrategias_diseno_css/" />
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.c7bcffe1b631dc45825dc64759f523156f555bbb307b515eb892f14c8eff2598.css" integrity="sha256-x7z/4bYx3EWCXcZHWfUjFW9VW7swe1FeuJLxTI7/JZg=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.346b7bb505a2b535947515c747973b5be8787e525e0f9dc2931295a6a030c67b.css" integrity="sha256-NGt7tQWitTWUdRXHR5c7W&#43;h4flJeD53CkxKVpqAwxns=" media="screen" crossorigin="anonymous">
 
 
 
@@ -61,19 +61,15 @@
 <meta property="og:title" content="Estrategias de diseño con CSS" />
 <meta property="og:description" content="En ocasiones resulta difícil pensar en cómo abordar el diseño con CSS. Las recomendaciones actuales van en la línea de priorizar el uso de clases para poder utilizarlas dentro de los archivos HTML. Dentro de esta recomendación nos encontramos con dos posibilidades: priorizar el diseño de componentes o priorizar el diseño de clases de utilidades." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pedroprieto.github.io/post/estrategias_diseno_css/" />
+<meta property="og:url" content="https://pedroprieto.github.io/post/estrategias_diseno_css/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-10-22T11:51:00+02:00" />
 <meta property="article:modified_time" content="2019-10-22T11:51:00+02:00" />
+
 <meta itemprop="name" content="Estrategias de diseño con CSS">
-<meta itemprop="description" content="En ocasiones resulta difícil pensar en cómo abordar el diseño con CSS. Las recomendaciones actuales van en la línea de priorizar el uso de clases para poder utilizarlas dentro de los archivos HTML. Dentro de esta recomendación nos encontramos con dos posibilidades: priorizar el diseño de componentes o priorizar el diseño de clases de utilidades.">
-<meta itemprop="datePublished" content="2019-10-22T11:51:00+02:00" />
+<meta itemprop="description" content="En ocasiones resulta difícil pensar en cómo abordar el diseño con CSS. Las recomendaciones actuales van en la línea de priorizar el uso de clases para poder utilizarlas dentro de los archivos HTML. Dentro de esta recomendación nos encontramos con dos posibilidades: priorizar el diseño de componentes o priorizar el diseño de clases de utilidades."><meta itemprop="datePublished" content="2019-10-22T11:51:00+02:00" />
 <meta itemprop="dateModified" content="2019-10-22T11:51:00+02:00" />
 <meta itemprop="wordCount" content="703">
-
-
-
-<meta itemprop="keywords" content="css,BEM," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css,BEM," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Estrategias de diseño con CSS"/>
 <meta name="twitter:description" content="En ocasiones resulta difícil pensar en cómo abordar el diseño con CSS. Las recomendaciones actuales van en la línea de priorizar el uso de clases para poder utilizarlas dentro de los archivos HTML. Dentro de esta recomendación nos encontramos con dos posibilidades: priorizar el diseño de componentes o priorizar el diseño de clases de utilidades."/>
 
@@ -266,7 +262,7 @@
       <p>En ocasiones resulta difícil pensar en cómo abordar el diseño con CSS. Las recomendaciones actuales van en la línea de priorizar el <strong>uso de clases</strong> para poder utilizarlas dentro de los archivos HTML. Dentro de esta recomendación nos encontramos con dos posibilidades: priorizar el <strong>diseño de componentes</strong> o priorizar el diseño de <strong>clases de utilidades</strong>.</p>
 <h2 id="diseño-basado-en-componentes">Diseño basado en componentes</h2>
 <p>Esta filosofía de diseño prioriza el desarrollo de clases CSS que hagan referencia a <strong>componentes</strong> creados en HTML. Un componente puede ser una tarjeta, un menú, un formulario o un botón. De esta manera tendríamos CSS como el siguiente:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#00f">card</span> {
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#00f">card</span> {
     <span style="color:#a2f;font-weight:bold">background</span>: <span style="color:#a2f;font-weight:bold">white</span>;
     <span style="color:#a2f;font-weight:bold">border</span>: <span style="color:#666">1</span><span style="color:#0b0;font-weight:bold">px</span> <span style="color:#a2f;font-weight:bold">solid</span> <span style="color:#a2f;font-weight:bold">grey</span>;
     <span style="color:#a2f;font-weight:bold">text-align</span>: <span style="color:#a2f;font-weight:bold">justify</span>;
@@ -287,13 +283,13 @@
 }
 </code></pre></div><p>Como podemos ver, las clases CSS hacen referencia a componentes que serán creados en HTML.</p>
 <p>Dentro de este tipo de diseño podemos distinguir dos enfoques: el primero sería la creación de clases CSS <strong>anidadas</strong>:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;autor&#34;</span>&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;autor&#34;</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;&#34;</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;&#34;</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;contenido&#34;</span>&gt;
     &lt;<span style="color:#008000;font-weight:bold">h2</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;nombre&#34;</span>&gt;Juan Gómez&lt;/<span style="color:#008000;font-weight:bold">h2</span>&gt;
   &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
 &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#00f">autor</span> {
+</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#00f">autor</span> {
     <span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#a2f;font-weight:bold">white</span>;
     <span style="color:#a2f;font-weight:bold">border</span>: <span style="color:#666">1</span><span style="color:#0b0;font-weight:bold">px</span> <span style="color:#a2f;font-weight:bold">solid</span> <span style="color:#a2f">hsl</span>(<span style="color:#666">0</span>,<span style="color:#666">0</span><span style="color:#0b0;font-weight:bold">%</span>,<span style="color:#666">85</span><span style="color:#0b0;font-weight:bold">%</span>);
     <span style="color:#a2f;font-weight:bold">border-radius</span>: <span style="color:#666">4</span><span style="color:#0b0;font-weight:bold">px</span>;
@@ -313,13 +309,13 @@
     <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f">rgba</span>(<span style="color:#666">0</span>,<span style="color:#666">0</span>,<span style="color:#666">0</span>,<span style="color:#666">0.8</span>);
 }
 </code></pre></div><p>El segundo sería la creación de clases CSS <strong>independientes</strong> (uno de los ejemplos más utilizados es la metodología <a href="http://getbem.com/naming/">BEM</a>):</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;autor&#34;</span>&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;autor&#34;</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">img</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;autor__img&#34;</span> <span style="color:#b44">src</span><span style="color:#666">=</span><span style="color:#b44">&#34;&#34;</span> <span style="color:#b44">alt</span><span style="color:#666">=</span><span style="color:#b44">&#34;&#34;</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">div</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;autor__contenido&#34;</span>&gt;
     &lt;<span style="color:#008000;font-weight:bold">h2</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;autor__nombre&#34;</span>&gt;Juan Gómez&lt;/<span style="color:#008000;font-weight:bold">h2</span>&gt;
   &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
 &lt;/<span style="color:#008000;font-weight:bold">div</span>&gt;
-</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#00f">autor</span> {
+</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#00f">autor</span> {
     <span style="color:#a2f;font-weight:bold">background-color</span>: <span style="color:#a2f;font-weight:bold">white</span>;
     <span style="color:#a2f;font-weight:bold">border</span>: <span style="color:#666">1</span><span style="color:#0b0;font-weight:bold">px</span> <span style="color:#a2f;font-weight:bold">solid</span> <span style="color:#a2f">hsl</span>(<span style="color:#666">0</span>,<span style="color:#666">0</span><span style="color:#0b0;font-weight:bold">%</span>,<span style="color:#666">85</span><span style="color:#0b0;font-weight:bold">%</span>);
     <span style="color:#a2f;font-weight:bold">border-radius</span>: <span style="color:#666">4</span><span style="color:#0b0;font-weight:bold">px</span>;
@@ -352,7 +348,7 @@
 </ul>
 <h2 id="diseño-basado-en-clases-de-utilidades">Diseño basado en clases de utilidades</h2>
 <p>Por el contrario, este paradigma de diseño prioriza el desarrollo de clases CSS que implementen <strong>pequeñas funcionalidades</strong> que puedan ser reutilizadas por todos los elementos o componentes de la página. Un ejemplo de código sería el siguiente:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#080;font-style:italic">/* Font sizes */</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#080;font-style:italic">/* Font sizes */</span>
 .<span style="color:#00f">font-13</span> { <span style="color:#a2f;font-weight:bold">font-size</span>: <span style="color:#666">13</span><span style="color:#0b0;font-weight:bold">px</span> }
 .<span style="color:#00f">font-16</span> { <span style="color:#a2f;font-weight:bold">font-size</span>: <span style="color:#666">16</span><span style="color:#0b0;font-weight:bold">px</span> }
 <span style="color:#666">...</span>
@@ -376,7 +372,7 @@
 <li>Aumenta el número de clases a aplicar en etiquetas HTML, por lo que el código HTML puede resultar más difícil de leer:</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">h2</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;font-16 font-bold font-purple&#34;</span>&gt;Game of Thrones&lt;/<span style="color:#008000;font-weight:bold">h2</span>&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">h2</span> <span style="color:#b44">class</span><span style="color:#666">=</span><span style="color:#b44">&#34;font-16 font-bold font-purple&#34;</span>&gt;Game of Thrones&lt;/<span style="color:#008000;font-weight:bold">h2</span>&gt;
 </code></pre></div><ul>
 <li>Aumenta el número de clases disponibles, por lo que puede resultar difícil conocerlas todas o saber cuál aplicar.</li>
 </ul>

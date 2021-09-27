@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.88.1" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/conceptos-basicos-css/" />
@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.c7bcffe1b631dc45825dc64759f523156f555bbb307b515eb892f14c8eff2598.css" integrity="sha256-x7z/4bYx3EWCXcZHWfUjFW9VW7swe1FeuJLxTI7/JZg=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.346b7bb505a2b535947515c747973b5be8787e525e0f9dc2931295a6a030c67b.css" integrity="sha256-NGt7tQWitTWUdRXHR5c7W&#43;h4flJeD53CkxKVpqAwxns=" media="screen" crossorigin="anonymous">
 
 
 
@@ -61,19 +61,15 @@
 <meta property="og:title" content="Conceptos básicos de CSS" />
 <meta property="og:description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pedroprieto.github.io/post/conceptos-basicos-css/" />
+<meta property="og:url" content="https://pedroprieto.github.io/post/conceptos-basicos-css/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-10-21T11:28:00+02:00" />
 <meta property="article:modified_time" content="2019-10-21T11:28:00+02:00" />
+
 <meta itemprop="name" content="Conceptos básicos de CSS">
-<meta itemprop="description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.">
-<meta itemprop="datePublished" content="2019-10-21T11:28:00+02:00" />
+<meta itemprop="description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada."><meta itemprop="datePublished" content="2019-10-21T11:28:00+02:00" />
 <meta itemprop="dateModified" content="2019-10-21T11:28:00+02:00" />
 <meta itemprop="wordCount" content="1384">
-
-
-
-<meta itemprop="keywords" content="css," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="css," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Conceptos básicos de CSS"/>
 <meta name="twitter:description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada."/>
 
@@ -281,19 +277,19 @@
 <li><strong>Aplicar estilos directamente a elementos HTML</strong>. De esta manera se escribe el código CSS dentro del atributo style de la etiqueta HTML en cuestión.Por ejemplo, para aplicar un estilo css a un párrafo:</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;código_css&#34;</span>&gt;HOLA&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;código_css&#34;</span>&gt;HOLA&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
 </code></pre></div><ul>
 <li><strong>Hojas de estilos internas</strong>. Se utilizan para aplicar estilos a la página en la cual se utiliza. El código de la hoja de estilo se ubicará en la cabecera de la página web, entre las etiquetas siguientes:</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">style</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span>&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">style</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span>&gt;
         <span style="color:#666">&lt;!</span><span style="color:#008000;font-weight:bold">--</span>  <span style="color:#008000;font-weight:bold">Código_css</span>  <span style="color:#008000;font-weight:bold">--</span><span style="color:#666">&gt;</span>
 &lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;
 </code></pre></div><ul>
 <li><strong>Hojas de estilos externas</strong>. Se utilizan para aplicar el mismo formato a varias páginas de un portal. Se definen en un archivo externo que será consultado por todas las páginas HTML del sitio web, reutilizando por tanto el código. Para ello se escribirá el código CSS en un documento externo con extensión css. Posteriormente se vinculará a la página web mediante la utilización de la siguiente <strong>etiqueta</strong> en la <strong>cabecera</strong> del documento HTML en cuestión:</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;nombre_archivo_css.css&#34;</span>&gt;
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;nombre_archivo_css.css&#34;</span>&gt;
 </code></pre></div><h2 id="cascada-y-herencia">Cascada y herencia</h2>
 <p>CSS permite definir estilos en varios sitios, tal como hemos visto en el punto anterior. Además, es posible que un elemento reciba estilos de varios orígenes distintos. Algunos ejemplos de ello son:</p>
 <ul>
@@ -311,7 +307,7 @@
 <li>Se cuenta el número de nombres de elementos y pseudo-elementos en el selector. (Peso &ldquo;<strong>d</strong>&rdquo;, menor importancia).</li>
 </ul>
 <p>Para determinar qué estilo se aplica en caso de conflicto se mira el resultado: el número más alto en la casilla de mayor peso es el que se aplica; en caso de empate, se comprueban los números de los pesos más bajos sucesivamente.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"> *             {}  /* a=0 b=0 c=0 d=0 -&gt; especificidad = 0,0,0,0 */
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"> *             {}  /* a=0 b=0 c=0 d=0 -&gt; especificidad = 0,0,0,0 */
  li            {}  /* a=0 b=0 c=0 d=1 -&gt; especificidad = 0,0,0,1 */
  li:first-line {}  /* a=0 b=0 c=0 d=2 -&gt; especificidad = 0,0,0,2 */
  ul li         {}  /* a=0 b=0 c=0 d=2 -&gt; especificidad = 0,0,0,2 */
@@ -334,18 +330,18 @@
 </code></pre></div><p>En el ejemplo, el párrafo tendrá color verde, ya que el valor de su peso &ldquo;a&rdquo; es 1. Como el peso &ldquo;a&rdquo; es el más importante, es el que se impone a los demás.</p>
 <h3 id="important">!important</h3>
 <p>Existe una manera de sobreescribir estilos CSS sin importar las reglas de especificidad: añadiendo <code>!important</code> a la regla correspondiente:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">p</span> {
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">p</span> {
     <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">red</span> <span style="color:#080">!important</span>;
 }
 #<span style="color:#00f;font-weight:bold">parrafo1</span> {
     <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">green</span>;
 }
-</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;parrafo1&#34;</span>&gt;Será ROJO a pesar de que la regla es menos específica&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;parrafo1&#34;</span>&gt;Será ROJO a pesar de que la regla es menos específica&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
 </code></pre></div><h2 id="hojas-de-estilo-alternativas">Hojas de estilo alternativas</h2>
 <p>Es posible incluir más de una hoja de estilo en un sitio web y ofrecer al usuario la posibilidad de usar una u otra mediante el uso de <strong>hojas de estilo alternativas</strong>.</p>
 <p>Algunos navegadores (como Firefox) permiten seleccionar la hoja de estilos a través de sus menús (en Firefox, menú <em>Ver</em> / <em>Estilo de página</em>).</p>
 <p>Para incluir hojas de estilo alternativas se debe utilizar la etiqueta <code>&lt;link rel=&quot;alternate stylesheet&quot;&gt;</code>. A continuación se muestra un ejemplo:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span>
       <span style="color:#b44">title</span><span style="color:#666">=</span><span style="color:#b44">&#34;Estilo principal&#34;</span>
       <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;./css/estilos.css&#34;</span>&gt;
 

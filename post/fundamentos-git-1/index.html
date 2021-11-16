@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.88.1" />
+<meta name="generator" content="Hugo 0.89.2" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/fundamentos-git-1/" />
@@ -68,7 +68,7 @@
 <meta itemprop="name" content="Fundamentos de Git I">
 <meta itemprop="description" content="En este artículo se pretende dar una introducción a los comandos más comunes del software de control de versiones Git."><meta itemprop="datePublished" content="2019-09-23T11:51:00+02:00" />
 <meta itemprop="dateModified" content="2019-09-23T11:51:00+02:00" />
-<meta itemprop="wordCount" content="334">
+<meta itemprop="wordCount" content="285">
 <meta itemprop="keywords" content="git," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Fundamentos de Git I"/>
 <meta name="twitter:description" content="En este artículo se pretende dar una introducción a los comandos más comunes del software de control de versiones Git."/>
@@ -298,11 +298,6 @@ git config --global user.email CORREO@ELECTRONICO
 git config --global core.editor notepad <span style="color:#080;font-style:italic"># Notepad de Windows</span>
 git config --global core.editor <span style="color:#b44">&#34;&#39;C:/Program Files/Notepad++/notepad++.exe&#39; -multiInst -notabbar -nosession -noPlugin&#34;</span> <span style="color:#080;font-style:italic"># Notepad ++</span>
 git config --global core.editor <span style="color:#b44">&#34;&#39;C:/Program Files (x86)/Notepad++/notepad++.exe&#39; -multiInst -notabbar -nosession -noPlugin&#34;</span> <span style="color:#080;font-style:italic"># Notepad ++ 32 bit</span>
-
-<span style="color:#080;font-style:italic"># Almacenamiento de credenciales para no pedir usuario y contraseña de GitHub cada vez que se suban cambios al servidor</span>
-<span style="color:#080;font-style:italic"># Ejecutar sólo uno de los dos comandos siguientes en función del sistema</span>
-git config --global credential.helper cache   <span style="color:#080;font-style:italic"># Para Linux</span>
-git config --global credential.helper wincred <span style="color:#080;font-style:italic"># Para Windows</span>
 </code></pre></div><h3 id="creación-de-repositorios">Creación de repositorios</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
 </code></pre></div><h3 id="ciclo-de-vida">Ciclo de vida</h3>

@@ -2,17 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pedroprieto.github.io/categories/</loc>
+    <lastmod>2023-10-24T13:16:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/lenguaje/</loc>
+    <lastmod>2023-10-24T13:16:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/post/lenguajes_programacion/</loc>
+    <lastmod>2023-10-24T13:16:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/</loc>
+    <lastmod>2023-10-24T13:16:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/post/</loc>
+    <lastmod>2023-10-24T13:16:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/programacion/</loc>
+    <lastmod>2023-10-24T13:16:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/categories/puestaprodseg/</loc>
+    <lastmod>2023-10-24T13:16:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/categories/puestaprodseg-lenguajes/</loc>
+    <lastmod>2023-10-24T13:16:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pedroprieto.github.io/tags/</loc>
+    <lastmod>2023-10-24T13:16:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://pedroprieto.github.io/tags/bootstrap/</loc>
     <lastmod>2020-01-07T12:56:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://pedroprieto.github.io/post/bootstrap/</loc>
-    <lastmod>2020-01-07T12:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/categories/</loc>
     <lastmod>2020-01-07T12:56:00+01:00</lastmod>
   </url>
   
@@ -28,21 +68,6 @@
   
   <url>
     <loc>https://pedroprieto.github.io/categories/diw-bootstrap/</loc>
-    <lastmod>2020-01-07T12:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/</loc>
-    <lastmod>2020-01-07T12:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/post/</loc>
-    <lastmod>2020-01-07T12:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pedroprieto.github.io/tags/</loc>
     <lastmod>2020-01-07T12:56:00+01:00</lastmod>
   </url>
   

@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Blog de Pedro Prieto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 24 Oct 2023 13:16:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Oct 2023 15:28:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entornos de desarrollo</title>
+      <link>https://pedroprieto.github.io/post/ides/</link>
+      <pubDate>Tue, 24 Oct 2023 15:28:00 +0200</pubDate>
+      
+      <guid>https://pedroprieto.github.io/post/ides/</guid>
+      <description>&lt;p&gt;Para trabajar con lenguajes de programación, no basta con utilizar un editor de texto: es recomendable contar con una serie de &lt;strong&gt;herramientas adicionales&lt;/strong&gt; que nos ayuden en el proceso de desarrollo o pruebas.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Lenguajes de programación</title>
       <link>https://pedroprieto.github.io/post/lenguajes_programacion/</link>

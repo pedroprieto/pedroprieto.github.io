@@ -13,7 +13,7 @@
       <pubDate>Tue, 19 Nov 2019 12:30:00 +0100</pubDate>
       
       <guid>https://pedroprieto.github.io/post/jekyllcms/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; es un &lt;a href=&#34;https://es.wikipedia.org/wiki/Sistema%5Fde%5Fgesti%C3%B3n%5Fde%5Fcontenidos&#34;&gt;gestor de contenido&lt;/a&gt; de tipo &lt;strong&gt;estático&lt;/strong&gt; (&lt;em&gt;static site generator&lt;/em&gt;). No depende de ninguna base de datos ni de ningún lenguaje de servidor. Utiliza ficheros de texto para almacenar los contenidos y los datos. Dado que no utiliza tecnologías de servidor, es necesario realizar un proceso de &lt;strong&gt;generación&lt;/strong&gt; o compilación para producir archivos HTML válidos que puedan ser alojados en un servidor y procesados adecuadamente por un navegador web convencional.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; es un &lt;a href=&#34;https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos&#34;&gt;gestor de contenido&lt;/a&gt; de tipo &lt;strong&gt;estático&lt;/strong&gt; (&lt;em&gt;static site generator&lt;/em&gt;). No depende de ninguna base de datos ni de ningún lenguaje de servidor. Utiliza ficheros de texto para almacenar los contenidos y los datos. Dado que no utiliza tecnologías de servidor, es necesario realizar un proceso de &lt;strong&gt;generación&lt;/strong&gt; o compilación para producir archivos HTML válidos que puedan ser alojados en un servidor y procesados adecuadamente por un navegador web convencional.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,7 +85,7 @@
       <pubDate>Mon, 28 Oct 2019 18:02:00 +0100</pubDate>
       
       <guid>https://pedroprieto.github.io/post/tecnicas_layout/</guid>
-      <description>&lt;p&gt;En la actualidad existen muchas maneras de crear layouts utilizando CSS. A las técnicas tradicionales (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;inline-block&lt;/code&gt;) se suman otras nuevas aportadas por CSS3, como &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FFlexible%5FBox%5FLayout/Conceptos%5FBasicos%5Fde%5FFlexbox&#34;&gt;flexbox&lt;/a&gt; o &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FGrid%5FLayout&#34;&gt;CSS Grid Layout&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;En la actualidad existen muchas maneras de crear layouts utilizando CSS. A las técnicas tradicionales (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;inline-block&lt;/code&gt;) se suman otras nuevas aportadas por CSS3, como &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Conceptos_Basicos_de_Flexbox&#34;&gt;flexbox&lt;/a&gt; o &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout&#34;&gt;CSS Grid Layout&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -112,7 +112,7 @@
       <pubDate>Tue, 22 Oct 2019 09:54:00 +0200</pubDate>
       
       <guid>https://pedroprieto.github.io/post/variables_preprocesadores_css/</guid>
-      <description>&lt;p&gt;En los últimos años han aparecido una gran cantidad de &lt;a href=&#34;https://developer.mozilla.org/es/docs/Glossary/Preprocesador%5FCSS&#34;&gt;preprocesadores CSS&lt;/a&gt; que permiten incorporar técnicas de lenguajes de programación (variables, anidamiento, &lt;a href=&#34;https://es.wikipedia.org/wiki/Mixin&#34;&gt;mixins&lt;/a&gt;,&amp;hellip;) a la creación de hojas de estilo. La desventaja que tienen es que el código debe &lt;strong&gt;compilarse&lt;/strong&gt; para generar CSS válido que pueda ser utilizado por el navegador.&lt;/p&gt;
+      <description>&lt;p&gt;En los últimos años han aparecido una gran cantidad de &lt;a href=&#34;https://developer.mozilla.org/es/docs/Glossary/Preprocesador_CSS&#34;&gt;preprocesadores CSS&lt;/a&gt; que permiten incorporar técnicas de lenguajes de programación (variables, anidamiento, &lt;a href=&#34;https://es.wikipedia.org/wiki/Mixin&#34;&gt;mixins&lt;/a&gt;,&amp;hellip;) a la creación de hojas de estilo. La desventaja que tienen es que el código debe &lt;strong&gt;compilarse&lt;/strong&gt; para generar CSS válido que pueda ser utilizado por el navegador.&lt;/p&gt;
 &lt;p&gt;Frente a esto, es interesante conocer que CSS permite definir &lt;strong&gt;variables&lt;/strong&gt; que pueden ser reutilizadas en todo el documento, proporcionando una alternativa sencilla y estándar, aunque lógicamente menos potente.&lt;/p&gt;</description>
     </item>
     
@@ -140,7 +140,7 @@
       <pubDate>Mon, 21 Oct 2019 11:47:00 +0200</pubDate>
       
       <guid>https://pedroprieto.github.io/post/modelo-caja-css/</guid>
-      <description>&lt;p&gt;El &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FModelo%5FCaja/Introducci%C3%B3n%5Fal%5Fmodelo%5Fde%5Fcaja%5Fde%5FCSS&#34;&gt;modelo de caja de CSS&lt;/a&gt; tiene como objetivo definir el comportamiento de los elementos en HTML. En concreto define el &lt;strong&gt;contenido&lt;/strong&gt;, &lt;strong&gt;relleno&lt;/strong&gt;, &lt;strong&gt;bordes&lt;/strong&gt; y &lt;strong&gt;márgenes&lt;/strong&gt;. Se utiliza en gran medida para disponer los elementos en una estructura determinada (el denominado &lt;strong&gt;layout&lt;/strong&gt;). En este artículo veremos un par de características relacionadas con él que pueden ser de mucha utilidad: la propiedad &lt;code&gt;box-sizing&lt;/code&gt; y el comportamiento de la &lt;strong&gt;anchura y altura&lt;/strong&gt; de las cajas.&lt;/p&gt;</description>
+      <description>&lt;p&gt;El &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS_Modelo_Caja/Introducci%C3%B3n_al_modelo_de_caja_de_CSS&#34;&gt;modelo de caja de CSS&lt;/a&gt; tiene como objetivo definir el comportamiento de los elementos en HTML. En concreto define el &lt;strong&gt;contenido&lt;/strong&gt;, &lt;strong&gt;relleno&lt;/strong&gt;, &lt;strong&gt;bordes&lt;/strong&gt; y &lt;strong&gt;márgenes&lt;/strong&gt;. Se utiliza en gran medida para disponer los elementos en una estructura determinada (el denominado &lt;strong&gt;layout&lt;/strong&gt;). En este artículo veremos un par de características relacionadas con él que pueden ser de mucha utilidad: la propiedad &lt;code&gt;box-sizing&lt;/code&gt; y el comportamiento de la &lt;strong&gt;anchura y altura&lt;/strong&gt; de las cajas.&lt;/p&gt;</description>
     </item>
     
     <item>

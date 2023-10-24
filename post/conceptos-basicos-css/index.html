@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="es" itemscope itemtype="http://schema.org/WebPage">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Conceptos básicos de CSS - Blog de Pedro Prieto</title>
-  
+<html
+  lang="es"
+  itemscope
+  itemtype="http://schema.org/WebPage"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+          Conceptos básicos de CSS - Blog de Pedro Prieto
+        </title>
+    
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -22,7 +28,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="Pedro Prieto Alarcón" />
+<meta name="author" content="Pedro Prieto" />
   <meta name="description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.
 " />
 
@@ -33,10 +39,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.89.2" />
+<meta name="generator" content="Hugo 0.119.0" />
 
 
 <link rel="canonical" href="https://pedroprieto.github.io/post/conceptos-basicos-css/" />
+
+
 
 
 
@@ -52,7 +60,9 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.346b7bb505a2b535947515c747973b5be8787e525e0f9dc2931295a6a030c67b.css" integrity="sha256-NGt7tQWitTWUdRXHR5c7W&#43;h4flJeD53CkxKVpqAwxns=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.d8d87b982993a745e5e7b6a6cbf257be8c3e82aab5e485f0908ad7e6c3501ab2.css" integrity="sha256-2Nh7mCmTp0Xl57amy/JXvow&#43;gqq15IXwkIrX5sNQGrI=" media="screen" crossorigin="anonymous">
+
+
 
 
 
@@ -64,7 +74,6 @@
 <meta property="og:url" content="https://pedroprieto.github.io/post/conceptos-basicos-css/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-10-21T11:28:00+02:00" />
 <meta property="article:modified_time" content="2019-10-21T11:28:00+02:00" />
-
 <meta itemprop="name" content="Conceptos básicos de CSS">
 <meta itemprop="description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada."><meta itemprop="datePublished" content="2019-10-21T11:28:00+02:00" />
 <meta itemprop="dateModified" content="2019-10-21T11:28:00+02:00" />
@@ -85,9 +94,11 @@
 
 
 
-</head>
-<body>
-  <div id="mobile-navbar" class="mobile-navbar">
+  </head>
+  <body>
+    <div id="back-to-top"></div>
+
+    <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
     <a href="/" class="logo">Blog de Pedro Prieto</a>
   </div>
@@ -142,14 +153,15 @@
 </nav>
 
 
-  
+    
 
-  
+    
 
-  
+    
 
-  <header id="header" class="header container">
-    <div class="logo-wrapper">
+
+    <header id="header" class="header">
+      <div class="logo-wrapper">
   <a href="/" class="logo">
     
       Blog de Pedro Prieto
@@ -224,42 +236,58 @@
   </ul>
 </nav>
 
-  </header>
-
-  <div id="mobile-panel">
-    <main id="main" class="main bg-llight">
-      <div class="content-wrapper">
-        <div id="content" class="content container">
-          <article class="post bg-white">
-    
-    <header class="post-header">
-      <h1 class="post-title">Conceptos básicos de CSS</h1>
-      
-      <div class="post-meta">
-        <time datetime="2019-10-21" class="post-time">
-          21-10-2019
-        </time>
-        <div class="post-category">
-            <a href="https://pedroprieto.github.io/categories/diw/"> diw </a>
-            <a href="https://pedroprieto.github.io/categories/diw-estilos-multimedia/"> diw-estilos-multimedia </a>
-            
-          </div>
-        
-
-        
-        
-
-        
-        
-      </div>
     </header>
 
+    <div id="mobile-panel">
+      <main id="main" class="main bg-llight wallpaper">
+        <div class="content-wrapper">
+    <div id="content" class="content">
+      <article class="post">
+        
+        <header class="post-header">
+          <h1 class="post-title">Conceptos básicos de CSS</h1>
+          
+
+          <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      Pedro Prieto
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2019-10-21">
+      21-10-2019
+    </time>
+  </div>
+
+  
+
+
+  <div class="post-meta__right">
+    
+
+    <div class="post-meta-category">
+        <a href="https://pedroprieto.github.io/categories/diw/"> diw </a>
+          <a href="https://pedroprieto.github.io/categories/diw-estilos-multimedia/"> diw-estilos-multimedia </a>
+          
+      </div>
+
+
     
     
 
+
     
-    <div class="post-content">
-      <p>Este artículo tiene como objetivo ofrecer una introducción sobre <strong>CSS</strong>, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.</p>
+    
+  </div>
+</div>
+
+        </header>
+
+        
+        <div class="post-content">
+          <p>Este artículo tiene como objetivo ofrecer una introducción sobre <strong>CSS</strong>, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.</p>
 <h2 id="introducción">Introducción</h2>
 <p>Las hojas de estilo en cascada <strong>CSS</strong> - <em>Cascade Style Sheet</em> en inglés - se utilizan para <strong>diseñar y dar formato</strong> a las páginas web escritas con HTML. Las razones de su aparición son las siguientes:</p>
 <ul>
@@ -270,27 +298,27 @@
 <p>Frente a esta situación, el organismo W3C decidió crear un sistema por el que las <strong>instrucciones de formato</strong> se encontraran <strong>separadas</strong> de los otros elementos. Así, a partir de la versión 4 de HTML se desaconseja utilizar elementos de formato y se sugiere la utilización de las hojas de estilo en cascada o CSS.</p>
 <p>Un ejemplo de las posibilidades que ofrecen las hojas de estilo se puede encontrar visitando la página <a href="http://www.csszengarden.com/">Zengarden</a>, donde se puede observar el efecto que produce en la misma página HTML utilizar una hoja de estilo u otra.</p>
 <h2 id="estructura-modular">Estructura modular</h2>
-<p>La versión actual de CSS es <strong>CSS 3</strong>. Esta especificación se ha dividido en una serie de <a href="https://en.wikipedia.org/wiki/Cascading%5FStyle%5FSheets#CSS%5F3">módulos</a> que son desarrollados por separado. Cada uno de dichos módulos hace referencia a una serie de funcionalidades (color, modelo de caja, fuentes, bordes, <em>layout</em>, <em>media queries</em>, selectores,&hellip;).</p>
+<p>La versión actual de CSS es <strong>CSS 3</strong>. Esta especificación se ha dividido en una serie de <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3">módulos</a> que son desarrollados por separado. Cada uno de dichos módulos hace referencia a una serie de funcionalidades (color, modelo de caja, fuentes, bordes, <em>layout</em>, <em>media queries</em>, selectores,&hellip;).</p>
 <h2 id="tipos-de-hojas-de-estilo">Tipos de hojas de estilo</h2>
 <p>Una hoja de estilos contiene datos de formato relativos a los elementos definidos en la página HTML. Por lo tanto, ambos (documento HTML y hoja de estilo) deben estar relacionados de alguna manera. Existen tres maneras de utilizar hojas de estilo:</p>
 <ul>
 <li><strong>Aplicar estilos directamente a elementos HTML</strong>. De esta manera se escribe el código CSS dentro del atributo style de la etiqueta HTML en cuestión.Por ejemplo, para aplicar un estilo css a un párrafo:</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;código_css&#34;</span>&gt;HOLA&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;código_css&#34;</span>&gt;HOLA&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+</span></span></code></pre></div><ul>
 <li><strong>Hojas de estilos internas</strong>. Se utilizan para aplicar estilos a la página en la cual se utiliza. El código de la hoja de estilo se ubicará en la cabecera de la página web, entre las etiquetas siguientes:</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">style</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span>&gt;
-        <span style="color:#666">&lt;!</span><span style="color:#008000;font-weight:bold">--</span>  <span style="color:#008000;font-weight:bold">Código_css</span>  <span style="color:#008000;font-weight:bold">--</span><span style="color:#666">&gt;</span>
-&lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">style</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#666">&lt;!</span><span style="color:#008000;font-weight:bold">--</span>  <span style="color:#008000;font-weight:bold">Código_css</span>  <span style="color:#008000;font-weight:bold">--</span><span style="color:#666">&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;
+</span></span></code></pre></div><ul>
 <li><strong>Hojas de estilos externas</strong>. Se utilizan para aplicar el mismo formato a varias páginas de un portal. Se definen en un archivo externo que será consultado por todas las páginas HTML del sitio web, reutilizando por tanto el código. Para ello se escribirá el código CSS en un documento externo con extensión css. Posteriormente se vinculará a la página web mediante la utilización de la siguiente <strong>etiqueta</strong> en la <strong>cabecera</strong> del documento HTML en cuestión:</li>
 </ul>
 <!-- raw HTML omitted -->
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;nombre_archivo_css.css&#34;</span>&gt;
-</code></pre></div><h2 id="cascada-y-herencia">Cascada y herencia</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;nombre_archivo_css.css&#34;</span>&gt;
+</span></span></code></pre></div><h2 id="cascada-y-herencia">Cascada y herencia</h2>
 <p>CSS permite definir estilos en varios sitios, tal como hemos visto en el punto anterior. Además, es posible que un elemento reciba estilos de varios orígenes distintos. Algunos ejemplos de ello son:</p>
 <ul>
 <li>Un elemento tiene asignado un nombre de clase y un identificador. En la hoja de estilos se definen estilos para dicho identificador y dicho nombre de clase.</li>
@@ -302,61 +330,61 @@
 <p>En concreto, el procedimiento que se aplica es el siguiente (fuente: <a href="https://www.w3.org/TR/CSS22/cascade.html#cascade">https://www.w3.org/TR/CSS22/cascade.html#cascade</a>):</p>
 <ul>
 <li>Se cuenta 1 si la declaración está incluida en un atributo <code>style</code>; si no, se cuenta 0. (Peso &ldquo;<strong>a</strong>&rdquo;, mayor importancia).</li>
-<li>Se cuenta el número de identificadores (ID) que aparezcan en el selector. (Peso &ldquo;<strong>b</strong>&quot;).</li>
-<li>Se cuenta el número de atributos (distintos al ID) , clases y pseudo-clases en el selector. (Peso &ldquo;<strong>c</strong>&quot;).</li>
+<li>Se cuenta el número de identificadores (ID) que aparezcan en el selector. (Peso &ldquo;<strong>b</strong>&rdquo;).</li>
+<li>Se cuenta el número de atributos (distintos al ID) , clases y pseudo-clases en el selector. (Peso &ldquo;<strong>c</strong>&rdquo;).</li>
 <li>Se cuenta el número de nombres de elementos y pseudo-elementos en el selector. (Peso &ldquo;<strong>d</strong>&rdquo;, menor importancia).</li>
 </ul>
 <p>Para determinar qué estilo se aplica en caso de conflicto se mira el resultado: el número más alto en la casilla de mayor peso es el que se aplica; en caso de empate, se comprueban los números de los pesos más bajos sucesivamente.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"> *             {}  /* a=0 b=0 c=0 d=0 -&gt; especificidad = 0,0,0,0 */
- li            {}  /* a=0 b=0 c=0 d=1 -&gt; especificidad = 0,0,0,1 */
- li:first-line {}  /* a=0 b=0 c=0 d=2 -&gt; especificidad = 0,0,0,2 */
- ul li         {}  /* a=0 b=0 c=0 d=2 -&gt; especificidad = 0,0,0,2 */
- ul ol+li      {}  /* a=0 b=0 c=0 d=3 -&gt; especificidad = 0,0,0,3 */
- h1 + *[rel=up]{}  /* a=0 b=0 c=1 d=1 -&gt; especificidad = 0,0,1,1 */
- ul ol li.red  {}  /* a=0 b=0 c=1 d=3 -&gt; especificidad = 0,0,1,3 */
- li.red.level  {}  /* a=0 b=0 c=2 d=1 -&gt; especificidad = 0,0,2,1 */
- #x34y         {}  /* a=0 b=1 c=0 d=0 -&gt; especificidad = 0,1,0,0 */
- style=&#34;&#34;          /* a=1 b=0 c=0 d=0 -&gt; especificidad = 1,0,0,0 .
-                      Éste último es el que se aplica.*/
-
-&lt;<span style="color:#008000;font-weight:bold">head</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">style</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span>&gt;
-    #<span style="color:#00f;font-weight:bold">x97z</span> { <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">red</span> }
-  &lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;
-  &lt;/<span style="color:#008000;font-weight:bold">head</span>&gt;
-&lt;<span style="color:#008000;font-weight:bold">body</span>&gt;
-  &lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;x97z&#34;</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;color: green&#34;</span>&gt;
-&lt;/<span style="color:#008000;font-weight:bold">body</span>&gt;
-</code></pre></div><p>En el ejemplo, el párrafo tendrá color verde, ya que el valor de su peso &ldquo;a&rdquo; es 1. Como el peso &ldquo;a&rdquo; es el más importante, es el que se impone a los demás.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span> *             {}  /* a=0 b=0 c=0 d=0 -&gt; especificidad = 0,0,0,0 */
+</span></span><span style="display:flex;"><span> li            {}  /* a=0 b=0 c=0 d=1 -&gt; especificidad = 0,0,0,1 */
+</span></span><span style="display:flex;"><span> li:first-line {}  /* a=0 b=0 c=0 d=2 -&gt; especificidad = 0,0,0,2 */
+</span></span><span style="display:flex;"><span> ul li         {}  /* a=0 b=0 c=0 d=2 -&gt; especificidad = 0,0,0,2 */
+</span></span><span style="display:flex;"><span> ul ol+li      {}  /* a=0 b=0 c=0 d=3 -&gt; especificidad = 0,0,0,3 */
+</span></span><span style="display:flex;"><span> h1 + *[rel=up]{}  /* a=0 b=0 c=1 d=1 -&gt; especificidad = 0,0,1,1 */
+</span></span><span style="display:flex;"><span> ul ol li.red  {}  /* a=0 b=0 c=1 d=3 -&gt; especificidad = 0,0,1,3 */
+</span></span><span style="display:flex;"><span> li.red.level  {}  /* a=0 b=0 c=2 d=1 -&gt; especificidad = 0,0,2,1 */
+</span></span><span style="display:flex;"><span> #x34y         {}  /* a=0 b=1 c=0 d=0 -&gt; especificidad = 0,1,0,0 */
+</span></span><span style="display:flex;"><span> style=&#34;&#34;          /* a=1 b=0 c=0 d=0 -&gt; especificidad = 1,0,0,0 .
+</span></span><span style="display:flex;"><span>                      Éste último es el que se aplica.*/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#008000;font-weight:bold">style</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    #<span style="color:#00f;font-weight:bold">x97z</span> { <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">red</span> }
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#008000;font-weight:bold">style</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#008000;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;x97z&#34;</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;color: green&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#008000;font-weight:bold">body</span>&gt;
+</span></span></code></pre></div><p>En el ejemplo, el párrafo tendrá color verde, ya que el valor de su peso &ldquo;a&rdquo; es 1. Como el peso &ldquo;a&rdquo; es el más importante, es el que se impone a los demás.</p>
 <h3 id="important">!important</h3>
 <p>Existe una manera de sobreescribir estilos CSS sin importar las reglas de especificidad: añadiendo <code>!important</code> a la regla correspondiente:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">p</span> {
-    <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">red</span> <span style="color:#080">!important</span>;
-}
-#<span style="color:#00f;font-weight:bold">parrafo1</span> {
-    <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">green</span>;
-}
-</code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;parrafo1&#34;</span>&gt;Será ROJO a pesar de que la regla es menos específica&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
-</code></pre></div><h2 id="hojas-de-estilo-alternativas">Hojas de estilo alternativas</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">p</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">red</span> <span style="color:#080">!important</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>#<span style="color:#00f;font-weight:bold">parrafo1</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">green</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;parrafo1&#34;</span>&gt;Será ROJO a pesar de que la regla es menos específica&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
+</span></span></code></pre></div><h2 id="hojas-de-estilo-alternativas">Hojas de estilo alternativas</h2>
 <p>Es posible incluir más de una hoja de estilo en un sitio web y ofrecer al usuario la posibilidad de usar una u otra mediante el uso de <strong>hojas de estilo alternativas</strong>.</p>
 <p>Algunos navegadores (como Firefox) permiten seleccionar la hoja de estilos a través de sus menús (en Firefox, menú <em>Ver</em> / <em>Estilo de página</em>).</p>
 <p>Para incluir hojas de estilo alternativas se debe utilizar la etiqueta <code>&lt;link rel=&quot;alternate stylesheet&quot;&gt;</code>. A continuación se muestra un ejemplo:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span>
-      <span style="color:#b44">title</span><span style="color:#666">=</span><span style="color:#b44">&#34;Estilo principal&#34;</span>
-      <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;./css/estilos.css&#34;</span>&gt;
-
-&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;alternate stylesheet&#34;</span>
-      <span style="color:#b44">title</span><span style="color:#666">=</span><span style="color:#b44">&#34;Estilo alternativo 1&#34;</span>
-      <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;./css/estilos1.css&#34;</span>&gt;
-
-&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;alternate stylesheet&#34;</span>
-      <span style="color:#b44">title</span><span style="color:#666">=</span><span style="color:#b44">&#34;Estilo alternativo 2&#34;</span>
-      <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;./css/estilos2.css&#34;</span>&gt;
-</code></pre></div><h2 id="compatibilidad-entre-navegadores">Compatibilidad entre navegadores</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#b44">title</span><span style="color:#666">=</span><span style="color:#b44">&#34;Estilo principal&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;./css/estilos.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;alternate stylesheet&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#b44">title</span><span style="color:#666">=</span><span style="color:#b44">&#34;Estilo alternativo 1&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;./css/estilos1.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;alternate stylesheet&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#b44">title</span><span style="color:#666">=</span><span style="color:#b44">&#34;Estilo alternativo 2&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;./css/estilos2.css&#34;</span>&gt;
+</span></span></code></pre></div><h2 id="compatibilidad-entre-navegadores">Compatibilidad entre navegadores</h2>
 <p>En ocasiones es difícil saber si una determinada propiedad CSS, sobre todo las más recientes, es compatible con una determinada versión de navegador. Para ello son muy útiles los siguientes enlaces:</p>
 <ul>
 <li><a href="http://caniuse.com/">Can I Use? (¿Puedo utilizar&hellip;?)</a></li>
-<li><a href="http://www.w3schools.com/cssref/css3%5Fbrowsersupport.asp">Tabla de compatibilidad de propiedades CSS con los principales navegadores</a></li>
+<li><a href="http://www.w3schools.com/cssref/css3_browsersupport.asp">Tabla de compatibilidad de propiedades CSS con los principales navegadores</a></li>
 </ul>
 <h2 id="recomendaciones-de-diseño-con-css">Recomendaciones de diseño con CSS</h2>
 <p>En el diseño de interfaces es recomendable definir <strong>clases de estilos</strong> para aplicar a determinadas secciones, elementos destacados, etc. De esta manera se conseguirá un código altamente <strong>modular</strong> que permitirá realizar cambios tanto de apariencia como de estructura con relativa facilidad.</p>
@@ -373,17 +401,17 @@
 <li><a href="http://librosweb.es/css/">http://librosweb.es/css/</a> - Curso completo de CSS pero algo anticuado</li>
 <li><a href="https://www.websiteplanet.com/blog/html-guide-beginners/">https://www.websiteplanet.com/blog/html-guide-beginners/</a> - Conceptos básicos de HTML</li>
 </ul>
-    </div>
+        </div>
 
-    
-    
+        
+        
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Autor</span>
-    <span class="item-content">Pedro Prieto Alarcón</span>
+    <span class="item-content">Pedro Prieto</span>
   </p>
   <p class="copyright-item">
-    <span class="item-title">Ultima Modificación</span>
+    <span class="item-title">Última Modificación</span>
     <span class="item-content">
       21-10-2019
       
@@ -397,60 +425,65 @@
 </div>
 
 
-    
-    
 
-    <footer class="post-footer">
-      <div class="post-tags">
-          <a href="https://pedroprieto.github.io/tags/css/">css</a>
-          
-        </div>
-
-      
-      <nav class="post-nav">
         
-          <a class="prev" href="/post/modelo-caja-css/">
+        
+
+
+        <footer class="post-footer">
+          <div class="post-tags">
+              <a href="https://pedroprieto.github.io/tags/css/">css</a>
+                
+            </div>
+
+
+          
+          <nav class="post-nav">
             
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+              <a class="prev" href="/post/modelo-caja-css/">
+                
+                <i class="iconfont">
+                  <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18">
   <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
 </svg>
 
-            </i>
-            <span class="prev-text nav-default">Notas sobre el modelo de cajas en CSS</span>
-            <span class="prev-text nav-mobile">Anterior</span>
-          </a>
-        
-          <a class="next" href="/post/accesibilidad/">
-            <span class="next-text nav-default">Pautas de accesibilidad</span>
-            <span class="prev-text nav-mobile">Siguiente</span>
+                </i>
+                <span class="prev-text nav-default">Notas sobre el modelo de cajas en CSS</span>
+                <span class="prev-text nav-mobile">Anterior</span>
+              </a>
             
-            <i class="iconfont">
-              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+              <a class="next" href="/post/accesibilidad/">
+                <span class="next-text nav-default">Pautas de accesibilidad</span>
+                <span class="prev-text nav-mobile">Siguiente</span>
+                
+                <i class="iconfont">
+                  <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18">
   <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
 </svg>
 
-            </i>
-          </a>
-      </nav>
-    </footer>
-  </article>
+                </i>
+              </a>
+          </nav>
+        </footer>
+      </article>
+
+      
+      
+
+
+      
+      
+
+  
 
   
   
 
   
-  
-
-  
-
-  
-  
-
   
 
   
@@ -461,12 +494,21 @@
 
   
 
-        </div>
-      </div>
-    </main>
+  
 
-    <footer id="footer" class="footer">
-      <div class="icon-links">
+
+    </div>
+
+    
+    
+
+
+  </div>
+
+      </main>
+
+      <footer id="footer" class="footer">
+        <div class="icon-links">
   
   
     <a href="mailto:pedroprieto@iesmarenostrum.com" rel="me noopener" class="iconfont"
@@ -500,7 +542,7 @@
 </svg>
 
   </a>
-   
+  
 </div>
 
 <div class="copyright">
@@ -516,7 +558,7 @@
     &copy;
     
        -
-    2021
+    2023
     <span class="heart">
       
       <i class="iconfont">
@@ -539,28 +581,30 @@
   
 </div>
 
-    </footer>
+      </footer>
 
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont">
-        
-        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+      <div class="button__back-to-top">
+        <a href="#back-to-top">
+          <i class="iconfont">
+            
+            <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="35" height="35">
   <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
 </svg>
 
-      </i>
+          </i>
+        </a>
+      </div>
     </div>
-  </div>
-  
+    
 <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
 
 
 
 
-<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.52161cb0a9aea932c16c96c2c7d6eed45dc2c8724a1df03dc857a931d78cce98.js" integrity="sha256-UhYcsKmuqTLBbJbCx9bu1F3CyHJKHfA9yFepMdeMzpg=" crossorigin="anonymous"></script>
 
 
 
@@ -587,5 +631,7 @@
 
 
 
-</body>
+
+
+  </body>
 </html>

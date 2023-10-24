@@ -13,7 +13,7 @@
       <pubDate>Mon, 28 Oct 2019 18:02:00 +0100</pubDate>
       
       <guid>https://pedroprieto.github.io/post/tecnicas_layout/</guid>
-      <description>&lt;p&gt;En la actualidad existen muchas maneras de crear layouts utilizando CSS. A las técnicas tradicionales (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;inline-block&lt;/code&gt;) se suman otras nuevas aportadas por CSS3, como &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FFlexible%5FBox%5FLayout/Conceptos%5FBasicos%5Fde%5FFlexbox&#34;&gt;flexbox&lt;/a&gt; o &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS%5FGrid%5FLayout&#34;&gt;CSS Grid Layout&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;En la actualidad existen muchas maneras de crear layouts utilizando CSS. A las técnicas tradicionales (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;inline-block&lt;/code&gt;) se suman otras nuevas aportadas por CSS3, como &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Conceptos_Basicos_de_Flexbox&#34;&gt;flexbox&lt;/a&gt; o &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout&#34;&gt;CSS Grid Layout&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>puestaprodseg on Blog de Pedro Prieto</title>
+    <title>Puestaprodseg on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/categories/puestaprodseg/</link>
-    <description>Recent content in puestaprodseg on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Puestaprodseg on Blog de Pedro Prieto</description>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 24 Oct 2023 15:28:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/categories/puestaprodseg/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Oct 2023 15:28:00 +0200</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/categories/puestaprodseg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Entornos de desarrollo</title>
       <link>https://pedroprieto.github.io/post/ides/</link>
       <pubDate>Tue, 24 Oct 2023 15:28:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/ides/</guid>
       <description>&lt;p&gt;Para trabajar con lenguajes de programación, no basta con utilizar un editor de texto: es recomendable contar con una serie de &lt;strong&gt;herramientas adicionales&lt;/strong&gt; que nos ayuden en el proceso de desarrollo o pruebas.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Lenguajes de programación</title>
       <link>https://pedroprieto.github.io/post/lenguajes_programacion/</link>
       <pubDate>Tue, 24 Oct 2023 13:16:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/lenguajes_programacion/</guid>
-      <description>Código fuente Conjunto de ficheros que almacenan texto escrito en un lenguaje legible por el ser humano. Dicho lenguaje, denominado lenguaje de programación, tiene una sintaxis específica. El texto escrito en dicho lenguaje especifica las acciones que llevará a cabo el programa cuando se ejecute.
-El código fuente debe traducirse a código máquina para que pueda ser ejecutado en un computador mediante un proceso denominado compilación.
-Código fuente en la Wikipedia.</description>
+      <description>&lt;h2 id=&#34;código-fuente&#34;&gt;&#xA;  Código fuente&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c%c3%b3digo-fuente&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Conjunto de ficheros que almacenan &lt;strong&gt;texto&lt;/strong&gt; escrito en un lenguaje legible por el ser humano. Dicho lenguaje, denominado &lt;strong&gt;lenguaje de programación&lt;/strong&gt;, tiene una sintaxis específica. El texto escrito en dicho lenguaje especifica las &lt;strong&gt;acciones&lt;/strong&gt; que llevará a cabo el programa cuando se ejecute.&lt;/p&gt;&#xA;&lt;p&gt;El código fuente debe traducirse a &lt;strong&gt;código máquina&lt;/strong&gt; para que pueda ser ejecutado en un computador mediante un proceso denominado &lt;strong&gt;compilación&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Source_code&#34;&gt;Código fuente en la Wikipedia&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

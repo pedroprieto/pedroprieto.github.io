@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>transformaciones on Blog de Pedro Prieto</title>
+    <title>Transformaciones on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/tags/transformaciones/</link>
-    <description>Recent content in transformaciones on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Transformaciones on Blog de Pedro Prieto</description>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 12 Nov 2019 00:09:00 +0100</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/transformaciones/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Nov 2019 00:09:00 +0100</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/tags/transformaciones/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Transformaciones, transiciones y animaciones en CSS</title>
       <link>https://pedroprieto.github.io/post/transiciones_css/</link>
       <pubDate>Tue, 12 Nov 2019 00:09:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/transiciones_css/</guid>
       <description>&lt;p&gt;En este artículo estudiaremos las herramientas disponibles en CSS para crear transformaciones, transiciones y animaciones.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

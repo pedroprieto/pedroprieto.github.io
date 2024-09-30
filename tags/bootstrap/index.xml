@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bootstrap on Blog de Pedro Prieto</title>
+    <title>Bootstrap on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/tags/bootstrap/</link>
-    <description>Recent content in bootstrap on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Bootstrap on Blog de Pedro Prieto</description>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 07 Jan 2020 12:56:00 +0100</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jan 2020 12:56:00 +0100</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bootstrap</title>
       <link>https://pedroprieto.github.io/post/bootstrap/</link>
       <pubDate>Tue, 07 Jan 2020 12:56:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/bootstrap/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com&#34;&gt;Bootstrap&lt;/a&gt; es una biblioteca de clases CSS pensada para facilitar la creación de prototipos web. Ofrece una serie de &lt;strong&gt;clases CSS&lt;/strong&gt; listas para ser usadas en cualquier proyecto &lt;strong&gt;prácticamente sin necesidad de tener que crear código CSS&lt;/strong&gt;. Los estilos han sido diseñados para &lt;strong&gt;ofrecer un aspecto visual uniforme&lt;/strong&gt; independientemente del tipo de navegador o sistema operativo utilizado.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

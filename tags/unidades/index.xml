@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>unidades on Blog de Pedro Prieto</title>
+    <title>Unidades on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/tags/unidades/</link>
-    <description>Recent content in unidades on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Unidades on Blog de Pedro Prieto</description>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 21 Oct 2019 12:28:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/unidades/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Oct 2019 12:28:00 +0200</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/tags/unidades/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unidades de medida</title>
       <link>https://pedroprieto.github.io/post/unidades-medida-css/</link>
       <pubDate>Mon, 21 Oct 2019 12:28:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/unidades-medida-css/</guid>
       <description>&lt;p&gt;En este artículo estudiaremos las unidades de medida más utilizadas en CSS, así como las diferencias más importantes entre las unidades &lt;strong&gt;relativas&lt;/strong&gt; y las unidades &lt;strong&gt;absolutas&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

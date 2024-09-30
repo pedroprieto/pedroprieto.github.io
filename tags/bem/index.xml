@@ -4,17 +4,16 @@
     <title>BEM on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/tags/bem/</link>
     <description>Recent content in BEM on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 22 Oct 2019 11:51:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/bem/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Oct 2019 11:51:00 +0200</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/tags/bem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Estrategias de diseño con CSS</title>
       <link>https://pedroprieto.github.io/post/estrategias_diseno_css/</link>
       <pubDate>Tue, 22 Oct 2019 11:51:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/estrategias_diseno_css/</guid>
       <description>&lt;p&gt;En ocasiones resulta difícil pensar en cómo abordar el diseño con CSS. Las recomendaciones actuales van en la línea de priorizar el &lt;strong&gt;uso de clases&lt;/strong&gt; para poder utilizarlas dentro de los archivos HTML. Dentro de esta recomendación nos encontramos con dos posibilidades: priorizar el &lt;strong&gt;diseño de componentes&lt;/strong&gt; o priorizar el diseño de &lt;strong&gt;clases de utilidades&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

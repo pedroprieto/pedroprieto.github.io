@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>optimizar on Blog de Pedro Prieto</title>
+    <title>Optimizar on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/tags/optimizar/</link>
-    <description>Recent content in optimizar on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Optimizar on Blog de Pedro Prieto</description>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 21 Oct 2019 12:39:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/optimizar/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Oct 2019 12:39:00 +0200</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/tags/optimizar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Minimización de hojas de estilo</title>
       <link>https://pedroprieto.github.io/post/minimizacion_css/</link>
       <pubDate>Mon, 21 Oct 2019 12:39:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/minimizacion_css/</guid>
       <description>&lt;p&gt;La minimización de código tiene como objetivo &lt;strong&gt;reducir el tamaño del archivo eliminando caracteres innecesarios&lt;/strong&gt;. Se utiliza en diseño web para reducir el tamaño de los archivos CSS y JavaScript y así reducir el tiempo de carga del sitio web.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

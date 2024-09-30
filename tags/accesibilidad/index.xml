@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>accesibilidad on Blog de Pedro Prieto</title>
+    <title>Accesibilidad on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/tags/accesibilidad/</link>
-    <description>Recent content in accesibilidad on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Accesibilidad on Blog de Pedro Prieto</description>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 14 Oct 2019 14:36:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/accesibilidad/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Oct 2019 14:36:00 +0200</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/tags/accesibilidad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pautas de accesibilidad</title>
       <link>https://pedroprieto.github.io/post/accesibilidad/</link>
       <pubDate>Mon, 14 Oct 2019 14:36:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/accesibilidad/</guid>
       <description>&lt;p&gt;La accesibilidad web es una práctica inclusiva que tiene como objetivo que &lt;strong&gt;no haya ninguna barrera que impida o limite el uso y acceso a Internet&lt;/strong&gt; a personas con cualquier tipo de discapacidad.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

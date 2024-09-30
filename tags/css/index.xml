@@ -1,165 +1,131 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>css on Blog de Pedro Prieto</title>
+    <title>Css on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/tags/css/</link>
-    <description>Recent content in css on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Css on Blog de Pedro Prieto</description>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 07 Jan 2020 12:56:00 +0100</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jan 2020 12:56:00 +0100</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bootstrap</title>
       <link>https://pedroprieto.github.io/post/bootstrap/</link>
       <pubDate>Tue, 07 Jan 2020 12:56:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/bootstrap/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://getbootstrap.com&#34;&gt;Bootstrap&lt;/a&gt; es una biblioteca de clases CSS pensada para facilitar la creación de prototipos web. Ofrece una serie de &lt;strong&gt;clases CSS&lt;/strong&gt; listas para ser usadas en cualquier proyecto &lt;strong&gt;prácticamente sin necesidad de tener que crear código CSS&lt;/strong&gt;. Los estilos han sido diseñados para &lt;strong&gt;ofrecer un aspecto visual uniforme&lt;/strong&gt; independientemente del tipo de navegador o sistema operativo utilizado.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fundamentos del CMS Jekyll</title>
       <link>https://pedroprieto.github.io/post/jekyllcms/</link>
       <pubDate>Tue, 19 Nov 2019 12:30:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/jekyllcms/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; es un &lt;a href=&#34;https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos&#34;&gt;gestor de contenido&lt;/a&gt; de tipo &lt;strong&gt;estático&lt;/strong&gt; (&lt;em&gt;static site generator&lt;/em&gt;). No depende de ninguna base de datos ni de ningún lenguaje de servidor. Utiliza ficheros de texto para almacenar los contenidos y los datos. Dado que no utiliza tecnologías de servidor, es necesario realizar un proceso de &lt;strong&gt;generación&lt;/strong&gt; o compilación para producir archivos HTML válidos que puedan ser alojados en un servidor y procesados adecuadamente por un navegador web convencional.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Audio y vídeo en HTML</title>
       <link>https://pedroprieto.github.io/post/audio_video_html/</link>
       <pubDate>Tue, 12 Nov 2019 00:55:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/audio_video_html/</guid>
       <description>&lt;p&gt;HTML5 define las etiquetas &lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt; y &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt; para incorporar archivos de audio y vídeo respectivamente en páginas web. En este artículo veremos cómo utilizar dichas etiquetas, qué &lt;strong&gt;formatos&lt;/strong&gt; de vídeo y audio son compatibles con los distintos navegadores y qué &lt;strong&gt;programas&lt;/strong&gt; podemos utilizar para &lt;strong&gt;editar&lt;/strong&gt; y &lt;strong&gt;realizar conversiones&lt;/strong&gt; entre distintos formatos.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Transformaciones, transiciones y animaciones en CSS</title>
       <link>https://pedroprieto.github.io/post/transiciones_css/</link>
       <pubDate>Tue, 12 Nov 2019 00:09:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/transiciones_css/</guid>
       <description>&lt;p&gt;En este artículo estudiaremos las herramientas disponibles en CSS para crear transformaciones, transiciones y animaciones.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Imágenes en la web</title>
       <link>https://pedroprieto.github.io/post/imagenes_web/</link>
       <pubDate>Mon, 11 Nov 2019 13:22:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/imagenes_web/</guid>
       <description>&lt;p&gt;Las imágenes incluidas en los sitios web son responsables de gran parte del &lt;strong&gt;tamaño de descarga&lt;/strong&gt;. Por tanto, es de vital importancia utilizar las técnicas adecuadas tanto para su &lt;strong&gt;correcta visualización&lt;/strong&gt; (independientemente del tipo de dispositivo utilizado) como para su &lt;strong&gt;optimización de tamaño&lt;/strong&gt; de cara a mejorar la velocidad de carga del sitio.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Licencias y propiedad intelectual</title>
       <link>https://pedroprieto.github.io/post/licencias/</link>
       <pubDate>Mon, 11 Nov 2019 12:23:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/licencias/</guid>
       <description>&lt;p&gt;A la hora de crear un sitio web es muy importante conocer la legislación sobre propiedad intelectual y los distintos tipos de licencias disponibles tanto para &lt;strong&gt;proteger los contenidos o código que generemos&lt;/strong&gt; como para &lt;strong&gt;utilizar adecuadamente contenido creado por terceros&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Diseño responsivo</title>
       <link>https://pedroprieto.github.io/post/disenyo_responsivo/</link>
       <pubDate>Mon, 04 Nov 2019 12:44:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/disenyo_responsivo/</guid>
       <description>&lt;p&gt;En este artículo trataremos los fundamentos del diseño web adaptable o adaptativo (&lt;em&gt;Responsive Web Design&lt;/em&gt; en inglés).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fuentes en CSS</title>
       <link>https://pedroprieto.github.io/post/css_fonts/</link>
       <pubDate>Thu, 31 Oct 2019 16:12:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/css_fonts/</guid>
       <description>&lt;p&gt;En este artículo se aborda el uso de tipos de letra (fuentes) en CSS: cómo incorporar fuentes desde &lt;strong&gt;servidores externos&lt;/strong&gt;, qué tipos de &lt;strong&gt;fuente genéricos&lt;/strong&gt; existen y cómo establecer &lt;strong&gt;tipos de fuentes seguros&lt;/strong&gt; para que sean compatibles con todos los navegadores y sistemas operativos.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Diseño de formularios</title>
       <link>https://pedroprieto.github.io/post/disenyo_formularios/</link>
       <pubDate>Tue, 29 Oct 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/disenyo_formularios/</guid>
       <description>&lt;p&gt;En este artículo se analizarán algunas recomendaciones de diseño relacionadas con los formularios web. El objetivo es aprender a diseñar formularios que muestren la información de manera limpia, clara y de forma adaptada a cualquier tipo de dispositivo.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Técnicas para crear layouts</title>
       <link>https://pedroprieto.github.io/post/tecnicas_layout/</link>
       <pubDate>Mon, 28 Oct 2019 18:02:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/tecnicas_layout/</guid>
       <description>&lt;p&gt;En la actualidad existen muchas maneras de crear layouts utilizando CSS. A las técnicas tradicionales (&lt;code&gt;float&lt;/code&gt;, &lt;code&gt;inline-block&lt;/code&gt;) se suman otras nuevas aportadas por CSS3, como &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Conceptos_Basicos_de_Flexbox&#34;&gt;flexbox&lt;/a&gt; o &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout&#34;&gt;CSS Grid Layout&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tipos de layouts</title>
       <link>https://pedroprieto.github.io/post/tipos_layout/</link>
       <pubDate>Mon, 28 Oct 2019 13:15:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/tipos_layout/</guid>
       <description>&lt;p&gt;El &lt;em&gt;layout&lt;/em&gt; o &lt;strong&gt;estructura&lt;/strong&gt; de un interfaz web es la manera de organizar o disponer los elementos visuales en la página. El diseño del layout determina la posición de cada uno de los elementos que componen el interfaz web (cabecera, menús, banners, contenido, etc.).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Estrategias de diseño con CSS</title>
       <link>https://pedroprieto.github.io/post/estrategias_diseno_css/</link>
       <pubDate>Tue, 22 Oct 2019 11:51:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/estrategias_diseno_css/</guid>
       <description>&lt;p&gt;En ocasiones resulta difícil pensar en cómo abordar el diseño con CSS. Las recomendaciones actuales van en la línea de priorizar el &lt;strong&gt;uso de clases&lt;/strong&gt; para poder utilizarlas dentro de los archivos HTML. Dentro de esta recomendación nos encontramos con dos posibilidades: priorizar el &lt;strong&gt;diseño de componentes&lt;/strong&gt; o priorizar el diseño de &lt;strong&gt;clases de utilidades&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Variables y preprocesadores CSS</title>
       <link>https://pedroprieto.github.io/post/variables_preprocesadores_css/</link>
       <pubDate>Tue, 22 Oct 2019 09:54:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/variables_preprocesadores_css/</guid>
-      <description>&lt;p&gt;En los últimos años han aparecido una gran cantidad de &lt;a href=&#34;https://developer.mozilla.org/es/docs/Glossary/Preprocesador_CSS&#34;&gt;preprocesadores CSS&lt;/a&gt; que permiten incorporar técnicas de lenguajes de programación (variables, anidamiento, &lt;a href=&#34;https://es.wikipedia.org/wiki/Mixin&#34;&gt;mixins&lt;/a&gt;,&amp;hellip;) a la creación de hojas de estilo. La desventaja que tienen es que el código debe &lt;strong&gt;compilarse&lt;/strong&gt; para generar CSS válido que pueda ser utilizado por el navegador.&lt;/p&gt;
-&lt;p&gt;Frente a esto, es interesante conocer que CSS permite definir &lt;strong&gt;variables&lt;/strong&gt; que pueden ser reutilizadas en todo el documento, proporcionando una alternativa sencilla y estándar, aunque lógicamente menos potente.&lt;/p&gt;</description>
+      <description>&lt;p&gt;En los últimos años han aparecido una gran cantidad de &lt;a href=&#34;https://developer.mozilla.org/es/docs/Glossary/Preprocesador_CSS&#34;&gt;preprocesadores CSS&lt;/a&gt; que permiten incorporar técnicas de lenguajes de programación (variables, anidamiento, &lt;a href=&#34;https://es.wikipedia.org/wiki/Mixin&#34;&gt;mixins&lt;/a&gt;,&amp;hellip;) a la creación de hojas de estilo. La desventaja que tienen es que el código debe &lt;strong&gt;compilarse&lt;/strong&gt; para generar CSS válido que pueda ser utilizado por el navegador.&lt;/p&gt;&#xA;&lt;p&gt;Frente a esto, es interesante conocer que CSS permite definir &lt;strong&gt;variables&lt;/strong&gt; que pueden ser reutilizadas en todo el documento, proporcionando una alternativa sencilla y estándar, aunque lógicamente menos potente.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Minimización de hojas de estilo</title>
       <link>https://pedroprieto.github.io/post/minimizacion_css/</link>
       <pubDate>Mon, 21 Oct 2019 12:39:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/minimizacion_css/</guid>
       <description>&lt;p&gt;La minimización de código tiene como objetivo &lt;strong&gt;reducir el tamaño del archivo eliminando caracteres innecesarios&lt;/strong&gt;. Se utiliza en diseño web para reducir el tamaño de los archivos CSS y JavaScript y así reducir el tiempo de carga del sitio web.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Unidades de medida</title>
       <link>https://pedroprieto.github.io/post/unidades-medida-css/</link>
       <pubDate>Mon, 21 Oct 2019 12:28:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/unidades-medida-css/</guid>
       <description>&lt;p&gt;En este artículo estudiaremos las unidades de medida más utilizadas en CSS, así como las diferencias más importantes entre las unidades &lt;strong&gt;relativas&lt;/strong&gt; y las unidades &lt;strong&gt;absolutas&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Notas sobre el modelo de cajas en CSS</title>
       <link>https://pedroprieto.github.io/post/modelo-caja-css/</link>
       <pubDate>Mon, 21 Oct 2019 11:47:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/modelo-caja-css/</guid>
       <description>&lt;p&gt;El &lt;a href=&#34;https://developer.mozilla.org/es/docs/Web/CSS/CSS_Modelo_Caja/Introducci%C3%B3n_al_modelo_de_caja_de_CSS&#34;&gt;modelo de caja de CSS&lt;/a&gt; tiene como objetivo definir el comportamiento de los elementos en HTML. En concreto define el &lt;strong&gt;contenido&lt;/strong&gt;, &lt;strong&gt;relleno&lt;/strong&gt;, &lt;strong&gt;bordes&lt;/strong&gt; y &lt;strong&gt;márgenes&lt;/strong&gt;. Se utiliza en gran medida para disponer los elementos en una estructura determinada (el denominado &lt;strong&gt;layout&lt;/strong&gt;). En este artículo veremos un par de características relacionadas con él que pueden ser de mucha utilidad: la propiedad &lt;code&gt;box-sizing&lt;/code&gt; y el comportamiento de la &lt;strong&gt;anchura y altura&lt;/strong&gt; de las cajas.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Conceptos básicos de CSS</title>
       <link>https://pedroprieto.github.io/post/conceptos-basicos-css/</link>
       <pubDate>Mon, 21 Oct 2019 11:28:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/conceptos-basicos-css/</guid>
       <description>&lt;p&gt;Este artículo tiene como objetivo ofrecer una introducción sobre &lt;strong&gt;CSS&lt;/strong&gt;, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

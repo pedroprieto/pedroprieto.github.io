@@ -1,294 +1,148 @@
 <!DOCTYPE html>
-<html
-  lang="es"
-  itemscope
-  itemtype="http://schema.org/WebPage"
->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>
-          Conceptos básicos de CSS - Blog de Pedro Prieto
-        </title>
-    
-
-<meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
-
-<meta name="MobileOptimized" content="width"/>
-<meta name="HandheldFriendly" content="true"/>
-
-
-<meta name="applicable-device" content="pc,mobile">
-
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-<meta name="mobile-web-app-capable" content="yes">
-
-<meta name="author" content="Pedro Prieto" />
-  <meta name="description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.
-" />
-
-  <meta name="keywords" content="DIW, interfaces, DAW, desarrollo web" />
-
-
-
-
-
-
-<meta name="generator" content="Hugo 0.119.0" />
-
-
-<link rel="canonical" href="https://pedroprieto.github.io/post/conceptos-basicos-css/" />
-
-
-
-
-
-<link rel="icon" href="/favicon.ico" />
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/sass/jane.min.d8d87b982993a745e5e7b6a6cbf257be8c3e82aab5e485f0908ad7e6c3501ab2.css" integrity="sha256-2Nh7mCmTp0Xl57amy/JXvow&#43;gqq15IXwkIrX5sNQGrI=" media="screen" crossorigin="anonymous">
-
-
-
-
-
-
-
-<meta property="og:title" content="Conceptos básicos de CSS" />
-<meta property="og:description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://pedroprieto.github.io/post/conceptos-basicos-css/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-10-21T11:28:00+02:00" />
-<meta property="article:modified_time" content="2019-10-21T11:28:00+02:00" />
-<meta itemprop="name" content="Conceptos básicos de CSS">
-<meta itemprop="description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada."><meta itemprop="datePublished" content="2019-10-21T11:28:00+02:00" />
-<meta itemprop="dateModified" content="2019-10-21T11:28:00+02:00" />
-<meta itemprop="wordCount" content="1384">
-<meta itemprop="keywords" content="css," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Conceptos básicos de CSS"/>
-<meta name="twitter:description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada."/>
-
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
-
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
-
-
-
-
-  </head>
-  <body>
-    <div id="back-to-top"></div>
-
-    <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">Blog de Pedro Prieto</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <li class="mobile-menu-item">
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://pedroprieto.github.io/post/conceptos-basicos-css/">
+  <meta property="og:site_name" content="Blog de Pedro Prieto">
+  <meta property="og:title" content="Conceptos básicos de CSS">
+  <meta property="og:description" content="Este artículo tiene como objetivo ofrecer una introducción sobre CSS, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2019-10-21T11:28:00+02:00">
+    <meta property="article:modified_time" content="2019-10-21T11:28:00+02:00">
+    <meta property="article:tag" content="Css">
+<title>Conceptos básicos de CSS | Blog de Pedro Prieto</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://pedroprieto.github.io/post/conceptos-basicos-css/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/es.search.min.11882d3abf00003ab1b17f7a39166c62944984e5159faea4f17c3ad0858fa1bd.js" integrity="sha256-EYgtOr8AADqxsX96ORZsYpRJhOUVn66k8Xw60IWPob0=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
         
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/">Inicio</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/post">Archivo</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/tags/">Tags</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/categories/">Categorías</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/about/">Acerca de</a>
-          
-        
-      </li>
-    
-
-    
-  </ul>
-</nav>
-
-
-    
-
-    
-
-    
-
-
-    <header id="header" class="header">
-      <div class="logo-wrapper">
-  <a href="/" class="logo">
-    
-      Blog de Pedro Prieto
-    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Blog de Pedro Prieto</span>
   </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Buscar" aria-label="Buscar" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
 </div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/">Inicio</a>
-          
 
-        
 
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/post">Archivo</a>
-          
 
-        
 
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/tags/">Tags</a>
-          
 
-        
 
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/categories/">Categorías</a>
-          
 
-        
 
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/about/">Acerca de</a>
-          
 
-        
 
-      </li>
-    
-
-    
-    
-
-    
-  </ul>
-</nav>
-
-    </header>
-
-    <div id="mobile-panel">
-      <main id="main" class="main bg-llight wallpaper">
-        <div class="content-wrapper">
-    <div id="content" class="content">
-      <article class="post">
-        
-        <header class="post-header">
-          <h1 class="post-title">Conceptos básicos de CSS</h1>
-          
-
-          <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      Pedro Prieto
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2019-10-21">
-      21-10-2019
-    </time>
-  </div>
 
   
 
 
-  <div class="post-meta__right">
-    
 
-    <div class="post-meta-category">
-        <a href="https://pedroprieto.github.io/categories/diw/"> diw </a>
-          <a href="https://pedroprieto.github.io/categories/diw-estilos-multimedia/"> diw-estilos-multimedia </a>
-          
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
       </div>
+    </aside>
 
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
 
-    
-    
+  <strong>Conceptos básicos de CSS</strong>
 
-
+  <label for="toc-control">
     
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
-  </div>
+  </label>
 </div>
 
-        </header>
 
-        
-        <div class="post-content">
-          <p>Este artículo tiene como objetivo ofrecer una introducción sobre <strong>CSS</strong>, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.</p>
-<h2 id="introducción">Introducción</h2>
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#estructura-modular">Estructura modular</a></li>
+    <li><a href="#tipos-de-hojas-de-estilo">Tipos de hojas de estilo</a></li>
+    <li><a href="#cascada-y-herencia">Cascada y herencia</a>
+      <ul>
+        <li><a href="#important">!important</a></li>
+      </ul>
+    </li>
+    <li><a href="#hojas-de-estilo-alternativas">Hojas de estilo alternativas</a></li>
+    <li><a href="#compatibilidad-entre-navegadores">Compatibilidad entre navegadores</a></li>
+    <li><a href="#recomendaciones-de-diseño-con-css">Recomendaciones de diseño con CSS</a></li>
+    <li><a href="#enlaces-de-referencia-de-css">Enlaces de referencia de CSS</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>Este artículo tiene como objetivo ofrecer una introducción sobre <strong>CSS</strong>, explicar los tipos de hojas de estilo, el modelo de cascada y herencia, comprobar qué características están disponibles en los distintos navegadores y proporcionar una serie de recursos donde encontrar información más detallada.</p>
+<h2 id="introducción">
+  Introducción
+  <a class="anchor" href="#introducci%c3%b3n">#</a>
+</h2>
 <p>Las hojas de estilo en cascada <strong>CSS</strong> - <em>Cascade Style Sheet</em> en inglés - se utilizan para <strong>diseñar y dar formato</strong> a las páginas web escritas con HTML. Las razones de su aparición son las siguientes:</p>
 <ul>
 <li><strong>HTML</strong> ofrece muy <strong>pocas opciones</strong> para dar formato al texto. Su función es estructurar el texto en secciones tales como tablas, listas, párrafos, etc., pero en cuanto a diseño visual resulta un tanto pobre.</li>
@@ -297,9 +151,15 @@
 </ul>
 <p>Frente a esta situación, el organismo W3C decidió crear un sistema por el que las <strong>instrucciones de formato</strong> se encontraran <strong>separadas</strong> de los otros elementos. Así, a partir de la versión 4 de HTML se desaconseja utilizar elementos de formato y se sugiere la utilización de las hojas de estilo en cascada o CSS.</p>
 <p>Un ejemplo de las posibilidades que ofrecen las hojas de estilo se puede encontrar visitando la página <a href="http://www.csszengarden.com/">Zengarden</a>, donde se puede observar el efecto que produce en la misma página HTML utilizar una hoja de estilo u otra.</p>
-<h2 id="estructura-modular">Estructura modular</h2>
+<h2 id="estructura-modular">
+  Estructura modular
+  <a class="anchor" href="#estructura-modular">#</a>
+</h2>
 <p>La versión actual de CSS es <strong>CSS 3</strong>. Esta especificación se ha dividido en una serie de <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3">módulos</a> que son desarrollados por separado. Cada uno de dichos módulos hace referencia a una serie de funcionalidades (color, modelo de caja, fuentes, bordes, <em>layout</em>, <em>media queries</em>, selectores,&hellip;).</p>
-<h2 id="tipos-de-hojas-de-estilo">Tipos de hojas de estilo</h2>
+<h2 id="tipos-de-hojas-de-estilo">
+  Tipos de hojas de estilo
+  <a class="anchor" href="#tipos-de-hojas-de-estilo">#</a>
+</h2>
 <p>Una hoja de estilos contiene datos de formato relativos a los elementos definidos en la página HTML. Por lo tanto, ambos (documento HTML y hoja de estilo) deben estar relacionados de alguna manera. Existen tres maneras de utilizar hojas de estilo:</p>
 <ul>
 <li><strong>Aplicar estilos directamente a elementos HTML</strong>. De esta manera se escribe el código CSS dentro del atributo style de la etiqueta HTML en cuestión.Por ejemplo, para aplicar un estilo css a un párrafo:</li>
@@ -318,7 +178,10 @@
 </ul>
 <!-- raw HTML omitted -->
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;stylesheet&#34;</span> <span style="color:#b44">type</span><span style="color:#666">=</span><span style="color:#b44">&#34;text/css&#34;</span> <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;nombre_archivo_css.css&#34;</span>&gt;
-</span></span></code></pre></div><h2 id="cascada-y-herencia">Cascada y herencia</h2>
+</span></span></code></pre></div><h2 id="cascada-y-herencia">
+  Cascada y herencia
+  <a class="anchor" href="#cascada-y-herencia">#</a>
+</h2>
 <p>CSS permite definir estilos en varios sitios, tal como hemos visto en el punto anterior. Además, es posible que un elemento reciba estilos de varios orígenes distintos. Algunos ejemplos de ello son:</p>
 <ul>
 <li>Un elemento tiene asignado un nombre de clase y un identificador. En la hoja de estilos se definen estilos para dicho identificador y dicho nombre de clase.</li>
@@ -356,7 +219,10 @@
 </span></span><span style="display:flex;"><span>  &lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;x97z&#34;</span> <span style="color:#b44">style</span><span style="color:#666">=</span><span style="color:#b44">&#34;color: green&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#008000;font-weight:bold">body</span>&gt;
 </span></span></code></pre></div><p>En el ejemplo, el párrafo tendrá color verde, ya que el valor de su peso &ldquo;a&rdquo; es 1. Como el peso &ldquo;a&rdquo; es el más importante, es el que se impone a los demás.</p>
-<h3 id="important">!important</h3>
+<h3 id="important">
+  !important
+  <a class="anchor" href="#important">#</a>
+</h3>
 <p>Existe una manera de sobreescribir estilos CSS sin importar las reglas de especificidad: añadiendo <code>!important</code> a la regla correspondiente:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">p</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">red</span> <span style="color:#080">!important</span>;
@@ -365,7 +231,10 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#a2f;font-weight:bold">color</span>: <span style="color:#a2f;font-weight:bold">green</span>;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">p</span> <span style="color:#b44">id</span><span style="color:#666">=</span><span style="color:#b44">&#34;parrafo1&#34;</span>&gt;Será ROJO a pesar de que la regla es menos específica&lt;/<span style="color:#008000;font-weight:bold">p</span>&gt;
-</span></span></code></pre></div><h2 id="hojas-de-estilo-alternativas">Hojas de estilo alternativas</h2>
+</span></span></code></pre></div><h2 id="hojas-de-estilo-alternativas">
+  Hojas de estilo alternativas
+  <a class="anchor" href="#hojas-de-estilo-alternativas">#</a>
+</h2>
 <p>Es posible incluir más de una hoja de estilo en un sitio web y ofrecer al usuario la posibilidad de usar una u otra mediante el uso de <strong>hojas de estilo alternativas</strong>.</p>
 <p>Algunos navegadores (como Firefox) permiten seleccionar la hoja de estilos a través de sus menús (en Firefox, menú <em>Ver</em> / <em>Estilo de página</em>).</p>
 <p>Para incluir hojas de estilo alternativas se debe utilizar la etiqueta <code>&lt;link rel=&quot;alternate stylesheet&quot;&gt;</code>. A continuación se muestra un ejemplo:</p>
@@ -380,16 +249,25 @@
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#008000;font-weight:bold">link</span> <span style="color:#b44">rel</span><span style="color:#666">=</span><span style="color:#b44">&#34;alternate stylesheet&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#b44">title</span><span style="color:#666">=</span><span style="color:#b44">&#34;Estilo alternativo 2&#34;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#b44">href</span><span style="color:#666">=</span><span style="color:#b44">&#34;./css/estilos2.css&#34;</span>&gt;
-</span></span></code></pre></div><h2 id="compatibilidad-entre-navegadores">Compatibilidad entre navegadores</h2>
+</span></span></code></pre></div><h2 id="compatibilidad-entre-navegadores">
+  Compatibilidad entre navegadores
+  <a class="anchor" href="#compatibilidad-entre-navegadores">#</a>
+</h2>
 <p>En ocasiones es difícil saber si una determinada propiedad CSS, sobre todo las más recientes, es compatible con una determinada versión de navegador. Para ello son muy útiles los siguientes enlaces:</p>
 <ul>
 <li><a href="http://caniuse.com/">Can I Use? (¿Puedo utilizar&hellip;?)</a></li>
 <li><a href="http://www.w3schools.com/cssref/css3_browsersupport.asp">Tabla de compatibilidad de propiedades CSS con los principales navegadores</a></li>
 </ul>
-<h2 id="recomendaciones-de-diseño-con-css">Recomendaciones de diseño con CSS</h2>
+<h2 id="recomendaciones-de-diseño-con-css">
+  Recomendaciones de diseño con CSS
+  <a class="anchor" href="#recomendaciones-de-dise%c3%b1o-con-css">#</a>
+</h2>
 <p>En el diseño de interfaces es recomendable definir <strong>clases de estilos</strong> para aplicar a determinadas secciones, elementos destacados, etc. De esta manera se conseguirá un código altamente <strong>modular</strong> que permitirá realizar cambios tanto de apariencia como de estructura con relativa facilidad.</p>
 <p>Por tanto, se intentará <strong>priorizar el uso de clases</strong> por encima del uso de selectores basados en nombres o agrupaciones de elementos. En <a href="/post/estrategias_diseno_css/">este artículo</a> se intenta entrar más en detalle sobre el tema.</p>
-<h2 id="enlaces-de-referencia-de-css">Enlaces de referencia de CSS</h2>
+<h2 id="enlaces-de-referencia-de-css">
+  Enlaces de referencia de CSS
+  <a class="anchor" href="#enlaces-de-referencia-de-css">#</a>
+</h2>
 <ul>
 <li><a href="https://developer.mozilla.org/es/docs/Learn/CSS">Curso de CSS de Mozilla</a> - Excelente curso de CSS de la Fundación Mozilla</li>
 <li><a href="https://desarrolloweb.com/home/css">Cursos de CSS en desarrolloweb.com</a> - Cursos completos de CSS</li>
@@ -400,238 +278,81 @@
 <li><a href="http://www.w3schools.com/cssref/">Guía de referencia de propiedades CSS</a> - Listado de propiedades CSS</li>
 <li><a href="http://librosweb.es/css/">http://librosweb.es/css/</a> - Curso completo de CSS pero algo anticuado</li>
 <li><a href="https://www.websiteplanet.com/blog/html-guide-beginners/">https://www.websiteplanet.com/blog/html-guide-beginners/</a> - Conceptos básicos de HTML</li>
-</ul>
-        </div>
-
-        
-        
-<div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">Autor</span>
-    <span class="item-content">Pedro Prieto</span>
-  </p>
-  <p class="copyright-item">
-    <span class="item-title">Última Modificación</span>
-    <span class="item-content">
-      21-10-2019
+</ul></article>
+ 
       
-    </span>
-  </p>
-  
-  <p class="copyright-item">
-    <span class="item-title">Licencia</span>
-    <span class="item-content"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
-  </p>
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
 </div>
 
 
 
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
         
-        
-
-
-        <footer class="post-footer">
-          <div class="post-tags">
-              <a href="https://pedroprieto.github.io/tags/css/">css</a>
-                
-            </div>
-
-
-          
-          <nav class="post-nav">
-            
-              <a class="prev" href="/post/modelo-caja-css/">
-                
-                <i class="iconfont">
-                  <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-                </i>
-                <span class="prev-text nav-default">Notas sobre el modelo de cajas en CSS</span>
-                <span class="prev-text nav-mobile">Anterior</span>
-              </a>
-            
-              <a class="next" href="/post/accesibilidad/">
-                <span class="next-text nav-default">Pautas de accesibilidad</span>
-                <span class="prev-text nav-mobile">Siguiente</span>
-                
-                <i class="iconfont">
-                  <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
-</svg>
-
-                </i>
-              </a>
-          </nav>
-        </footer>
-      </article>
-
-      
-      
-
-
-      
-      
-
-  
-
-  
-  
-
-  
-  
-
-  
-
-  
-
-    
-
-  
-
-  
-
-
-    </div>
-
-    
-    
-
-
-  </div>
-
-      </main>
-
-      <footer id="footer" class="footer">
-        <div class="icon-links">
-  
-  
-    <a href="mailto:pedroprieto@iesmarenostrum.com" rel="me noopener" class="iconfont"
-      title="email" >
-      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="36" height="36">
-  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
-</svg>
-
-    </a>
-  
-    <a href="https://github.com/pedroprieto" rel="me noopener" class="iconfont"
-      title="github"  target="_blank"
-      >
-      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="36" height="36">
-  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
-</svg>
-
-    </a>
-
-
-<a href="https://pedroprieto.github.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
-    class="iconfont" title="rss" target="_blank">
-    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="30" height="30">
-  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
-</svg>
-
-  </a>
-  
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
-  </span>
-
-  <span class="copyright-year">
-    &copy;
-    
-       -
-    2023
-    <span class="heart">
-      
-      <i class="iconfont">
-        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="14" height="14">
-  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
-   fill="#8a8a8a"></path>
-</svg>
-
-      </i>
-    </span><span class="author">
-        Pedro Prieto Alarcón
-        
-      </span></span>
-
-  
-  
-
-  
-</div>
-
       </footer>
 
-      <div class="button__back-to-top">
-        <a href="#back-to-top">
-          <i class="iconfont">
-            
-            <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="35" height="35">
-  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
-</svg>
+      
+  
+  <div class="book-comments">
 
-          </i>
-        </a>
-      </div>
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
+
     
-<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción">Introducción</a></li>
+    <li><a href="#estructura-modular">Estructura modular</a></li>
+    <li><a href="#tipos-de-hojas-de-estilo">Tipos de hojas de estilo</a></li>
+    <li><a href="#cascada-y-herencia">Cascada y herencia</a>
+      <ul>
+        <li><a href="#important">!important</a></li>
+      </ul>
+    </li>
+    <li><a href="#hojas-de-estilo-alternativas">Hojas de estilo alternativas</a></li>
+    <li><a href="#compatibilidad-entre-navegadores">Compatibilidad entre navegadores</a></li>
+    <li><a href="#recomendaciones-de-diseño-con-css">Recomendaciones de diseño con CSS</a></li>
+    <li><a href="#enlaces-de-referencia-de-css">Enlaces de referencia de CSS</a></li>
+  </ul>
+</nav>
 
 
+ 
+      </div>
+    </aside>
+    
+  </main>
 
-
-<script type="text/javascript" src="/js/main.52161cb0a9aea932c16c96c2c7d6eed45dc2c8724a1df03dc857a931d78cce98.js" integrity="sha256-UhYcsKmuqTLBbJbCx9bu1F3CyHJKHfA9yFepMdeMzpg=" crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </body>
+  
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

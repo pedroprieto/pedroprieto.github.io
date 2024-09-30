@@ -1,47 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>diw-planificacion-interfacesweb on Blog de Pedro Prieto</title>
+    <title>Diw-Planificacion-Interfacesweb on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/categories/diw-planificacion-interfacesweb/</link>
-    <description>Recent content in diw-planificacion-interfacesweb on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Diw-Planificacion-Interfacesweb on Blog de Pedro Prieto</description>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 14 Oct 2019 14:36:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/categories/diw-planificacion-interfacesweb/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Oct 2019 14:36:00 +0200</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/categories/diw-planificacion-interfacesweb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pautas de accesibilidad</title>
       <link>https://pedroprieto.github.io/post/accesibilidad/</link>
       <pubDate>Mon, 14 Oct 2019 14:36:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/accesibilidad/</guid>
       <description>&lt;p&gt;La accesibilidad web es una práctica inclusiva que tiene como objetivo que &lt;strong&gt;no haya ninguna barrera que impida o limite el uso y acceso a Internet&lt;/strong&gt; a personas con cualquier tipo de discapacidad.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Diseño de prototipos</title>
       <link>https://pedroprieto.github.io/post/diseno-prototipos/</link>
       <pubDate>Mon, 07 Oct 2019 11:01:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/diseno-prototipos/</guid>
       <description>&lt;p&gt;En todo proyecto de desarrollo web es recomendable realizar un prototipo o boceto del interfaz. De esta manera se puede tener una idea aproximada del aspecto visual que tendrá, qué secciones lo compondrán, cómo se verá en pantalla, etc.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Guias de estilo</title>
       <link>https://pedroprieto.github.io/post/planificacion-guia-estilo/</link>
       <pubDate>Mon, 30 Sep 2019 10:46:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/planificacion-guia-estilo/</guid>
       <description>&lt;p&gt;Una guía de estilo recoge las normas de diseño que se utilizarán para crear un sitio web. Normalmente hace referencia a una serie de elementos (tipografía, colores, logos, etc.) que se deben utilizar para garantizar la &lt;strong&gt;uniformidad&lt;/strong&gt; de la &lt;strong&gt;estructura&lt;/strong&gt; y &lt;strong&gt;apariencia visual&lt;/strong&gt; del sitio.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fundamentos de la planificación de interfaces web</title>
       <link>https://pedroprieto.github.io/post/planificacion-fundamentos/</link>
       <pubDate>Mon, 30 Sep 2019 10:28:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/planificacion-fundamentos/</guid>
       <description>&lt;p&gt;Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos &lt;strong&gt;principios de diseño&lt;/strong&gt; y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la &lt;strong&gt;&lt;a href=&#34;https://pedroprieto.github.io/post/planificacion-guia-estilo&#34;&gt;guía de estilo&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>krug on Blog de Pedro Prieto</title>
+    <title>Krug on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/tags/krug/</link>
-    <description>Recent content in krug on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Krug on Blog de Pedro Prieto</description>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 30 Sep 2019 10:28:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/krug/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Sep 2019 10:28:00 +0200</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/tags/krug/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fundamentos de la planificación de interfaces web</title>
       <link>https://pedroprieto.github.io/post/planificacion-fundamentos/</link>
       <pubDate>Mon, 30 Sep 2019 10:28:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/planificacion-fundamentos/</guid>
       <description>&lt;p&gt;Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos &lt;strong&gt;principios de diseño&lt;/strong&gt; y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la &lt;strong&gt;&lt;a href=&#34;https://pedroprieto.github.io/post/planificacion-guia-estilo&#34;&gt;guía de estilo&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>licencias on Blog de Pedro Prieto</title>
+    <title>Licencias on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/tags/licencias/</link>
-    <description>Recent content in licencias on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Licencias on Blog de Pedro Prieto</description>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 11 Nov 2019 12:23:00 +0100</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/licencias/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Nov 2019 12:23:00 +0100</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/tags/licencias/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Licencias y propiedad intelectual</title>
       <link>https://pedroprieto.github.io/post/licencias/</link>
       <pubDate>Mon, 11 Nov 2019 12:23:00 +0100</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/licencias/</guid>
       <description>&lt;p&gt;A la hora de crear un sitio web es muy importante conocer la legislación sobre propiedad intelectual y los distintos tipos de licencias disponibles tanto para &lt;strong&gt;proteger los contenidos o código que generemos&lt;/strong&gt; como para &lt;strong&gt;utilizar adecuadamente contenido creado por terceros&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

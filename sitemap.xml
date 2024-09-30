@@ -1,444 +1,269 @@
-<?xml-stylesheet type="text/xsl" href="https://pedroprieto.github.io/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://pedroprieto.github.io/categories/</loc>
     <lastmod>2023-10-24T15:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/ides/</loc>
     <lastmod>2023-10-24T15:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/</loc>
     <lastmod>2023-10-24T15:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/</loc>
     <lastmod>2023-10-24T15:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/categories/puestaprodseg/</loc>
     <lastmod>2023-10-24T15:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/categories/puestaprodseg-lenguajes/</loc>
     <lastmod>2023-10-24T15:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/lenguaje/</loc>
     <lastmod>2023-10-24T13:16:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/lenguajes_programacion/</loc>
     <lastmod>2023-10-24T13:16:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/programacion/</loc>
     <lastmod>2023-10-24T13:16:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/</loc>
     <lastmod>2023-10-24T13:16:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/bootstrap/</loc>
     <lastmod>2020-01-07T12:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/bootstrap/</loc>
     <lastmod>2020-01-07T12:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/css/</loc>
     <lastmod>2020-01-07T12:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/categories/diw/</loc>
     <lastmod>2020-01-07T12:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/categories/diw-bootstrap/</loc>
     <lastmod>2020-01-07T12:56:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/cms/</loc>
     <lastmod>2019-11-19T12:30:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/categories/diw-estilos-multimedia/</loc>
     <lastmod>2019-11-19T12:30:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/jekyllcms/</loc>
     <lastmod>2019-11-19T12:30:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/jekyll/</loc>
     <lastmod>2019-11-19T12:30:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/audio/</loc>
     <lastmod>2019-11-12T00:55:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/audio_video_html/</loc>
     <lastmod>2019-11-12T00:55:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/video/</loc>
     <lastmod>2019-11-12T00:55:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/animaciones/</loc>
     <lastmod>2019-11-12T00:09:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/transformaciones/</loc>
     <lastmod>2019-11-12T00:09:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/transiciones_css/</loc>
     <lastmod>2019-11-12T00:09:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/transiciones/</loc>
     <lastmod>2019-11-12T00:09:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/imagenes/</loc>
     <lastmod>2019-11-11T13:22:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/imagenes_web/</loc>
     <lastmod>2019-11-11T13:22:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/licencias/</loc>
     <lastmod>2019-11-11T12:23:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/licencias/</loc>
     <lastmod>2019-11-11T12:23:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/disenyo_responsivo/</loc>
     <lastmod>2019-11-04T12:44:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/responsive/</loc>
     <lastmod>2019-11-04T12:44:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/fuentes/</loc>
     <lastmod>2019-10-31T16:12:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/css_fonts/</loc>
     <lastmod>2019-10-31T16:12:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/disenyo_formularios/</loc>
     <lastmod>2019-10-29T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/formularios/</loc>
     <lastmod>2019-10-29T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/flexbox/</loc>
     <lastmod>2019-10-28T18:02:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/grid/</loc>
     <lastmod>2019-10-28T18:02:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/layout/</loc>
     <lastmod>2019-10-28T18:02:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/tecnicas_layout/</loc>
     <lastmod>2019-10-28T18:02:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/tipos_layout/</loc>
     <lastmod>2019-10-28T13:15:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/bem/</loc>
     <lastmod>2019-10-22T11:51:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/estrategias_diseno_css/</loc>
     <lastmod>2019-10-22T11:51:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/less/</loc>
     <lastmod>2019-10-22T09:54:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/preprocesadores/</loc>
     <lastmod>2019-10-22T09:54:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/sass/</loc>
     <lastmod>2019-10-22T09:54:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/variables/</loc>
     <lastmod>2019-10-22T09:54:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/variables_preprocesadores_css/</loc>
     <lastmod>2019-10-22T09:54:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/minimizacion_css/</loc>
     <lastmod>2019-10-21T12:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/minimizar/</loc>
     <lastmod>2019-10-21T12:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/optimizar/</loc>
     <lastmod>2019-10-21T12:39:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/medida/</loc>
     <lastmod>2019-10-21T12:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/unidades/</loc>
     <lastmod>2019-10-21T12:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/unidades-medida-css/</loc>
     <lastmod>2019-10-21T12:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/viewport/</loc>
     <lastmod>2019-10-21T12:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/modelo-caja/</loc>
     <lastmod>2019-10-21T11:47:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/modelo-caja-css/</loc>
     <lastmod>2019-10-21T11:47:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/conceptos-basicos-css/</loc>
     <lastmod>2019-10-21T11:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/accesibilidad/</loc>
     <lastmod>2019-10-14T14:36:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/accesibility/</loc>
     <lastmod>2019-10-14T14:36:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/aria/</loc>
     <lastmod>2019-10-14T14:36:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/categories/diw-planificacion-interfacesweb/</loc>
     <lastmod>2019-10-14T14:36:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/accesibilidad/</loc>
     <lastmod>2019-10-14T14:36:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/wai/</loc>
     <lastmod>2019-10-14T14:36:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/dise%C3%B1o/</loc>
     <lastmod>2019-10-07T11:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/diseno-prototipos/</loc>
     <lastmod>2019-10-07T11:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/mockup/</loc>
     <lastmod>2019-10-07T11:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/moqups/</loc>
     <lastmod>2019-10-07T11:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/prototipos/</loc>
     <lastmod>2019-10-07T11:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/wireframe/</loc>
     <lastmod>2019-10-07T11:01:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/estilo/</loc>
     <lastmod>2019-09-30T10:46:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/guia/</loc>
     <lastmod>2019-09-30T10:46:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/planificacion-guia-estilo/</loc>
     <lastmod>2019-09-30T10:46:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/planificacion/</loc>
     <lastmod>2019-09-30T10:46:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/planificacion-fundamentos/</loc>
     <lastmod>2019-09-30T10:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/krug/</loc>
     <lastmod>2019-09-30T10:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/usabilidad/</loc>
     <lastmod>2019-09-30T10:28:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/categories/diw-herramientas-desarrollo/</loc>
     <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/editores/</loc>
     <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/herramientas/</loc>
     <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/herramientas-desarrollo/</loc>
     <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/ide/</loc>
     <lastmod>2019-09-24T00:43:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/git/</loc>
     <lastmod>2019-09-23T12:37:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/tags/github/</loc>
     <lastmod>2019-09-23T12:37:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/uso-github/</loc>
     <lastmod>2019-09-23T12:37:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/fundamentos-git-2/</loc>
     <lastmod>2019-09-23T12:18:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/about/</loc>
     <lastmod>2019-09-23T11:56:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://pedroprieto.github.io/post/fundamentos-git-1/</loc>
     <lastmod>2019-09-23T11:51:00+02:00</lastmod>
   </url>
-  
 </urlset>

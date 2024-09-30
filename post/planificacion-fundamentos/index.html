@@ -1,298 +1,165 @@
 <!DOCTYPE html>
-<html
-  lang="es"
-  itemscope
-  itemtype="http://schema.org/WebPage"
->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>
-          Fundamentos de la planificación de interfaces web - Blog de Pedro Prieto
-        </title>
-    
-
-<meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
-
-<meta name="MobileOptimized" content="width"/>
-<meta name="HandheldFriendly" content="true"/>
-
-
-<meta name="applicable-device" content="pc,mobile">
-
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-<meta name="mobile-web-app-capable" content="yes">
-
-<meta name="author" content="Pedro Prieto" />
-  <meta name="description" content="Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos principios de diseño y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la guía de estilo.
-" />
-
-  <meta name="keywords" content="DIW, interfaces, DAW, desarrollo web" />
-
-
-
-
-
-
-<meta name="generator" content="Hugo 0.119.0" />
-
-
-<link rel="canonical" href="https://pedroprieto.github.io/post/planificacion-fundamentos/" />
-
-
-
-
-
-<link rel="icon" href="/favicon.ico" />
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/sass/jane.min.d8d87b982993a745e5e7b6a6cbf257be8c3e82aab5e485f0908ad7e6c3501ab2.css" integrity="sha256-2Nh7mCmTp0Xl57amy/JXvow&#43;gqq15IXwkIrX5sNQGrI=" media="screen" crossorigin="anonymous">
-
-
-
-
-
-
-
-<meta property="og:title" content="Fundamentos de la planificación de interfaces web" />
-<meta property="og:description" content="Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos principios de diseño y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la guía de estilo." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://pedroprieto.github.io/post/planificacion-fundamentos/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-09-30T10:28:00+02:00" />
-<meta property="article:modified_time" content="2019-09-30T10:28:00+02:00" />
-<meta itemprop="name" content="Fundamentos de la planificación de interfaces web">
-<meta itemprop="description" content="Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos principios de diseño y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la guía de estilo."><meta itemprop="datePublished" content="2019-09-30T10:28:00+02:00" />
-<meta itemprop="dateModified" content="2019-09-30T10:28:00+02:00" />
-<meta itemprop="wordCount" content="1211">
-<meta itemprop="keywords" content="krug,planificacion,usabilidad," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Fundamentos de la planificación de interfaces web"/>
-<meta name="twitter:description" content="Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos principios de diseño y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la guía de estilo."/>
-
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
-
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
-
-
-
-
-  </head>
-  <body>
-    <div id="back-to-top"></div>
-
-    <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">Blog de Pedro Prieto</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <li class="mobile-menu-item">
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos principios de diseño y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la guía de estilo.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://pedroprieto.github.io/post/planificacion-fundamentos/">
+  <meta property="og:site_name" content="Blog de Pedro Prieto">
+  <meta property="og:title" content="Fundamentos de la planificación de interfaces web">
+  <meta property="og:description" content="Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos principios de diseño y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la guía de estilo.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2019-09-30T10:28:00+02:00">
+    <meta property="article:modified_time" content="2019-09-30T10:28:00+02:00">
+    <meta property="article:tag" content="Krug">
+    <meta property="article:tag" content="Planificacion">
+    <meta property="article:tag" content="Usabilidad">
+<title>Fundamentos de la planificación de interfaces web | Blog de Pedro Prieto</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://pedroprieto.github.io/post/planificacion-fundamentos/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/es.search.min.11882d3abf00003ab1b17f7a39166c62944984e5159faea4f17c3ad0858fa1bd.js" integrity="sha256-EYgtOr8AADqxsX96ORZsYpRJhOUVn66k8Xw60IWPob0=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
         
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/">Inicio</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/post">Archivo</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/tags/">Tags</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/categories/">Categorías</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/about/">Acerca de</a>
-          
-        
-      </li>
-    
-
-    
-  </ul>
-</nav>
-
-
-    
-
-    
-
-    
-
-
-    <header id="header" class="header">
-      <div class="logo-wrapper">
-  <a href="/" class="logo">
-    
-      Blog de Pedro Prieto
-    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Blog de Pedro Prieto</span>
   </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Buscar" aria-label="Buscar" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
 </div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
 
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/">Inicio</a>
-          
 
-        
 
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/post">Archivo</a>
-          
 
-        
 
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/tags/">Tags</a>
-          
 
-        
 
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/categories/">Categorías</a>
-          
 
-        
 
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="https://pedroprieto.github.io/about/">Acerca de</a>
-          
 
-        
 
-      </li>
-    
-
-    
-    
-
-    
-  </ul>
-</nav>
-
-    </header>
-
-    <div id="mobile-panel">
-      <main id="main" class="main bg-llight wallpaper">
-        <div class="content-wrapper">
-    <div id="content" class="content">
-      <article class="post">
-        
-        <header class="post-header">
-          <h1 class="post-title">Fundamentos de la planificación de interfaces web</h1>
-          
-
-          <div class="post-meta">
-  <div class="post-meta-author">
-    by
-      Pedro Prieto
-    
-  </div>
-
-  <div class="post-meta-time">
-    <time datetime="2019-09-30">
-      30-09-2019
-    </time>
-  </div>
 
   
 
 
-  <div class="post-meta__right">
-    
 
-    <div class="post-meta-category">
-        <a href="https://pedroprieto.github.io/categories/diw/"> diw </a>
-          <a href="https://pedroprieto.github.io/categories/diw-planificacion-interfacesweb/"> diw-planificacion-interfacesweb </a>
-          
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
       </div>
+    </aside>
 
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
 
-    
-    
+  <strong>Fundamentos de la planificación de interfaces web</strong>
 
-
+  <label for="toc-control">
     
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
-  </div>
+  </label>
 </div>
 
-        </header>
 
-        
-        <div class="post-content">
-          <p>Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos <strong>principios de diseño</strong> y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la <strong><a href="/post/planificacion-guia-estilo">guía de estilo</a></strong>.</p>
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#don-t-make-me-think">Don&rsquo;t make me think!</a></li>
+    <li><a href="#errores-típicos">Errores típicos</a></li>
+    <li><a href="#diseño-orientado-al-escaneo-no-a-la-lectura">Diseño orientado al escaneo, no a la lectura</a></li>
+    <li><a href="#elecciones-sencillas">Elecciones sencillas</a></li>
+    <li><a href="#omisión-de-palabras-inútiles">Omisión de palabras inútiles</a></li>
+    <li><a href="#diseño-de-la-navegación">Diseño de la navegación</a>
+      <ul>
+        <li><a href="#tipos-de-usuarios">Tipos de usuarios</a></li>
+        <li><a href="#objetivos-del-menú-de-navegación">Objetivos del menú de navegación</a></li>
+        <li><a href="#convenciones">Convenciones</a></li>
+        <li><a href="#elementos-de-la-navegación">Elementos de la navegación</a></li>
+        <li><a href="#búsqueda">Búsqueda</a></li>
+        <li><a href="#nombres-de-las-páginas">Nombres de las páginas</a></li>
+        <li><a href="#localización">Localización</a></li>
+        <li><a href="#migas-de-pan">Migas de pan</a></li>
+        <li><a href="#pestañas">Pestañas</a></li>
+        <li><a href="#test-de-navegación">Test de navegación</a></li>
+      </ul>
+    </li>
+    <li><a href="#referencias">Referencias</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>Antes de proceder a la edición de código e incluso antes de la creación de un prototipo es necesario tener claros algunos <strong>principios de diseño</strong> y tomar algunas decisiones relacionadas con el estilo general del sitio, que normalmente vendrán recogidas en la <strong><a href="/post/planificacion-guia-estilo">guía de estilo</a></strong>.</p>
 <p>En este artículo nos centraremos en analizar algunos de los principios generales de diseño más importantes a tener en cuenta. Para ello se tomará como base el libro &ldquo;<a href="http://www.sensible.com/dmmt.html">Don&rsquo;t Make Me Think</a>&rdquo; (<em>No me hagas pensar</em>), de Steven Krug.</p>
-<h2 id="don-t-make-me-think">Don&rsquo;t make me think!</h2>
+<h2 id="don-t-make-me-think">
+  Don&rsquo;t make me think!
+  <a class="anchor" href="#don-t-make-me-think">#</a>
+</h2>
 <p>&ldquo;No me hagas pensar&rdquo; es el principio más importante que toda página debería seguir en cuanto a usabilidad. El objetivo principal de toda página web debería ser que fuera evidente, auto-explicativa. El usuario debería ser capaz de ver de un vistazo lo que la página propone sin gastar mucho tiempo pensando sobre ello.</p>
 <p>¿Cómo de evidente? Lo suficiente como para que una persona que no sea experta en el tema propuesto en la página y que apenas sepa usar el navegador sea capaz de llegar al sitio y decir &ldquo;Ah, esta página va de&hellip;&rdquo;.</p>
-<h2 id="errores-típicos">Errores típicos</h2>
+<h2 id="errores-típicos">
+  Errores típicos
+  <a class="anchor" href="#errores-t%c3%adpicos">#</a>
+</h2>
 <ul>
 <li>Nombres poco claros, como nombres de marcas, específicos del funcionamiento interno de la empresa o siglas o nombres técnicos.</li>
 <li>Enlaces y botones que no se muestran de manera obvia y se confunden con texto normal.</li>
@@ -304,7 +171,10 @@
 <li>Mezclar el contenido de la página con la publicidad de la misma de manera que sea muy difícil diferenciar ambas cosas.</li>
 </ul>
 <p>El objetivo principal es eliminar todas aquellas preguntas que se pueda hacer el usuario a la hora de utilizar la página.</p>
-<h2 id="diseño-orientado-al-escaneo-no-a-la-lectura">Diseño orientado al escaneo, no a la lectura</h2>
+<h2 id="diseño-orientado-al-escaneo-no-a-la-lectura">
+  Diseño orientado al escaneo, no a la lectura
+  <a class="anchor" href="#dise%c3%b1o-orientado-al-escaneo-no-a-la-lectura">#</a>
+</h2>
 <ol>
 <li>Sigue las <strong>convenciones</strong> del diseño web.
 <ul>
@@ -337,7 +207,10 @@
 </ul>
 </li>
 </ol>
-<h2 id="elecciones-sencillas">Elecciones sencillas</h2>
+<h2 id="elecciones-sencillas">
+  Elecciones sencillas
+  <a class="anchor" href="#elecciones-sencillas">#</a>
+</h2>
 <ul>
 <li>Los usuarios buscan elecciones sencillas.</li>
 <li>Es más recomendable ofrecer pocas opciones  en varios pasos que muchas opciones en pocos pasos.</li>
@@ -350,20 +223,32 @@
 </ul>
 </li>
 </ul>
-<h2 id="omisión-de-palabras-inútiles">Omisión de palabras inútiles</h2>
+<h2 id="omisión-de-palabras-inútiles">
+  Omisión de palabras inútiles
+  <a class="anchor" href="#omisi%c3%b3n-de-palabras-in%c3%batiles">#</a>
+</h2>
 <ul>
 <li>Es conveniente eliminar la mayoría de palabras inútiles en la página.</li>
 <li>Una vez escrito el texto, es conveniente analizarlo para intentar eliminar la mitad de las palabras.</li>
 <li>Se debe intentar evitar textos de bienvenida y descripciones al principio de las secciones y en la página principal.</li>
 <li>Las instrucciones deben escribirse de manera concisa.</li>
 </ul>
-<h2 id="diseño-de-la-navegación">Diseño de la navegación</h2>
-<h3 id="tipos-de-usuarios">Tipos de usuarios</h3>
+<h2 id="diseño-de-la-navegación">
+  Diseño de la navegación
+  <a class="anchor" href="#dise%c3%b1o-de-la-navegaci%c3%b3n">#</a>
+</h2>
+<h3 id="tipos-de-usuarios">
+  Tipos de usuarios
+  <a class="anchor" href="#tipos-de-usuarios">#</a>
+</h3>
 <ul>
 <li>Orientados a la navegación.</li>
 <li>Orientados a la búsqueda.</li>
 </ul>
-<h3 id="objetivos-del-menú-de-navegación">Objetivos del menú de navegación</h3>
+<h3 id="objetivos-del-menú-de-navegación">
+  Objetivos del menú de navegación
+  <a class="anchor" href="#objetivos-del-men%c3%ba-de-navegaci%c3%b3n">#</a>
+</h3>
 <ul>
 <li>Ayudar a encontrar lo que se está buscando.</li>
 <li>Indicar la localización actual dentro del sitio.</li>
@@ -371,7 +256,10 @@
 <li>Explicar cómo utilizar el sitio.</li>
 <li>Dar confianza en la calidad del sitio.</li>
 </ul>
-<h3 id="convenciones">Convenciones</h3>
+<h3 id="convenciones">
+  Convenciones
+  <a class="anchor" href="#convenciones">#</a>
+</h3>
 <ul>
 <li>Los menús de navegación deben aparecer en los sitios convencionales.</li>
 <li>La navegación debe de mostrarse de manera consistente en todas las páginas, con algunas excepciones:
@@ -382,56 +270,89 @@
 </li>
 <li>Es conveniente mostrar el logo de la página que actúe de enlace a la página principal en la parte superior izquierda.</li>
 </ul>
-<h3 id="elementos-de-la-navegación">Elementos de la navegación</h3>
-<h4 id="navegación-primaria-dot">Navegación primaria.</h4>
+<h3 id="elementos-de-la-navegación">
+  Elementos de la navegación
+  <a class="anchor" href="#elementos-de-la-navegaci%c3%b3n">#</a>
+</h3>
+<h4 id="navegación-primaria-dot">
+  Navegación primaria.
+  <a class="anchor" href="#navegaci%c3%b3n-primaria-dot">#</a>
+</h4>
 <ul>
 <li>Muestra las secciones principales del sitio.</li>
 </ul>
-<h4 id="utilidades">Utilidades</h4>
+<h4 id="utilidades">
+  Utilidades
+  <a class="anchor" href="#utilidades">#</a>
+</h4>
 <ul>
 <li>Son herramientas que utilizará el usuario. Ejemplos: cuadro de búsqueda, carrito de compra, &ldquo;mi cuenta&rdquo;, enlaces para iniciar sesión,&hellip;</li>
 <li>Se deben mostrar las cuatro o cinco más importantes en lugar visible (junto a la navegación primaria, por ejemplo).</li>
 <li>El resto deben mostrarse en el pie de página.</li>
 </ul>
-<h4 id="enlace-a-la-página-principal">Enlace a la página principal</h4>
+<h4 id="enlace-a-la-página-principal">
+  Enlace a la página principal
+  <a class="anchor" href="#enlace-a-la-p%c3%a1gina-principal">#</a>
+</h4>
 <ul>
 <li>En el logo de la empresa.</li>
 <li>En la navegación principal.</li>
 </ul>
-<h4 id="navegación-secundaria-y-posteriores">Navegación secundaria y posteriores</h4>
+<h4 id="navegación-secundaria-y-posteriores">
+  Navegación secundaria y posteriores
+  <a class="anchor" href="#navegaci%c3%b3n-secundaria-y-posteriores">#</a>
+</h4>
 <ul>
 <li>Se debe prestar atención a todos los niveles de navegación, no solo a los principales.</li>
 <li>De esta manera se asegura una coherencia a todos los niveles.</li>
 </ul>
-<h3 id="búsqueda">Búsqueda</h3>
+<h3 id="búsqueda">
+  Búsqueda
+  <a class="anchor" href="#b%c3%basqueda">#</a>
+</h3>
 <ul>
 <li>Es conveniente mostrar un cuadro de búsqueda en las utilidades.</li>
 <li>El cuadro de búsqueda debe mostrarse de manera convencional (icono de buscar o palabra &ldquo;Buscar&rdquo;).</li>
 <li>No deben mostrarse muchas opciones de búsqueda o filtrado en primera instancia. En su lugar, se deben mostrar cuando ya se haya realizado la primera búsqueda con el objeto de ayudar a filtrar los resultados.</li>
 </ul>
-<h3 id="nombres-de-las-páginas">Nombres de las páginas</h3>
+<h3 id="nombres-de-las-páginas">
+  Nombres de las páginas
+  <a class="anchor" href="#nombres-de-las-p%c3%a1ginas">#</a>
+</h3>
 <ul>
 <li>Se debe mostrar el nombre de cada una de las páginas en la parte superior del contenido.</li>
 <li>El nombre debe resaltarse de manera adecuada, ya que es el elemento de mayor jerarquía de la página.</li>
 <li>El nombre debe concordar con el nombre de la opción del menú que ha conducido a dicha página.</li>
 </ul>
-<h3 id="localización">Localización</h3>
+<h3 id="localización">
+  Localización
+  <a class="anchor" href="#localizaci%c3%b3n">#</a>
+</h3>
 <ul>
 <li>El menú de navegación debe resaltar la sección o secciones en las que se está en cada momento.</li>
 <li>El resaltado debe ser evidente.</li>
 </ul>
-<h3 id="migas-de-pan">Migas de pan</h3>
+<h3 id="migas-de-pan">
+  Migas de pan
+  <a class="anchor" href="#migas-de-pan">#</a>
+</h3>
 <ul>
 <li>Deben aparecer en la parte superior.</li>
 <li>Se debe utilizar &ldquo;<strong>&gt;</strong>&rdquo; para separar niveles.</li>
 <li>El último nivel (nombre de la página actual) no debe ser un enlace y debe aparecer destacado.</li>
 </ul>
-<h3 id="pestañas">Pestañas</h3>
+<h3 id="pestañas">
+  Pestañas
+  <a class="anchor" href="#pesta%c3%b1as">#</a>
+</h3>
 <ul>
 <li>Son evidentes y fáciles de usar.</li>
 <li>Deben estar correctamente configuradas para resaltar la sección actual.</li>
 </ul>
-<h3 id="test-de-navegación">Test de navegación</h3>
+<h3 id="test-de-navegación">
+  Test de navegación
+  <a class="anchor" href="#test-de-navegaci%c3%b3n">#</a>
+</h3>
 <p>El diseñador siempre piensa que el usuario va a llegar a la página deseada a través de la página principal y desde allí a través de la navegación. Sin embargo, en multitud de ocasiones se llega a una página directamente a través de un enlace enviado por otra persona o a través de un buscador.
 Por ello, al llegar a una página interior de un sitio web directamente se debería poder contestar a las siguientes preguntas sin demasiada dificultad:</p>
 <ul>
@@ -442,245 +363,97 @@ Por ello, al llegar a una página interior de un sitio web directamente se deber
 <li>¿En qué lugar me encuentro dentro de la jerarquía? (Localización)</li>
 <li>¿Dónde puedo realizar una búsqueda?</li>
 </ul>
-<h2 id="referencias">Referencias</h2>
+<h2 id="referencias">
+  Referencias
+  <a class="anchor" href="#referencias">#</a>
+</h2>
 <ul>
 <li><a href="http://www.sensible.com/dmmt.html">Don&rsquo;t make me think</a>, enlace a la web del autor del libro, Steven Krug</li>
 <li><a href="https://amybughunter.wordpress.com/2014/08/16/book-summary-dont-make-me-think-by-steve-krug/">https://amybughunter.wordpress.com/2014/08/16/book-summary-dont-make-me-think-by-steve-krug/</a></li>
 <li><a href="http://www.squeezedbooks.com/articles/dont-make-me-think-a-common-sense-approach-to-web-usability-%282nd-edition%29--summary.html">http://www.squeezedbooks.com/articles/dont-make-me-think-a-common-sense-approach-to-web-usability-%282nd-edition%29--summary.html</a></li>
-</ul>
-        </div>
-
-        
-        
-<div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">Autor</span>
-    <span class="item-content">Pedro Prieto</span>
-  </p>
-  <p class="copyright-item">
-    <span class="item-title">Última Modificación</span>
-    <span class="item-content">
-      30-09-2019
+</ul></article>
+ 
       
-    </span>
-  </p>
-  
-  <p class="copyright-item">
-    <span class="item-title">Licencia</span>
-    <span class="item-content"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
-  </p>
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
 </div>
 
 
 
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
         
-        
-
-
-        <footer class="post-footer">
-          <div class="post-tags">
-              <a href="https://pedroprieto.github.io/tags/krug/">krug</a>
-                <a href="https://pedroprieto.github.io/tags/planificacion/">planificacion</a>
-                <a href="https://pedroprieto.github.io/tags/usabilidad/">usabilidad</a>
-                
-            </div>
-
-
-          
-          <nav class="post-nav">
-            
-              <a class="prev" href="/post/planificacion-guia-estilo/">
-                
-                <i class="iconfont">
-                  <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-                </i>
-                <span class="prev-text nav-default">Guias de estilo</span>
-                <span class="prev-text nav-mobile">Anterior</span>
-              </a>
-            
-              <a class="next" href="/post/herramientas-desarrollo/">
-                <span class="next-text nav-default">Herramientas de desarrollo</span>
-                <span class="prev-text nav-mobile">Siguiente</span>
-                
-                <i class="iconfont">
-                  <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
-</svg>
-
-                </i>
-              </a>
-          </nav>
-        </footer>
-      </article>
-
-      
-      
-
-
-      
-      
-
-  
-
-  
-  
-
-  
-  
-
-  
-
-  
-
-    
-
-  
-
-  
-
-
-    </div>
-
-    
-    
-
-
-  </div>
-
-      </main>
-
-      <footer id="footer" class="footer">
-        <div class="icon-links">
-  
-  
-    <a href="mailto:pedroprieto@iesmarenostrum.com" rel="me noopener" class="iconfont"
-      title="email" >
-      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="36" height="36">
-  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
-</svg>
-
-    </a>
-  
-    <a href="https://github.com/pedroprieto" rel="me noopener" class="iconfont"
-      title="github"  target="_blank"
-      >
-      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="36" height="36">
-  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
-</svg>
-
-    </a>
-
-
-<a href="https://pedroprieto.github.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
-    class="iconfont" title="rss" target="_blank">
-    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="30" height="30">
-  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
-</svg>
-
-  </a>
-  
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
-  </span>
-
-  <span class="copyright-year">
-    &copy;
-    
-       -
-    2023
-    <span class="heart">
-      
-      <i class="iconfont">
-        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="14" height="14">
-  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
-   fill="#8a8a8a"></path>
-</svg>
-
-      </i>
-    </span><span class="author">
-        Pedro Prieto Alarcón
-        
-      </span></span>
-
-  
-  
-
-  
-</div>
-
       </footer>
 
-      <div class="button__back-to-top">
-        <a href="#back-to-top">
-          <i class="iconfont">
-            
-            <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="35" height="35">
-  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
-</svg>
+      
+  
+  <div class="book-comments">
 
-          </i>
-        </a>
-      </div>
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
+
     
-<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#don-t-make-me-think">Don&rsquo;t make me think!</a></li>
+    <li><a href="#errores-típicos">Errores típicos</a></li>
+    <li><a href="#diseño-orientado-al-escaneo-no-a-la-lectura">Diseño orientado al escaneo, no a la lectura</a></li>
+    <li><a href="#elecciones-sencillas">Elecciones sencillas</a></li>
+    <li><a href="#omisión-de-palabras-inútiles">Omisión de palabras inútiles</a></li>
+    <li><a href="#diseño-de-la-navegación">Diseño de la navegación</a>
+      <ul>
+        <li><a href="#tipos-de-usuarios">Tipos de usuarios</a></li>
+        <li><a href="#objetivos-del-menú-de-navegación">Objetivos del menú de navegación</a></li>
+        <li><a href="#convenciones">Convenciones</a></li>
+        <li><a href="#elementos-de-la-navegación">Elementos de la navegación</a></li>
+        <li><a href="#búsqueda">Búsqueda</a></li>
+        <li><a href="#nombres-de-las-páginas">Nombres de las páginas</a></li>
+        <li><a href="#localización">Localización</a></li>
+        <li><a href="#migas-de-pan">Migas de pan</a></li>
+        <li><a href="#pestañas">Pestañas</a></li>
+        <li><a href="#test-de-navegación">Test de navegación</a></li>
+      </ul>
+    </li>
+    <li><a href="#referencias">Referencias</a></li>
+  </ul>
+</nav>
 
 
+ 
+      </div>
+    </aside>
+    
+  </main>
 
-
-<script type="text/javascript" src="/js/main.52161cb0a9aea932c16c96c2c7d6eed45dc2c8724a1df03dc857a931d78cce98.js" integrity="sha256-UhYcsKmuqTLBbJbCx9bu1F3CyHJKHfA9yFepMdeMzpg=" crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </body>
+  
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

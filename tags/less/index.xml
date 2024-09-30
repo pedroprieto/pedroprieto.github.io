@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>less on Blog de Pedro Prieto</title>
+    <title>Less on Blog de Pedro Prieto</title>
     <link>https://pedroprieto.github.io/tags/less/</link>
-    <description>Recent content in less on Blog de Pedro Prieto</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Less on Blog de Pedro Prieto</description>
+    <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 22 Oct 2019 09:54:00 +0200</lastBuildDate><atom:link href="https://pedroprieto.github.io/tags/less/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Oct 2019 09:54:00 +0200</lastBuildDate>
+    <atom:link href="https://pedroprieto.github.io/tags/less/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Variables y preprocesadores CSS</title>
       <link>https://pedroprieto.github.io/post/variables_preprocesadores_css/</link>
       <pubDate>Tue, 22 Oct 2019 09:54:00 +0200</pubDate>
-      
       <guid>https://pedroprieto.github.io/post/variables_preprocesadores_css/</guid>
-      <description>&lt;p&gt;En los últimos años han aparecido una gran cantidad de &lt;a href=&#34;https://developer.mozilla.org/es/docs/Glossary/Preprocesador_CSS&#34;&gt;preprocesadores CSS&lt;/a&gt; que permiten incorporar técnicas de lenguajes de programación (variables, anidamiento, &lt;a href=&#34;https://es.wikipedia.org/wiki/Mixin&#34;&gt;mixins&lt;/a&gt;,&amp;hellip;) a la creación de hojas de estilo. La desventaja que tienen es que el código debe &lt;strong&gt;compilarse&lt;/strong&gt; para generar CSS válido que pueda ser utilizado por el navegador.&lt;/p&gt;
-&lt;p&gt;Frente a esto, es interesante conocer que CSS permite definir &lt;strong&gt;variables&lt;/strong&gt; que pueden ser reutilizadas en todo el documento, proporcionando una alternativa sencilla y estándar, aunque lógicamente menos potente.&lt;/p&gt;</description>
+      <description>&lt;p&gt;En los últimos años han aparecido una gran cantidad de &lt;a href=&#34;https://developer.mozilla.org/es/docs/Glossary/Preprocesador_CSS&#34;&gt;preprocesadores CSS&lt;/a&gt; que permiten incorporar técnicas de lenguajes de programación (variables, anidamiento, &lt;a href=&#34;https://es.wikipedia.org/wiki/Mixin&#34;&gt;mixins&lt;/a&gt;,&amp;hellip;) a la creación de hojas de estilo. La desventaja que tienen es que el código debe &lt;strong&gt;compilarse&lt;/strong&gt; para generar CSS válido que pueda ser utilizado por el navegador.&lt;/p&gt;&#xA;&lt;p&gt;Frente a esto, es interesante conocer que CSS permite definir &lt;strong&gt;variables&lt;/strong&gt; que pueden ser reutilizadas en todo el documento, proporcionando una alternativa sencilla y estándar, aunque lógicamente menos potente.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -22,7 +22,7 @@
 <link rel="canonical" href="https://pedroprieto.github.io/post/fundamentos-git-2/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/es.search.min.11882d3abf00003ab1b17f7a39166c62944984e5159faea4f17c3ad0858fa1bd.js" integrity="sha256-EYgtOr8AADqxsX96ORZsYpRJhOUVn66k8Xw60IWPob0=" crossorigin="anonymous"></script>
+  <script defer src="/es.search.min.1091a5aeade20ca6d24048e154c72bcb4c55ae451d7be97d9e63765ada3e2afa.js" integrity="sha256-EJGlrq3iDKbSQEjhVMcry0xVrkUde&#43;l9nmN2Wto&#43;Kvo=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -199,75 +199,139 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#crear-ramas">#</a>
 </h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch &lt;nombre_rama&gt;
+</span></span></code></pre></div><p>Este comando creará una rama nueva con el nombre seleccionado. Si no se indica ningún parámetro adicional, la rama creada apuntará <code>HEAD</code>, es decir, el <strong>último commit de la rama en la que nos encontremos</strong>.</p>
+<p>Una alternativa es ejecutar <code>git checkout -b &lt;nombre_rama&gt;</code>. Este comando creará una rama con el nombre indicado y cambiará a dicha rama.</p>
+<p>Es posible crear una rama que apunte a un commit o una rama determinada mediante el comando:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch &lt;nombre_rama&gt; &lt;COMMIT_HASH&gt;
+</span></span><span style="display:flex;"><span>git branch &lt;nombre_rama&gt; &lt;NOMBRE_RAMA_EXISTENTE&gt;
 </span></span></code></pre></div><h4 id="ver-ramas-disponibles">
   Ver ramas disponibles
   <a class="anchor" href="#ver-ramas-disponibles">#</a>
 </h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch
-</span></span></code></pre></div><h4 id="cambiar-de-rama">
+</span></span></code></pre></div><p>Este comando mostrará las <strong>ramas locales</strong> existentes en el repositorio. Si se desea ver las ramas existentes en el remoto (ver sección siguiente) se puede ejecutar <code>git branch --all</code>.</p>
+<h4 id="cambiar-de-rama">
   Cambiar de rama
   <a class="anchor" href="#cambiar-de-rama">#</a>
 </h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout &lt;nombre_rama&gt;
-</span></span></code></pre></div><h4 id="fusionar-una-rama">
+</span></span><span style="display:flex;"><span>git switch &lt;nombre_rama&gt;
+</span></span></code></pre></div><p>Cualquiera de los dos comandos anteriores cambiará a la rama indicada. Es posible que el comando falle <strong>si hay cambios en el directorio de trabajo</strong> que no estén integrados en ningún commit: si dichos pueden ser sobreescritos por los cambios de la rama a la que se desea cambiar, <code>git</code> abortará el cambio de rama y nos indicará el problema. En ese caso deberemos crear un commit con los cambios que estemos realizando (o bien guardarlos mediante <code>git stash</code>) y a continuación volver a ejecutar el comando de cambio de rama.</p>
+<h4 id="fusionar-una-rama">
   Fusionar una rama
   <a class="anchor" href="#fusionar-una-rama">#</a>
 </h4>
-<ul>
-<li>Primero nos posicionamos en la rama sobre la que se va a realizar la fusión</li>
-<li>Para realizar la fusión ejecutar:</li>
-</ul>
-<!-- raw HTML omitted -->
+<p>Fusionar una rama, en inglés <em>merge</em>, consiste en incorporar los cambios presentes en una rama a la rama en la que nos encontramos actualmente. Para realizar una fusión hay que realizar las siguientes acciones:</p>
+<ol>
+<li>Primero nos posicionamos en la rama sobre la que se va a realizar la fusión (la rama que va a recibir los cambios)</li>
+<li>Para realizar la fusión ejecutar:
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git merge &lt;nombre_rama_a_fusionar&gt;
-</span></span></code></pre></div><h4 id="eliminar-una-rama">
+</span></span></code></pre></div></li>
+</ol>
+<p>Si por ejemplo queremos integrar en la rama principal (<code>master</code>) los cambios presentes en la rama <code>feature1</code>, cambiaremos a la rama principal (si no estamos ya en ella) mediante <code>git checkout master</code> y a continuación ejecutaremos <code>git merge feature1</code>.</p>
+<h4 id="conflictos">
+  Conflictos
+  <a class="anchor" href="#conflictos">#</a>
+</h4>
+<p><strong>Al fusionar una rama</strong> pueden producirse <strong>conflictos</strong>. Un conflicto se produce cuando <strong>diferentes commits introducen cambios en las mismas líneas de los mismos archivos</strong>. Si por ejemplo estamos en un commit referenciado por dos ramas y realizamos desde ese punto común un commit en cada una de las ramas de manera que afecten a la misma línea del mismo fichero, se producirá un conflicto <strong>al fusionar una rama en la otra</strong>.</p>
+<p>Por ejemplo, en esta imagen podría producirse un conflicto si queremos incorporar los cambios de la rama <code>master</code> en la rama <code>rama1</code> mediante <code>git merge master</code> (siempre que los cambios producidos en los commits afecten a las mismas líneas de los mismos ficheros).</p>
+<figure><img src="/ox-hugo/conflicto.png">
+</figure>
+
+<p>Al producirse un conflicto, git no sabe qué cambios deben prevalecer: los de la rama A, los de la rama B, los dos, ninguno, algo totalmente distinto,&hellip; En este caso <strong>es necesaria la intervención humana</strong>. Git modificará los ficheros afectados incluyendo <strong>delimitadores</strong> para indicar los cambios que vienen de una rama y los que vienen de <code>HEAD</code>, es decir, de la rama en la que nos encontremos.</p>
+<p>Es importante recalcar que <strong>git no perderá información</strong>: la incluirá toda, junto con los delimitadores para identificar la procedencia de los cambios.</p>
+<p>Si se produce un conflicto <strong>git quedará en un estado intermedio</strong>: añadirá al área de preparación (color verde) los archivos que no presenten conflictos e <strong>indicará los archivos en conflicto</strong>, en color rojo, para que el usuario los edite y resuelva los conflictos.</p>
+<p>Resolver los conflictos pasa por <strong>editar el archivo</strong>, localizar los <strong>delimitadores</strong> y <strong>dejar el archivo como queremos que quede</strong>. Normalmente esta última acción consistirá en decidir <strong>qué cambios son los que queremos dejar y eliminar los delimitadores</strong>. Al final, <strong>el fichero debe quedar tal como queremos que quede</strong>: en ocasiones una de las versiones será la correcta; en otras, la otra versión; en otras, ninguna; en obras, ambas; en otras, algo totalmente distinto.</p>
+<p>Una vez resuelto el conflicto en todos los archivos habrá que ejecutar los comandos <code>git add</code> y <code>git commit</code> para <strong>crear un commit que resuelva el conflicto</strong>.</p>
+<h4 id="eliminar-una-rama">
   Eliminar una rama
   <a class="anchor" href="#eliminar-una-rama">#</a>
 </h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -d &lt;nombre_rama&gt;
-</span></span></code></pre></div><h3 id="remotos">
+</span></span></code></pre></div><p>Este comando eliminará la rama local indicada. <strong>IMPORTANTE</strong>: la eliminación de una rama supone la eliminación del puntero que hace referencia a un determinado commit. Si al eliminar una rama se quedan commits sin referenciar, dichos commits se perderán: pueden recuperarse durante un tiempo solo si se conocen sus <em>hash</em>; <code>git</code> realiza también tareas de limpieza al realizar algunas acciones y procede a limpiar los commits &ldquo;huérfanos&rdquo;, por lo que pasado un tiempo ni siquiera se podrán recuperar a través de sus <em>hash</em>.</p>
+<p>En el ejemplo siguiente, si se elimina la rama <code>test1</code> se perderán los commits <code>5aebbf7</code>, <code>897742a</code> y <code>6ba47e7</code>, ya que no habrá ninguna rama que haga referencia a ellos.</p>
+<figure><img src="/ox-hugo/borrar_rama.png">
+</figure>
+
+<h3 id="remotos">
   Remotos
   <a class="anchor" href="#remotos">#</a>
 </h3>
+<p>Los repositorios remotos son <strong>versiones</strong> del proyecto que están alojadas en un <strong>servidor web</strong> o en una <strong>carpeta</strong> accesible a través de la <strong>red</strong>.</p>
+<p>Los repositorios remotos se almacenan en una forma especial denominada <em>bare</em>, que <strong>no dispone de directorio de trabajo</strong>.</p>
+<p>Los repositorios remotos pueden estar configurados como <strong>solo lectura</strong> o <strong>lectura/escritura</strong>.</p>
+<p>Los repositorios remotos suelen utilizarse como <strong>punto de referencia</strong> de alojamiento del código: es posible realizar <strong>copias</strong> de dicho repositorio remoto denominadas <strong>clones</strong>, que pueden evolucionar de manera <strong>independiente</strong>. Esto hace que git sea un sistema <strong>descentralizado</strong> de gestión de código, ya que <strong>cada clon</strong> es un repositorio <strong>completo</strong> e <strong>independiente</strong> del resto.</p>
+<p>Es posible <strong>sincronizar</strong> los cambios de un repositorio remoto a partir de los cambios de un repositorio local y viceversa.</p>
 <h4 id="clonar-un-repositorio">
   Clonar un repositorio
   <a class="anchor" href="#clonar-un-repositorio">#</a>
 </h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone &lt;URL_REPOSITORIO&gt;
-</span></span></code></pre></div><h4 id="ver-remotos">
+</span></span></code></pre></div><p>Este comando permite clonar un repositorio remoto a partir de su URL. También es posible indicar una ruta del sistema de ficheros. Por defecto se mostrará la <strong>rama principal</strong> del repositorio remoto. El resto de ramas no aparecen como ramas locales, aunque pueden obtenerse.</p>
+<p>Al clonar un repositorio <strong>se crea una referencia al remoto en el repositorio local</strong> con el nombre <code>origin</code> que hace referencia a la URL indicada.</p>
+<h4 id="ver-remotos">
   Ver remotos
   <a class="anchor" href="#ver-remotos">#</a>
 </h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v
-</span></span></code></pre></div><h4 id="añadir-eliminar-y-renombrar-remotos">
+</span></span></code></pre></div><p>Este comando permite ver los remotos configurados. Otra alternativa es ejecutar <code>git remote show &lt;nombre_del_remoto</code> para ver los detalles del repositorio remoto.</p>
+<h4 id="añadir-eliminar-y-renombrar-remotos">
   Añadir, eliminar y renombrar remotos
   <a class="anchor" href="#a%c3%b1adir-eliminar-y-renombrar-remotos">#</a>
 </h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add &lt;NOMBRE_REMOTO&gt; &lt;URL_REPOSITORIO&gt;   <span style="color:#080;font-style:italic"># Añadir remoto</span>
 </span></span><span style="display:flex;"><span>git remote rm &lt;NOMBRE_REMOTO&gt;                      <span style="color:#080;font-style:italic"># Eliminar remoto</span>
 </span></span><span style="display:flex;"><span>git remote rename &lt;NOMBRE_ORIGINAL&gt; &lt;NOMBRE_NUEVO&gt; <span style="color:#080;font-style:italic"># Renombrar remoto</span>
-</span></span></code></pre></div><h4 id="traer-información-del-remoto">
+</span></span></code></pre></div><p>Estos comandos permiten añadir y editar repositorios remotos. Un repositorio local puede tener 0 o más remotos.</p>
+<h4 id="traer-información-del-remoto">
   Traer información del remoto
   <a class="anchor" href="#traer-informaci%c3%b3n-del-remoto">#</a>
 </h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Este comando NO realiza la fusión en la rama local</span>
 </span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># Si se desean incorporar los cambios habría que realizar un git merge</span>
 </span></span><span style="display:flex;"><span>git fetch <span style="color:#666">[</span>NOMBRE_REMOTO<span style="color:#666">]</span> <span style="color:#080;font-style:italic"># El nombre del remoto por defecto es ORIGIN</span>
-</span></span></code></pre></div><h4 id="traer-y-fusionar-cambios-del-remoto">
+</span></span></code></pre></div><p>Este comando permite actualizar la información de los repositorios remotos. <code>git</code> se conecta al remoto y comprueba si hay nuevos cambios en las ramas remotas; si es así, actualiza los punteros de las ramas remotas del repositorio local para reflejar dichos cambios. <strong>Pero no incorpora los cambios a las ramas locales</strong>.</p>
+<p>Cuando un repositorio tiene configurado un remoto, git crea <strong>en el repositorio local</strong> unos punteros que hacen referencia a las <strong>ramas remotas</strong>. Dichos punteros son similares a las ramas locales, con la peculiaridad de que <strong>no se puede cambiar a una rama remota</strong>. Es decir, las ramas remotas son de <strong>solo lectura</strong>: hacen referencia a la información que tiene git de la situación del repositorio remoto (dónde están las ramas en el repositorio remoto).</p>
+<p>En este punto es necesario insistir en la idea de que git es un sistema <strong>descentralizado</strong>: <strong>git no se está ejecutando continuamente</strong> (no es un demonio o un servicio), por lo que no está en contacto continuo con el remoto; si se producen cambios en el remoto (porque otra persona ha realizado un commit en una rama, por ejemplo), <strong>el repositorio local no se sincronizará automáticamente</strong>, sino que para él la rama remota seguirá en el mismo lugar que estaba cuando realizó el último <code>fetch</code>; si a continuación de dicho cambio se ejecuta un nuevo <code>fetch</code>, entonces el repositorio local tomará conciencia del nuevo cambio en la rama remota y <strong>actualizará el puntero de dicha rama remota</strong> al nuevo commit.</p>
+<p>En resumen: <code>git fetch</code> es la única manera de que el repositorio local tenga conciencia de que ha habido cambios en el repositorio remoto.</p>
+<h4 id="traer-y-fusionar-cambios-del-remoto">
   Traer y fusionar cambios del remoto
   <a class="anchor" href="#traer-y-fusionar-cambios-del-remoto">#</a>
 </h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git pull <span style="color:#666">[</span>NOMBRE_REMOTO<span style="color:#666">]</span> <span style="color:#666">[</span>NOMBRE_RAMA<span style="color:#666">]</span> <span style="color:#080;font-style:italic"># Pull = fetch + merge</span>
-</span></span></code></pre></div><h4 id="enviar-cambios-al-remoto">
+</span></span></code></pre></div><p>Un <code>pull</code> equivale a dos acciones: un <code>fetch</code> y un <code>merge</code>. Mediante <code>fetch</code>, git comprueba los cambios que hay en las ramas remotas y los refleja en los punteros de las ramas remotas en el repositorio local; a continuación, la acción <code>merge</code> incorpora los cambios de la rama remota a la rama local correspondiente.</p>
+<p>Esta operación es una de las más habituales a la hora de sincronizar los cambios con el repositorio remoto. En la mayoría de los casos, las ramas local y remota <strong>están asociadas</strong>: es decir, git ha sido informado de que dicha rama local tiene que sincronizarse con la rama remota correspondiente. Lo más habitual es que ambas ramas (local y remota) tengan <strong>el mismo nombre</strong>. En ese caso bastará con ejecutar <code>git pull</code> sin parámetros: git asumirá que si estamos en la rama <code>rama1</code>, por ejemplo, tiene que sincronizarse con la rama <code>rama1</code> remota.</p>
+<p>Dicho todo esto, es posible <strong>fusionar el contenido de una rama remota en otra rama distinta</strong> a la asociada. Las ramas remotas pueden ser referenciadas como <code>&lt;nombre_remoto&gt;/&lt;nombre_rama_remota&gt;</code>. Así, la rama <code>origin/rama1</code> hará referencia a la rama <code>rama1</code> del repositorio remoto <code>origin</code>. Si estamos posicionados en la rama <code>master</code> local podríamos incorporar los cambios de la rama remota <code>origin/rama1</code> de dos maneras:</p>
+<ul>
+<li>Ejecutando <code>git merge origin/rama1</code> - Directamente estaremos incorporando los cambios de la rama remota <code>origin/rama1</code> en la rama local <code>master</code>. En este caso, la rama local <code>rama1</code> <strong>no recibiría los nuevos cambios que pudiera tener la rama remota</strong> <code>origin/rama1</code></li>
+<li>Otra opción sería:
+<ol>
+<li>Cambiar a la rama <strong>local</strong> <code>rama1</code>: <code>git checkout rama1</code></li>
+<li>Fusionar los cambios de su rama remota asociada: <code>git pull</code>, o <code>git pull origin rama1</code> si no estuvieran asociadas. En este punto, la rama local <code>rama1</code> <strong>recibiría los nuevos cambios que pudiera haber</strong> en la rama remota <code>origin/rama1</code></li>
+<li>Cambiar de nuevo a la rama local <code>master</code>: <code>git checkout master</code></li>
+<li>Por último, fusionar los cambios de la rama local <code>rama1</code>: <code>git merge rama1</code></li>
+</ol>
+</li>
+</ul>
+<p>No hay una manera mejor que otra: simplemente hay que tener claro qué acciones se están ejecutando y qué cambios es están produciendo.</p>
+<h4 id="enviar-cambios-al-remoto">
   Enviar cambios al remoto
   <a class="anchor" href="#enviar-cambios-al-remoto">#</a>
 </h4>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push <span style="color:#666">[</span>NOMBRE_REMOTO<span style="color:#666">]</span> <span style="color:#666">[</span>NOMBRE_RAMA<span style="color:#666">]</span>
-</span></span></code></pre></div><h4 id="enviar-los-cambios-de-una-rama-al-remoto-y-crear-una-rama-remota-asociada">
-  Enviar los cambios de una rama al remoto y crear una rama remota asociada
-  <a class="anchor" href="#enviar-los-cambios-de-una-rama-al-remoto-y-crear-una-rama-remota-asociada">#</a>
+</span></span></code></pre></div><p>Esta operación permite <strong>enviar los commits locales de una rama</strong> a la rama indicada del repositorio remoto. Sería el inverso de <code>pull</code>: mientras que <code>pull</code> trae cambios del remoto, <code>push</code> los envía.</p>
+<p>Tal como pasa con <code>git pull</code>, la mayoría de las veces las ramas local y remota están <strong>asociadas</strong>, por lo que si ejecutamos <code>git push</code> sin parámetros se enviarán los cambios de la rama en que nos encontremos a la rama remota asociada (la mayoría de las veces tendrán el mismo nombre).</p>
+<h4 id="ramas-asociadas">
+  Ramas asociadas
+  <a class="anchor" href="#ramas-asociadas">#</a>
 </h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push -u NOMBRE_REMOTO NOMBRE_RAMA
-</span></span></code></pre></div></article>
+<p>Anteriormente hemos hecho referencia al concepto de <strong>rama asociada</strong>. Una rama asociada es <strong>una rama local</strong> configurada para <strong>hacer referencia a una rama determinada del repositorio remoto</strong>. Si una rama está asociada a una rama remota, al situarnos en dicha rama y ejecutar un <code>git push</code> o un <code>git pull</code> haremos referencia a la rama remota asociada correspondiente sin necesidad de tener que especificarla en dichos comandos.</p>
+<p>Podemos <strong>asociar una rama</strong> a una rama remota de <strong>varias maneras</strong>:</p>
+<ul>
+<li>Al ejecutar un <code>git clone</code> automáticamente se crea una rama local principal (normalmente con el nombre <code>master</code> o <code>main</code>) asociada a la rama remota principal (<code>master</code> o <code>main</code>, casi siempre).</li>
+<li>Al realizar un <strong>cambio de rama local a una rama existente en el repositorio remoto</strong> mediante <code>git checkout &lt;rama_existente_en_remoto&gt;</code> se creará una rama local <strong>con el mismo nombre que la rama remota</strong> y <strong>se realizará la asociación de dichas ramas</strong>. Por ejemplo, si en el remoto existe una rama principal <code>master</code> y una segunda rama llamada <code>rama1</code>, al realizar el clonado solamente tendremos disponible en local la rama <code>master</code>; si a continuación ejecutamos <code>git checkout rama1</code> veremos que se crea la rama local <code>rama1</code>, que apunta al mismo commit que la rama remota correspondiente y que ambas ramas quedan asociadas.</li>
+<li>Si creamos una rama local nueva <strong>que no exista en el repositorio remoto</strong>, podemos posicionarnos en dicha rama y a continuación ejecutar el comando <code>git push -u &lt;nombre_remoṭo&gt; &lt;nombre_rama&gt;</code> para <strong>crear una rama remota del mismo nombre</strong>, <strong>sincronizarla</strong> con la rama local y <strong>realizar la asociación</strong> de dichas ramas. La opción clave es la opción <code>-u</code>, equivalente a <code>--set-upstream</code>.</li>
+</ul></article>
  
       
 

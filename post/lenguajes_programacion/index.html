@@ -31,7 +31,7 @@ Código fuente en la Wikipedia.">
 <link rel="canonical" href="https://pedroprieto.github.io/post/lenguajes_programacion/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/es.search.min.1091a5aeade20ca6d24048e154c72bcb4c55ae451d7be97d9e63765ada3e2afa.js" integrity="sha256-EJGlrq3iDKbSQEjhVMcry0xVrkUde&#43;l9nmN2Wto&#43;Kvo=" crossorigin="anonymous"></script>
+  <script defer src="/es.search.min.b0c4144b61731676e73d1361d817025bf5e5d4f97234d828a863be28841412c7.js" integrity="sha256-sMQUS2FzFnbnPRNh2BcCW/Xl1PlyNNgoqGO&#43;KIQUEsc=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -516,10 +516,11 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#código-fuente">Código fuente</a></li>
     <li><a href="#código-máquina-arquitectura-y-sistemas-operativos">Código máquina, arquitectura y sistemas operativos</a></li>
     <li><a href="#compilación">Compilación</a></li>
-    <li><a href="#enlace">Enlace</a></li>
+    <li><a href="#enlazador--linker">Enlazador (<em>linker</em>)</a></li>
     <li><a href="#intérpretes">Intérpretes</a></li>
     <li><a href="#compilación-jit">Compilación JIT</a></li>
     <li><a href="#bytecode">ByteCode</a></li>
+    <li><a href="#virtualización">Virtualización</a></li>
     <li><a href="#sintaxis">Sintaxis</a>
       <ul>
         <li><a href="#variables">Variables</a></li>
@@ -571,7 +572,7 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <p>La <strong>compilación</strong> es el proceso de generación de ejecutables a partir del código fuente. Existen varias métodos:</p>
 <ul>
-<li><strong>Compilación y enlace</strong> - Los ficheros de código fuente se transforman a ficheros de código máquina. Posteriormente, el <strong>enlazador</strong> genera un ejecutable a partir de los ficheros de código máquina, conectándolo con las librerías adicionales necesarias para su funcionamiento.</li>
+<li><strong>Compilación y enlace</strong> - Los ficheros de código fuente se transforman a ficheros de código máquina o <strong>ficheros objeto</strong>. Posteriormente, el <strong>enlazador</strong> genera un ejecutable a partir de los ficheros de código máquina, conectándolos con las librerías adicionales necesarias para su funcionamiento.</li>
 <li><strong>Interpretación</strong> - Los ficheros de código fuente no se transforman a código máquina: en lugar de ello, un programa, denominado <strong>intérprete</strong>, lee línea a línea el código fuente y va realizando la compilación de cada línea de manera independiente.</li>
 <li><strong>Compilación JIT</strong> o <em>Just In Time</em> - Los ficheros de código fuente no se transforman a código máquina: en su lugar, un programa se encarga de realizar la compilación <strong>en el momento de la ejecución</strong>. Se trata de un híbrido entre la compilación y la interpretación.</li>
 </ul>
@@ -593,27 +594,71 @@ https://github.com/alex-shpak/hugo-book
     </figcaption>
 </figure>
 
-<h2 id="enlace">
-  Enlace
-  <a class="anchor" href="#enlace">#</a>
+<h2 id="enlazador--linker">
+  Enlazador (<em>linker</em>)
+  <a class="anchor" href="#enlazador--linker">#</a>
 </h2>
+<p>El enlazador es el programa que se encarga de <strong>combinar</strong> los <strong>ficheros objeto</strong> en un <strong>único objeto o fichero ejecutable</strong>. El enlazador puede funcionar de dos maneras: <strong>estática</strong> y <strong>dinámica</strong>:</p>
+<ul>
+<li>Al enlazar de manera <strong>estática</strong>, las <strong>librerías</strong> de las que depende el programa principal quedan <strong>integradas</strong> en el fichero ejecutable final.</li>
+<li>Al enlazar de manera <strong>dinámica</strong>, las <strong>librerías</strong> de las que depende el programa principal <strong>no se incorporan al ejecutable final</strong>. En su lugar, el programa final, cuando se <strong>ejecuta</strong>, busca las librerías en <strong>ficheros externos</strong>. Estas librerías externas pueden estar instaladas en el sistema operativo donde se ejecuta el programa o pueden distribuirse junto a él mediante un <strong>paquete</strong> o instalador, o a través de algún sistema de <strong>virtualización</strong>, como máquinas virtuales o contenedores.</li>
+</ul>
 <h2 id="intérpretes">
   Intérpretes
   <a class="anchor" href="#int%c3%a9rpretes">#</a>
 </h2>
+<p>Un intérprete es un programa que se encarga de <strong>ejecutar instrucciones</strong> escritas en un determinado lenguaje de programación. El intérprete ejecuta las instrucciones de <strong>una en una</strong>, <strong>sin</strong> tener que realizar ningún paso de <strong>compilación</strong> previo.</p>
+<p>En ocasiones se habla de <strong>lenguajes interpretados</strong> o <strong>lenguajes compilados</strong>. En realidad, la mayoría de lenguajes podrían soportar ambos modelos. Así, cuando se dice que un programa es interpretado o compilado, lo que se quiere decir es que la implementación &ldquo;canónica&rdquo; o más habitual de dicho programa funciona de esa manera determinada.</p>
 <h2 id="compilación-jit">
   Compilación JIT
   <a class="anchor" href="#compilaci%c3%b3n-jit">#</a>
 </h2>
+<p>La compilación JIT, o <em>Just in Time</em>, es un mecanismo de compilación que se realiza <strong>durante la ejecución</strong> del programa. Por tanto, elimina la necesidad de realizar un paso previo de compilación.</p>
+<p>La compilación JIT en ocasiones realiza la traducción de código fuente a código ejecutable, aunque en muchos casos lo que se realiza es una traducción de un tipo de lenguaje especial, el <strong>bytecode</strong>, a código ejecutable.</p>
 <h2 id="bytecode">
   ByteCode
   <a class="anchor" href="#bytecode">#</a>
 </h2>
+<p>Bytecode es un tipo de formato de código <strong>intermedio</strong>, normalmente de tipo <strong>binario</strong>. Se utiliza habitualmente para <strong>reducir la dependencia del hardware</strong> donde se ejecuta el programa. Una vez compilado el código fuente a bytecode, éste se ejecuta sobre algún tipo de <strong>máquina virtual</strong>. De esta manera, el programa compilado podrá ejecutarse en cualquier sistema que tenga instalada dicha máquina virtual.</p>
+<p>El ejemplo más famoso de lenguaje que utiliza bytecode es <strong>Java</strong>. El código fuente de Java se compila a bytecode, por ejemplo, un fichero <code>jar</code>. Dicho fichero bytecode puede ejecutarse en la <strong>Máquina Virtual Java</strong> (<strong>JVM</strong>, o <em>Java Virtual Machine</em>). Así, en cualquier equipo donde esté instalada la JVM podrá ejecutarse dicho programa.</p>
+<figure><img src="/ox-hugo/bytecode.png"
+    alt="Figure 4: Ejemplo de compilación Bytecode"><figcaption>
+      <p><!-- raw HTML omitted -->Figure 4: <!-- raw HTML omitted -->Ejemplo de compilación Bytecode</p>
+    </figcaption>
+</figure>
+
+<h2 id="virtualización">
+  Virtualización
+  <a class="anchor" href="#virtualizaci%c3%b3n">#</a>
+</h2>
+<p>La <strong>virtualización</strong> permite la ejecución de un programa en un <strong>entorno aislado</strong>. De esta manera se garantiza que las aplicaciones <strong>no interfieran</strong> unas con otras, o que tengan acceso exclusivo a sus recursos, <strong>sin afectar al resto de aplicaciones</strong>.</p>
+<p>En ocasiones, diferentes aplicaciones necesitan acceder a diferentes librerías, o incluso a versiones diferentes de las mismas librerías. Si esas librerías necesitan ser cargadas de manera <strong>dinámica</strong>, en tiempo de ejecución, deben estar disponibles en el entorno donde se ejecuta dicha aplicación. Pongamos por ejemplo una aplicación que necesita la versión 1 de la librería <code>lib1</code>, y que una segunda aplicación necesita la versión 2 de la misma librería. Es posible que solo una de ellas pueda estar disponible a la vez, por lo que una de las aplicaciones podría no funcionar correctamente al no encontrar la versión que necesita:</p>
+<figure><img src="/ox-hugo/libreria_compartida.png"
+    alt="Figure 5: Ejemplo de compilación Bytecode"><figcaption>
+      <p><!-- raw HTML omitted -->Figure 5: <!-- raw HTML omitted -->Ejemplo de compilación Bytecode</p>
+    </figcaption>
+</figure>
+
+<p>Mediante la virtualización, sería posible ejecutar cada aplicación en un entorno aislado independiente, por lo que cada entorno podría tener instalada su propia versión de la librería necesaria:</p>
+<figure><img src="/ox-hugo/virtualizacion.png"
+    alt="Figure 6: Ejemplo de compilación Bytecode"><figcaption>
+      <p><!-- raw HTML omitted -->Figure 6: <!-- raw HTML omitted -->Ejemplo de compilación Bytecode</p>
+    </figcaption>
+</figure>
+
+<p>Existen diferentes posibilidades para implementar esa virtualización. Algunas de las opciones son las siguientes:</p>
 <ul>
-<li>.NET</li>
-<li>Java</li>
-<li>Python, JavaScript (JIT)</li>
+<li><strong>Dependencias de proyecto</strong> - En el desarrollo de aplicaciones, cada aplicación puede instalar las dependencias necesarias para su funcionamiento en una <strong>carpeta de proyecto</strong>. De esta manera, las <strong>versiones</strong> necesarias de las librerías <strong>no se instalan a nivel de sistema</strong>, sino que se instalan a nivel de proyecto.</li>
+<li><strong>Máquina virtual de aplicación o proceso</strong> - Son programas software que se encargan de <strong>ejecutar aplicaciones</strong> de manera <strong>independiente del hardware</strong>. Normalmente, estas máquinas <strong>ejecutan bytecode</strong>. La <strong>Máquina Virtual de Java</strong>, JVM, es su ejemplo más paradigmático.</li>
+<li><strong>Máquina virtual de sistema</strong> - Son las máquinas virtuales completas, que usualmente integran un <strong>sistema operativo invitado</strong>. Aplicaciones como <strong>VirtualBox</strong> o <strong>VMWare</strong> permiten crear este tipo de máquinas. Las aplicaciones que se ejecutan dentro de este tipo de máquinas virtuales tienen <strong>acceso exclusivo a un sistema operativo</strong>. De esta manera, todas las librerías que se instalen dentro de una máquina virtual no interferirán con las del resto de máquinas virtuales.</li>
+<li><strong>Contenedores</strong> - También llamados sistemas de <strong>virtualización ligera</strong>.</li>
 </ul>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Dockervsvm.jpg"
+    alt="Figure 7: Docker vs MV Drinkler, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons"><figcaption>
+      <p><!-- raw HTML omitted -->Figure 7: <!-- raw HTML omitted -->Docker vs MV Drinkler, CC BY-SA 4.0 <a href="https://creativecommons.org/licenses/by-sa/4.0">https://creativecommons.org/licenses/by-sa/4.0</a>, via Wikimedia Commons</p>
+    </figcaption>
+</figure>
+
 <h2 id="sintaxis">
   Sintaxis
   <a class="anchor" href="#sintaxis">#</a>
@@ -690,10 +735,11 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#código-fuente">Código fuente</a></li>
     <li><a href="#código-máquina-arquitectura-y-sistemas-operativos">Código máquina, arquitectura y sistemas operativos</a></li>
     <li><a href="#compilación">Compilación</a></li>
-    <li><a href="#enlace">Enlace</a></li>
+    <li><a href="#enlazador--linker">Enlazador (<em>linker</em>)</a></li>
     <li><a href="#intérpretes">Intérpretes</a></li>
     <li><a href="#compilación-jit">Compilación JIT</a></li>
     <li><a href="#bytecode">ByteCode</a></li>
+    <li><a href="#virtualización">Virtualización</a></li>
     <li><a href="#sintaxis">Sintaxis</a>
       <ul>
         <li><a href="#variables">Variables</a></li>

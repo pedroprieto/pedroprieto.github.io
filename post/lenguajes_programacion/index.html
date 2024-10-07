@@ -31,7 +31,7 @@ Código fuente en la Wikipedia.">
 <link rel="canonical" href="https://pedroprieto.github.io/post/lenguajes_programacion/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/es.search.min.b0c4144b61731676e73d1361d817025bf5e5d4f97234d828a863be28841412c7.js" integrity="sha256-sMQUS2FzFnbnPRNh2BcCW/Xl1PlyNNgoqGO&#43;KIQUEsc=" crossorigin="anonymous"></script>
+  <script defer src="/es.search.min.131c3a410108ddbc5c2d599ba7e64d8ff7bfaebb4669f9a09db995f55b60ef1e.js" integrity="sha256-Exw6QQEI3bxcLVmbp&#43;ZNj/e/rrtGafmgnbmV9Vtg7x4=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -521,17 +521,6 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#compilación-jit">Compilación JIT</a></li>
     <li><a href="#bytecode">ByteCode</a></li>
     <li><a href="#virtualización">Virtualización</a></li>
-    <li><a href="#sintaxis">Sintaxis</a>
-      <ul>
-        <li><a href="#variables">Variables</a></li>
-        <li><a href="#tipos-de-datos">Tipos de datos</a></li>
-        <li><a href="#condicionales">Condicionales</a></li>
-        <li><a href="#bucles">Bucles</a></li>
-        <li><a href="#asignación">Asignación</a></li>
-        <li><a href="#funciones">Funciones</a></li>
-      </ul>
-    </li>
-    <li><a href="#módulos-clases-ficheros">Módulos, clases, ficheros</a></li>
   </ul>
 </nav>
 
@@ -651,7 +640,7 @@ https://github.com/alex-shpak/hugo-book
 <li><strong>Dependencias de proyecto</strong> - En el desarrollo de aplicaciones, cada aplicación puede instalar las dependencias necesarias para su funcionamiento en una <strong>carpeta de proyecto</strong>. De esta manera, las <strong>versiones</strong> necesarias de las librerías <strong>no se instalan a nivel de sistema</strong>, sino que se instalan a nivel de proyecto.</li>
 <li><strong>Máquina virtual de aplicación o proceso</strong> - Son programas software que se encargan de <strong>ejecutar aplicaciones</strong> de manera <strong>independiente del hardware</strong>. Normalmente, estas máquinas <strong>ejecutan bytecode</strong>. La <strong>Máquina Virtual de Java</strong>, JVM, es su ejemplo más paradigmático.</li>
 <li><strong>Máquina virtual de sistema</strong> - Son las máquinas virtuales completas, que usualmente integran un <strong>sistema operativo invitado</strong>. Aplicaciones como <strong>VirtualBox</strong> o <strong>VMWare</strong> permiten crear este tipo de máquinas. Las aplicaciones que se ejecutan dentro de este tipo de máquinas virtuales tienen <strong>acceso exclusivo a un sistema operativo</strong>. De esta manera, todas las librerías que se instalen dentro de una máquina virtual no interferirán con las del resto de máquinas virtuales.</li>
-<li><strong>Contenedores</strong> - También llamados sistemas de <strong>virtualización ligera</strong>.</li>
+<li><strong>Contenedores</strong> - También llamados sistemas de <strong>virtualización ligera</strong>. Permiten <strong>encapsular aplicaciones, junto con sus librerías y configuración</strong>, en un formato específico que puede ser desplegado mediante un <strong>motor de contenedores</strong>. El más popular es <strong>Docker</strong>. Los contenedores se diferencian de las máquinas virtuales de sistema en que <strong>no incorporan sistema operativo invitado</strong>.</li>
 </ul>
 <figure><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Dockervsvm.jpg"
     alt="Figure 7: Docker vs MV Drinkler, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons"><figcaption>
@@ -659,38 +648,6 @@ https://github.com/alex-shpak/hugo-book
     </figcaption>
 </figure>
 
-<h2 id="sintaxis">
-  Sintaxis
-  <a class="anchor" href="#sintaxis">#</a>
-</h2>
-<h3 id="variables">
-  Variables
-  <a class="anchor" href="#variables">#</a>
-</h3>
-<h3 id="tipos-de-datos">
-  Tipos de datos
-  <a class="anchor" href="#tipos-de-datos">#</a>
-</h3>
-<h3 id="condicionales">
-  Condicionales
-  <a class="anchor" href="#condicionales">#</a>
-</h3>
-<h3 id="bucles">
-  Bucles
-  <a class="anchor" href="#bucles">#</a>
-</h3>
-<h3 id="asignación">
-  Asignación
-  <a class="anchor" href="#asignaci%c3%b3n">#</a>
-</h3>
-<h3 id="funciones">
-  Funciones
-  <a class="anchor" href="#funciones">#</a>
-</h3>
-<h2 id="módulos-clases-ficheros">
-  Módulos, clases, ficheros
-  <a class="anchor" href="#m%c3%b3dulos-clases-ficheros">#</a>
-</h2>
 </article>
  
       
@@ -740,17 +697,6 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#compilación-jit">Compilación JIT</a></li>
     <li><a href="#bytecode">ByteCode</a></li>
     <li><a href="#virtualización">Virtualización</a></li>
-    <li><a href="#sintaxis">Sintaxis</a>
-      <ul>
-        <li><a href="#variables">Variables</a></li>
-        <li><a href="#tipos-de-datos">Tipos de datos</a></li>
-        <li><a href="#condicionales">Condicionales</a></li>
-        <li><a href="#bucles">Bucles</a></li>
-        <li><a href="#asignación">Asignación</a></li>
-        <li><a href="#funciones">Funciones</a></li>
-      </ul>
-    </li>
-    <li><a href="#módulos-clases-ficheros">Módulos, clases, ficheros</a></li>
   </ul>
 </nav>
 

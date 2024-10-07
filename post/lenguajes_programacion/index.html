@@ -31,7 +31,7 @@ Código fuente en la Wikipedia.">
 <link rel="canonical" href="https://pedroprieto.github.io/post/lenguajes_programacion/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/es.search.min.7bc918258fcf59d9191fba32313b1aa75c52d8a4761b5e701d88477183125191.js" integrity="sha256-e8kYJY/PWdkZH7oyMTsap1xS2KR2G15wHYhHcYMSUZE=" crossorigin="anonymous"></script>
+  <script defer src="/es.search.min.c2ace3bd921a3c89791fe1c7f8bbd134cfd6f34ba0e169105062ff9d0c057a0e.js" integrity="sha256-wqzjvZIaPIl5H&#43;HH&#43;LvRNM/W80ug4WkQUGL/nQwFeg4=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -637,7 +637,7 @@ https://github.com/alex-shpak/hugo-book
 
 <p>Existen diferentes posibilidades para implementar esa virtualización. Algunas de las opciones son las siguientes:</p>
 <ul>
-<li><strong>Dependencias de proyecto</strong> - En el desarrollo de aplicaciones, cada aplicación puede instalar las dependencias necesarias para su funcionamiento en una <strong>carpeta de proyecto</strong>. De esta manera, las <strong>versiones</strong> necesarias de las librerías <strong>no se instalan a nivel de sistema</strong>, sino que se instalan a nivel de proyecto.</li>
+<li><strong>Dependencias de proyecto</strong> - No es estrictamente un tipo de virtualización, pero está relacionado con el tema que nos ocupa. En el desarrollo de aplicaciones, cada aplicación puede instalar las dependencias necesarias para su funcionamiento en una <strong>carpeta de proyecto</strong>. De esta manera, las <strong>versiones</strong> necesarias de las librerías <strong>no se instalan a nivel de sistema</strong>, sino que se instalan a nivel de proyecto.</li>
 <li><strong>Máquina virtual de aplicación o proceso</strong> - Son programas software que se encargan de <strong>ejecutar aplicaciones</strong> de manera <strong>independiente del hardware</strong>. Normalmente, estas máquinas <strong>ejecutan bytecode</strong>. La <strong>Máquina Virtual de Java</strong>, JVM, es su ejemplo más paradigmático.</li>
 <li><strong>Máquina virtual de sistema</strong> - Son las máquinas virtuales completas, que usualmente integran un <strong>sistema operativo invitado</strong>. Aplicaciones como <strong>VirtualBox</strong> o <strong>VMWare</strong> permiten crear este tipo de máquinas. Las aplicaciones que se ejecutan dentro de este tipo de máquinas virtuales tienen <strong>acceso exclusivo a un sistema operativo</strong>. De esta manera, todas las librerías que se instalen dentro de una máquina virtual no interferirán con las del resto de máquinas virtuales.</li>
 <li><strong>Contenedores</strong> - También llamados sistemas de <strong>virtualización ligera</strong>. Permiten <strong>encapsular aplicaciones, junto con sus librerías y configuración</strong>, en un formato específico que puede ser desplegado mediante un <strong>motor de contenedores</strong>. El más popular es <strong>Docker</strong>. Los contenedores se diferencian de las máquinas virtuales de sistema en que <strong>no incorporan sistema operativo invitado</strong>.</li>
